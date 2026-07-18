@@ -1,0 +1,106 @@
+baseURL = 'https://www.neighborsof2411.org/'
+languageCode = 'en-us'
+title = 'Neighbors of 2411'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+pygmentsUseClasses = true
+
+[minify]
+  disableXML = true
+
+[params]
+  env = 'production'
+  title = 'Neighbors of 2411'
+  description = 'Neighbors of 2411 is a community campaign opposing the proposed warehouse project at 2411 [Street Name]. Get informed, get involved, and make your voice heard.'
+  keywords = ['Neighbors of 2411', 'warehouse project', 'community campaign', 'CEQA', 'traffic', 'air quality']
+  author = 'Neighbors of 2411'
+
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowShareButtons = true
+  ShowReadingTime = false
+  ShowWordCount = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowRssButtonInSectionTermList = false
+  ShowFullTextinRSS = true
+  ShowToc = true
+  TocOpen = false
+  disableSpecial1stPost = true
+  disableScrollToTop = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  comments = false
+
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:info@neighborsof2411.org'
+
+  [params.assets]
+    disableHLJS = true
+    # favicon = "/favicon.ico"
+    # favicon16x16 = "/favicon-16x16.png"
+    # favicon32x32 = "/favicon-32x32.png"
+    # apple_touch_icon = "/apple-touch-icon.png"
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ['title', 'permalink', 'summary', 'content']
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'the-project'
+    name = 'The Project'
+    url = '/the-project/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'comment-letters'
+    name = 'Comment Letters'
+    url = '/comment-letters/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'resources'
+    name = 'Resources'
+    url = '/resources/'
+    weight = 40
+  [[menu.main]]
+    identifier = 'events'
+    name = 'Events'
+    url = '/events/'
+    weight = 50
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact / Join'
+    url = '/contact/'
+    weight = 60
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
