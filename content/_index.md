@@ -3,8 +3,6 @@ title: "2411 Glassell Warehouse Opposition | Orange, CA"
 description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 just 54 feet from homes and a quarter-mile from Fletcher Elementary School in Orange, CA. Learn the issues, review the evidence, and prepare your public comment for the Planning Commission hearing."
 ---
 
-# Stop the 2411 Glassell Warehouse: Planning Commission Hearing
-
 {{< callout type="warning" title="Planning Commission Hearing Coming Soon" icon="⚠️" >}}
 **Tentative dates: August 3 or September 10, 2026.** The City will notify the public 10 days before the date is confirmed.
 
@@ -61,16 +59,35 @@ The Planning Commission hearing is your opportunity to be heard directly. Public
 
 {{< homepage-faq >}}
 
-## The Core Problem
+## The Core Problem: A Fact Hub
 
 The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, a streamlined environmental review. An IS/MND requires the agency to show there will be **no significant environmental impacts**.
 
-**We believe there is substantial evidence of significant impacts — which means the law requires a full Environmental Impact Report (EIR).**
+**We believe there is substantial evidence of significant impacts — which means the law requires a full Environmental Impact Report (EIR).** Expand each issue below to compare the IS/MND's conclusion against the record.
 
-1. **Air Quality**: Health risk assessment shows cancer risk barely below the significance threshold, using outdated models and understated assumptions.
-2. **Noise**: Nighttime dock operations model at 53.6 dBA — just 1.4 dBA below the significance threshold, a thin margin with little room for error.
-3. **Traffic**: The project itself acknowledges that truck traffic on the southern driveway will operate at Level of Service E/F. This is described as "unavoidable."
-4. **Land Use Incompatibility**: 24/7 warehouse operations contradict proximity to sensitive land uses (school, homes).
+{{< accordion title="Air Quality: \"Less than significant.\"" >}}
+{{< fact-compare claim="The IS/MND concludes air quality impacts, including cancer risk from diesel particulate matter, are less than significant." >}}
+The health risk assessment models cancer risk at **9.48 per million** — only **0.52 below** the 10.0 per million significance threshold — while assuming just 5 loading dock doors (the site plan shows 36) and only 50 hours/year of backup generator use (SCAQMD says 200+ is realistic). {{< cite doc="appendix-b" label="Verify Fact" >}}
+{{< /fact-compare >}}
+{{< /accordion >}}
+
+{{< accordion title="Noise: \"Less than significant.\"" >}}
+{{< fact-compare claim="The IS/MND concludes nighttime noise impacts are less than significant." >}}
+Modeled nighttime dock noise is **53.6 dBA** — only **1.4 dBA below** the 55.0 dBA significance threshold — and the analysis does not model backup alarms, which run 75+ dBA on heavy vehicles. {{< cite doc="appendix-k" label="Verify Fact" >}}
+{{< /fact-compare >}}
+{{< /accordion >}}
+
+{{< accordion title="Traffic: \"Less than significant, with mitigation.\"" >}}
+{{< fact-compare claim="The IS/MND concludes traffic impacts are less than significant with standard mitigation." >}}
+The project's own traffic study projects the southern truck driveway will operate at **Level of Service E/F** — severe congestion — and calls this **\"unavoidable.\"** It adds 810 net new daily truck trips near Fletcher Elementary School. {{< cite doc="appendix-l" label="Verify Fact" >}}
+{{< /fact-compare >}}
+{{< /accordion >}}
+
+{{< accordion title="Land Use: \"Consistent with the zoning.\"" >}}
+{{< fact-compare claim="The project meets the M-2 zone's requirements as designed." >}}
+A 24/7 industrial warehouse would operate just **54 feet** from single-family homes. CARB siting guidance recommends against locating sensitive uses like schools near high-traffic warehouse sites — Fletcher Elementary is a quarter-mile away. {{< cite doc="opposition-site-plan" label="Verify Fact" >}}
+{{< /fact-compare >}}
+{{< /accordion >}}
 
 [Learn about 2411 Glassell's environmental issues →](/issues/)
 

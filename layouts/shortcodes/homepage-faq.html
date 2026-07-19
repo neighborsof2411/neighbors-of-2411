@@ -4,7 +4,7 @@
   FAQPage JSON-LD block from the same data, so visible text and structured
   data never drift out of sync.
 -->
-{{ $faqs := site.Data.homepage_faq }}
+{{ $faqs := hugo.Data.homepage_faq }}
 <div class="faq-section">
   {{ range $item := $faqs }}
   <details class="faq-item">

@@ -1,4 +1,4 @@
-{{- $p := site.Data.project }}
+{{- $p := hugo.Data.project }}
 <div class="site-footer-extended">
 
   <div class="footer-ctas">
@@ -36,3 +36,94 @@
 
   <p class="footer-disclaimer">This site is maintained by Neighbors of 2411, an independent community group. It is not affiliated with the City of Orange or Rexford Industrial Realty, Inc. All claims are cited to the public record; see <a href="/evidence/">Evidence &amp; Documents</a>.</p>
 </div>
+
+<script>
+(function () {
+  var activeOverlay = null;
+  var activeBadge = null;
+
+  function onKeydown(e) {
+    if (e.key === 'Escape') closeModal();
+  }
+
+  function closeModal() {
+    if (!activeOverlay) return;
+    activeOverlay.remove();
+    activeOverlay = null;
+    document.removeEventListener('keydown', onKeydown);
+    if (activeBadge) {
+      activeBadge.setAttribute('aria-expanded', 'false');
+      activeBadge.focus();
+      activeBadge = null;
+    }
+  }
+
+  function openModal(badge) {
+    closeModal();
+    activeBadge = badge;
+    badge.setAttribute('aria-expanded', 'true');
+
+    var title = badge.getAttribute('data-title') || 'Source Document';
+    var detail = badge.getAttribute('data-detail') || '';
+    var href = badge.getAttribute('data-href') || '#';
+
+    var overlay = document.createElement('div');
+    overlay.className = 'cite-modal-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', title);
+
+    var modal = document.createElement('div');
+    modal.className = 'cite-modal';
+
+    var titleEl = document.createElement('p');
+    titleEl.className = 'cite-modal-title';
+    titleEl.textContent = title;
+    modal.appendChild(titleEl);
+
+    if (detail) {
+      var detailEl = document.createElement('p');
+      detailEl.className = 'cite-modal-summary';
+      detailEl.textContent = detail;
+      modal.appendChild(detailEl);
+    }
+
+    var actions = document.createElement('div');
+    actions.className = 'cite-modal-actions';
+
+    var link = document.createElement('a');
+    link.className = 'button button--primary';
+    link.href = href;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = 'View Source Document';
+    actions.appendChild(link);
+
+    var closeBtn = document.createElement('button');
+    closeBtn.type = 'button';
+    closeBtn.className = 'cite-modal-close';
+    closeBtn.textContent = 'Close';
+    closeBtn.addEventListener('click', closeModal);
+    actions.appendChild(closeBtn);
+
+    modal.appendChild(actions);
+    overlay.appendChild(modal);
+
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeModal();
+    });
+
+    document.body.appendChild(overlay);
+    document.addEventListener('keydown', onKeydown);
+    activeOverlay = overlay;
+    closeBtn.focus();
+  }
+
+  document.addEventListener('click', function (e) {
+    var badge = e.target.closest ? e.target.closest('.cite-badge') : null;
+    if (!badge) return;
+    e.preventDefault();
+    openModal(badge);
+  });
+})();
+</script>

@@ -4,6 +4,7 @@
   issues: [general]
   critical: false
   file: /documents/2411_N_Glassell_Street_MND.pdf
+  url: ""
   summary: "The City of Orange's environmental analysis of the proposed warehouse project — the primary decision document. Includes project description, existing conditions, and impact analysis."
   lookFor: "Page 24: Parking summary (380 stalls). Page 141: Building specs (298,988 SF). Page 188: General Plan designation."
 
@@ -13,6 +14,7 @@
   issues: [air-quality]
   critical: true
   file: /documents/Appendix_B_Health_Risk_Assessment.pdf
+  url: ""
   summary: "Models diesel particulate matter emissions and cancer risk. Modeled risk is 9.48 per million against a 10.0 per million significance threshold — a margin of just 0.52."
   lookFor: "Assumes only 5 loading dock doors operating (site plan shows 36). Assumes 50 hrs/year generator use (SCAQMD says 200+ is realistic)."
 
@@ -22,6 +24,7 @@
   issues: [noise]
   critical: true
   file: /documents/Appendix_K_Noise_and_Vibration_Impact_Analysis.pdf
+  url: ""
   summary: "Models nighttime dock noise at 53.6 dBA against a 55.0 dBA significance threshold — a margin of just 1.4 dBA, with no modeling of backup alarms or refrigeration noise."
   lookFor: "Modeling assumptions on pages 1-5 matter more than the final numbers."
 
@@ -31,6 +34,7 @@
   issues: [traffic]
   critical: true
   file: /documents/Appendix_L_Traffic_Impact_Analysis.pdf
+  url: ""
   summary: "810 net new daily PCE trips. The southern truck driveway is projected to operate at Level of Service E/F — acknowledged as 'unavoidable.' Footnote 1 (page 166) reveals the dock-door discrepancy with Appendix B."
   lookFor: "Page 140: specs. Page 166: Footnote 1 (dock door discrepancy). Page 170: trip generation. Page 178+: LOS analysis."
 
@@ -40,6 +44,7 @@
   issues: [air-quality]
   critical: false
   file: /documents/Appendix_A_AQ_Energy_and_GHG_Impact_Analysis.pdf
+  url: ""
   summary: "Supplementary air quality analysis and GHG emissions; relies on Appendix B for diesel particulate matter analysis."
   lookFor: ""
 
@@ -49,6 +54,7 @@
   issues: [traffic]
   critical: false
   file: /documents/Appendix_M_VMT_Screening_Memo.pdf
+  url: ""
   summary: "Brief screening analysis of vehicle miles traveled and related greenhouse gas / transportation impacts."
   lookFor: ""
 
@@ -58,6 +64,7 @@
   issues: [air-quality]
   critical: true
   file: /documents/SCAQMD_Formal_Deficiency_Letter.pdf
+  url: ""
   summary: "South Coast Air Quality Management District's formal response identifying 7 technical deficiencies in the air quality analysis, including outdated dispersion models and an unrealistic backup-generator scenario."
   lookFor: "Signed by Sam Wang, Air Quality Specialist, May 6, 2026."
 
@@ -67,6 +74,7 @@
   issues: [air-quality, noise, traffic, land-use]
   critical: false
   file: /documents/Formal_Objection_EIR_Demand.pdf
+  url: ""
   summary: "Neighbors of 2411's detailed comment letter submitted during the public comment period, laying out the dock-door discrepancy, health risk inadequacy, noise modeling gaps, traffic impacts, and land-use incompatibility."
   lookFor: ""
 
@@ -76,6 +84,7 @@
   issues: [air-quality, land-use]
   critical: false
   file: /documents/Supplemental_Evidence_Health_Impacts.pdf
+  url: ""
   summary: "Additional comment letter presenting supplemental evidence of health impacts on nearby residents and Fletcher Elementary students."
   lookFor: ""
 
@@ -85,5 +94,6 @@
   issues: [land-use]
   critical: false
   file: /documents/Opposition_Site_Plan_Review.pdf
+  url: ""
   summary: "Comment letter addressing the site plan design and its incompatibility with surrounding residential and school uses."
   lookFor: ""

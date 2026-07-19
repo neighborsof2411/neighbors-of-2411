@@ -1,0 +1,36 @@
+<!--
+  Inline "Verify Fact" citation badge. Looks up doc in data/documents.yaml
+  by id and renders a small button; clicking opens a modal with the
+  document title, what to look for, and a link to the source. The link
+  prefers the optional `url` field (e.g. a City of Orange Legistar/agenda
+  record) and falls back to the hosted PDF's own `file` field, since that
+  is the one link every entry is guaranteed to actually have.
+
+  The modal's shared JS lives in layouts/_partials/extend_footer.html
+  (rendered once per page in the footer), not here -- this shortcode is
+  often nested inside other shortcodes' markdown content (e.g. inside a
+  fact-compare inside an accordion), and a multi-line <script> block
+  embedded that deep gets passed through markdownify more than once,
+  which corrupts it (goldmark wraps blank-line-separated JS statements
+  in stray <p> tags). Keeping this shortcode's own output to a single
+  inert <button> avoids that entirely.
+
+  Usage: a self-closing "cite" shortcode with "doc" set to a data/documents.yaml
+  id, and an optional "label" (defaults to "Verify Fact").
+-->
+{{ $docID := .Get "doc" }}
+{{ $label := .Get "label" | default "Verify Fact" }}
+{{ $doc := false }}
+{{ range hugo.Data.documents }}
+  {{ if eq .id $docID }}
+    {{ $doc = . }}
+  {{ end }}
+{{ end }}
+{{ if not $doc }}
+  {{ errorf "cite shortcode: no entry in data/documents.yaml with id %q (used in %s)" $docID .Page.File.Path }}
+{{ end }}
+{{ $href := $doc.url | default ($doc.file | absURL) }}
+<button type="button" class="cite-badge" aria-haspopup="dialog" aria-expanded="false"
+  data-title="{{ $doc.title }}"
+  data-detail="{{ $doc.lookFor | default $doc.summary }}"
+  data-href="{{ $href }}">{{ $label }}</button>

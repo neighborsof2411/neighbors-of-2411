@@ -5,8 +5,8 @@
   actual date, update data/project.json's tentativeDates / status fields —
   this shortcode picks up the change automatically on next build.
 -->
-{{ $dates := site.Data.project.timeline.nextHearing.tentativeDates }}
-{{ $status := site.Data.project.timeline.nextHearing.status }}
+{{ $dates := hugo.Data.project.timeline.nextHearing.tentativeDates }}
+{{ $status := hugo.Data.project.timeline.nextHearing.status }}
 <div class="countdown-box" data-dates="{{ delimit $dates "," }}">
   <p class="countdown-label">⚠️ Planning Commission Hearing {{ if eq $status "tentative" }}(Tentative){{ end }}</p>
   <p class="countdown-dates">

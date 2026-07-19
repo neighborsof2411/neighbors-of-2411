@@ -1,0 +1,22 @@
+<!--
+  "They Say / The Facts Say" two-column comparison. The claim (developer/
+  opposition talking point) is a short "claim" param; the rebuttal is the
+  shortcode's inner content so it can hold full markdown and nested
+  shortcodes (e.g. a cite badge attached to the supporting fact). Commonly
+  used as the panel body of an accordion shortcode.
+
+  Usage: a "fact-compare" shortcode pair with a "claim" param (the "They
+  Say" side), and the rebuttal as inner markdown content (the "The Facts
+  Say" side) -- which can itself include a nested "cite" shortcode.
+-->
+{{ $claim := .Get "claim" }}
+<div class="fact-compare">
+  <div class="fact-compare-col fact-compare-claim">
+    <div class="fact-compare-label">They Say</div>
+    <div class="fact-compare-text">{{ $claim | markdownify }}</div>
+  </div>
+  <div class="fact-compare-col fact-compare-fact">
+    <div class="fact-compare-label">The Facts Say</div>
+    <div class="fact-compare-text">{{ .Inner | markdownify }}</div>
+  </div>
+</div>

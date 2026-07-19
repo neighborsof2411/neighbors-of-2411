@@ -21,6 +21,21 @@
     --nb-warning-border: #c0392b;
     --nb-warning-text: #7a1f14;
     --nb-critical-badge: #c2410c;
+
+    /* Landing-page "Fact Hub" system: deep slate/navy hero with a sharp
+       orange/yellow CTA. Deliberately theme-invariant (same in light and
+       dark mode) — the hero is a fixed dark banner by design, not part of
+       the site's light/dark toggle. Contrast-checked: navy text (#0b1220)
+       on the amber CTA is ~8.7:1; white hero text on the navy gradient is
+       ~17.9:1 — both comfortably exceed WCAG AA (4.5:1). */
+    --nb-hero-bg-start: #0b1220;
+    --nb-hero-bg-end: #16223d;
+    --nb-hero-text: #f8fafc;
+    --nb-hero-text-muted: #cbd5e1;
+    --nb-hero-cta-bg: #f59e0b;
+    --nb-hero-cta-text: #0b1220;
+    --nb-hero-cta-hover: #fbbf24;
+    --nb-hero-cta-outline: #f8fafc;
 }
 
 :root[data-theme="dark"] {
@@ -141,16 +156,16 @@ a.button, .button {
 
 /* ---------- Forms (subscribe) ---------- */
 
-.subscribe-form {
+.subscribe-form, .petition-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     max-width: 480px;
     margin: 1.5rem 0;
 }
-.subscribe-form .form-row, .wizard .form-row { display: flex; flex-direction: column; gap: 0.35rem; }
-.subscribe-form label, .wizard label { font-weight: 600; font-size: 0.9rem; }
-.subscribe-form input, .wizard input, .wizard select, .wizard textarea,
+.subscribe-form .form-row, .wizard .form-row, .petition-form .form-row { display: flex; flex-direction: column; gap: 0.35rem; }
+.subscribe-form label, .wizard label, .petition-form label { font-weight: 600; font-size: 0.9rem; }
+.subscribe-form input, .wizard input, .wizard select, .wizard textarea, .petition-form input,
 .doc-library input {
     font: inherit;
     font-size: 16px; /* prevents iOS zoom-on-focus */
@@ -256,6 +271,258 @@ a.button, .button {
 .finding-title { font-size: 1.1rem; }
 .faq-answer, .finding-body { padding: 0 0 1rem; }
 .faq-answer > *:first-child, .finding-body > *:first-child { margin-top: 0; }
+
+/* ---------- Fact Hub: They Say / The Facts Say ---------- */
+
+.fact-compare {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+@media (min-width: 700px) {
+    .fact-compare { grid-template-columns: 1fr 1fr; align-items: stretch; }
+}
+.fact-compare-col {
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+}
+.fact-compare-claim { background: var(--tertiary); }
+.fact-compare-fact { background: var(--nb-alert-bg); border-color: var(--nb-alert-border); }
+.fact-compare-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.fact-compare-claim .fact-compare-label { color: var(--secondary); }
+.fact-compare-claim .fact-compare-label::before { content: "✕"; color: var(--nb-warning-border); }
+.fact-compare-fact .fact-compare-label { color: var(--nb-alert-text); }
+.fact-compare-fact .fact-compare-label::before { content: "✓"; color: var(--nb-alert-border); }
+.fact-compare-text { font-size: 0.95rem; }
+.fact-compare-text > *:first-child { margin-top: 0; }
+.fact-compare-text > *:last-child { margin-bottom: 0; }
+
+/* ---------- Fact Hub: accordion ---------- */
+
+.fact-accordion {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.25rem 1.1rem;
+    margin: 0.85rem 0;
+    background: var(--entry);
+}
+.fact-accordion-summary {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 1rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+.fact-accordion-summary::-webkit-details-marker { display: none; }
+.fact-accordion-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    color: var(--nb-accent);
+    flex-shrink: 0;
+    width: 1.2rem;
+    text-align: center;
+}
+.fact-accordion-icon::before { content: "+"; }
+.fact-accordion[open] > .fact-accordion-summary .fact-accordion-icon::before { content: "−"; }
+.fact-accordion-title { font-size: 1.05rem; }
+.fact-accordion-panel { height: auto; overflow: hidden; transition: height 0.25s ease; }
+.fact-accordion:not([open]) .fact-accordion-panel { height: 0; }
+.fact-accordion-panel-inner { padding: 0 0 1.1rem; }
+.fact-accordion-panel-inner > *:first-child { margin-top: 0; }
+
+/* ---------- Fact Hub: citation badge + modal ---------- */
+
+.cite-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.15rem 0.55rem;
+    margin-left: 0.35rem;
+    border-radius: 999px;
+    border: 1px solid var(--nb-accent);
+    color: var(--nb-accent);
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1.6;
+    vertical-align: middle;
+}
+.cite-badge:hover, .cite-badge[aria-expanded="true"] { background: var(--nb-accent); color: #fff; }
+.cite-badge::before { content: "📄"; font-size: 0.85em; }
+
+.cite-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    z-index: 999;
+}
+.cite-modal {
+    background: var(--theme);
+    color: var(--primary);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    max-width: 420px;
+    width: 100%;
+    padding: 1.25rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+.cite-modal-title { font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; }
+.cite-modal-summary { font-size: 0.9rem; color: var(--secondary); margin: 0 0 1rem; }
+.cite-modal-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; justify-content: space-between; }
+.cite-modal-close {
+    background: transparent; border: 1px solid var(--border); border-radius: var(--radius);
+    color: var(--primary); padding: 0.5rem 0.9rem; cursor: pointer; font: inherit; font-size: 0.9rem;
+    min-height: 40px;
+}
+
+/* ---------- Hero (landing page) ---------- */
+
+.hero-mega {
+    /* Full-bleed breakout: .main has its own max-width + padding, so the
+       hero has to escape that box to reach the viewport edges. */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(160deg, var(--nb-hero-bg-start), var(--nb-hero-bg-end));
+    color: var(--nb-hero-text);
+    padding: 3.5rem var(--gap) 3rem;
+    margin-top: calc(-1 * var(--gap));
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+.hero-mega-inner {
+    max-width: var(--main-width);
+    margin: 0 auto;
+    text-align: center;
+}
+.hero-mega-eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--nb-hero-cta-bg);
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    border-radius: 999px;
+    padding: 0.3rem 0.9rem;
+    margin-bottom: 1.25rem;
+}
+.hero-mega-h1 {
+    font-size: clamp(1.85rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+    color: var(--nb-hero-text);
+}
+.hero-mega-sub {
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    color: var(--nb-hero-text-muted);
+    max-width: 46rem;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+.hero-cta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    max-width: 26rem;
+    margin: 0 auto;
+}
+@media (min-width: 640px) {
+    .hero-cta-row { flex-direction: row; justify-content: center; max-width: none; }
+}
+.hero-cta-row .button {
+    min-height: 54px;
+    padding: 0.9rem 1.75rem;
+    font-size: 1.05rem;
+    flex: 1 1 auto;
+}
+@media (min-width: 640px) {
+    .hero-cta-row .button { flex: 0 1 auto; }
+}
+.button--hero-primary, a.button.button--hero-primary {
+    background: var(--nb-hero-cta-bg);
+    color: var(--nb-hero-cta-text);
+    border-color: var(--nb-hero-cta-bg);
+}
+.button--hero-primary:hover, a.button.button--hero-primary:hover { background: var(--nb-hero-cta-hover); border-color: var(--nb-hero-cta-hover); }
+.button--hero-secondary, a.button.button--hero-secondary {
+    background: transparent;
+    color: var(--nb-hero-cta-outline);
+    border-color: var(--nb-hero-cta-outline);
+}
+.button--hero-secondary:hover, a.button.button--hero-secondary:hover { background: rgba(248, 250, 252, 0.12); }
+.hero-mega-meta {
+    margin-top: 1.75rem;
+    font-size: 0.85rem;
+    color: var(--nb-hero-text-muted);
+}
+
+/* ---------- Petition section ---------- */
+
+.petition-section {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem var(--gap);
+    margin: 0 0 2rem;
+}
+.petition-inner { max-width: 32rem; margin: 0 auto; text-align: center; }
+.petition-title { margin: 0 0 0.6rem; font-size: clamp(1.3rem, 3vw, 1.6rem); }
+.petition-sub { margin: 0 0 1.25rem; color: var(--secondary); font-size: 0.95rem; }
+.petition-form { max-width: 100%; margin: 0 auto; text-align: left; }
+.petition-submit { width: 100%; font-size: 1.05rem; min-height: 52px; }
+
+/* ---------- Sticky header + nav CTA ---------- */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--theme);
+    border-bottom: 1px solid var(--border);
+}
+.menu-cta-item { display: flex; align-items: center; }
+.button--nav-cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius);
+    background: var(--nb-cta-primary);
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.button--nav-cta:hover { background: var(--nb-cta-primary-hover); }
 
 /* ---------- Share buttons ---------- */
 

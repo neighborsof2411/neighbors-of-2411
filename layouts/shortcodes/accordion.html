@@ -1,0 +1,74 @@
+<!--
+  Fact Hub accordion item. Native <details>/<summary> (keyboard-accessible,
+  works with zero JS), enhanced with vanilla JS for a smooth height
+  transition on open/close instead of the native instant snap.
+
+  Usage: a "accordion" shortcode pair with a "title" param, and the
+  panel body (often a fact-compare shortcode) as inner content. Pass
+  open="true" to render expanded by default.
+-->
+{{ $title := .Get "title" }}
+{{ $open := eq (.Get "open") "true" }}
+<details class="fact-accordion"{{ if $open }} open{{ end }}>
+  <summary class="fact-accordion-summary">
+    <span class="fact-accordion-icon" aria-hidden="true"></span>
+    <span class="fact-accordion-title">{{ $title }}</span>
+  </summary>
+  <div class="fact-accordion-panel">
+    <div class="fact-accordion-panel-inner">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</details>
+
+<script>
+(function () {
+  // Each accordion shortcode emits its own <details> + <script> pair, so
+  // document.currentScript.previousElementSibling reliably identifies THIS
+  // instance's <details> at parse time — no page-wide querySelectorAll,
+  // no dependency on other accordions having been parsed yet, and no
+  // duplicate-listener risk from re-running a shared init routine.
+  var details = document.currentScript.previousElementSibling;
+  if (!details || !details.classList.contains('fact-accordion')) return;
+  var summary = details.querySelector('summary');
+  if (!summary) return;
+
+  function animateOpen() {
+    var panel = details.querySelector('.fact-accordion-panel');
+    if (!panel) return;
+    panel.style.height = '0px';
+    details.setAttribute('open', '');
+    var target = panel.scrollHeight;
+    requestAnimationFrame(function () {
+      panel.style.height = target + 'px';
+    });
+    panel.addEventListener('transitionend', function done() {
+      panel.style.height = '';
+      panel.removeEventListener('transitionend', done);
+    });
+  }
+
+  function animateClose() {
+    var panel = details.querySelector('.fact-accordion-panel');
+    if (!panel) { details.removeAttribute('open'); return; }
+    panel.style.height = panel.scrollHeight + 'px';
+    requestAnimationFrame(function () {
+      panel.style.height = '0px';
+    });
+    panel.addEventListener('transitionend', function done() {
+      panel.removeEventListener('transitionend', done);
+      details.removeAttribute('open');
+      panel.style.height = '';
+    });
+  }
+
+  summary.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (details.hasAttribute('open')) {
+      animateClose();
+    } else {
+      animateOpen();
+    }
+  });
+})();
+</script>

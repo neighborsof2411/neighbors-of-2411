@@ -202,7 +202,7 @@ We are an organized group of residents committed to ensuring proper environmenta
 1. **Email the group**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) — subject "I want to participate in opposition to the 2411 N. Glassell warehouse," including your name, address, email, and how you'd like to help
 2. **Attend group meetings** (dates/times TBD) — discuss strategy, review documents together, coordinate hearing attendance
 3. **Share information** with neighbors — forward emails, encourage others to submit public comment, post on community social media
-4. **Sign the petition** (link forthcoming) — shows unified neighborhood opposition
+4. **[Sign the petition](/#petition)** — shows unified neighborhood opposition
 5. **Donate or volunteer** — help with outreach, refreshments for volunteers, or legal/consultant fees if the group votes to retain counsel
 
 **Group values**: factual accuracy, respectful and professional communication, no personal attacks, strategic focus, inclusive leadership.
