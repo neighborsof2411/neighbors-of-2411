@@ -1,0 +1,38 @@
+<!--
+  Keyword-targeted FAQ block, driven by data/homepage_faq.yaml. Renders as an
+  accessible accordion (native details/summary) and emits a matching
+  FAQPage JSON-LD block from the same data, so visible text and structured
+  data never drift out of sync.
+-->
+{{ $faqs := site.Data.homepage_faq }}
+<div class="faq-section">
+  {{ range $item := $faqs }}
+  <details class="faq-item">
+    <summary>{{ $item.q }}</summary>
+    <div class="faq-answer">
+      <p>{{ $item.a }}</p>
+      {{ if $item.link }}<p><a href="{{ $item.link }}">{{ $item.linkText }}</a></p>{{ end }}
+    </div>
+  </details>
+  {{ end }}
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $item := $faqs }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $item.a | jsonify }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>

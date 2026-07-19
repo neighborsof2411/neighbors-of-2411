@@ -1,6 +1,6 @@
 ---
-title: "Environmental Issues: Air Quality, Noise, Traffic Impacts"
-description: "Why the 2411 N. Glassell warehouse project needs a full Environmental Impact Report: air quality, noise, traffic, and land-use evidence from the City's own technical studies."
+title: "2411 Glassell Environmental Issues: Air Quality, Noise, Traffic"
+description: "2411 Glassell environmental issues in Orange, CA: why the warehouse project needs a full Environmental Impact Report — air quality, noise, traffic, and land-use evidence from the City's own technical studies."
 ShowToc: true
 TocOpen: false
 ---

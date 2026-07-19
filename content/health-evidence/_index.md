@@ -1,6 +1,6 @@
 ---
-title: "Children's Health Evidence: USC Study & 2411 N. Glassell"
-description: "The USC Children's Health Study documents how diesel pollution harms children's lungs. Learn why this warehouse poses health risks to Fletcher Elementary students."
+title: "Children's Health & Diesel Pollution: 2411 Glassell & Fletcher Elementary"
+description: "2411 Glassell and Fletcher Elementary: the USC Children's Health Study documents how diesel pollution harms children's lungs. Learn why this Orange, CA warehouse poses health risks to Fletcher Elementary students."
 ShowToc: true
 TocOpen: false
 ---

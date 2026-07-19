@@ -1,0 +1,118 @@
+{{- /* Custom structured data. The theme's own schema_json.html already emits
+     an Organization block on home and BreadcrumbList on inner pages; these
+     additions cover the address (not supported by the theme's version) and
+     the page-specific article types requested for Issues and Health Evidence. */}}
+
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Neighbors of 2411",
+  "url": {{ site.Home.Permalink }},
+  "email": "neighborsof2411@gmail.com",
+  "description": "Community campaign opposing the 2411 North Glassell Street warehouse project in Orange, CA.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Orange",
+    "addressRegion": "CA",
+    "postalCode": "92866",
+    "addressCountry": "US"
+  }
+}
+</script>
+{{- end }}
+
+{{- if eq .RelPermalink "/issues/" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": {{ .Title | plainify | jsonify }},
+  "description": {{ .Description | plainify | jsonify }},
+  "url": {{ .Permalink }},
+  "datePublished": "2026-07-18",
+  "dateModified": "2026-07-18",
+  "author": {
+    "@type": "Organization",
+    "name": "Neighbors of 2411"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Neighbors of 2411",
+    "url": {{ site.Home.Permalink }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink }}
+  }
+}
+</script>
+{{- end }}
+
+{{- if eq .RelPermalink "/health-evidence/" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ .Title | plainify | jsonify }},
+  "description": {{ .Description | plainify | jsonify }},
+  "url": {{ .Permalink }},
+  "datePublished": "2026-07-18",
+  "author": {
+    "@type": "Organization",
+    "name": "Neighbors of 2411"
+  },
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Traffic, Susceptibility, and Childhood Asthma",
+      "author": "McConnell R, Berhane K, Yao T, et al.",
+      "datePublished": "2006",
+      "isPartOf": "Environmental Health Perspectives",
+      "sameAs": "https://doi.org/10.1289/ehp.8594"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "The Effect of Air Pollution on Lung Development from 10 to 18 Years of Age",
+      "author": "Gauderman WJ, McConnell R, Gilliland F, et al.",
+      "datePublished": "2004",
+      "isPartOf": "New England Journal of Medicine",
+      "sameAs": "https://doi.org/10.1056/NEJMoa040610"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Respiratory Effects of Relocating to Areas of Differing Air Pollution Levels",
+      "author": "Avol EL, Gauderman WJ, Tan SM, et al.",
+      "datePublished": "2001",
+      "isPartOf": "American Journal of Respiratory and Critical Care Medicine",
+      "sameAs": "https://doi.org/10.1164/ajrccm.164.11.2102138"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Air Pollution and Bronchitic Symptoms in Southern California Children with Asthma",
+      "author": "McConnell R, Berhane K, Gilliland F, et al.",
+      "datePublished": "2003",
+      "isPartOf": "Environmental Health Perspectives",
+      "sameAs": "https://doi.org/10.1289/ehp.6408"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Air Pollution Exposure, Lung Function, and Bronchial Responsiveness in Southwestern U.S. Children",
+      "author": "Gilliland FD, Avol E, Kinney PL, et al.",
+      "datePublished": "2001",
+      "isPartOf": "Epidemiology",
+      "sameAs": "https://doi.org/10.1097/00001648-200111000-00006"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Association of Improved Air Quality with Lung Development in Children",
+      "author": "Gauderman WJ, Urman R, Avol E, et al.",
+      "datePublished": "2015",
+      "isPartOf": "New England Journal of Medicine",
+      "sameAs": "https://doi.org/10.1056/NEJMoa1414123"
+    }
+  ]
+}
+</script>
+{{- end }}

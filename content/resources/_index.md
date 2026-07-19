@@ -1,6 +1,6 @@
 ---
-title: "Resources, FAQ & Contact Information"
-description: "Frequently asked questions, a glossary of CEQA and planning terms, the full contact directory, and a Public Records Act request template for the 2411 N. Glassell warehouse project."
+title: "FAQ, Glossary & Resources: 2411 Glassell Opposition"
+description: "2411 Glassell opposition FAQ: frequently asked questions, a glossary of CEQA and planning terms, the full contact directory, and a Public Records Act request template for the Orange, CA warehouse project."
 ShowToc: true
 TocOpen: false
 ---

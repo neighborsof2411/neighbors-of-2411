@@ -13,11 +13,19 @@ pygmentsUseClasses = true
 [minify]
   disableXML = true
 
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+
+[services]
+  [services.googleAnalytics]
+    id = 'GA_MEASUREMENT_ID'
+
 [params]
   env = 'production'
   title = 'Neighbors of 2411'
   description = 'Community opposition to the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA — 24/7 operations 54 feet from homes and a quarter-mile from Fletcher Elementary School. Learn the issues, review the evidence, and prepare your Planning Commission testimony.'
-  keywords = ['2411 North Glassell', 'Orange CA warehouse', 'Rexford Industrial', 'Fletcher Elementary', 'Planning Commission hearing', 'CEQA', 'environmental impact report', 'CUP 25-0013', 'ENV25-0002']
+  keywords = ['2411 Glassell', '2411 North Glassell', 'Orange CA warehouse', 'Rexford Industrial', 'Fletcher Elementary', 'Planning Commission hearing', 'CEQA', 'environmental impact report', 'CUP 25-0013', 'ENV25-0002']
   author = 'Neighbors of 2411'
 
   defaultTheme = 'auto'
@@ -43,6 +51,9 @@ pygmentsUseClasses = true
     name = 'email'
     url = 'mailto:neighborsof2411@gmail.com'
 
+  [params.schema]
+    publisherType = 'Organization'
+
   [params.assets]
     disableHLJS = true
 
@@ -62,6 +73,11 @@ pygmentsUseClasses = true
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
+
+[taxonomies]
+  # No tags/categories are used anywhere on this site — disabling avoids
+  # generating empty taxonomy list pages that would otherwise show up in
+  # the sitemap as thin content.
 
 [menu]
   [[menu.main]]

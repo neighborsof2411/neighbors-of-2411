@@ -1,6 +1,6 @@
 ---
-title: "The Project: 2411 North Glassell Street Warehouse Specifications"
-description: "Full specifications, timeline, entitlements, and developer information for the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA."
+title: "2411 N. Glassell Warehouse: Project Specs & Timeline"
+description: "2411 Glassell project specs and timeline: full building specifications, entitlements, and developer information for the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA."
 ShowToc: true
 TocOpen: false
 ---
@@ -102,7 +102,7 @@ An IS/MND is a streamlined environmental review (not a full Environmental Impact
 - Traffic and Level of Service impacts
 - Greenhouse gas emissions
 
-We have identified substantial evidence in the City's own documents that contradicts the "no significant impacts" conclusion. [See Key Issues →](/issues/)
+We have identified substantial evidence in the City's own documents that contradicts the "no significant impacts" conclusion. [See 2411 Glassell's key environmental issues →](/issues/)
 
 ## Surrounding Land Uses & Sensitive Receptors
 

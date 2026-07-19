@@ -1,7 +1,9 @@
 ---
-title: "2411 N. Glassell Warehouse Opposition"
-description: "A 298,988 SF warehouse is proposed to operate 24/7 just 54 feet from homes and a quarter-mile from Fletcher Elementary School in Orange, CA. Learn the issues, review the evidence, and prepare your Planning Commission testimony."
+title: "2411 Glassell Warehouse Opposition | Orange, CA"
+description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 just 54 feet from homes and a quarter-mile from Fletcher Elementary School in Orange, CA. Learn the issues, review the evidence, and prepare your Planning Commission testimony."
 ---
+
+# Stop the 2411 Glassell Warehouse: Planning Commission Hearing
 
 {{< callout type="warning" title="Planning Commission Hearing Coming Soon" icon="⚠️" >}}
 **Tentative dates: August 3 or September 10, 2026.** The City will notify the public 10 days before the date is confirmed.
@@ -55,6 +57,10 @@ The Planning Commission hearing is your opportunity to be heard directly. Testim
 - **Next step**: Planning Commission hearing (date TBD, with 10-day notice)
 - **Entitlements**: Conditional Use Permit (CUP 25-0013), Major Site Plan Review (SP-1180)
 
+## Frequently Asked Questions About 2411 Glassell
+
+{{< homepage-faq >}}
+
 ## The Core Problem
 
 The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, a streamlined environmental review. An IS/MND requires the agency to show there will be **no significant environmental impacts**.
@@ -66,7 +72,7 @@ The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, 
 3. **Traffic**: The project itself acknowledges that truck traffic on the southern driveway will operate at Level of Service E/F. This is described as "unavoidable."
 4. **Land Use Incompatibility**: 24/7 warehouse operations contradict proximity to sensitive land uses (school, homes).
 
-[Learn more about the issues →](/issues/)
+[Learn about 2411 Glassell's environmental issues →](/issues/)
 
 ## What You Need to Know
 

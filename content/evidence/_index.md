@@ -1,6 +1,6 @@
 ---
-title: "Technical Documents & Evidence: Full IS/MND & Appendices"
-description: "The technical record for the 2411 N. Glassell warehouse project — city documents, technical appendices, government agency letters, and neighborhood group comment letters, with summaries and download links."
+title: "Technical Documents & Evidence: 2411 Glassell IS/MND & Appendices"
+description: "2411 Glassell technical record: city documents, technical appendices, government agency letters, and neighborhood group comment letters for the Orange, CA warehouse project, with summaries and download links."
 ---
 
 This page provides access to the key technical studies, government agency letters, and environmental documents related to the 2411 N. Glassell warehouse project.
