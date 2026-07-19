@@ -51,7 +51,7 @@ The Planning Commission hearing is your opportunity to be heard directly. Testim
 - **Where**: 2411 N. Glassell Street, Orange, CA (southeast corner of Glassell & Fletcher)
 - **Applicant**: Rexford Industrial Realty, Inc.
 - **Zoning**: M-2 (Industrial Manufacturing), Light Industrial General Plan
-- **Status**: Draft Environmental Report released April 16, 2026; public comment period closed May 6, 2026
+- **Status**: Draft Environmental Report released April 16, 2026; while the initial public comment period closed on May 6, 2026, public comments may still be submitted to the official administrative record until the conclusion of the Planning Commission public hearing
 - **Next step**: Planning Commission hearing (date TBD, with 10-day notice)
 - **Entitlements**: Conditional Use Permit (CUP 25-0013), Major Site Plan Review (SP-1180)
 
