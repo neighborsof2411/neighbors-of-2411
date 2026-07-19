@@ -56,7 +56,7 @@ A comprehensive environmental document (typically 50–200+ pages) analyzing all
 {{< /faq >}}
 
 {{< faq q="What's the 'fair argument' standard?" >}}
-Under CEQA, an EIR is required if there is **any reasonable argument** that a project may have significant environmental effects — a lower burden than "preponderance of evidence." Example: if the applicant's own noise model shows 53.6 dBA, only 0.4 dBA below the 55 dBA threshold, there is a fair argument that nighttime noise impacts are significant, even though the modeled level is technically below the threshold.
+Under CEQA, an EIR is required if there is **any reasonable argument** that a project may have significant environmental effects — a lower burden than "preponderance of evidence." Example: if the applicant's own noise model shows 53.6 dBA, only 1.4 dBA below the 55 dBA threshold, there is a fair argument that nighttime noise impacts are significant, even though the modeled level is technically below the threshold.
 {{< /faq >}}
 
 {{< faq q="What's the difference between a 'less than significant' impact and a 'significant' impact?" >}}
@@ -132,7 +132,7 @@ California Air Resources Board — the state agency responsible for air quality 
 ### About Noise
 
 {{< faq q="What do the decibel (dB) numbers mean?" >}}
-Decibels measure sound intensity on a logarithmic scale — each 10 dB increase is roughly twice as loud to human ears. For reference: whisper ~30 dBA, conversation ~60 dBA, busy traffic ~70 dBA, lawn mower ~90 dBA, chainsaw ~110 dBA. A 0.4 dBA difference (this project's noise margin) is imperceptible to human ears.
+Decibels measure sound intensity on a logarithmic scale — each 10 dB increase is roughly twice as loud to human ears. For reference: whisper ~30 dBA, conversation ~60 dBA, busy traffic ~70 dBA, lawn mower ~90 dBA, chainsaw ~110 dBA. A 1.4 dBA difference (this project's modeled noise margin) is barely perceptible to human ears — and easily erased by real-world variability in equipment, weather, or maintenance.
 {{< /faq >}}
 
 {{< faq q="Is nighttime noise more regulated than daytime?" >}}

@@ -68,7 +68,7 @@ The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, 
 **We believe there is substantial evidence of significant impacts — which means the law requires a full Environmental Impact Report (EIR).**
 
 1. **Air Quality**: Health risk assessment shows cancer risk barely below the significance threshold, using outdated models and understated assumptions.
-2. **Noise**: Nighttime dock operations model at 53.6 dBA — just 0.4 dBA below the significance threshold. No margin for error.
+2. **Noise**: Nighttime dock operations model at 53.6 dBA — just 1.4 dBA below the significance threshold, a thin margin with little room for error.
 3. **Traffic**: The project itself acknowledges that truck traffic on the southern driveway will operate at Level of Service E/F. This is described as "unavoidable."
 4. **Land Use Incompatibility**: 24/7 warehouse operations contradict proximity to sensitive land uses (school, homes).
 

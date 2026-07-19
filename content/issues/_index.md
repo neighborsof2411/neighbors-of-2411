@@ -77,14 +77,14 @@ A 24/7 warehouse a quarter-mile from homes and a school means continuous noise f
 {{< callout type="citation" title="Modeled Nighttime Dock Noise" >}}
 - **Modeled noise level**: 53.6 decibels (dBA) at the nearest residential receptor
 - **Significance threshold (nighttime)**: 55.0 dBA
-- **Margin**: Only 0.4 dBA — essentially no margin for error
+- **Margin**: Only 1.4 dBA — a thin margin for error
 {{< /callout >}}
 
 The City concludes this is "less than significant" because it's technically below 55 dBA.
 
 ### Why This Is Inadequate
 
-**1. No margin for variability.** A 0.4 dBA margin is meaningless in the real world: loading operations are louder during peak activity, backup alarms add 75+ dBA (far above the 53.6 dBA modeled level), refrigeration units add continuous noise, and weather/atmospheric conditions affect noise transmission.
+**1. Thin margin for variability.** A 1.4 dBA margin leaves little room in the real world: loading operations are louder during peak activity, backup alarms add 75+ dBA (far above the 53.6 dBA modeled level), refrigeration units add continuous noise, and weather/atmospheric conditions affect noise transmission.
 
 **2. Incomplete modeling.** The analysis does not adequately model backup alarm noise (required by federal safety regulations on heavy vehicles), refrigeration/cold storage noise (typical for Rexford warehouses), truck tire noise and engine braking on Glassell Street, or nighttime versus daytime differences.
 
@@ -172,7 +172,7 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 | Issue | City Claims | The Record Says |
 |-------|-------------|------------------|
 | **Air Quality** | "Less than significant" | SCAQMD identified 7 deficiencies; dock door discrepancy (5 vs. 36); cancer risk margin only 0.52 per million; outdated modeling |
-| **Noise** | "Mitigated by sound walls" | Sound walls unspecified; margin only 0.4 dBA; backup alarms and refrigeration not modeled |
+| **Noise** | "Mitigated by sound walls" | Sound walls unspecified; margin only 1.4 dBA; backup alarms and refrigeration not modeled |
 | **Traffic** | "Acceptable" | Southern driveway LOS E/F, called "unavoidable" by the applicant |
 | **Land Use** | "Consistent with zoning" | Legal consistency ≠ compatibility; 24/7 use incompatible with adjacent homes and school |
 

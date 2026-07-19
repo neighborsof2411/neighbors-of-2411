@@ -98,7 +98,7 @@ Use this tool to draft a starting-point testimony script based on your answers. 
 
 > "My name is Mike Rodriguez. I live on Fletcher Avenue, 54 feet from the proposed warehouse site.
 >
-> The noise analysis in Appendix K shows nighttime dock operations would generate 53.6 decibels at my house. The significance threshold for nighttime noise is 55 decibels — a margin of 0.4 decibels, less than nothing.
+> The noise analysis in Appendix K shows nighttime dock operations would generate 53.6 decibels at my house. The significance threshold for nighttime noise is 55 decibels — a margin of just 1.4 decibels.
 >
 > This analysis doesn't even model backup alarms, which are required on heavy vehicles and sound at 75 decibels or higher. It doesn't model refrigeration units, common in Rexford warehouses. And with 24/7 operations, peak dock activity happens at night, when I'm sleeping.
 >
@@ -120,7 +120,7 @@ Use this tool to draft a starting-point testimony script based on your answers. 
 >
 > Second, the air quality analysis modeled only 5 loading dock doors, but Footnote 1 of the traffic study confirms the site plan has 36 — a sevenfold underestimation of emissions.
 >
-> Third, the noise analysis shows nighttime dock operations at 53.6 decibels, only 0.4 below the significance threshold, with no margin for error.
+> Third, the noise analysis shows nighttime dock operations at 53.6 decibels, only 1.4 below the significance threshold, leaving little margin for error.
 >
 > Fourth, the traffic analysis acknowledges the southern driveway will operate at Level of Service E/F, and the applicant calls this 'unavoidable.' An unavoidable significant impact cannot be waved through by an IS/MND.
 >

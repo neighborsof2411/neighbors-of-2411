@@ -22,7 +22,7 @@
   issues: [noise]
   critical: true
   file: /documents/Appendix_K_Noise_and_Vibration_Impact_Analysis.pdf
-  summary: "Models nighttime dock noise at 53.6 dBA against a 55.0 dBA significance threshold — a margin of just 0.4 dBA, with no modeling of backup alarms or refrigeration noise."
+  summary: "Models nighttime dock noise at 53.6 dBA against a 55.0 dBA significance threshold — a margin of just 1.4 dBA, with no modeling of backup alarms or refrigeration noise."
   lookFor: "Modeling assumptions on pages 1-5 matter more than the final numbers."
 
 - id: appendix-l
