@@ -125,7 +125,15 @@ We have identified substantial evidence in the City's own documents that contrad
 - **Significance**: Closest sensitive receptor for air quality and noise impacts; most vulnerable population (children)
 {{< /callout >}}
 
-**Residential Homes** — 54 feet (immediate north boundary); single-family residences along Fletcher Avenue, zoned R-1-7 and R-1-8 (Low Density Residential); exposed to 24/7 truck traffic, noise, and light pollution.
+### Residential Homes and Sensitive Receptors — 54 Feet (Immediate North Boundary)
+
+Single-family residences along Fletcher Avenue (zoned R-1-7 and R-1-8, Low Density Residential) are home to families with young children and infants. These residences sit 54 feet from the northern project boundary and are occupied by sensitive receptors as defined by CARB and OEHHA guidance — particularly children during critical developmental windows (in utero through age 18). The 24/7 warehouse operations (truck traffic, diesel particulate matter, nighttime noise, and light pollution) will expose sleeping children to:
+
+- Nighttime noise (dock operations, backup alarms, refrigeration units) during hours when children's sleep is essential for neurodevelopment and immune function (10 PM–7 AM)
+- Cumulative diesel exhaust and fine particulate exposure at a residence only 54 feet away, compounding exposure from the nearby school and existing freeway traffic
+- Sleep disruption and circadian rhythm disturbance in a developmental cohort most sensitive to chronic noise stress and air quality impacts
+
+Families in these homes are not transient tenants; they are choosing to raise children in Orange's residential neighborhoods based on existing land use patterns. The project converts a light-industrial site adjacent to single-family residential into 24/7 heavy-industrial operations — a fundamental incompatibility with the sensitive-receptor population now at risk.
 
 ## Timeline: Project Review Process
 
