@@ -1,0 +1,24 @@
+<!--
+  Social share buttons (Twitter/X, Facebook, LinkedIn, Email).
+
+  Usage: a "share" shortcode with an optional "text" param for pre-written
+  share copy.
+  Defaults to a general share message about the site if "text" is omitted.
+-->
+{{ $text := .Get "text" | default "Neighbors of 2411: a 298,988 SF warehouse is proposed 54 feet from homes and a quarter-mile from Fletcher Elementary. Learn the issues and prepare your Planning Commission testimony." }}
+{{ $url := .Page.Permalink }}
+<div class="share-buttons">
+  <span class="share-label">Share:</span>
+  <a class="share-link share-link--twitter" target="_blank" rel="noopener noreferrer"
+     href="https://twitter.com/intent/tweet?text={{ $text | urlquery }}&url={{ $url | urlquery }}"
+     aria-label="Share on X (Twitter)">X / Twitter</a>
+  <a class="share-link share-link--facebook" target="_blank" rel="noopener noreferrer"
+     href="https://www.facebook.com/sharer/sharer.php?u={{ $url | urlquery }}"
+     aria-label="Share on Facebook">Facebook</a>
+  <a class="share-link share-link--linkedin" target="_blank" rel="noopener noreferrer"
+     href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url | urlquery }}"
+     aria-label="Share on LinkedIn">LinkedIn</a>
+  <a class="share-link share-link--email"
+     href="mailto:?subject={{ "Please review: 2411 N. Glassell Warehouse Opposition" | urlquery }}&body={{ (printf "%s\n\n%s" $text $url) | urlquery }}"
+     aria-label="Share by email">Email</a>
+</div>

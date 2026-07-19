@@ -1,0 +1,45 @@
+<!--
+  Countdown to the tentative Planning Commission hearing date(s).
+  Reads tentative dates from data/project.json (timeline.nextHearing).
+  Pure vanilla JS, no external dependencies. Once the City confirms the
+  actual date, update data/project.json's tentativeDates / status fields —
+  this shortcode picks up the change automatically on next build.
+-->
+{{ $dates := site.Data.project.timeline.nextHearing.tentativeDates }}
+{{ $status := site.Data.project.timeline.nextHearing.status }}
+<div class="countdown-box" data-dates="{{ delimit $dates "," }}">
+  <p class="countdown-label">⚠️ Planning Commission Hearing {{ if eq $status "tentative" }}(Tentative){{ end }}</p>
+  <p class="countdown-dates">
+    {{ range $i, $d := $dates }}{{ if $i }} or {{ end }}{{ dateFormat "January 2, 2006" $d }}{{ end }}
+  </p>
+  <p class="countdown-timer" id="countdown-timer" aria-live="polite">Calculating days remaining&hellip;</p>
+  <p class="countdown-note">The City will notify the public 10 days before the hearing date is confirmed.</p>
+</div>
+<script>
+(function () {
+  var el = document.getElementById('countdown-timer');
+  if (!el) return;
+  var box = el.closest('.countdown-box');
+  var dateStrs = (box.getAttribute('data-dates') || '').split(',').filter(Boolean);
+  if (!dateStrs.length) { el.textContent = ''; return; }
+  var now = new Date();
+  var future = dateStrs
+    .map(function (d) { return new Date(d + 'T00:00:00'); })
+    .filter(function (d) { return d.getTime() > now.getTime(); })
+    .sort(function (a, b) { return a - b; });
+  if (!future.length) {
+    el.textContent = 'Check back for the confirmed hearing date.';
+    return;
+  }
+  var target = future[0];
+  var msPerDay = 24 * 60 * 60 * 1000;
+  var days = Math.ceil((target.getTime() - now.getTime()) / msPerDay);
+  if (days <= 0) {
+    el.textContent = 'The hearing may be happening now — check for the confirmed date.';
+  } else if (days === 1) {
+    el.textContent = '1 day until the earliest tentative hearing date';
+  } else {
+    el.textContent = days + ' days until the earliest tentative hearing date';
+  }
+})();
+</script>

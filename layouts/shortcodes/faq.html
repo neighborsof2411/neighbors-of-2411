@@ -1,0 +1,12 @@
+<!--
+  FAQ accordion item using native <details>/<summary> — keyboard accessible
+  (Tab + Enter/Space) with zero JS required.
+  Usage: a "faq" shortcode pair with a "q" param holding the question text,
+  and the answer as the shortcode's inner content.
+-->
+<details class="faq-item">
+  <summary>{{ .Get "q" }}</summary>
+  <div class="faq-answer">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

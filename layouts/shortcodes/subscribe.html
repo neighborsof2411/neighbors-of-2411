@@ -1,0 +1,33 @@
+<!--
+  Email subscription form (Formspree).
+
+  Usage: add a "subscribe" shortcode call with an "id" parameter set to your
+  Formspree form ID (the part after "https://formspree.io/f/" in your
+  dashboard at https://formspree.io/forms). Optional "compact" parameter
+  ("true") renders a smaller footer-style version.
+-->
+{{ $id := .Get "id" | default "xzdnrjaz" }}
+{{ $compact := .Get "compact" }}
+<form class="subscribe-form{{ if $compact }} subscribe-form--compact{{ end }}" action="https://formspree.io/f/{{ $id }}" method="POST">
+  <input type="hidden" name="_subject" value="Website Subscription">
+  <div class="form-row">
+    <label for="sub-name-{{ $compact }}">Name</label>
+    <input id="sub-name-{{ $compact }}" type="text" name="name" autocomplete="name" required>
+  </div>
+
+  <div class="form-row">
+    <label for="sub-email-{{ $compact }}">Email</label>
+    <input id="sub-email-{{ $compact }}" type="email" name="email" autocomplete="email" required>
+  </div>
+
+  {{ if not $compact }}
+  <div class="form-row">
+    <label for="sub-address-{{ $compact }}">Address / Neighborhood (optional)</label>
+    <input id="sub-address-{{ $compact }}" type="text" name="address" autocomplete="address-line1">
+  </div>
+  {{ end }}
+
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+  <button type="submit" class="button button--primary">Get Hearing Date Updates</button>
+</form>

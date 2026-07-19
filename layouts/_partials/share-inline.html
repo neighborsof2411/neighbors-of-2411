@@ -1,0 +1,18 @@
+<!-- Footer social share buttons -->
+{{- $text := "Neighbors of 2411: a 298,988 SF warehouse is proposed 54 feet from homes and a quarter-mile from Fletcher Elementary. Learn the issues and prepare your Planning Commission testimony." }}
+{{- /* This partial is rendered inside PaperMod's partialCached footer, so it
+     must not depend on the current page's context (it would get cached and
+     reused verbatim across all pages of the same Kind/Layout). Link to the
+     homepage, which matches its "Share this site" framing anyway. */}}
+{{- $url := site.Home.Permalink }}
+<div class="share-buttons">
+  <span class="share-label">Share this site:</span>
+  <a class="share-link" target="_blank" rel="noopener noreferrer"
+     href="https://twitter.com/intent/tweet?text={{ $text | urlquery }}&url={{ $url | urlquery }}">X / Twitter</a>
+  <a class="share-link" target="_blank" rel="noopener noreferrer"
+     href="https://www.facebook.com/sharer/sharer.php?u={{ $url | urlquery }}">Facebook</a>
+  <a class="share-link" target="_blank" rel="noopener noreferrer"
+     href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url | urlquery }}">LinkedIn</a>
+  <a class="share-link"
+     href="mailto:?subject={{ "Please review: 2411 N. Glassell Warehouse Opposition" | urlquery }}&body={{ (printf "%s\n\n%s" $text $url) | urlquery }}">Email</a>
+</div>

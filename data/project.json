@@ -1,0 +1,286 @@
+{
+  "project": {
+    "name": "2411 North Glassell Street Project",
+    "shortName": "2411 N. Glassell Warehouse",
+    "location": {
+      "address": "2411 North Glassell Street",
+      "city": "Orange",
+      "state": "California",
+      "zip": "92866",
+      "county": "Orange",
+      "coordinates": {
+        "lat": 33.7733,
+        "lng": -117.8506
+      },
+      "apn": ["374-381-01", "374-381-02"],
+      "acreage": 12.1,
+      "cornerDescription": "Southeast corner of Glassell Street and Fletcher Avenue"
+    },
+    "developer": {
+      "name": "Rexford Industrial Realty, Inc.",
+      "address": "555 Anton Blvd, Suite 910, Costa Mesa, CA 92626",
+      "contact": {
+        "name": "Luis Gomez",
+        "title": "Vice President, Development",
+        "email": "LGomez@rexfordindustrial.com",
+        "phone": "(424) 465-2061"
+      },
+      "outreachEmail": "2411NGlassell@gmail.com"
+    }
+  },
+  "entitlements": {
+    "leadAgency": "City of Orange",
+    "department": "Community Development Department, Planning Division",
+    "caseNumbers": {
+      "conditionalUsePermit": "25-0013",
+      "majorSitePlanReview": "SP-1180",
+      "designReview": "5154",
+      "lotLineAdjustment": "2025-03",
+      "environmentalReview": "ENV25-0002"
+    },
+    "zoning": {
+      "current": "M-2 (Industrial Manufacturing)",
+      "generalPlan": "Light Industrial (LI)",
+      "maxHeight": "45 feet",
+      "minSetbacks": "20 feet (arterial), 20 feet (residential), 10 feet (local street)"
+    }
+  },
+  "projectSpecs": {
+    "buildingSize": {
+      "total": "298,988 SF",
+      "warehouse": {
+        "current": "260,118 SF",
+        "analyzed": "189,988 SF"
+      },
+      "manufacturing": {
+        "current": "20,000 SF",
+        "analyzed": "109,000 SF"
+      },
+      "office": {
+        "groundFloor": "9,400 SF",
+        "mezzanine": "9,400 SF"
+      },
+      "note": "Analysis assumed maximum manufacturing scenario (189,988 warehouse + 109,000 manufacturing)"
+    },
+    "parking": {
+      "analyzedProject": {
+        "total": 380,
+        "standard": 297,
+        "accessible": 5,
+        "vanAccessible": 2,
+        "ev": 76
+      },
+      "option2": {
+        "total": 247,
+        "standard": 190,
+        "accessible": 5,
+        "vanAccessible": 2,
+        "ev": 50
+      },
+      "bicycleParkingTotal": 20
+    },
+    "loading": {
+      "dockDoors": 36,
+      "configuration": "Option 2 (36-dock configuration)"
+    },
+    "transportation": {
+      "dailyTrips": 843,
+      "netNewPCETrips": 810,
+      "amPeakHour": 106,
+      "pmPeakHour": 115,
+      "amPeakPCE": 139,
+      "pmPeakPCE": 147,
+      "note": "PCE = Passenger Car Equivalent; accounts for truck volume impact"
+    },
+    "operations": {
+      "hoursPerDay": 24,
+      "daysPerWeek": 7,
+      "schedule": "24/7",
+      "note": "Round-the-clock operations, 7 days per week"
+    }
+  },
+  "timeline": {
+    "events": [
+      {
+        "name": "Notice of Availability Issued",
+        "date": "2026-04-16",
+        "status": "completed",
+        "details": "City distributed Draft IS/MND to public agencies and general public"
+      },
+      {
+        "name": "Public Comment Period Opens",
+        "date": "2026-04-16",
+        "status": "completed",
+        "details": "20-day public review period begins"
+      },
+      {
+        "name": "Public Comment Period Closes",
+        "date": "2026-05-06",
+        "status": "completed",
+        "details": "Deadline for submitting written comments on IS/MND",
+        "isCritical": true
+      },
+      {
+        "name": "Planning Commission Hearing (Tentative Date 1)",
+        "date": "2026-08-03",
+        "status": "tentative",
+        "details": "First potential date for PC hearing; city will notify 10 days before confirmation",
+        "isCritical": true,
+        "altDate": "2026-09-10"
+      },
+      {
+        "name": "Planning Commission Hearing (Tentative Date 2)",
+        "date": "2026-09-10",
+        "status": "tentative",
+        "details": "Alternative date for PC hearing if not scheduled for August 3",
+        "isCritical": true,
+        "primaryDate": "2026-08-03"
+      },
+      {
+        "name": "PC Decision",
+        "date": null,
+        "status": "pending",
+        "details": "Planning Commission approves, denies, or continues project"
+      },
+      {
+        "name": "Appeal Window Opens (if applicable)",
+        "date": null,
+        "status": "pending",
+        "details": "10-15 day window to appeal PC decision to City Council",
+        "durationDays": 15
+      }
+    ],
+    "commentPeriod": {
+      "openDate": "2026-04-16",
+      "closeDate": "2026-05-06",
+      "duration": 20,
+      "status": "closed"
+    },
+    "nextHearing": {
+      "type": "Planning Commission",
+      "tentativeDates": ["2026-08-03", "2026-09-10"],
+      "notificationDaysBeforeConfirmation": 10,
+      "status": "tentative"
+    }
+  },
+  "contacts": {
+    "cityStaff": [
+      {
+        "name": "Arlen Beck",
+        "title": "Senior Planner, Community Development Department",
+        "phone": "(714) 744-7272",
+        "email": "abeck@cityoforange.org",
+        "isPrimary": true
+      },
+      {
+        "name": "Hayden Beckman",
+        "title": "Planning Manager",
+        "phone": "(714) 744-7220",
+        "email": "hbeckman@cityoforange.org"
+      }
+    ],
+    "cityCouncil": [
+      {
+        "name": "Kathy Tavoularis",
+        "title": "City Council Member (Friendly Contact)",
+        "email": "ktavoularis@cityoforange.org",
+        "note": "Neighbor and ally; recusal risk if project reaches Council appeal due to quasi-adjudicative role"
+      }
+    ],
+    "airQuality": [
+      {
+        "agency": "South Coast Air Quality Management District (SCAQMD)",
+        "contact": {
+          "name": "Jivar Afshar",
+          "title": "Air Quality Specialist",
+          "email": "jafshar@aqmd.gov"
+        }
+      },
+      {
+        "agency": "South Coast Air Quality Management District (SCAQMD)",
+        "contact": {
+          "name": "Sam Wang",
+          "title": "Air Quality Specialist (Control Letter Signer)",
+          "email": "swang1@aqmd.gov",
+          "note": "Issued formal deficiency letter (Control No. ORC260414-01, May 6, 2026)"
+        }
+      }
+    ],
+    "neighborGroup": {
+      "name": "Neighbors of 2411 (UNA)",
+      "status": "Unincorporated Nonprofit Association (California)",
+      "email": "neighborsof2411@gmail.com",
+      "authorizedSignatory": "Rachel Chiguila",
+      "note": "Group was recently formalized with founding documents"
+    }
+  },
+  "sensitiveReceptors": [
+    {
+      "type": "Elementary School",
+      "name": "Fletcher Elementary School",
+      "grade": "TK-6",
+      "enrollment": "~497 students",
+      "programs": "Mandarin Language & GATE Academy",
+      "address": "515 W. Fletcher Avenue, Orange, CA",
+      "distanceToSite": "0.25 miles (quarter-mile)",
+      "isClosestSensitiveReceptor": true,
+      "note": "Valid receptor for diesel particulate matter (DPM) and proximity arguments"
+    },
+    {
+      "type": "Residential",
+      "description": "Single-family residences along Fletcher Avenue",
+      "distanceToSite": "54 feet (north boundary)",
+      "note": "Nearest homes to the site"
+    }
+  ],
+  "keyData": {
+    "environmentalIssues": [
+      "Air quality (diesel particulate matter, health risk assessment)",
+      "Noise (24/7 operations, dock alarms, truck activity)",
+      "Traffic (810 net new daily PCE trips, LOS impacts)",
+      "Land use compatibility (proximity to school and residences)",
+      "Greenhouse gas emissions"
+    ],
+    "technicalVulnerabilities": [
+      "Health risk assessment (9.48 per million cancer risk vs. 10 per million threshold)",
+      "Dock door count discrepancy (HRA modeled 5 doors; TIA Footnote 1 confirms 36-door Option 2 plan)",
+      "SCAQMD formal deficiency letter (7 technical issues identified)",
+      "Nighttime noise (53.6 dBA modeled vs. 55.0 dBA threshold)",
+      "Southern truck driveway LOS E/F deficiency (acknowledged as unavoidable)"
+    ],
+    "mitigationStatus": "Initial Study/Mitigated Negative Declaration (IS/MND) — no full EIR",
+    "appealPath": "Planning Commission → City Council (if applicant or public appeals PC decision)"
+  },
+  "organizationalInfo": {
+    "groupName": "Neighbors of 2411",
+    "legalStructure": "Unincorporated Nonprofit Association (UNA)",
+    "jurisdiction": "California",
+    "statuteReference": "California UNA statute (2005 reforms)",
+    "protections": [
+      "Anti-SLAPP defense (California Code of Civil Procedure §425.16)",
+      "Litigation privilege (California Civil Code §47(b))",
+      "No separate entity filing required until dispute arises"
+    ],
+    "authorizedSignatory": "Rachel Chiguila",
+    "foundingMembers": [
+      "Rachel Chiguila",
+      "Don Lee",
+      "Rob Ranallo",
+      "Atlacatl Chiguila",
+      "Angelina Neu",
+      "Diana Caballero"
+    ]
+  },
+  "metadata": {
+    "dataCompletionDate": "2026-07-18",
+    "dataSource": [
+      "City of Orange IS/MND No. ENV25-0002 (Draft, April 2026)",
+      "Appendix L: Traffic Impact Analysis",
+      "SCAQMD formal correspondence",
+      "City of Orange Planning Division website",
+      "Neighbors of 2411 project records"
+    ],
+    "nextUpdateNeeded": "Planning Commission hearing date confirmation (10 days before hearing)",
+    "claudeCodeUsage": "Pass this entire JSON to Claude Code artifact for website construction"
+  }
+}

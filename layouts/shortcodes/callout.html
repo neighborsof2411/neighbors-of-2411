@@ -1,0 +1,17 @@
+<!--
+  Callout / citation / alert box.
+  Usage: a "callout" shortcode pair with type/title/icon params, e.g.
+  type="alert" title="Fletcher Elementary by the Numbers" icon set to a pin emoji.
+  type: "alert" (light green, proactive facts), "citation" (light gray, academic/factual), "warning" (used sparingly)
+-->
+{{ $type := .Get "type" | default "citation" }}
+{{ $title := .Get "title" }}
+{{ $icon := .Get "icon" }}
+<div class="callout callout--{{ $type }}">
+  {{ if $title }}
+  <p class="callout-title">{{ if $icon }}<span aria-hidden="true">{{ $icon }}</span> {{ end }}{{ $title }}</p>
+  {{ end }}
+  <div class="callout-body">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

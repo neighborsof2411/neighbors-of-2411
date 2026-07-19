@@ -1,0 +1,99 @@
+<!--
+  Filterable, searchable document library, driven by data/documents.yaml.
+  Filtering/search is done client-side in vanilla JS over the pre-rendered
+  DOM (no external dependencies, no separate JSON fetch needed).
+-->
+{{ $docs := site.Data.documents }}
+<div class="doc-library" id="doc-library">
+
+  <div class="doc-library-controls">
+    <div class="form-row">
+      <label for="doc-search">Search documents</label>
+      <input type="search" id="doc-search" placeholder="e.g. dock, cancer risk, SCAQMD, noise&hellip;">
+    </div>
+
+    <div class="doc-filter-group" role="group" aria-label="Filter by issue">
+      <span class="doc-filter-label">Issue:</span>
+      <button type="button" class="doc-filter is-active" data-filter-type="issue" data-filter-value="all">All</button>
+      <button type="button" class="doc-filter" data-filter-type="issue" data-filter-value="air-quality">Air Quality</button>
+      <button type="button" class="doc-filter" data-filter-type="issue" data-filter-value="noise">Noise</button>
+      <button type="button" class="doc-filter" data-filter-type="issue" data-filter-value="traffic">Traffic</button>
+      <button type="button" class="doc-filter" data-filter-type="issue" data-filter-value="land-use">Land Use</button>
+      <button type="button" class="doc-filter" data-filter-type="issue" data-filter-value="general">General</button>
+    </div>
+
+    <div class="doc-filter-group" role="group" aria-label="Filter by document type">
+      <span class="doc-filter-label">Type:</span>
+      <button type="button" class="doc-filter is-active" data-filter-type="category" data-filter-value="all">All</button>
+      <button type="button" class="doc-filter" data-filter-type="category" data-filter-value="city-documents">City Documents</button>
+      <button type="button" class="doc-filter" data-filter-type="category" data-filter-value="agency-letters">Agency Letters</button>
+      <button type="button" class="doc-filter" data-filter-type="category" data-filter-value="appendices">Appendices</button>
+      <button type="button" class="doc-filter" data-filter-type="category" data-filter-value="opposition-comments">Opposition Comments</button>
+    </div>
+
+    <p class="doc-count" id="doc-count" aria-live="polite"></p>
+  </div>
+
+  <div class="doc-list">
+    {{ range $docs }}
+    <article class="doc-card{{ if .critical }} doc-card--critical{{ end }}"
+              id="{{ .id }}"
+              data-issues="{{ delimit .issues " " }}"
+              data-category="{{ .category }}"
+              data-search="{{ lower (printf "%s %s %s" .title .summary .lookFor) }}">
+      {{ if .critical }}<span class="doc-badge">Critical Evidence</span>{{ end }}
+      <h3 class="doc-title">{{ .title }}</h3>
+      <p class="doc-summary">{{ .summary }}</p>
+      {{ if .lookFor }}<p class="doc-lookfor"><strong>What to look for:</strong> {{ .lookFor }}</p>{{ end }}
+      <a class="button button--secondary doc-download" href="{{ .file }}" download>Download PDF</a>
+    </article>
+    {{ end }}
+  </div>
+
+  <p class="doc-empty" id="doc-empty" hidden>No documents match your search/filter. Try clearing a filter.</p>
+</div>
+
+<script>
+(function () {
+  var lib = document.getElementById('doc-library');
+  if (!lib) return;
+  var cards = Array.prototype.slice.call(lib.querySelectorAll('.doc-card'));
+  var search = document.getElementById('doc-search');
+  var countEl = document.getElementById('doc-count');
+  var emptyEl = document.getElementById('doc-empty');
+  var active = { issue: 'all', category: 'all' };
+
+  function applyFilters() {
+    var term = (search.value || '').toLowerCase().trim();
+    var shown = 0;
+    cards.forEach(function (card) {
+      var issues = (card.getAttribute('data-issues') || '').split(' ');
+      var category = card.getAttribute('data-category');
+      var haystack = card.getAttribute('data-search') || '';
+      var matchesIssue = active.issue === 'all' || issues.indexOf(active.issue) !== -1;
+      var matchesCategory = active.category === 'all' || category === active.category;
+      var matchesSearch = !term || haystack.indexOf(term) !== -1;
+      var visible = matchesIssue && matchesCategory && matchesSearch;
+      card.hidden = !visible;
+      if (visible) shown++;
+    });
+    countEl.textContent = shown + ' document' + (shown === 1 ? '' : 's');
+    emptyEl.hidden = shown !== 0;
+  }
+
+  lib.querySelectorAll('.doc-filter').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var type = btn.getAttribute('data-filter-type');
+      var value = btn.getAttribute('data-filter-value');
+      active[type] = value;
+      lib.querySelectorAll('.doc-filter[data-filter-type="' + type + '"]').forEach(function (b) {
+        b.classList.toggle('is-active', b === btn);
+      });
+      applyFilters();
+    });
+  });
+
+  search.addEventListener('input', applyFilters);
+  applyFilters();
+})();
+</script>

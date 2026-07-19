@@ -1,0 +1,234 @@
+<!--
+  Testimony Preparation Wizard. Pure vanilla JS, no external dependencies.
+  Walks the user through: issue -> personal impact -> supporting facts ->
+  generated testimony script (copy/print).
+-->
+<div class="wizard" id="testimony-wizard">
+
+  <div class="wizard-progress" aria-hidden="true">
+    <span class="wizard-progress-step is-active" data-progress-step="1">1. Issue</span>
+    <span class="wizard-progress-step" data-progress-step="2">2. Impact</span>
+    <span class="wizard-progress-step" data-progress-step="3">3. Facts</span>
+    <span class="wizard-progress-step" data-progress-step="4">4. Testimony</span>
+  </div>
+
+  <form id="wizard-form">
+
+    <fieldset class="wizard-step" data-step="1">
+      <legend><strong>Step 1: What issue affects you most?</strong></legend>
+      <div class="form-row">
+        <label for="wiz-issue">Choose the issue you feel most strongly about</label>
+        <select id="wiz-issue" name="issue" required>
+          <option value="" disabled selected>Select one&hellip;</option>
+          <option value="air-quality">Air Quality</option>
+          <option value="noise">Noise</option>
+          <option value="traffic">Traffic</option>
+          <option value="land-use">Land Use</option>
+          <option value="health">Health</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="wiz-name">Your name (optional — used in the generated testimony)</label>
+        <input id="wiz-name" type="text" name="name" placeholder="Your Name">
+      </div>
+      <div class="form-row">
+        <label for="wiz-address">Your street / neighborhood (optional)</label>
+        <input id="wiz-address" type="text" name="address" placeholder="Your Address or Cross Streets">
+      </div>
+      <button type="button" class="button button--primary wizard-next" data-next="2">Next: How It Affects You →</button>
+    </fieldset>
+
+    <fieldset class="wizard-step" data-step="2" hidden>
+      <legend><strong>Step 2: How does it affect you?</strong></legend>
+      <div class="form-row">
+        <label for="wiz-impact">Describe the personal impact in your own words (a sentence or two is plenty)</label>
+        <textarea id="wiz-impact" name="impact" rows="4" placeholder="Example: My bedroom window faces the site, 54 feet away. / My children walk to Fletcher Elementary every day."></textarea>
+      </div>
+      <button type="button" class="button wizard-back" data-back="1">← Back</button>
+      <button type="button" class="button button--primary wizard-next" data-next="3">Next: Pick Supporting Facts →</button>
+    </fieldset>
+
+    <fieldset class="wizard-step" data-step="3" hidden>
+      <legend><strong>Step 3: Pick supporting facts from the record</strong></legend>
+      <p class="wizard-hint">We've pre-checked the facts most relevant to your issue above. Add or remove any.</p>
+      <div id="wiz-facts-list" class="wizard-facts"></div>
+      <div class="form-row">
+        <label for="wiz-recommendation">What do you want the Commission to do?</label>
+        <select id="wiz-recommendation" name="recommendation">
+          <option value="eir">Demand a full Environmental Impact Report</option>
+          <option value="conditions">Impose strict conditions of approval (no 24/7 ops, truck caps, monitoring)</option>
+          <option value="both">Demand an EIR, and impose strict conditions if approved anyway</option>
+          <option value="deny">Deny the project outright</option>
+        </select>
+      </div>
+      <button type="button" class="button wizard-back" data-back="2">← Back</button>
+      <button type="button" class="button button--primary wizard-next" id="wiz-generate" data-next="4">Generate My Testimony →</button>
+    </fieldset>
+
+    <fieldset class="wizard-step" data-step="4" hidden>
+      <legend><strong>Step 4: Your testimony</strong></legend>
+      <p class="wizard-hint">Read it out loud and time yourself — aim for 2&ndash;3 minutes. Edit freely; this is a starting draft, not a script to memorize.</p>
+      <textarea id="wiz-output" rows="16" readonly></textarea>
+      <div class="wizard-actions">
+        <button type="button" class="button button--primary" id="wiz-copy">Copy to Clipboard</button>
+        <button type="button" class="button" id="wiz-print">Print</button>
+        <button type="button" class="button wizard-back" data-back="3">← Edit Answers</button>
+      </div>
+      <p class="wizard-hint">Next: <a href="/testify/#how-to-prepare-testimony">review the full testimony guide</a> for what to expect at the hearing.</p>
+    </fieldset>
+
+  </form>
+</div>
+
+<script>
+(function () {
+  var wizard = document.getElementById('testimony-wizard');
+  if (!wizard) return;
+
+  var FACTS = {
+    'air-quality': [
+      { id: 'aq-cancer', label: 'Modeled cancer risk is 9.48 per million — only 0.52 below the 10 per million significance threshold.' },
+      { id: 'aq-docks', label: 'The health risk analysis modeled only 5 loading dock doors, but the site plan shows 36 — actual risk could be far higher.' },
+      { id: 'aq-scaqmd', label: 'The South Coast Air Quality Management District (SCAQMD) identified 7 technical deficiencies in the air quality analysis.' },
+      { id: 'aq-generator', label: 'The analysis assumes just 50 hours/year of backup generator use; SCAQMD says a realistic estimate is 200+ hours.' }
+    ],
+    'noise': [
+      { id: 'n-margin', label: 'Modeled nighttime dock noise is 53.6 dBA — only 0.4 dBA below the 55 dBA significance threshold.' },
+      { id: 'n-alarms', label: 'The noise analysis does not model backup alarms, which run 75+ dBA on heavy vehicles.' },
+      { id: 'n-247', label: 'With 24/7 operations, peak loading-dock activity can occur at night, during sleeping hours.' }
+    ],
+    'traffic': [
+      { id: 't-trips', label: 'The project adds 810 net new daily truck trips (PCE), mostly diesel vehicles.' },
+      { id: 't-los', label: 'The southern truck driveway is projected to operate at Level of Service E/F (severe congestion) — called "unavoidable" by the applicant.' },
+      { id: 't-school', label: 'Fletcher Elementary is a quarter-mile away; many children walk or bike on routes trucks will use.' }
+    ],
+    'land-use': [
+      { id: 'lu-2417', label: 'A 24/7 industrial warehouse would operate just 54 feet from single-family homes.' },
+      { id: 'lu-carb', label: "CARB siting guidance recommends against sensitive uses like schools locating near high-traffic warehouse sites." },
+      { id: 'lu-setback', label: 'The 20-foot residential setback required by the M-2 zone was not designed for 24/7, high-intensity warehouse operations.' }
+    ],
+    'health': [
+      { id: 'h-chs', label: "The USC Children's Health Study links proximity to heavy truck traffic with increased childhood asthma risk." },
+      { id: 'h-lung', label: 'USC CHS research shows diesel-related pollutants (NO2, elemental carbon) measurably reduce lung-function growth in children ages 10-18.' },
+      { id: 'h-asthma', label: 'An estimated 40+ children at Fletcher Elementary already live with asthma and are especially vulnerable to added pollution.' },
+      { id: 'h-absence', label: 'Peer-reviewed research links higher pollution days to more respiratory infections and school absences.' }
+    ]
+  };
+
+  var ISSUE_LABELS = {
+    'air-quality': 'the air quality impacts of this warehouse',
+    'noise': 'the noise impacts of 24/7 operations',
+    'traffic': 'the traffic and school-safety impacts of this project',
+    'land-use': "this project's incompatibility with our neighborhood",
+    'health': "this warehouse's health impact on children at Fletcher Elementary"
+  };
+
+  var RECOMMENDATION_TEXT = {
+    'eir': 'I urge the Planning Commission to demand a full Environmental Impact Report before this project can be approved.',
+    'conditions': 'I urge the Planning Commission to impose strict, enforceable conditions of approval: no 24/7 operations, a cap on daily truck trips, zero-emission equipment requirements, and independent monitoring.',
+    'both': 'I urge the Planning Commission to demand a full Environmental Impact Report — and if the project moves forward regardless, to impose strict, enforceable conditions: no 24/7 operations, capped truck trips, and independent monitoring.',
+    'deny': 'I urge the Planning Commission to deny this project as proposed.'
+  };
+
+  function $(sel, ctx) { return (ctx || wizard).querySelector(sel); }
+  function $all(sel, ctx) { return Array.prototype.slice.call((ctx || wizard).querySelectorAll(sel)); }
+
+  function goToStep(n) {
+    $all('.wizard-step').forEach(function (s) {
+      s.hidden = (s.getAttribute('data-step') !== String(n));
+    });
+    $all('.wizard-progress-step').forEach(function (s) {
+      s.classList.toggle('is-active', s.getAttribute('data-progress-step') === String(n));
+    });
+  }
+
+  $all('.wizard-next').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var issue = $('#wiz-issue').value;
+      if (btn.id === 'wiz-generate') {
+        generateTestimony();
+      }
+      if (btn.getAttribute('data-next') === '2' && !issue) {
+        $('#wiz-issue').reportValidity();
+        return;
+      }
+      if (btn.getAttribute('data-next') === '3') {
+        renderFacts(issue);
+      }
+      goToStep(btn.getAttribute('data-next'));
+    });
+  });
+
+  $all('.wizard-back').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      goToStep(btn.getAttribute('data-back'));
+    });
+  });
+
+  function renderFacts(issue) {
+    var list = $('#wiz-facts-list');
+    list.innerHTML = '';
+    var facts = FACTS[issue] || [];
+    facts.forEach(function (fact) {
+      var id = 'fact-' + fact.id;
+      var wrap = document.createElement('div');
+      wrap.className = 'wizard-fact';
+      wrap.innerHTML =
+        '<label><input type="checkbox" id="' + id + '" value="' + fact.id + '" checked> ' + fact.label + '</label>';
+      list.appendChild(wrap);
+    });
+  }
+
+  function generateTestimony() {
+    var issue = $('#wiz-issue').value || 'air-quality';
+    var name = ($('#wiz-name').value || '[Your Name]').trim();
+    var address = ($('#wiz-address').value || '').trim();
+    var impact = ($('#wiz-impact').value || '').trim();
+    var recommendation = $('#wiz-recommendation').value;
+    var checkedFacts = $all('#wiz-facts-list input[type=checkbox]:checked').map(function (cb) {
+      var label = cb.parentElement.textContent.trim();
+      return label;
+    });
+
+    var lines = [];
+    lines.push('My name is ' + name + '.' + (address ? ' I live near ' + address + '.' : ''));
+    lines.push('I am testifying about ' + (ISSUE_LABELS[issue] || 'this project') + '.');
+    lines.push('');
+    if (impact) {
+      lines.push(impact);
+      lines.push('');
+    }
+    if (checkedFacts.length) {
+      lines.push("Here's what the record shows:");
+      checkedFacts.forEach(function (f) { lines.push('- ' + f); });
+      lines.push('');
+    }
+    lines.push(RECOMMENDATION_TEXT[recommendation] || RECOMMENDATION_TEXT['eir']);
+    lines.push('');
+    lines.push('Thank you for your time and for protecting our neighborhood.');
+
+    $('#wiz-output').value = lines.join('\n');
+  }
+
+  var copyBtn = $('#wiz-copy');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var out = $('#wiz-output');
+      out.select();
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(out.value).then(function () {
+          copyBtn.textContent = 'Copied!';
+          setTimeout(function () { copyBtn.textContent = 'Copy to Clipboard'; }, 2000);
+        });
+      } else {
+        document.execCommand('copy');
+      }
+    });
+  }
+
+  var printBtn = $('#wiz-print');
+  if (printBtn) {
+    printBtn.addEventListener('click', function () { window.print(); });
+  }
+})();
+</script>

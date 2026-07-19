@@ -1,0 +1,14 @@
+<!-- Compact footer subscribe form. Set your real Formspree form ID below. -->
+{{- $formID := "xzdnrjaz" }}
+<form class="subscribe-form subscribe-form--compact" action="https://formspree.io/f/{{ $formID }}" method="POST">
+  <input type="hidden" name="_subject" value="Website Subscription">
+  <p class="subscribe-label">Get an email when the hearing date is confirmed:</p>
+  <div class="subscribe-inline-row">
+    <label class="visually-hidden" for="footer-sub-name">Name</label>
+    <input id="footer-sub-name" type="text" name="name" placeholder="Name" autocomplete="name" required>
+    <label class="visually-hidden" for="footer-sub-email">Email</label>
+    <input id="footer-sub-email" type="email" name="email" placeholder="Email" autocomplete="email" required>
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <button type="submit" class="button button--primary">Subscribe</button>
+  </div>
+</form>

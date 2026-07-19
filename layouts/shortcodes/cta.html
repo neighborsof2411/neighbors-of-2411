@@ -1,0 +1,9 @@
+<!--
+  Call-to-action button.
+  Usage: a "cta" shortcode pair with href/variant params, and the button
+  label as inner content.
+  variant: "primary" (red/orange, large), "secondary" (default), "tertiary" (text-style, footer)
+-->
+{{ $href := .Get "href" | default "/testify/" }}
+{{ $variant := .Get "variant" | default "secondary" }}
+<a class="button button--{{ $variant }}" href="{{ $href }}">{{ .Inner }}</a>

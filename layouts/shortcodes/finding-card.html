@@ -1,0 +1,19 @@
+<!--
+  Health Evidence "Finding" card — collapsible (native details/summary),
+  open by default so the science is visible on first load, but still
+  collapsible/keyboard-accessible on mobile.
+  Usage: a "finding-card" shortcode pair with num/icon/title params, and the
+  card body as inner content.
+-->
+{{ $num := .Get "num" }}
+{{ $icon := .Get "icon" | default "🔬" }}
+{{ $title := .Get "title" }}
+<details class="finding-card" open>
+  <summary>
+    <span class="finding-icon" aria-hidden="true">{{ $icon }}</span>
+    <span class="finding-title">Finding #{{ $num }}: {{ $title }}</span>
+  </summary>
+  <div class="finding-body">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

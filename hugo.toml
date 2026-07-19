@@ -1,5 +1,5 @@
 baseURL = 'https://www.neighborsof2411.org/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Neighbors of 2411'
 theme = 'PaperMod'
 
@@ -16,13 +16,13 @@ pygmentsUseClasses = true
 [params]
   env = 'production'
   title = 'Neighbors of 2411'
-  description = 'Neighbors of 2411 is a community campaign opposing the proposed warehouse project at 2411 [Street Name]. Get informed, get involved, and make your voice heard.'
-  keywords = ['Neighbors of 2411', 'warehouse project', 'community campaign', 'CEQA', 'traffic', 'air quality']
+  description = 'Community opposition to the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA — 24/7 operations 54 feet from homes and a quarter-mile from Fletcher Elementary School. Learn the issues, review the evidence, and prepare your Planning Commission testimony.'
+  keywords = ['2411 North Glassell', 'Orange CA warehouse', 'Rexford Industrial', 'Fletcher Elementary', 'Planning Commission hearing', 'CEQA', 'environmental impact report', 'CUP 25-0013', 'ENV25-0002']
   author = 'Neighbors of 2411'
 
   defaultTheme = 'auto'
   disableThemeToggle = false
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowReadingTime = false
   ShowWordCount = false
   ShowPostNavLinks = false
@@ -34,26 +34,22 @@ pygmentsUseClasses = true
   TocOpen = false
   disableSpecial1stPost = true
   disableScrollToTop = false
-  hidemeta = false
+  hidemeta = true
   hideSummary = false
   showtoc = false
   comments = false
 
   [[params.socialIcons]]
     name = 'email'
-    url = 'mailto:info@neighborsof2411.org'
+    url = 'mailto:neighborsof2411@gmail.com'
 
   [params.assets]
     disableHLJS = true
-    # favicon = "/favicon.ico"
-    # favicon16x16 = "/favicon-16x16.png"
-    # favicon32x32 = "/favicon-32x32.png"
-    # apple_touch_icon = "/apple-touch-icon.png"
 
   [params.cover]
-    hidden = false
-    hiddenInList = false
-    hiddenInSingle = false
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = true
 
   [params.fuseOpts]
     isCaseSensitive = false
@@ -74,33 +70,41 @@ pygmentsUseClasses = true
     url = '/'
     weight = 10
   [[menu.main]]
-    identifier = 'the-project'
-    name = 'The Project'
-    url = '/the-project/'
+    identifier = 'project'
+    name = 'Project'
+    url = '/project/'
     weight = 20
   [[menu.main]]
-    identifier = 'comment-letters'
-    name = 'Comment Letters'
-    url = '/comment-letters/'
+    identifier = 'issues'
+    name = 'Issues'
+    url = '/issues/'
     weight = 30
+  [[menu.main]]
+    identifier = 'health-evidence'
+    name = 'Health Evidence'
+    url = '/health-evidence/'
+    weight = 40
+  [[menu.main]]
+    identifier = 'evidence'
+    name = 'Evidence'
+    url = '/evidence/'
+    weight = 50
+  [[menu.main]]
+    identifier = 'testify'
+    name = 'Testify'
+    url = '/testify/'
+    weight = 60
   [[menu.main]]
     identifier = 'resources'
     name = 'Resources'
     url = '/resources/'
-    weight = 40
-  [[menu.main]]
-    identifier = 'events'
-    name = 'Events'
-    url = '/events/'
-    weight = 50
-  [[menu.main]]
-    identifier = 'contact'
-    name = 'Contact / Join'
-    url = '/contact/'
-    weight = 60
+    weight = 70
 
 [markup]
   [markup.highlight]
     noClasses = false
   [markup.goldmark.renderer]
     unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3

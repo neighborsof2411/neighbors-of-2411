@@ -1,0 +1,37 @@
+{{- $p := site.Data.project }}
+<div class="site-footer-extended">
+
+  <div class="footer-ctas">
+    <a class="button button--primary" href="/testify/">Attend the Hearing</a>
+    <a class="button button--secondary" href="/resources/#contact-directory">Contact Us</a>
+  </div>
+
+  {{ partial "subscribe-inline.html" . }}
+
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h4>Neighbors of 2411</h4>
+      <p><a href="mailto:{{ $p.contacts.neighborGroup.email }}">{{ $p.contacts.neighborGroup.email }}</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>City of Orange Planning</h4>
+      {{ range $p.contacts.cityStaff }}
+      <p>{{ .name }}, {{ .title }}<br>
+        <a href="mailto:{{ .email }}">{{ .email }}</a>{{ with .phone }} · {{ . }}{{ end }}</p>
+      {{ end }}
+    </div>
+
+    <div class="footer-col">
+      <h4>Air Quality (SCAQMD)</h4>
+      {{ range $p.contacts.airQuality }}
+      <p>{{ .contact.name }}<br>
+        <a href="mailto:{{ .contact.email }}">{{ .contact.email }}</a></p>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ partial "share-inline.html" . }}
+
+  <p class="footer-disclaimer">This site is maintained by Neighbors of 2411, an independent community group. It is not affiliated with the City of Orange or Rexford Industrial Realty, Inc. All claims are cited to the public record; see <a href="/evidence/">Evidence &amp; Documents</a>.</p>
+</div>
