@@ -36,10 +36,10 @@ Rexford Industrial is proposing to demolish the existing office campus at 2411 N
 | **Duration** | Indefinite (built for 50+ years of use) |
 
 <div class="cta-primary-row">
-{{< cta href="/testify/" variant="primary" >}}Prepare Your Testimony Now →{{< /cta >}}
+{{< cta href="/testify/" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
-The Planning Commission hearing is your opportunity to be heard directly. Testimony from residents, parents, and health advocates makes a real difference in the record.
+The Planning Commission hearing is your opportunity to be heard directly. Public comment from residents, parents, and health advocates makes a real difference in the record.
 
 <div class="cta-secondary-row">
 {{< cta href="/issues/" variant="secondary" >}}Learn the Issues{{< /cta >}}
@@ -78,7 +78,7 @@ The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, 
 
 ### The Comment Period Is Closed — But the Record Is Still Open
 
-The public comment deadline (May 6, 2026) has passed — **but you can still submit testimony at the Planning Commission hearing itself**, and it counts toward the administrative record.
+The public comment deadline (May 6, 2026) has passed — **but you can still submit public comment at the Planning Commission hearing itself**, and it counts toward the administrative record.
 
 ### The Planning Commission Has Power
 
@@ -106,9 +106,9 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 4. **Commissioner questions** — they probe weak points in the analysis
 5. **Deliberation & vote** — the Commission votes to approve, deny, or continue
 
-**Your testimony directly influences the record and the commissioners' thinking.**
+**Your public comment directly influences the record and the commissioners' thinking.**
 
-[How to prepare your testimony →](/testify/#how-to-prepare-testimony)
+[How to prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
 
 ## You're Not Alone
 
@@ -135,7 +135,7 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 **This warehouse would fundamentally change the character of this neighborhood — 24 hours a day, every day, forever. The environmental review falls short. The Planning Commission needs to hear from you.**
 
 <div class="cta-primary-row">
-{{< cta href="/testify/#how-to-prepare-testimony" variant="primary" >}}Prepare Your Testimony Now →{{< /cta >}}
+{{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
 {{< share >}}

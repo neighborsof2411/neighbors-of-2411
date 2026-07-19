@@ -5,19 +5,19 @@ description: "2411 Glassell technical record: city documents, technical appendic
 
 This page provides access to the key technical studies, government agency letters, and environmental documents related to the 2411 N. Glassell warehouse project.
 
-**All of these documents are public records.** You have the right to review them, cite them, and use them in your testimony.
+**All of these documents are public records.** You have the right to review them, cite them, and use them in your public comment.
 
 {{< document-library >}}
 
 ## How to Use These Documents
 
-**For testimony preparation:**
+**For public comment preparation:**
 1. Start with the [Issues page](/issues/) (simplified explanations)
 2. Then review the specific technical appendix (Appendix B for air quality, Appendix K for noise, Appendix L for traffic)
 3. Look at the SCAQMD deficiency letter — powerful evidence in your favor
 4. Review the formal objection letter from the neighborhood group — it lays out the strongest arguments
 
-**For written comments at the hearing**, cite specific page numbers in the technical appendices, the SCAQMD deficiency letter (agency testimony), and your personal impacts tied to the technical evidence. Example:
+**For written comments at the hearing**, cite specific page numbers in the technical appendices, the SCAQMD deficiency letter (agency evidence), and your personal impacts tied to the technical evidence. Example:
 
 > *"As stated in Appendix K, nighttime dock noise is modeled at 53.6 dBA, only 1.4 dBA below the 55 dBA significance threshold. This thin margin, combined with incomplete modeling of backup alarms and refrigeration noise, means the noise impacts are likely significant. My family is 54 feet from this site, and we will experience sleep disruption from 24/7 operations. An EIR is required."*
 

@@ -180,14 +180,14 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 
 ## What You Can Do
 
-1. **Attend the Planning Commission hearing** and testify to the impacts you've experienced or are concerned about
-2. **Submit written comments at the hearing** — even though the formal comment period is closed, you can submit testimony at the hearing itself
+1. **Attend the Planning Commission hearing** and speak to the impacts you've experienced or are concerned about
+2. **Submit written comments at the hearing** — even though the formal comment period is closed, you can submit public comment at the hearing itself
 3. **Demand an EIR** by name and cite the fair argument standard
 4. **Request strict conditions of approval** as a fallback (operational restrictions, truck routing, noise/air quality controls)
 5. **Join Neighbors of 2411** and stay engaged
 
 <div class="cta-primary-row">
-{{< cta href="/testify/" variant="primary" >}}Prepare Your Testimony →{{< /cta >}}
+{{< cta href="/testify/" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
 ## References & Documents

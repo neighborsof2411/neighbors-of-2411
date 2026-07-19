@@ -136,21 +136,21 @@ The District has a duty of care to protect students from known environmental hea
 
 ### For Parents & Educators
 
-You have direct standing to comment and testify — health and safety of students is your core jurisdiction.
+You have direct standing to submit public comment — health and safety of students is your core jurisdiction.
 
 > *"I am a [parent / teacher / school nurse] at Fletcher Elementary. The USC Children's Health Study shows that children living near diesel truck traffic have increased asthma risk and measurable lung damage. This warehouse generates 810 daily diesel truck trips 0.25 miles from our school. I urge the Planning Commission to demand a full Environmental Impact Report examining health impacts on our students, and to impose strict conditions if the project is approved."*
 
 - [ ] Share USC CHS findings with school administrators
 - [ ] Propose the District submit formal comments supporting the EIR demand
-- [ ] Encourage other parents and educators to attend and testify
+- [ ] Encourage other parents and educators to attend and speak up
 
 ### For Health Professionals
 
-Your expertise and testimony carry particular weight with decision-makers.
+Your expertise and public comment carry particular weight with decision-makers.
 
 - [ ] Draft a formal comment letter from your practice, clinic, or organization
-- [ ] Testify at the Planning Commission hearing, explaining the health mechanisms
-- [ ] Connect with [Neighbors of 2411](/testify/#how-to-join-the-group) to coordinate health professional testimony
+- [ ] Speak at the Planning Commission hearing, explaining the health mechanisms
+- [ ] Connect with [Neighbors of 2411](/testify/#how-to-join-the-group) to coordinate health professional public comment
 - [ ] Reach out to your professional organizations about engaging on this issue
 
 ### For City Council & Planning Decision-Makers
@@ -167,10 +167,10 @@ Health impacts on sensitive receptors (schools) are considered "significant" und
 - [ ] Share this page on social media and neighborhood apps
 - [ ] Bring these findings to community meetings
 - [ ] Contact city council members requesting health-protective conditions or an EIR
-- [ ] Attend the Planning Commission hearing and testify
+- [ ] Attend the Planning Commission hearing and speak up
 
 <div class="cta-primary-row">
-{{< cta href="/testify/#how-to-prepare-testimony" variant="primary" >}}Testify About Health Impacts →{{< /cta >}}
+{{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Submit Public Comment About Health Impacts →{{< /cta >}}
 </div>
 
 ## References: Full Citations & Links

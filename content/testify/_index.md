@@ -1,6 +1,6 @@
 ---
-title: "How to Testify at Planning Commission Hearing"
-description: "Step-by-step guidance for testifying at the Planning Commission hearing on the 2411 N. Glassell warehouse project, plus example testimony scripts and how to join Neighbors of 2411."
+title: "How to Submit Public Comment at the Planning Commission Hearing"
+description: "Step-by-step guidance for submitting public comment — written or oral — at the Planning Commission hearing on the 2411 N. Glassell warehouse project, plus example comment scripts and how to join Neighbors of 2411."
 ShowToc: true
 TocOpen: false
 ---
@@ -9,18 +9,18 @@ TocOpen: false
 
 **The public comment period has closed (May 6, 2026), but the record is NOT closed.**
 
-You can still submit testimony **at the Planning Commission hearing itself**, and it will be included in the official administrative record. Your testimony directly influences the commissioners' thinking and creates a legal record that can be cited in any future appeals or litigation.
+You can still submit public comment — in writing or in person — **at the Planning Commission hearing itself**, and it will be included in the official administrative record. Your public comment directly influences the commissioners' thinking and creates a legal record that can be cited in any future appeals or litigation.
 
 ## Quick Start: Three Ways to Participate
 
-**1. Attend & testify at the Planning Commission hearing (most powerful).** When: August 3 or September 10, 2026 (the City will notify 10 days before). Where: Orange City Hall, Community Development Department or designated hearing room. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
+**1. Attend & speak at the Planning Commission hearing (most powerful).** When: August 3 or September 10, 2026 (the City will notify 10 days before). Where: Orange City Hall, Community Development Department or designated hearing room. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
 
 **2. Submit written comments at the hearing.** Even if you can't speak in person, you can submit a written comment letter (usually 1–2 pages) to be read into the record.
 
 **3. Join Neighbors of 2411.** Support the organized opposition effort, stay informed, and coordinate with other residents. [Jump to how to join →](#how-to-join-the-group)
 
 <div class="cta-primary-row">
-{{< cta href="#how-to-prepare-testimony" variant="primary" >}}Prepare Your Testimony Now →{{< /cta >}}
+{{< cta href="#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
 ## How the Planning Commission Hearing Works
@@ -28,13 +28,13 @@ You can still submit testimony **at the Planning Commission hearing itself**, an
 1. **Call to order** (5 min) — the Chair calls the meeting to order; staff presents procedural information
 2. **Staff presentation** (15–20 min) — City planner (likely Arlen Beck) presents the project, impacts identified, and mitigation proposed
 3. **Applicant presentation** (10–20 min) — Rexford Industrial and their consultants present their position and respond to comments
-4. **Public testimony** (30–60 min) — members of the public speak, usually 3–5 minutes each, in support or opposition. **You do NOT need a prepared speech** — commissioners want to hear your concerns
-5. **Commissioner questions & discussion** (10–20 min) — this is where your testimony can influence the conversation
+4. **Public comment** (30–60 min) — members of the public speak, usually 3–5 minutes each, in support or opposition. **You do NOT need a prepared speech** — commissioners want to hear your concerns
+5. **Commissioner questions & discussion** (10–20 min) — this is where your public comment can influence the conversation
 6. **Deliberation & vote** (5–20 min) — commissioners debate and vote to approve, deny, or continue
 
-**Total time**: usually 60–120 minutes if you testify; you may leave after your portion if you just attend.
+**Total time**: usually 60–120 minutes if you speak; you may leave after your portion if you just attend.
 
-## How to Prepare Testimony
+## How to Prepare Your Public Comment
 
 ### Step 1: Identify Your Core Message
 
@@ -50,9 +50,9 @@ Don't try to cover every issue — focus on what directly affects you or what yo
 
 Pick one or two specific facts from the technical analysis. Keep it simple — say *"The South Coast Air Quality Management District identified seven technical deficiencies in the air quality analysis"* rather than reciting jargon like dispersion-model names.
 
-### Step 3: Write Out Your Testimony (2–3 minutes)
+### Step 3: Write Out Your Public Comment (2–3 minutes)
 
-1. **Introduction** (15 sec): "My name is [Name]. I live at [Address/Location]. I'm testifying in opposition to this project because [core message]."
+1. **Introduction** (15 sec): "My name is [Name]. I live at [Address/Location]. I'm speaking in opposition to this project because [core message]."
 2. **Impact** (30 sec): what this project would do to you/your family/your neighborhood — be specific.
 3. **Evidence** (45 sec): cite one or two specific pieces of evidence from the record.
 4. **Recommendation** (15 sec): "I urge the Planning Commission to [demand an EIR / deny this project / impose strict conditions]."
@@ -64,19 +64,19 @@ Read it out loud and time yourself. Don't memorize — speak naturally. If you g
 
 ### Step 5: Bring Notes to the Hearing
 
-Bring your written testimony (1 copy per commissioner, plus 1 for staff), a notecard with key points, and copies of any technical documents you're referencing.
+Bring your written public comment (1 copy per commissioner, plus 1 for staff), a notecard with key points, and copies of any technical documents you're referencing.
 
 ---
 
-## Testimony Preparation Wizard
+## Public Comment Preparation Wizard
 
-Use this tool to draft a starting-point testimony script based on your answers. Edit it freely afterward — it's a draft, not a script to memorize.
+Use this tool to draft a starting-point public comment script based on your answers. Edit it freely afterward — it's a draft, not a script to memorize.
 
 {{< testimony-wizard >}}
 
 ---
 
-## Example Testimony Scripts
+## Example Public Comment Scripts
 
 ### Example 1: Parent Concerned About Children's Health
 
@@ -181,7 +181,7 @@ Respectfully submitted,
 
 **Length**: 1–2 pages. **Tone**: professional, factual, respectful. **Impact**: goes into the official record and is reviewed by commissioners before or during the hearing.
 
-## What NOT to Say in Testimony
+## What NOT to Say in Your Public Comment
 
 **Avoid personal attacks.** Not: *"The developers are greedy and don't care about our community."* Instead: *"The developer's business model prioritizes warehouse density and 24/7 operations, which are incompatible with this neighborhood."*
 
@@ -201,7 +201,7 @@ We are an organized group of residents committed to ensuring proper environmenta
 
 1. **Email the group**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) — subject "I want to participate in opposition to the 2411 N. Glassell warehouse," including your name, address, email, and how you'd like to help
 2. **Attend group meetings** (dates/times TBD) — discuss strategy, review documents together, coordinate hearing attendance
-3. **Share information** with neighbors — forward emails, encourage others to testify, post on community social media
+3. **Share information** with neighbors — forward emails, encourage others to submit public comment, post on community social media
 4. **Sign the petition** (link forthcoming) — shows unified neighborhood opposition
 5. **Donate or volunteer** — help with outreach, refreshments for volunteers, or legal/consultant fees if the group votes to retain counsel
 
@@ -211,36 +211,36 @@ We are an organized group of residents committed to ensuring proper environmenta
 
 ## Planning Commission Hearing Checklist
 
-**Before the hearing**: review the [Issues page](/issues/); pick your core message; read the relevant technical appendix; write out your testimony; practice saying it out loud; bring 6–7 copies for commissioners; note the hearing date on your calendar; arrange childcare/time off work if needed.
+**Before the hearing**: review the [Issues page](/issues/); pick your core message; read the relevant technical appendix; write out your public comment; practice saying it out loud; bring 6–7 copies for commissioners; note the hearing date on your calendar; arrange childcare/time off work if needed.
 
-**At the hearing**: arrive 15–20 minutes early; sign up to testify; sit in the public comment section; listen to staff and applicant presentations; when called, state your name and address, speak clearly, refer to documents if you have them, stay within your time limit, and thank the commissioners when finished.
+**At the hearing**: arrive 15–20 minutes early; sign up to speak; sit in the public comment section; listen to staff and applicant presentations; when called, state your name and address, speak clearly, refer to documents if you have them, stay within your time limit, and thank the commissioners when finished.
 
 **After the hearing**: stay for the vote; take notes on what commissioners said; share your experience with neighbors; let the group know how it went.
 
 ## Frequently Asked Questions
 
 {{< faq q="Is the comment period really closed?" >}}
-Yes, the formal 20-day comment period (April 16 – May 6, 2026) closed. However, you can still submit testimony at the Planning Commission hearing, and it will be included in the administrative record.
+Yes, the formal 20-day comment period (April 16 – May 6, 2026) closed. However, you can still submit public comment at the Planning Commission hearing, and it will be included in the administrative record.
 {{< /faq >}}
 
-{{< faq q="How many people will be testifying?" >}}
+{{< faq q="How many people will be speaking?" >}}
 Usually 10–30 people, depending on the project's public visibility. This is a well-known issue, so attendance may be higher.
 {{< /faq >}}
 
-{{< faq q="Will my testimony change the outcome?" >}}
-Possibly. If the commissioners are on the fence, testimony can tip the balance. Even if they're leaning toward approval, strong testimony creates a powerful record for potential appeal or litigation.
+{{< faq q="Will my public comment change the outcome?" >}}
+Possibly. If the commissioners are on the fence, public comment can tip the balance. Even if they're leaning toward approval, strong public comment creates a powerful record for potential appeal or litigation.
 {{< /faq >}}
 
 {{< faq q="What if I get nervous and forget what I wanted to say?" >}}
 It's okay. Commissioners understand this is emotional. You can pause, take a breath, look at your notes, and continue.
 {{< /faq >}}
 
-{{< faq q="Can I testify more than once?" >}}
-You can testify once during public comment. Some agencies allow additional comment if commissioners ask questions — ask the Chair if you have follow-up points.
+{{< faq q="Can I speak more than once?" >}}
+You can speak once during public comment. Some agencies allow additional comment if commissioners ask questions — ask the Chair if you have follow-up points.
 {{< /faq >}}
 
 ---
 
-**Your voice matters.** The Planning Commission needs to hear directly from residents about how this project affects you and your family. Testimony creates a legal record that shapes the decision and protects your neighborhood. **The hearing is your moment to be heard.**
+**Your voice matters.** The Planning Commission needs to hear directly from residents about how this project affects you and your family. Public comment creates a legal record that shapes the decision and protects your neighborhood. **The hearing is your moment to be heard.**
 
-{{< share text="Here's how to testify at the Planning Commission hearing on the 2411 N. Glassell warehouse — step-by-step guidance, example scripts, and a testimony wizard." >}}
+{{< share text="Here's how to submit public comment at the Planning Commission hearing on the 2411 N. Glassell warehouse — step-by-step guidance, example scripts, and a public comment wizard." >}}

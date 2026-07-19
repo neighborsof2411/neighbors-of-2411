@@ -10,7 +10,7 @@ TocOpen: false
 ### About the Project
 
 {{< faq q="When did the public comment period close?" >}}
-May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you can still submit testimony at the Planning Commission hearing.
+May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you can still submit public comment at the Planning Commission hearing.
 {{< /faq >}}
 
 {{< faq q="When is the Planning Commission hearing?" >}}
@@ -18,7 +18,7 @@ Tentatively scheduled for either **August 3, 2026** or **September 10, 2026**. T
 {{< /faq >}}
 
 {{< faq q="Can I still submit comments?" >}}
-Yes. You can submit written or oral testimony **at the Planning Commission hearing itself**. Testimony submitted at the hearing is included in the official administrative record.
+Yes. You can submit written or oral public comment **at the Planning Commission hearing itself**. Public comment submitted at the hearing is included in the official administrative record.
 {{< /faq >}}
 
 {{< faq q="How many people live nearby?" >}}
@@ -68,7 +68,7 @@ A requirement imposed on a project to reduce impacts to less-than-significant le
 {{< /faq >}}
 
 {{< faq q="Can I demand an EIR at the hearing?" >}}
-Yes. You can testify that substantial evidence supports a fair argument of significant impacts, and therefore an EIR is required. The Planning Commission cannot ignore a fair argument — they must either prepare an EIR or provide written findings explaining why impacts are not significant.
+Yes. You can submit public comment stating that substantial evidence supports a fair argument of significant impacts, and therefore an EIR is required. The Planning Commission cannot ignore a fair argument — they must either prepare an EIR or provide written findings explaining why impacts are not significant.
 {{< /faq >}}
 
 ### About Your Rights
@@ -96,7 +96,7 @@ Requirements imposed on a project that must be met before and/or during operatio
 {{< /faq >}}
 
 {{< faq q="How do I propose a condition?" >}}
-Testify at the hearing or submit written comments requesting a specific, measurable condition. Example: *"I urge the Planning Commission to impose the following condition: 'The warehouse shall not operate between 10 PM and 7 AM, and no truck traffic shall occur during those hours.'"* Be specific rather than vague.
+Speak at the hearing or submit written comments requesting a specific, measurable condition. Example: *"I urge the Planning Commission to impose the following condition: 'The warehouse shall not operate between 10 PM and 7 AM, and no truck traffic shall occur during those hours.'"* Be specific rather than vague.
 {{< /faq >}}
 
 {{< faq q="Who enforces conditions of approval?" >}}
@@ -241,7 +241,7 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **Email**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) · **Authorized Signatory**: Rachel Chiguila
 
-To get involved: share your contact info and how you'd like to help, receive updates on hearing dates and testimony strategy, and attend group meetings (dates TBD). See [How to Join the Group →](/testify/#how-to-join-the-group)
+To get involved: share your contact info and how you'd like to help, receive updates on hearing dates and public comment strategy, and attend group meetings (dates TBD). See [How to Join the Group →](/testify/#how-to-join-the-group)
 
 ### Developer / Applicant
 

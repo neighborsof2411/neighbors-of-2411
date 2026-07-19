@@ -24,7 +24,7 @@ pygmentsUseClasses = true
 [params]
   env = 'production'
   title = 'Neighbors of 2411'
-  description = 'Community opposition to the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA — 24/7 operations 54 feet from homes and a quarter-mile from Fletcher Elementary School. Learn the issues, review the evidence, and prepare your Planning Commission testimony.'
+  description = 'Community opposition to the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA — 24/7 operations 54 feet from homes and a quarter-mile from Fletcher Elementary School. Learn the issues, review the evidence, and prepare your public comment for the Planning Commission hearing.'
   keywords = ['2411 Glassell', '2411 North Glassell', 'Orange CA warehouse', 'Rexford Industrial', 'Fletcher Elementary', 'Planning Commission hearing', 'CEQA', 'environmental impact report', 'CUP 25-0013', 'ENV25-0002']
   author = 'Neighbors of 2411'
 
@@ -107,7 +107,7 @@ pygmentsUseClasses = true
     weight = 50
   [[menu.main]]
     identifier = 'testify'
-    name = 'Testify'
+    name = 'Public Comment'
     url = '/testify/'
     weight = 60
   [[menu.main]]

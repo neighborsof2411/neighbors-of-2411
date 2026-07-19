@@ -1,7 +1,7 @@
 <!--
-  Testimony Preparation Wizard. Pure vanilla JS, no external dependencies.
+  Public Comment Preparation Wizard. Pure vanilla JS, no external dependencies.
   Walks the user through: issue -> personal impact -> supporting facts ->
-  generated testimony script (copy/print).
+  generated public comment script (copy/print).
 -->
 <div class="wizard" id="testimony-wizard">
 
@@ -9,7 +9,7 @@
     <span class="wizard-progress-step is-active" data-progress-step="1">1. Issue</span>
     <span class="wizard-progress-step" data-progress-step="2">2. Impact</span>
     <span class="wizard-progress-step" data-progress-step="3">3. Facts</span>
-    <span class="wizard-progress-step" data-progress-step="4">4. Testimony</span>
+    <span class="wizard-progress-step" data-progress-step="4">4. Comment</span>
   </div>
 
   <form id="wizard-form">
@@ -28,7 +28,7 @@
         </select>
       </div>
       <div class="form-row">
-        <label for="wiz-name">Your name (optional — used in the generated testimony)</label>
+        <label for="wiz-name">Your name (optional — used in the generated public comment)</label>
         <input id="wiz-name" type="text" name="name" placeholder="Your Name">
       </div>
       <div class="form-row">
@@ -62,11 +62,11 @@
         </select>
       </div>
       <button type="button" class="button wizard-back" data-back="2">← Back</button>
-      <button type="button" class="button button--primary wizard-next" id="wiz-generate" data-next="4">Generate My Testimony →</button>
+      <button type="button" class="button button--primary wizard-next" id="wiz-generate" data-next="4">Generate My Public Comment →</button>
     </fieldset>
 
     <fieldset class="wizard-step" data-step="4" hidden>
-      <legend><strong>Step 4: Your testimony</strong></legend>
+      <legend><strong>Step 4: Your public comment</strong></legend>
       <p class="wizard-hint">Read it out loud and time yourself — aim for 2&ndash;3 minutes. Edit freely; this is a starting draft, not a script to memorize.</p>
       <textarea id="wiz-output" rows="16" readonly></textarea>
       <div class="wizard-actions">
@@ -74,7 +74,7 @@
         <button type="button" class="button" id="wiz-print">Print</button>
         <button type="button" class="button wizard-back" data-back="3">← Edit Answers</button>
       </div>
-      <p class="wizard-hint">Next: <a href="/testify/#how-to-prepare-testimony">review the full testimony guide</a> for what to expect at the hearing.</p>
+      <p class="wizard-hint">Next: <a href="/testify/#how-to-prepare-your-public-comment">review the full public comment guide</a> for what to expect at the hearing.</p>
     </fieldset>
 
   </form>
@@ -192,7 +192,7 @@
 
     var lines = [];
     lines.push('My name is ' + name + '.' + (address ? ' I live near ' + address + '.' : ''));
-    lines.push('I am testifying about ' + (ISSUE_LABELS[issue] || 'this project') + '.');
+    lines.push('I am submitting this public comment about ' + (ISSUE_LABELS[issue] || 'this project') + '.');
     lines.push('');
     if (impact) {
       lines.push(impact);

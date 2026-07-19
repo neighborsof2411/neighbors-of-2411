@@ -150,7 +150,7 @@ Families in these homes are not transient tenants; they are choosing to raise ch
 
 **Step 1: Initial Study / Mitigated Negative Declaration (current)** — City determines if the project has "significant environmental effects." If IS/MND is approved, project moves forward under streamlined review. If a "fair argument" of significant effects is shown, an EIR must be prepared.
 
-**Step 2: Planning Commission hearing (next)** — Commission reviews staff report, IS/MND, and public comments. Public testimony is taken. Commission votes to approve, deny, or continue the project.
+**Step 2: Planning Commission hearing (next)** — Commission reviews staff report, IS/MND, and public comments. Public comment is taken. Commission votes to approve, deny, or continue the project.
 
 **Step 3: City Council appeal (if applicable)** — If denied by PC, applicant can appeal to Council. If approved by PC, community can appeal to Council. Council makes the final decision.
 
@@ -198,7 +198,7 @@ If this project is approved without proper environmental review and strict condi
 ## Next Steps
 
 - **Review the technical evidence**: [See Issues & Evidence](/issues/)
-- **Prepare your testimony**: [How to testify at the Planning Commission](/testify/#how-to-prepare-testimony)
+- **Prepare your public comment**: [How to submit public comment at the Planning Commission](/testify/#how-to-prepare-your-public-comment)
 - **Join the group**: [Get Involved](/testify/#how-to-join-the-group)
 - **Stay informed**: [Subscribe to email updates](/#stay-informed)
 
