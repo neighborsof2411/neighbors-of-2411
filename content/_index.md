@@ -1,6 +1,6 @@
 ---
 title: "2411 Glassell Warehouse Opposition | Orange, CA"
-description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 just 54 feet from homes and a quarter-mile from Fletcher Elementary School in Orange, CA. Learn the issues, review the evidence, and prepare your Planning Commission testimony."
+description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 just 54 feet from homes and a quarter-mile from Fletcher Elementary School in Orange, CA. Learn the issues, review the evidence, and prepare your public comment for the Planning Commission hearing."
 ---
 
 # Stop the 2411 Glassell Warehouse: Planning Commission Hearing
