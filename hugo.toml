@@ -19,7 +19,7 @@ pygmentsUseClasses = true
 
 [services]
   [services.googleAnalytics]
-    id = 'GA_MEASUREMENT_ID'
+    id = 'G-PWK8TB3BF8'
 
 [params]
   env = 'production'
