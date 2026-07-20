@@ -239,7 +239,7 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 ### Neighbors of 2411
 
-**Email**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) · **Authorized Signatory**: Rachel Chiguila
+**Email**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com)
 
 To get involved: share your contact info and how you'd like to help, receive updates on hearing dates and public comment strategy, and attend group meetings (dates TBD). See [How to Join the Group →](/testify/#how-to-join-the-group)
 
