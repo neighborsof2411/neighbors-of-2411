@@ -165,7 +165,7 @@ a.button, .button {
 }
 .subscribe-form .form-row, .wizard .form-row, .petition-form .form-row { display: flex; flex-direction: column; gap: 0.35rem; }
 .subscribe-form label, .wizard label, .petition-form label { font-weight: 600; font-size: 0.9rem; }
-.subscribe-form input, .wizard input, .wizard select, .wizard textarea, .petition-form input,
+.subscribe-form input, .wizard input, .wizard select, .wizard textarea, .petition-form input, .petition-form textarea,
 .doc-library input {
     font: inherit;
     font-size: 16px; /* prevents iOS zoom-on-focus */
@@ -176,7 +176,7 @@ a.button, .button {
     color: var(--primary);
     min-height: 48px;
 }
-.wizard textarea, .subscribe-form textarea { min-height: auto; }
+.wizard textarea, .subscribe-form textarea, .petition-form textarea { min-height: auto; }
 
 .subscribe-form--compact { max-width: 100%; margin: 1rem 0; }
 .subscribe-inline-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: stretch; }

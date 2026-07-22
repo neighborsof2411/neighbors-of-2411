@@ -5,11 +5,17 @@
   the same form.
 
   Params (via a dict): idPrefix (unique per instance on a page, used for
-  input ids), buttonLabel, subject (hidden _subject value).
+  input ids), buttonLabel, subject (hidden _subject value), showComment,
+  showPhone, showWhy (all "true"/"false" -- showComment is used by
+  petition instances, showPhone/showWhy by the join page, for the
+  Google Sheets columns the automation script expects).
 -->
 {{ $idPrefix := .idPrefix | default "petition" }}
 {{ $buttonLabel := .buttonLabel | default "Sign the Opposition Petition" }}
 {{ $subject := .subject | default "Petition Signature -- 2411 Glassell Opposition" }}
+{{ $showComment := eq (.showComment | default "false") "true" }}
+{{ $showPhone := eq (.showPhone | default "false") "true" }}
+{{ $showWhy := eq (.showWhy | default "false") "true" }}
 <form class="petition-form" action="https://formspree.io/f/xzdnrjaz" method="POST">
   <input type="hidden" name="_subject" value="{{ $subject }}">
   <div class="form-row">
@@ -24,6 +30,24 @@
     <label for="{{ $idPrefix }}-address">Address / Neighborhood (optional)</label>
     <input id="{{ $idPrefix }}-address" type="text" name="address" autocomplete="address-line1">
   </div>
+  {{ if $showComment }}
+  <div class="form-row">
+    <label for="{{ $idPrefix }}-comment">What concerns you most? (optional)</label>
+    <textarea id="{{ $idPrefix }}-comment" name="comment" rows="3"></textarea>
+  </div>
+  {{ end }}
+  {{ if $showPhone }}
+  <div class="form-row">
+    <label for="{{ $idPrefix }}-phone">Phone (optional)</label>
+    <input id="{{ $idPrefix }}-phone" type="tel" name="phone" autocomplete="tel">
+  </div>
+  {{ end }}
+  {{ if $showWhy }}
+  <div class="form-row">
+    <label for="{{ $idPrefix }}-why">Why do you want to join? (optional)</label>
+    <textarea id="{{ $idPrefix }}-why" name="why" rows="3"></textarea>
+  </div>
+  {{ end }}
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
   <button type="submit" class="button button--primary petition-submit">{{ $buttonLabel }}</button>
 </form>
