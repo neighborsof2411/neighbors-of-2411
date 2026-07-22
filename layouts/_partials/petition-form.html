@@ -1,0 +1,29 @@
+<!--
+  Shared petition/join sign-on form. Posts to the site's one real Formspree
+  endpoint; the hidden _subject field is what distinguishes petition
+  signatures from join requests in the group's inbox, since both post to
+  the same form.
+
+  Params (via a dict): idPrefix (unique per instance on a page, used for
+  input ids), buttonLabel, subject (hidden _subject value).
+-->
+{{ $idPrefix := .idPrefix | default "petition" }}
+{{ $buttonLabel := .buttonLabel | default "Sign the Opposition Petition" }}
+{{ $subject := .subject | default "Petition Signature -- 2411 Glassell Opposition" }}
+<form class="petition-form" action="https://formspree.io/f/xzdnrjaz" method="POST">
+  <input type="hidden" name="_subject" value="{{ $subject }}">
+  <div class="form-row">
+    <label for="{{ $idPrefix }}-name">Name</label>
+    <input id="{{ $idPrefix }}-name" type="text" name="name" autocomplete="name" required>
+  </div>
+  <div class="form-row">
+    <label for="{{ $idPrefix }}-email">Email</label>
+    <input id="{{ $idPrefix }}-email" type="email" name="email" autocomplete="email" required>
+  </div>
+  <div class="form-row">
+    <label for="{{ $idPrefix }}-address">Address / Neighborhood (optional)</label>
+    <input id="{{ $idPrefix }}-address" type="text" name="address" autocomplete="address-line1">
+  </div>
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <button type="submit" class="button button--primary petition-submit">{{ $buttonLabel }}</button>
+</form>

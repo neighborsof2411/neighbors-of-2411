@@ -1,0 +1,46 @@
+{{- define "main" }}
+<!--
+  Dedicated /petition landing page: a focused, shareable version of the
+  homepage's petition ask. Reuses the same hero styling and the same real
+  petition-form partial (same Formspree endpoint as the homepage), so
+  there's exactly one working form to maintain, not two.
+-->
+
+<section class="hero-mega">
+  <div class="hero-mega-inner">
+    <span class="hero-mega-eyebrow">Orange, CA &middot; Neighbors of 2411</span>
+    <h1 class="hero-mega-h1">Sign the Petition Opposing the 2411 Glassell Warehouse.</h1>
+    <p class="hero-mega-sub">Rexford Industrial wants to run a 298,988 SF warehouse 24 hours a day, 7 days a week &mdash; 54 feet from homes and a quarter-mile from Fletcher Elementary School. Add your name and tell the Planning Commission you oppose it.</p>
+  </div>
+</section>
+
+<section id="petition" class="petition-section">
+  <div class="petition-inner">
+    <h2 class="petition-title">Add Your Name in Opposition</h2>
+    <p class="petition-sub">This goes directly to Neighbors of 2411 (UNA). We'll use it to show the Planning Commission the scale of neighborhood opposition, and to send you hearing-date updates and ways to help.</p>
+    {{ partial "petition-form.html" (dict "idPrefix" "petition-page" "buttonLabel" "Sign the Opposition Petition" "subject" "Petition Signature -- 2411 Glassell Opposition") }}
+  </div>
+</section>
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+<div class="post-content md-content">
+<h2 id="why-we-oppose-this-project">Why We Oppose This Project</h2>
+<ul>
+<li><strong>298,988 SF warehouse</strong> operating 24 hours a day, 7 days a week</li>
+<li><strong>810 net new daily truck trips</strong>, mostly diesel vehicles</li>
+<li><strong>54 feet</strong> from the nearest homes</li>
+<li><strong>0.25 miles</strong> (a quarter-mile) from Fletcher Elementary School</li>
+<li>Modeled nighttime noise is <strong>53.6 dBA</strong> &mdash; only <strong>1.4 dBA</strong> below the 55.0 dBA significance threshold</li>
+<li>Modeled cancer risk is <strong>9.48 per million</strong> &mdash; only <strong>0.52</strong> below the 10.0 per million significance threshold</li>
+</ul>
+<p><a href="/issues/">Learn more about the environmental issues &rarr;</a> &middot; <a href="/evidence/">Review the technical evidence &rarr;</a></p>
+</div>
+
+{{- end }}

@@ -1,0 +1,47 @@
+{{- define "main" }}
+<!--
+  Dedicated /join landing page. Reuses the same hero styling and the same
+  real petition-form partial as the homepage/petition page (same Formspree
+  endpoint), just with join-specific copy and a distinct hidden _subject
+  so join requests are distinguishable from petition signatures in the
+  group's inbox. Links out to the fuller "How to Join the Group" section
+  on the Public Comment page instead of duplicating that content here.
+-->
+
+<section class="hero-mega">
+  <div class="hero-mega-inner">
+    <span class="hero-mega-eyebrow">Orange, CA &middot; Neighbors of 2411</span>
+    <h1 class="hero-mega-h1">Join Neighbors of 2411.</h1>
+    <p class="hero-mega-sub">Neighbors of 2411 is an organized group of residents opposing the proposed 24/7 warehouse at 2411 N. Glassell Street. Join to get hearing-date updates, help review the technical record, and coordinate opposition strategy.</p>
+  </div>
+</section>
+
+<section id="join" class="petition-section">
+  <div class="petition-inner">
+    <h2 class="petition-title">Add Your Contact Info</h2>
+    <p class="petition-sub">This goes directly to Neighbors of 2411 (UNA). We'll use it to send you hearing-date updates, meeting details, and ways to help &mdash; and to show the Planning Commission the scale of organized opposition.</p>
+    {{ partial "petition-form.html" (dict "idPrefix" "join-page" "buttonLabel" "Join Neighbors of 2411" "subject" "Join Request -- 2411 Glassell Opposition") }}
+  </div>
+</section>
+
+{{- if .Content }}
+<div class="post-content md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+<div class="post-content md-content">
+<h2 id="more-ways-to-help">More Ways to Help</h2>
+<p>Signing up above is the fastest way to join. There's more you can do:</p>
+<ul>
+<li>Email the group directly at <a href="mailto:neighborsof2411@gmail.com">neighborsof2411@gmail.com</a></li>
+<li>Attend group meetings (dates TBD)</li>
+<li>Share information with neighbors</li>
+<li><a href="/petition/">Sign the opposition petition</a> if you haven't already</li>
+</ul>
+<p><a href="/testify/#how-to-join-the-group">See the full guide to joining the group &rarr;</a></p>
+</div>
+
+{{- end }}
