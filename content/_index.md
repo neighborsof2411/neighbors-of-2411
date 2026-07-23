@@ -16,7 +16,7 @@ description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 jus
 Rexford Industrial is proposing to demolish the existing office campus at 2411 N. Glassell Street and replace it with a massive warehouse that will:
 
 - **Operate 24/7, 365 days a year** — no quiet hours
-- **Generate 810 net new daily truck trips** with heavy diesel traffic directly affecting Fletcher Elementary School (just 0.25 miles away) and homes as close as 54 feet
+- **Generate 556 net new daily vehicle trips, including about 163 truck trips** (810 passenger-car-equivalent/PCE trips due to the heavy truck mix) with heavy diesel traffic directly affecting Fletcher Elementary School (just 0.25 miles away) and homes as close as 54 feet
 - **Emit diesel particulate matter** that increases cancer risk in a community already burdened by air pollution
 - **Create continuous noise** from loading docks, truck alarms, and 24-hour operations
 
@@ -28,7 +28,7 @@ Rexford Industrial is proposing to demolish the existing office campus at 2411 N
 |------|--------|
 | **Distance to Elementary School** | 0.25 miles (quarter-mile) |
 | **Distance to Nearest Homes** | 54 feet north of the site |
-| **Daily Truck Trips** | 810 net new diesel vehicle trips |
+| **Daily Vehicle Trips** | 556 net new daily (≈163 trucks; 810 PCE-weighted) |
 | **Operating Hours** | 24 hours, 7 days a week |
 | **Building Size** | 298,988 square feet |
 | **Duration** | Indefinite (built for 50+ years of use) |
@@ -73,13 +73,13 @@ The health risk assessment models cancer risk at **9.48 per million** — only *
 
 {{< accordion title="Noise: \"Less than significant.\"" >}}
 {{< fact-compare claim="The IS/MND concludes nighttime noise impacts are less than significant." >}}
-Modeled nighttime dock noise is **53.6 dBA** — only **1.4 dBA below** the 55.0 dBA significance threshold — and the analysis does not model backup alarms, which run 75+ dBA on heavy vehicles. {{< cite doc="appendix-k" label="Verify Fact" >}}
+The project would generate **53.6 dBA** at the nearest home at night — above the City's baseline nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code). The MND avoids a significance finding by applying the City's ambient-adjustment rules, which raise the effective threshold at this receptor to about 57–58 dBA — and the analysis does not model backup alarms, which run 75+ dBA on heavy vehicles. {{< cite doc="appendix-k" label="Verify Fact" >}}
 {{< /fact-compare >}}
 {{< /accordion >}}
 
 {{< accordion title="Traffic: \"Less than significant, with mitigation.\"" >}}
 {{< fact-compare claim="The IS/MND concludes traffic impacts are less than significant with standard mitigation." >}}
-The project's own traffic study projects the southern truck driveway will operate at **Level of Service E/F** — severe congestion — and calls this **\"unavoidable.\"** It adds 810 net new daily truck trips near Fletcher Elementary School. {{< cite doc="appendix-l" label="Verify Fact" >}}
+The project's own traffic study projects the southern truck driveway will operate at **Level of Service E/F** — severe congestion — and calls this **\"unavoidable.\"** It adds 810 net new daily passenger-car-equivalent (PCE) trips — a traffic engineering measure that weights trucks more heavily than cars to reflect their greater roadway impact — near Fletcher Elementary School. {{< cite doc="appendix-l" label="Verify Fact" >}}
 {{< /fact-compare >}}
 {{< /accordion >}}
 

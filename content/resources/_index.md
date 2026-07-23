@@ -56,7 +56,7 @@ A comprehensive environmental document (typically 50–200+ pages) analyzing all
 {{< /faq >}}
 
 {{< faq q="What's the 'fair argument' standard?" >}}
-Under CEQA, an EIR is required if there is **any reasonable argument** that a project may have significant environmental effects — a lower burden than "preponderance of evidence." Example: if the applicant's own noise model shows 53.6 dBA, only 1.4 dBA below the 55 dBA threshold, there is a fair argument that nighttime noise impacts are significant, even though the modeled level is technically below the threshold.
+Under CEQA, an EIR is required if there is **any reasonable argument** that a project may have significant environmental effects — a lower burden than "preponderance of evidence." Example: the City's baseline nighttime noise standards are 45 dBA (General Plan) and 50 dBA (Municipal Code), and the applicant's own noise model shows the project generating 53.6 dBA at the nearest home. The MND finds this "less than significant" only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at this receptor to roughly 57–58 dBA because ambient noise there is already elevated. There is a fair argument that this adjustment methodology doesn't adequately protect residents, even though the modeled level falls below the adjusted number.
 {{< /faq >}}
 
 {{< faq q="What's the difference between a 'less than significant' impact and a 'significant' impact?" >}}
@@ -132,7 +132,7 @@ California Air Resources Board — the state agency responsible for air quality 
 ### About Noise
 
 {{< faq q="What do the decibel (dB) numbers mean?" >}}
-Decibels measure sound intensity on a logarithmic scale — each 10 dB increase is roughly twice as loud to human ears. For reference: whisper ~30 dBA, conversation ~60 dBA, busy traffic ~70 dBA, lawn mower ~90 dBA, chainsaw ~110 dBA. A 1.4 dBA difference (this project's modeled noise margin) is barely perceptible to human ears — and easily erased by real-world variability in equipment, weather, or maintenance.
+Decibels measure sound intensity on a logarithmic scale — each 10 dB increase is roughly twice as loud to human ears. For reference: whisper ~30 dBA, conversation ~60 dBA, busy traffic ~70 dBA, lawn mower ~90 dBA, chainsaw ~110 dBA. Notably, the City's own Municipal Code defines 3 dBA as "the industry-accepted threshold of human perceptibility for a change in the noise environment" — and a 3 dBA increase is exactly the ambient-noise adjustment the MND relies on to avoid a significant-impact finding for this project's modeled 53.6 dBA nighttime noise.
 {{< /faq >}}
 
 {{< faq q="Is nighttime noise more regulated than daytime?" >}}

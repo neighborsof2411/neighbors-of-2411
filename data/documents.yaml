@@ -25,7 +25,7 @@
   critical: true
   file: /documents/Appendix_K_Noise_and_Vibration_Impact_Analysis.pdf
   url: ""
-  summary: "Models nighttime dock noise at 53.6 dBA against a 55.0 dBA significance threshold — a margin of just 1.4 dBA, with no modeling of backup alarms or refrigeration noise."
+  summary: "Models nighttime dock noise at 53.6 dBA — above the City's baseline nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code) — with the MND relying on the City's ambient-adjustment rules (raising the effective threshold to ~57–58 dBA) to avoid a significance finding, and no modeling of backup alarms or refrigeration noise."
   lookFor: "Modeling assumptions on pages 1-5 matter more than the final numbers."
 
 - id: appendix-l

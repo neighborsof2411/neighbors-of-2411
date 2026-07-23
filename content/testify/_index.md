@@ -40,10 +40,10 @@ You can still submit public comment — in writing or in person — **at the Pla
 
 Don't try to cover every issue — focus on what directly affects you or what you feel most passionate about:
 
-- **Sleep & noise**: "This warehouse operates 24/7, and I will lose sleep from noise and truck traffic." *(Appendix K: 53.6 vs. 55 dBA)*
+- **Sleep & noise**: "This warehouse operates 24/7, and I will lose sleep from noise and truck traffic." *(Appendix K: 53.6 dBA modeled vs. City's 45/50 dBA baseline standards)*
 - **Children's health**: "My children attend Fletcher Elementary, a quarter-mile away. They breathe diesel exhaust from this 24/7 warehouse." *(Appendix B: cancer risk 9.48 vs. 10 per million; [Health Evidence →](/health-evidence/))*
 - **Air quality analysis**: "The air quality analysis is incomplete — SCAQMD identified 7 deficiencies, and the dock door count is wrong (36 vs. 5 modeled)." *(SCAQMD letter, Appendix L Footnote 1)*
-- **Traffic safety**: "Adding 810 daily truck trips creates a safety hazard at the school crossing." *(Appendix L: southern driveway LOS E/F)*
+- **Traffic safety**: "Adding approximately 163 daily truck trips creates a safety hazard at the school crossing." *(Appendix L: southern driveway LOS E/F)*
 - **Procedural/legal**: "The law requires an EIR when there is substantial evidence of significant impacts — and this analysis shows exactly that." *(no personal impact required)*
 
 ### Step 2: Gather Supporting Facts
@@ -82,7 +82,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 > "My name is Sarah Chen, and I live on Fletcher Avenue, two blocks from the proposed warehouse. I have a first-grader and a third-grader who attend Fletcher Elementary, a quarter-mile north of this site.
 >
-> Every day, my children walk to school on streets that will be congested with 810 additional diesel truck trips. The warehouse operates 24/7, meaning trucks would be arriving and departing at all hours.
+> Every day, my children walk to school on streets that will be congested with approximately 163 additional diesel truck trips. The warehouse operates 24/7, meaning trucks would be arriving and departing at all hours.
 >
 > I reviewed the health risk assessment in the environmental document. It shows the diesel particulate matter from this project would create a cancer risk of 9.48 per million — the significance threshold is 10 per million. That's a margin of 0.52 — essentially zero.
 >
@@ -98,7 +98,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 > "My name is Mike Rodriguez. I live on Fletcher Avenue, 54 feet from the proposed warehouse site.
 >
-> The noise analysis in Appendix K shows nighttime dock operations would generate 53.6 decibels at my house. The significance threshold for nighttime noise is 55 decibels — a margin of just 1.4 decibels.
+> The noise analysis in Appendix K shows nighttime dock operations would generate 53.6 decibels at my house. The City's own baseline nighttime noise standards are 45 decibels (General Plan) and 50 decibels (Municipal Code) — this project is modeled above both. The MND avoids calling this significant only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at my home to around 57–58 decibels because the existing background noise is already elevated.
 >
 > This analysis doesn't even model backup alarms, which are required on heavy vehicles and sound at 75 decibels or higher. It doesn't model refrigeration units, common in Rexford warehouses. And with 24/7 operations, peak dock activity happens at night, when I'm sleeping.
 >
@@ -120,7 +120,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > Second, the air quality analysis modeled only 5 loading dock doors, but Footnote 1 of the traffic study confirms the site plan has 36 — a sevenfold underestimation of emissions.
 >
-> Third, the noise analysis shows nighttime dock operations at 53.6 decibels, only 1.4 below the significance threshold, leaving little margin for error.
+> Third, the noise analysis shows nighttime dock operations at 53.6 decibels, above the City's baseline 45- and 50-decibel nighttime standards — the MND avoids a significant-impact finding only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at the nearest home to roughly 57–58 decibels.
 >
 > Fourth, the traffic analysis acknowledges the southern driveway will operate at Level of Service E/F, and the applicant calls this 'unavoidable.' An unavoidable significant impact cannot be waved through by an IS/MND.
 >
@@ -136,7 +136,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > I'm not opposed to development — I support industrial uses in the M-2 zone. But this project raises specific concerns that deserve proper environmental review.
 >
-> The warehouse is designed for 24/7 operations a quarter-mile from Fletcher Elementary and 54 feet from homes. The analysis shows the project operating at the edge of significance thresholds: cancer risk 9.48 per million (threshold 10), nighttime noise 53.6 dBA (threshold 55), and an acknowledged Level of Service E/F traffic impact.
+> The warehouse is designed for 24/7 operations a quarter-mile from Fletcher Elementary and 54 feet from homes. The analysis shows the project pushing against the City's own significance thresholds: cancer risk 9.48 per million (threshold 10), nighttime noise 53.6 dBA (above the City's 45/50 dBA baseline standards, though under its ambient-adjusted threshold), and an acknowledged Level of Service E/F traffic impact.
 >
 > When a project operates this close to significance thresholds, with this many deficiencies identified by government agencies, a full Environmental Impact Report is warranted.
 >

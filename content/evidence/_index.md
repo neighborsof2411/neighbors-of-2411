@@ -19,7 +19,7 @@ This page provides access to the key technical studies, government agency letter
 
 **For written comments at the hearing**, cite specific page numbers in the technical appendices, the SCAQMD deficiency letter (agency evidence), and your personal impacts tied to the technical evidence. Example:
 
-> *"As stated in Appendix K, nighttime dock noise is modeled at 53.6 dBA, only 1.4 dBA below the 55 dBA significance threshold. This thin margin, combined with incomplete modeling of backup alarms and refrigeration noise, means the noise impacts are likely significant. My family is 54 feet from this site, and we will experience sleep disruption from 24/7 operations. An EIR is required."*
+> *"As stated in Appendix K, nighttime dock noise is modeled at 53.6 dBA — above the City's baseline nighttime standards of 45 dBA and 50 dBA. The MND avoids a significant-impact finding only by applying the City's ambient-noise adjustment, which raises the effective threshold at my home to around 57–58 dBA. Combined with incomplete modeling of backup alarms and refrigeration noise, I don't think that adjustment adequately accounts for what we'll actually hear at night. My family is 54 feet from this site, and we will experience sleep disruption from 24/7 operations. An EIR is required."*
 
 **For public advocacy:** share the SCAQMD letter with friends, neighbors, and media; highlight the dock door discrepancy (5 vs. 36) — the most concrete evidence of analysis inadequacy; reference the cancer risk margin (9.48 vs. 10 per million) to show how close to the significance threshold the project is.
 

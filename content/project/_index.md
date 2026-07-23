@@ -39,7 +39,7 @@ Rexford Industrial Realty, Inc. is proposing to demolish three existing office b
 | Specification | Detail |
 |---------------|--------|
 | **Operating Hours** | 24 hours per day, 7 days per week (24/7) |
-| **Daily Truck Trips** | 843 total; 810 net new PCE trips |
+| **Daily Vehicle Trips** | 843 total; 556 net new (≈163 trucks, 810 PCE-weighted) |
 | **AM Peak Hour Trips** | 106 vehicle trips (139 PCE) |
 | **PM Peak Hour Trips** | 115 vehicle trips (147 PCE) |
 | **Truck Driveway Access** | Southern driveway on Glassell Street (40 ft wide) |

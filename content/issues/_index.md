@@ -19,7 +19,7 @@ Under California law (CEQA), if there is **any reasonable argument** that a proj
 
 <span aria-hidden="true">🫁</span> **The Problem**
 
-Diesel trucks emit particulate matter (PM) that causes respiratory disease and cancer. A warehouse generating 810 daily truck trips (mostly diesel) a quarter-mile from an elementary school raises serious health questions.
+Diesel trucks emit particulate matter (PM) that causes respiratory disease and cancer. A warehouse generating approximately 163 daily truck trips (mostly diesel) a quarter-mile from an elementary school raises serious health questions.
 
 ### What the City's Analysis Says
 
@@ -41,7 +41,7 @@ The City concludes this is "less than significant" because it's technically belo
 
 **3. Understated operating assumptions.** The HRA assumes a 50-hour-per-year scenario for backup generators and fire pumps. Rexford has not committed to limiting backup generator use; SCAQMD identified this as a deficiency and noted a more realistic scenario could assume **200 hours per year** — 4 times the analyzed scenario.
 
-**4. Cumulative air quality already burdened.** The MATES-V ambient air quality study (SCAQMD) shows background diesel particulate matter in this area is already **300–400 per million** — far above the regional average. Adding a 298,988 SF warehouse generating 810 daily truck trips to an already-burdened air basin deserves scrutiny.
+**4. Cumulative air quality already burdened.** The MATES-V ambient air quality study (SCAQMD) shows background diesel particulate matter in this area is already **300–400 per million** — far above the regional average. Adding a 298,988 SF warehouse generating approximately 163 daily truck trips to an already-burdened air basin deserves scrutiny.
 
 ### What Government Agencies Say
 
@@ -58,7 +58,7 @@ The **South Coast Air Quality Management District (SCAQMD)** issued a formal def
 
 ### Why This Matters for Fletcher Elementary
 
-497 children attend Fletcher Elementary, 0.25 miles north. Children breathe more air per unit body weight than adults. Diesel PM is a known carcinogen (CARB, OEHHA, WHO classification). Chronic exposure increases asthma, respiratory disease, and cancer risk in children. **The City's own guidance (CARB siting rules) discourages sensitive land uses like schools near high-traffic corridors** — this warehouse will generate 810 daily truck trips, far more intense than typical roadway traffic. See the full research on our [Health Evidence page →](/health-evidence/)
+497 children attend Fletcher Elementary, 0.25 miles north. Children breathe more air per unit body weight than adults. Diesel PM is a known carcinogen (CARB, OEHHA, WHO classification). Chronic exposure increases asthma, respiratory disease, and cancer risk in children. **The City's own guidance (CARB siting rules) discourages sensitive land uses like schools near high-traffic corridors** — this warehouse will generate approximately 163 daily truck trips, far more intense than typical roadway traffic. See the full research on our [Health Evidence page →](/health-evidence/)
 
 ### What Should Happen
 
@@ -75,16 +75,18 @@ A 24/7 warehouse a quarter-mile from homes and a school means continuous noise f
 ### What the City's Analysis Says
 
 {{< callout type="citation" title="Modeled Nighttime Dock Noise" >}}
-- **Modeled noise level**: 53.6 decibels (dBA) at the nearest residential receptor
-- **Significance threshold (nighttime)**: 55.0 dBA
-- **Margin**: Only 1.4 dBA — a thin margin for error
+- **City of Orange nighttime noise standards**: 45 dBA Leq (General Plan Noise Element, MND at 119–120, Table NOI-4) and 50 dBA Leq (Municipal Code [§ 8.24.040](https://ecode360.com/43562273), Table 8.24.040)
+- **Modeled noise level**: 53.6 dBA at the nearest residential receptor to the east (MND at 121, Table NOI-6)
+- **Measured ambient noise at that receptor**: 55.0 dBA — already above both baseline standards
 {{< /callout >}}
 
-The City concludes this is "less than significant" because it's technically below 55 dBA.
+The MND does not find this significant because both the General Plan (Appendix K at 12, Table C, Note 4) and the Municipal Code ([§ 8.24.040(C)](https://ecode360.com/43562273)) allow the standard to be adjusted upward when existing ambient noise already exceeds the base standard. The Municipal Code defines this "adjusted ambient noise level" as measured ambient plus 3 dB(A) ([§ 8.24.020](https://ecode360.com/43562255)), which raises the effective nighttime threshold at this receptor to roughly 57–58 dBA — and the project's 53.6 dBA falls below that adjusted number.
+
+Whether that adjustment methodology adequately protects residents 54 feet from the property line — where the ambient itself is a mix of traffic, rail, and existing industrial noise — is a real question. The base standards exist to protect sleep and health at sensitive receptors; using an already-elevated ambient as the effective floor lets a new industrial noise source add to nighttime noise at nearby homes without ever triggering a significance finding.
 
 ### Why This Is Inadequate
 
-**1. Thin margin for variability.** A 1.4 dBA margin leaves little room in the real world: loading operations are louder during peak activity, backup alarms add 75+ dBA (far above the 53.6 dBA modeled level), refrigeration units add continuous noise, and weather/atmospheric conditions affect noise transmission.
+**1. A thin margin even under the adjusted standard.** Even measured against the City's ambient-adjusted threshold (~57–58 dBA) rather than its base 45/50 dBA standards, the 53.6 dBA modeled noise level leaves only a few dBA of headroom — before accounting for real-world variability: loading operations are louder during peak activity, backup alarms add 75+ dBA (far above the 53.6 dBA modeled level), refrigeration units add continuous noise, and weather/atmospheric conditions affect noise transmission.
 
 **2. Incomplete modeling.** The analysis does not adequately model backup alarm noise (required by federal safety regulations on heavy vehicles), refrigeration/cold storage noise (typical for Rexford warehouses), truck tire noise and engine braking on Glassell Street, or nighttime versus daytime differences.
 
@@ -96,13 +98,21 @@ The City concludes this is "less than significant" because it's technically belo
 
 A full EIR should include detailed modeling of backup alarms, truck traffic, and dock operations; 24-hour noise monitoring to establish a baseline; analysis of sleep disruption and health impacts; specific, enforceable mitigation measures; and a commitment to restrict nighttime dock operations.
 
+### A Separate Problem: An Undisclosed Delivery-Hours Restriction
+
+Orange Municipal Code [§ 8.24.050(P)](https://ecode360.com/43562278) restricts deliveries and pickups at a commercial or industrial property sharing a property line with residential property to 7:00 a.m.–10:00 p.m. daily. Deliveries outside those hours require separate City approval through a permit or license.
+
+The project is proposed to operate 24 hours a day, seven days a week (MND at 26), with loading docks — 5 under Option 1, or 36 raised docks plus two grade-level doors under Option 2 (MND at 23–24) — on a site sharing a property line with single-family homes 54 feet to the north. The MND's noise analysis cites Municipal Code § 8.24.050 four separate times, but only for the construction-hours exemption in subsection (E). It does not mention subsection (P), and does not address whether the Conditional Use Permit (CUP 25-0013) will authorize truck deliveries and pickups outside the 7 a.m.–10 p.m. window this section otherwise requires.
+
+That leaves a real question the MND doesn't answer: does the City intend the Conditional Use Permit to authorize round-the-clock deliveries at a property line shared with homes — and if so, why doesn't the noise analysis evaluate what that authorization would mean for the closest residents?
+
 ---
 
 ## Issue 3: Traffic and Transportation
 
 <span aria-hidden="true">🚗</span> **The Problem**
 
-An additional 810 net new daily truck trips is a massive increase in heavy vehicle traffic on residential streets, impacting school safety, street congestion, accident risk, and air quality.
+An additional 556 net new daily vehicle trips — including approximately 163 truck trips, weighted at 810 passenger-car-equivalent (PCE) trips due to the heavy truck mix — is a massive increase in heavy vehicle traffic on residential streets, impacting school safety, street congestion, accident risk, and air quality.
 
 ### What the City's Analysis Says
 
@@ -120,7 +130,7 @@ The applicant and City acknowledge this LOS E/F impact as **"unavoidable."** The
 
 **1. Acknowledged Level of Service deficiency.** An "unavoidable" LOS E/F impact is a significant environmental impact by definition. The fact that the applicant can't or won't mitigate it doesn't make it insignificant — it makes the mitigation inadequate.
 
-**2. School route safety.** Fletcher Elementary is 0.25 miles away and many children walk or bike to school. Adding 810 daily truck trips — with heavy diesel vehicles and large blind spots — creates significant safety risks, and no specific traffic calming measures or school route protections are proposed.
+**2. School route safety.** Fletcher Elementary is 0.25 miles away and many children walk or bike to school. Adding approximately 163 daily truck trips — with heavy diesel vehicles and large blind spots — creates significant safety risks, and no specific traffic calming measures or school route protections are proposed.
 
 **3. Cumulative traffic impacts.** The TIA evaluates several nearby intersections, but cumulative impacts (this project plus other approved/pending projects) are not adequately analyzed.
 
@@ -149,7 +159,7 @@ While the M-2 zone technically permits manufacturing, it is supposed to be used 
 
 ### What the State Says
 
-**CARB (California Air Resources Board) Siting Guidance** recommends against locating sensitive land uses (schools, homes, child care centers) within 500 feet of high-traffic roadways or warehouses. Fletcher Elementary is 0.25 miles (1,320 feet) away — beyond the 500-foot rule, but still very close for a warehouse generating 810 daily truck trips.
+**CARB (California Air Resources Board) Siting Guidance** recommends against locating sensitive land uses (schools, homes, child care centers) within 500 feet of high-traffic roadways or warehouses. Fletcher Elementary is 0.25 miles (1,320 feet) away — beyond the 500-foot rule, but still very close for a warehouse generating approximately 163 daily truck trips.
 
 ### Nighttime Operations & Residential Compatibility
 
@@ -172,7 +182,7 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 | Issue | City Claims | The Record Says |
 |-------|-------------|------------------|
 | **Air Quality** | "Less than significant" | SCAQMD identified 7 deficiencies; dock door discrepancy (5 vs. 36); cancer risk margin only 0.52 per million; outdated modeling |
-| **Noise** | "Mitigated by sound walls" | Sound walls unspecified; margin only 1.4 dBA; backup alarms and refrigeration not modeled |
+| **Noise** | "Mitigated by sound walls" | Sound walls unspecified; "less than significant" only by using an ambient-adjusted threshold (~57–58 dBA) instead of the City's base 45/50 dBA standards; backup alarms and refrigeration not modeled |
 | **Traffic** | "Acceptable" | Southern driveway LOS E/F, called "unavoidable" by the applicant |
 | **Land Use** | "Consistent with zoning" | Legal consistency ≠ compatibility; 24/7 use incompatible with adjacent homes and school |
 

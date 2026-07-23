@@ -33,9 +33,9 @@ McConnell R, Berhane K, Yao T, et al. Traffic, Susceptibility, and Childhood Ast
 
 **What the research shows**: children living within 500 meters (~1,600 feet) of busy roads with heavy vehicle traffic have significantly higher rates of asthma diagnosis and asthma-like symptoms. Risk increases with proximity and with traffic volume/intensity.
 
-**Why this applies to Fletcher Elementary**: the warehouse will generate 810 net new daily truck trips — functionally a "new busy road" that did not previously exist on this block. The nearest homes are 54 feet from the site; Fletcher Elementary is 0.25 miles (1,320 feet) north. While the school is technically beyond the 500-meter high-risk zone, the concentration of diesel truck traffic creates an emissions source comparable to busy roadside proximity.
+**Why this applies to Fletcher Elementary**: the warehouse will generate approximately 163 net new daily truck trips — the primary source of diesel particulate matter and functionally a "new busy road" that did not previously exist on this block. The nearest homes are 54 feet from the site; Fletcher Elementary is 0.25 miles (1,320 feet) north. While the school is technically beyond the 500-meter high-risk zone, the concentration of diesel truck traffic creates an emissions source comparable to busy roadside proximity.
 
-**What this means**: the addition of 810 daily truck trips near a school creates a documented health risk factor for asthma in enrolled students — not speculation, but peer-reviewed research on Southern California children.
+**What this means**: the addition of approximately 163 daily truck trips near a school creates a documented health risk factor for asthma in enrolled students — not speculation, but peer-reviewed research on Southern California children.
 {{< /finding-card >}}
 
 ## Finding #2: Diesel Emissions Cause Measurable Lung Damage in Children
@@ -54,7 +54,7 @@ Gauderman WJ, McConnell R, Gilliland F, et al. The Effect of Air Pollution on Lu
 | Acid Vapor | Vehicle exhaust, secondary formation | Airway damage and reduced lung capacity |
 | Diesel Particulate Matter (DPM) | Diesel engines, trucks, generators | Deep-lung deposits; carcinogenic |
 
-**Why this applies**: the warehouse will operate 24/7, generating 810 daily truck trips, loading dock operations, backup generators, possible refrigerated trailers, and idling engines — each emitting NO2, elemental carbon, and diesel particulates.
+**Why this applies**: the warehouse will operate 24/7, generating approximately 163 daily truck trips, loading dock operations, backup generators, possible refrigerated trailers, and idling engines — each emitting NO2, elemental carbon, and diesel particulates.
 
 **What this means**: children at Fletcher Elementary would be exposed throughout their elementary and middle school years — exactly the 10–18 age window the CHS identified as most vulnerable to pollution-related lung damage. A typical warehouse operates for 50+ years.
 {{< /finding-card >}}
@@ -107,7 +107,7 @@ Gilliland FD, Avol E, Kinney PL, et al. Air Pollution Exposure, Lung Function, a
 
 | Health Effect | Study | Finding | Applies to This Project? |
 |---------------|-------|---------|---------------------------|
-| Asthma risk | McConnell et al., 2006 | Children near busy roads have increased asthma risk | Yes — 810 daily truck trips create a "new busy road" |
+| Asthma risk | McConnell et al., 2006 | Children near busy roads have increased asthma risk | Yes — approximately 163 daily truck trips create a "new busy road" |
 | Lung damage | Gauderman et al., 2004 | Diesel/NO2/elemental carbon reduce lung function in children | Yes — 24/7 diesel emissions |
 | Air quality improvement / reversal | Avol et al., 2001; Gauderman et al., 2015 | Cleaner air improves lung function; reversal harms development | Yes — reverses 20 years of local progress |
 | Asthma vulnerability | McConnell et al., 2003 | Asthmatic children especially vulnerable to pollution | Yes — ~40 asthmatic students at Fletcher |
@@ -138,7 +138,7 @@ The District has a duty of care to protect students from known environmental hea
 
 You have direct standing to submit public comment — health and safety of students is your core jurisdiction.
 
-> *"I am a [parent / teacher / school nurse] at Fletcher Elementary. The USC Children's Health Study shows that children living near diesel truck traffic have increased asthma risk and measurable lung damage. This warehouse generates 810 daily diesel truck trips 0.25 miles from our school. I urge the Planning Commission to demand a full Environmental Impact Report examining health impacts on our students, and to impose strict conditions if the project is approved."*
+> *"I am a [parent / teacher / school nurse] at Fletcher Elementary. The USC Children's Health Study shows that children living near diesel truck traffic have increased asthma risk and measurable lung damage. This warehouse generates approximately 163 daily diesel truck trips 0.25 miles from our school. I urge the Planning Commission to demand a full Environmental Impact Report examining health impacts on our students, and to impose strict conditions if the project is approved."*
 
 - [ ] Share USC CHS findings with school administrators
 - [ ] Propose the District submit formal comments supporting the EIR demand
