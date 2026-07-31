@@ -22,6 +22,13 @@
     --nb-warning-text: #7a1f14;
     --nb-critical-badge: #c2410c;
 
+    /* Text color for anything sitting ON an accent/CTA fill (orange, teal,
+       blue). Light mode's accents are dark enough for white text; dark mode
+       lightens every accent for background contrast, which flips the text
+       requirement to a dark ink. Kept as one token so the two never drift
+       apart again -- see the hero, which has always used dark-on-amber. */
+    --nb-on-accent: #fff;
+
     /* Landing-page "Fact Hub" system: deep slate/navy hero with a sharp
        orange/yellow CTA. Deliberately theme-invariant (same in light and
        dark mode) — the hero is a fixed dark banner by design, not part of
@@ -54,6 +61,7 @@
     --nb-warning-border: #e0685c;
     --nb-warning-text: #f6cfc9;
     --nb-critical-badge: #f0743a;
+    --nb-on-accent: #0b1220;
 }
 
 /* ---------- Typography ---------- */
@@ -85,11 +93,11 @@ a.button, .button {
 
 .button--primary, a.button.button--primary {
     background: var(--nb-cta-primary);
-    color: #fff;
+    color: var(--nb-on-accent);
 }
 .button--primary:hover, a.button.button--primary:hover {
     background: var(--nb-cta-primary-hover);
-    color: #fff;
+    color: var(--nb-on-accent);
 }
 
 .button--secondary, a.button.button--secondary, .button:not([class*="button--"]) {
@@ -99,7 +107,7 @@ a.button, .button {
 }
 .button--secondary:hover, a.button.button--secondary:hover {
     background: var(--nb-cta-secondary);
-    color: #fff;
+    color: var(--nb-on-accent);
 }
 
 .button--tertiary, a.button.button--tertiary {
@@ -198,7 +206,7 @@ a.button, .button {
 }
 .wizard-progress { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; font-size: 0.85rem; }
 .wizard-progress-step { padding: 0.25rem 0.6rem; border-radius: 999px; background: var(--tertiary); color: var(--secondary); }
-.wizard-progress-step.is-active { background: var(--nb-accent); color: #fff; font-weight: 700; }
+.wizard-progress-step.is-active { background: var(--nb-accent); color: var(--nb-on-accent); font-weight: 700; }
 .wizard fieldset { border: none; padding: 0; margin: 0; }
 .wizard legend { font-size: 1.1rem; margin-bottom: 0.75rem; padding: 0; }
 .wizard .form-row { margin-bottom: 1rem; }
@@ -219,7 +227,7 @@ a.button, .button {
     border-radius: 999px; border: 1px solid var(--border); background: var(--theme);
     color: var(--primary); cursor: pointer;
 }
-.doc-filter.is-active { background: var(--nb-accent); border-color: var(--nb-accent); color: #fff; }
+.doc-filter.is-active { background: var(--nb-accent); border-color: var(--nb-accent); color: var(--nb-on-accent); }
 .doc-count { font-size: 0.85rem; color: var(--secondary); margin: 0.5rem 0 0; }
 .doc-list { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 @media (min-width: 700px) {
@@ -231,7 +239,7 @@ a.button, .button {
 }
 .doc-card--critical { border-color: var(--nb-critical-badge); border-width: 2px; }
 .doc-badge {
-    display: inline-block; background: var(--nb-critical-badge); color: #fff;
+    display: inline-block; background: var(--nb-critical-badge); color: var(--nb-on-accent);
     font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;
     padding: 0.15rem 0.5rem; border-radius: 999px; margin-bottom: 0.5rem;
 }
@@ -364,7 +372,7 @@ a.button, .button {
     line-height: 1.6;
     vertical-align: middle;
 }
-.cite-badge:hover, .cite-badge[aria-expanded="true"] { background: var(--nb-accent); color: #fff; }
+.cite-badge:hover, .cite-badge[aria-expanded="true"] { background: var(--nb-accent); color: var(--nb-on-accent); }
 .cite-badge::before { content: "📄"; font-size: 0.85em; }
 
 .cite-modal-overlay {
@@ -515,7 +523,7 @@ a.button, .button {
     padding: 0.4rem 0.9rem;
     border-radius: var(--radius);
     background: var(--nb-cta-primary);
-    color: #fff !important;
+    color: var(--nb-on-accent) !important;
     font-weight: 700;
     font-size: 0.85rem;
     line-height: 1.2;
@@ -523,6 +531,50 @@ a.button, .button {
     white-space: nowrap;
 }
 .button--nav-cta:hover { background: var(--nb-cta-primary-hover); }
+
+/* The nav <ul> scrolls horizontally on narrow screens (theme behaviour), which
+   pushed "Sign the Petition" ~257px past the right edge of a 375px viewport --
+   the primary conversion CTA was only reachable by scrolling a strip most
+   people never realise scrolls. Pinning it to the scroll container's right
+   edge keeps it on screen at every scroll position. The fade masks menu items
+   passing underneath. */
+@media (max-width: 768px) {
+    .menu-cta-item {
+        position: sticky;
+        right: 0;
+        z-index: 1;
+        background: var(--theme);
+        padding-left: 0.75rem;
+        box-shadow: -10px 0 10px -6px var(--theme);
+    }
+    /* Tightened here so the pinned CTA claims less of the strip and more
+       menu items stay readable beside it. */
+    .menu-cta-item .button--nav-cta {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
+
+/* ---------- Focus visibility ---------- */
+
+/* The site's own interactive components (citation badges, accordion and FAQ
+   toggles, filter chips, wizard controls, CTAs) previously had no focus
+   styling at all -- the only outline rule in the loaded CSS belonged to a
+   theme search feature this site doesn't use, leaving keyboard users on
+   browser defaults, which are easy to lose against the amber/navy hero and
+   the filled CTA fills. :focus-visible keeps this off mouse clicks. */
+:where(a, button, summary, input, select, textarea, .cite-badge, .doc-filter):focus-visible {
+    outline: 3px solid var(--nb-accent);
+    outline-offset: 2px;
+    border-radius: var(--radius);
+}
+
+/* On the fixed dark hero, the teal accent is the weaker signal -- the hero's
+   own near-white reads far more clearly against both the navy field and the
+   amber CTA. */
+.hero-mega :where(a, button):focus-visible {
+    outline-color: var(--nb-hero-cta-outline);
+}
 
 /* ---------- Share buttons ---------- */
 
