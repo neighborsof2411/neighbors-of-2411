@@ -14,7 +14,7 @@ May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you
 {{< /faq >}}
 
 {{< faq q="When is the Planning Commission hearing?" >}}
-Tentatively scheduled for either **August 3, 2026** or **September 10, 2026**. The City will notify the public **10 days before** the hearing is confirmed. [Sign up for email updates](/#stay-informed) to be notified immediately.
+Tentatively scheduled for **September 10, 2026**. The City will notify the public **10 days before** the hearing is confirmed. [Sign up for email updates](/#stay-informed) to be notified immediately.
 {{< /faq >}}
 
 {{< faq q="Can I still submit comments?" >}}
@@ -267,10 +267,10 @@ To get involved: share your contact info and how you'd like to help, receive upd
 | **April 16 – May 6, 2026** | Public comment period (20 days) |
 | **May 6, 2026** | Comment period closes |
 | **Late May / June 2026** | City prepares responses to comments |
-| **August 3 or September 10, 2026** | **Planning Commission hearing** (tentative; 10-day notice required) |
+| **September 10, 2026** | **Planning Commission hearing** (tentative; 10-day notice required) |
 | **Post-PC decision** | 10–15 day appeal window to City Council (if applicable) |
 
-**Next milestone**: watch for the City's 10-day hearing confirmation notice. Set a calendar reminder for August 3 and September 10.
+**Next milestone**: watch for the City's 10-day hearing confirmation notice. Set a calendar reminder for September 10.
 
 ## External Resources
 
@@ -324,7 +324,7 @@ Respectfully,
 
 {{< subscribe id="xzdnrjaz" >}}
 
-Set a phone reminder for **August 3, 2026** and **September 10, 2026** — and watch for the City's 10-day notice confirming the actual date.
+Set a phone reminder for **September 10, 2026** — and watch for the City's 10-day notice confirming the actual date.
 
 ---
 

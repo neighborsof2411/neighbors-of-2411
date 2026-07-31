@@ -121,20 +121,11 @@
         "isCritical": true
       },
       {
-        "name": "Planning Commission Hearing (Tentative Date 1)",
-        "date": "2026-08-03",
-        "status": "tentative",
-        "details": "First potential date for PC hearing; city will notify 10 days before confirmation",
-        "isCritical": true,
-        "altDate": "2026-09-10"
-      },
-      {
-        "name": "Planning Commission Hearing (Tentative Date 2)",
+        "name": "Planning Commission Hearing (Tentative)",
         "date": "2026-09-10",
         "status": "tentative",
-        "details": "Alternative date for PC hearing if not scheduled for August 3",
-        "isCritical": true,
-        "primaryDate": "2026-08-03"
+        "details": "Potential date for PC hearing; city will notify 10 days before confirmation",
+        "isCritical": true
       },
       {
         "name": "PC Decision",
@@ -158,7 +149,7 @@
     },
     "nextHearing": {
       "type": "Planning Commission",
-      "tentativeDates": ["2026-08-03", "2026-09-10"],
+      "tentativeDates": ["2026-09-10"],
       "notificationDaysBeforeConfirmation": 10,
       "status": "tentative"
     }

@@ -143,7 +143,7 @@ Families in these homes are not transient tenants; they are choosing to raise ch
 | **April 16 – May 6, 2026** | Public comment period (20 days) |
 | **May 6, 2026** | Comment period closes |
 | *Late May / early June 2026* | City prepares responses to comments |
-| **August 3 or September 10, 2026** | **Planning Commission hearing** (tentative; 10-day notice) |
+| **September 10, 2026** | **Planning Commission hearing** (tentative; 10-day notice) |
 | **10–15 days after PC approval** | Appeal window to City Council (if decision is appealed) |
 
 ### How the Process Works

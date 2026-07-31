@@ -4,7 +4,7 @@ description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 jus
 ---
 
 {{< callout type="warning" title="Planning Commission Hearing Coming Soon" icon="⚠️" >}}
-**Tentative dates: August 3 or September 10, 2026.** The City will notify the public 10 days before the date is confirmed.
+**Tentative date: September 10, 2026.** The City will notify the public 10 days before the date is confirmed.
 
 **This is your chance to be heard on a 24/7 industrial warehouse 54 feet from homes and a quarter-mile from Fletcher Elementary School.**
 {{< /callout >}}
@@ -112,7 +112,7 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 
 - 📅 **April 16, 2026** → MND released for public review
 - 📅 **May 6, 2026** → Comment period closes *(past)*
-- 📅 **Aug 3 or Sept 10, 2026** → Planning Commission hearing *(next — confirmed 10 days before)*
+- 📅 **Sept 10, 2026** → Planning Commission hearing *(next — confirmed 10 days before)*
 - 📅 **10–15 days after PC** → Appeal window to City Council (if needed)
 
 ## What Happens at the Planning Commission Hearing?

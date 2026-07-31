@@ -13,7 +13,7 @@ You can still submit public comment — in writing or in person — **at the Pla
 
 ## Quick Start: Three Ways to Participate
 
-**1. Attend & speak at the Planning Commission hearing (most powerful).** When: August 3 or September 10, 2026 (the City will notify 10 days before). Where: Orange City Hall, Community Development Department or designated hearing room. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
+**1. Attend & speak at the Planning Commission hearing (most powerful).** When: September 10, 2026 (the City will notify 10 days before). Where: Orange City Hall, Community Development Department or designated hearing room. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
 
 **2. Submit written comments at the hearing.** Even if you can't speak in person, you can submit a written comment letter (usually 1–2 pages) to be read into the record.
 

@@ -34,12 +34,15 @@
   var target = future[0];
   var msPerDay = 24 * 60 * 60 * 1000;
   var days = Math.ceil((target.getTime() - now.getTime()) / msPerDay);
+  // "earliest" only reads correctly while more than one date is still in play.
+  var label = future.length > 1 ? ' the earliest tentative hearing date'
+                                : ' the tentative hearing date';
   if (days <= 0) {
     el.textContent = 'The hearing may be happening now — check for the confirmed date.';
   } else if (days === 1) {
-    el.textContent = '1 day until the earliest tentative hearing date';
+    el.textContent = '1 day until' + label;
   } else {
-    el.textContent = days + ' days until the earliest tentative hearing date';
+    el.textContent = days + ' days until' + label;
   }
 })();
 </script>
