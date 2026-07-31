@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Neighbors of 2411">
+  <rect width="512" height="512" rx="96" fill="#0b1220"/>
+  <path fill="#f59e0b" fill-rule="evenodd"
+        d="M256 138 L460 286 L408 286 L408 418 L104 418 L104 286 L52 286 Z
+           M226 336 H286 V418 H226 Z"/>
+</svg>
