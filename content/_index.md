@@ -16,7 +16,7 @@ description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 jus
 Three City meetings are coming up in September. Only the last one is the hearing on this project — but showing up at all three is what makes the neighborhood impossible to overlook.
 
 {{< callout type="alert" title="Tuesday, September 8 · 6:00 PM — City Council" icon="🗣️" >}}
-Not a formal hearing on this project, but an opportunity to speak during public comment and put Council members on notice that this neighborhood is watching and organized. This meeting can also be joined remotely by Zoom.
+Not a formal hearing on this project, but an opportunity to speak during public comment and put Council members on notice that this neighborhood is watching and organized. This meeting can also be joined remotely by Zoom — the agenda and remote-participation details are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A).
 {{< /callout >}}
 
 {{< callout type="alert" title="Thursday, September 10 · 5:30 PM — Planning Commission" icon="👥" >}}
@@ -27,7 +27,7 @@ The Rexford item is not on this agenda, but Commissioners will be present and pu
 This is expected to be the rescheduled hearing where the Commission actually considers the project. Treat this date as tentative until the City's official notice confirms it — but plan to attend.
 {{< /callout >}}
 
-All three meet at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. [Prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
+All three meet at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas, times, and remote-participation details for every City meeting are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — worth checking before you go, since agendas can change. [Prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
 
 ## A 298,988-Square-Foot Warehouse Operating 24 Hours a Day, Every Day — Right Next Door to Your Child's School
 

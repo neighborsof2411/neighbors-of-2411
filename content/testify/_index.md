@@ -21,13 +21,13 @@ Three City meetings are coming up. Only the September 21 hearing puts this proje
 | **Thu, Sept 10, 2026** | Planning Commission | 5:30 PM | No — public comment open |
 | **Mon, Sept 21, 2026** | Planning Commission | 5:30 PM | **Yes — tentative hearing on the project** |
 
-**September 8 — City Council.** Not a formal hearing on this project, but an opportunity to speak during public comment and put Council members on notice that this neighborhood is watching and organized. This meeting can also be joined remotely by Zoom.
+**September 8 — City Council.** Not a formal hearing on this project, but an opportunity to speak during public comment and put Council members on notice that this neighborhood is watching and organized. This meeting can also be joined remotely by Zoom — the agenda and remote-participation details are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A).
 
 **September 10 — Planning Commission.** The Rexford item is not on this agenda, but Commissioners will be present and public comment is open. Showing up in numbers here, even without a vote on the table, reinforces that our opposition isn't going anywhere.
 
 **September 21 — Planning Commission (tentative).** This is expected to be the rescheduled hearing where the Commission actually considers the project. Treat this date as tentative until the City's official notice confirms it — but plan to attend.
 
-All three meet at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866.
+All three meet at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas, times, and remote-participation details for every City meeting are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — check it before you go, since agendas can change.
 
 ## Quick Start: Three Ways to Participate
 

@@ -237,6 +237,8 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **City Council** — Kathy Tavoularis (friendly contact), [ktavoularis@cityoforange.org](mailto:ktavoularis@cityoforange.org) *(may recuse if the project reaches a City Council appeal due to her quasi-adjudicative role)*
 
+**Meeting agendas & remote participation** — [City of Orange meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A). Agendas, times, and Zoom details for City Council and Planning Commission meetings are posted here. Check it before any meeting you plan to attend, since agendas can change.
+
 ### Neighbors of 2411
 
 **Email**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com)
