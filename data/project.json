@@ -121,10 +121,27 @@
         "isCritical": true
       },
       {
-        "name": "Planning Commission Hearing (Tentative)",
+        "name": "City Council Meeting (public comment)",
+        "date": "2026-09-08",
+        "time": "18:00",
+        "status": "scheduled",
+        "details": "Not a hearing on this project; public comment is open. Zoom option available.",
+        "isCritical": false
+      },
+      {
+        "name": "Planning Commission Meeting (public comment)",
         "date": "2026-09-10",
+        "time": "17:30",
+        "status": "scheduled",
+        "details": "Rexford item not on this agenda; Commissioners present and public comment open",
+        "isCritical": false
+      },
+      {
+        "name": "Planning Commission Hearing (Tentative)",
+        "date": "2026-09-21",
+        "time": "17:30",
         "status": "tentative",
-        "details": "Potential date for PC hearing; city will notify 10 days before confirmation",
+        "details": "Expected rescheduled hearing where the Commission considers the project; tentative until the City's official notice",
         "isCritical": true
       },
       {
@@ -149,7 +166,7 @@
     },
     "nextHearing": {
       "type": "Planning Commission",
-      "tentativeDates": ["2026-09-10"],
+      "tentativeDates": ["2026-09-21"],
       "notificationDaysBeforeConfirmation": 10,
       "status": "tentative"
     }

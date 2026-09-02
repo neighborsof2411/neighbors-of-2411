@@ -11,9 +11,27 @@ TocOpen: false
 
 You can still submit public comment — in writing or in person — **at the Planning Commission hearing itself**, and it will be included in the official administrative record. Your public comment directly influences the commissioners' thinking and creates a legal record that can be cited in any future appeals or litigation.
 
+## Upcoming Meetings
+
+Three City meetings are coming up. Only the September 21 hearing puts this project in front of the Commission for a decision — but public comment is open at all three, and turnout at the earlier two is what signals that this neighborhood is organized and paying attention.
+
+| Date | Meeting | Time | This project on the agenda? |
+|------|---------|------|------------------------------|
+| **Tue, Sept 8, 2026** | City Council | 6:00 PM | No — public comment open |
+| **Thu, Sept 10, 2026** | Planning Commission | 5:30 PM | No — public comment open |
+| **Mon, Sept 21, 2026** | Planning Commission | 5:30 PM | **Yes — tentative hearing on the project** |
+
+**September 8 — City Council.** Not a formal hearing on this project, but an opportunity to speak during public comment and put Council members on notice that this neighborhood is watching and organized. This meeting can also be joined remotely by Zoom.
+
+**September 10 — Planning Commission.** The Rexford item is not on this agenda, but Commissioners will be present and public comment is open. Showing up in numbers here, even without a vote on the table, reinforces that our opposition isn't going anywhere.
+
+**September 21 — Planning Commission (tentative).** This is expected to be the rescheduled hearing where the Commission actually considers the project. Treat this date as tentative until the City's official notice confirms it — but plan to attend.
+
+All three meet at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866.
+
 ## Quick Start: Three Ways to Participate
 
-**1. Attend & speak at the Planning Commission hearing (most powerful).** When: September 10, 2026 (the City will notify 10 days before). Where: Orange City Hall, Community Development Department or designated hearing room. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
+**1. Attend & speak at the Planning Commission hearing (most powerful).** When: tentatively Monday, September 21, 2026 at 5:30 PM (the City will notify 10 days before). Where: Orange City Hall, Community Development Department or designated hearing room. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
 
 **2. Submit written comments at the hearing.** Even if you can't speak in person, you can submit a written comment letter (usually 1–2 pages) to be read into the record.
 
