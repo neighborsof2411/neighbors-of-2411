@@ -1,8 +1,18 @@
 {
   "name": "neighbors-of-2411",
+  "main": "worker/index.js",
   "compatibility_date": "2026-07-18",
   "assets": {
     "directory": "public",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
-  }
+  },
+  // Duplicate-check storage for POST /api/sign: the "SIGNERS" KV namespace
+  // (Cloudflare dashboard -> Storage & Databases -> KV). Only SHA-256 hashes
+  // of "<form>:<email>" are stored, never addresses. If this binding is ever
+  // removed, the Worker fails open -- submissions still reach Formspree, just
+  // without a duplicate check.
+  "kv_namespaces": [
+    { "binding": "SIGNERS", "id": "b35808076168429f8ecf8ef902f04b8b" }
+  ]
 }
