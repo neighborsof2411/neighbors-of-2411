@@ -1,8 +1,18 @@
 {
   "name": "neighbors-of-2411",
+  "main": "worker/index.js",
   "compatibility_date": "2026-07-18",
   "assets": {
     "directory": "public",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
   }
+  // Duplicate-check storage for POST /api/sign. Create a KV namespace
+  // (Cloudflare dashboard -> Storage & Databases -> KV, or
+  // `npx wrangler kv namespace create SIGNERS`) and add it below to turn on
+  // cross-device dedupe. Until then the Worker fails open -- submissions
+  // still reach Formspree, just without a duplicate check. Shape:
+  // "kv_namespaces": [
+  //   { "binding": "SIGNERS", "id": "<production-id>", "preview_id": "<preview-id>" }
+  // ]
 }
