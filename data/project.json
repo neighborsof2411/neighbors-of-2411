@@ -141,8 +141,18 @@
         "date": "2026-09-21",
         "time": "17:30",
         "status": "tentative",
-        "details": "Expected rescheduled hearing where the Commission considers the project; tentative until the City's official notice",
+        "location": "City Council Chamber, 300 E. Chapman Avenue",
+        "details": "Regular session on the City calendar; expected hearing on the project, agenda not yet posted",
         "isCritical": true
+      },
+      {
+        "name": "City Council Meeting (public comment)",
+        "date": "2026-09-22",
+        "time": "18:00",
+        "status": "scheduled",
+        "location": "City Council Chamber, 300 E. Chapman Avenue",
+        "details": "Regular session 6:00 PM (closed session 5:00 PM); public comment open; agenda not yet posted",
+        "isCritical": false
       },
       {
         "name": "PC Decision",

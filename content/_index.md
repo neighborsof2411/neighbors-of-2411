@@ -4,9 +4,11 @@ description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 jus
 ---
 
 {{< callout type="warning" title="Planning Commission Hearing Coming Soon" icon="⚠️" >}}
-**Tentative date: Monday, September 21, 2026 at 5:30 PM.** This is expected to be the rescheduled hearing where the Commission actually considers the project. The City will notify the public 10 days before the date is confirmed — treat it as tentative until then, but plan to attend.
+**Monday, September 21, 2026 · 5:30 PM — now on the City's calendar.** The Planning Commission meets in regular session that evening, and it's expected to be the rescheduled hearing where the Commission actually considers the project. The agenda hasn't been posted yet, so the project's place on it isn't confirmed — but plan to attend.
 
-**Where:** Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas and remote-participation details are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — worth checking before you go, since agendas can change.
+**Where:** City Council Chamber, Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas and remote-participation details are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — worth checking before you go, since agendas can change.
+
+**The next evening:** the City Council meets **Tuesday, September 22 at 6:00 PM** (regular session) in the same chamber, with public comment open.
 
 **This is your chance to be heard on a 24/7 industrial warehouse 54 feet from homes and a quarter-mile from Fletcher Elementary School.** [Prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
 {{< /callout >}}
@@ -54,7 +56,7 @@ The Planning Commission hearing is your opportunity to be heard directly. Public
 - **Applicant**: Rexford Industrial Realty, Inc.
 - **Zoning**: M-2 (Industrial Manufacturing), Light Industrial General Plan
 - **Status**: Draft Environmental Report released April 16, 2026; while the initial public comment period closed on May 6, 2026, public comments may still be submitted to the official administrative record until the conclusion of the Planning Commission public hearing
-- **Next step**: Planning Commission hearing (date TBD, with 10-day notice)
+- **Next step**: Planning Commission meeting, Monday, September 21 at 5:30 PM — expected hearing on the project (agenda not yet posted)
 - **Entitlements**: Conditional Use Permit (CUP 25-0013), Major Site Plan Review (SP-1180)
 
 ## Frequently Asked Questions About 2411 Glassell
@@ -116,7 +118,8 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 - 📅 **May 6, 2026** → Comment period closes *(past)*
 - 📅 **Sept 8, 2026** → City Council meeting — public comment only, project not on agenda *(past)*
 - 📅 **Sept 10, 2026** → Planning Commission meeting — public comment only, project not on agenda *(past)*
-- 📅 **Sept 21, 2026** → Planning Commission hearing on the project, 5:30 PM *(tentative — confirmed 10 days before)*
+- 📅 **Sept 21, 2026** → Planning Commission regular session, 5:30 PM — expected hearing on the project *(agenda not yet posted)*
+- 📅 **Sept 22, 2026** → City Council regular session, 6:00 PM — public comment open *(agenda not yet posted)*
 - 📅 **10–15 days after PC** → Appeal window to City Council (if needed)
 
 ## What Happens at the Planning Commission Hearing?

@@ -14,7 +14,7 @@ May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you
 {{< /faq >}}
 
 {{< faq q="When is the Planning Commission hearing?" >}}
-Tentatively scheduled for **Monday, September 21, 2026 at 5:30 PM**. The City will notify the public **10 days before** the hearing is confirmed. [Sign up for email updates](/#stay-informed) to be notified immediately.
+The Planning Commission meets **Monday, September 21, 2026 at 5:30 PM** in the City Council Chamber, and that meeting is expected to be the hearing on the project. The agenda hasn't been posted yet, so check the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) before you go. The City Council also meets the next evening, **Tuesday, September 22 at 6:00 PM**, with public comment open. [Sign up for email updates](/#stay-informed) to be notified immediately.
 {{< /faq >}}
 
 {{< faq q="Can I still submit comments?" >}}
@@ -271,10 +271,11 @@ To get involved: share your contact info and how you'd like to help, receive upd
 | **Late May / June 2026** | City prepares responses to comments |
 | **September 8, 2026** | City Council meeting — public comment only; project not on agenda *(past)* |
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
-| **September 21, 2026** | **Planning Commission hearing on the project**, 5:30 PM (tentative; 10-day notice required) |
+| **September 21, 2026** | **Planning Commission regular session**, 5:30 PM — expected hearing on the project (agenda not yet posted) |
+| **September 22, 2026** | City Council regular session, 6:00 PM — public comment open (agenda not yet posted) |
 | **Post-PC decision** | 10–15 day appeal window to City Council (if applicable) |
 
-**Next milestone**: the tentative September 21 hearing. Watch for the City's 10-day confirmation notice, and set a calendar reminder.
+**Next milestone**: the September 21 Planning Commission meeting — the expected hearing on the project — then the September 22 City Council meeting. Watch for the posted agendas, and set calendar reminders for both.
 
 ## External Resources
 
@@ -328,7 +329,7 @@ Respectfully,
 
 {{< subscribe id="xzdnrjaz" >}}
 
-Set a phone reminder for **Monday, September 21, 2026 at 5:30 PM** (tentative hearing on the project) — and watch for the City's 10-day notice confirming the date.
+Set phone reminders for **Monday, September 21, 2026 at 5:30 PM** (Planning Commission — expected hearing on the project) and **Tuesday, September 22 at 6:00 PM** (City Council, public comment) — and check the posted agendas before you go.
 
 ---
 

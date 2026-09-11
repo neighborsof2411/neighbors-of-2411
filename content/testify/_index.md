@@ -13,13 +13,15 @@ You can still submit public comment — in writing or in person — **at the Pla
 
 ## Upcoming Meetings
 
-**Monday, September 21, 2026 · 5:30 PM — Planning Commission (tentative).** This is expected to be the rescheduled hearing where the Commission actually considers the project. Treat this date as tentative until the City's official notice confirms it — but plan to attend.
+**Monday, September 21, 2026 · 5:30 PM — Planning Commission.** Now on the City's calendar as a regular session. This is expected to be the rescheduled hearing where the Commission actually considers the project; the agenda hasn't been posted yet, so the project's place on it isn't confirmed — but plan to attend.
 
-It meets at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas, times, and remote-participation details for every City meeting are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — check it before you go, since agendas can change.
+**Tuesday, September 22, 2026 · 6:00 PM — City Council.** Regular session, with public comment open (a closed session precedes it at 5:00 PM). The agenda hasn't been posted yet.
+
+Both meet in the City Council Chamber at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas, times, and remote-participation details for every City meeting are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — check it before you go, since agendas can change.
 
 ## Quick Start: Three Ways to Participate
 
-**1. Attend & speak at the Planning Commission hearing (most powerful).** When: tentatively Monday, September 21, 2026 at 5:30 PM (the City will notify 10 days before). Where: Orange City Hall, Community Development Department or designated hearing room. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
+**1. Attend & speak at the Planning Commission hearing (most powerful).** When: Monday, September 21, 2026 at 5:30 PM (on the City's calendar; agenda not yet posted). Where: City Council Chamber, Orange City Hall, 300 East Chapman Avenue. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
 
 **2. Submit written comments at the hearing.** Even if you can't speak in person, you can submit a written comment letter (usually 1–2 pages) to be read into the record.
 
