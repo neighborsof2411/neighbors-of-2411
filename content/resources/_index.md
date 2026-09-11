@@ -14,7 +14,7 @@ May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you
 {{< /faq >}}
 
 {{< faq q="When is the Planning Commission hearing?" >}}
-The Planning Commission meets **Monday, September 21, 2026 at 5:30 PM** in the City Council Chamber, and that meeting is expected to be the hearing on the project. The agenda hasn't been posted yet, so check the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) before you go. The City Council also meets the next evening, **Tuesday, September 22 at 6:00 PM**, with public comment open. [Sign up for email updates](/#stay-informed) to be notified immediately.
+It hasn't been officially noticed, and the expected date has already moved more than once. We keep the current date — and every upcoming Planning Commission and City Council meeting — in one place: [Upcoming City Meetings on the homepage](/#upcoming-city-meetings). The [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx) is the authoritative schedule. [Sign up for email updates](/#stay-informed) to be notified when dates change.
 {{< /faq >}}
 
 {{< faq q="Can I still submit comments?" >}}
@@ -237,13 +237,13 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **City Council** — Kathy Tavoularis (friendly contact), [ktavoularis@cityoforange.org](mailto:ktavoularis@cityoforange.org) *(may recuse if the project reaches a City Council appeal due to her quasi-adjudicative role)*
 
-**Meeting agendas & remote participation** — [City of Orange meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A). Agendas, times, and Zoom details for City Council and Planning Commission meetings are posted here. Check it before any meeting you plan to attend, since agendas can change.
+**Meeting agendas & remote participation** — [City of Orange meeting calendar](https://cityoforange.legistar.com/Calendar.aspx). Agendas, times, and Zoom details for City Council and Planning Commission meetings are posted here. Check it before any meeting you plan to attend, since agendas can change.
 
 ### Neighbors of 2411
 
 **Email**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com)
 
-To get involved: share your contact info and how you'd like to help, receive updates on hearing dates and public comment strategy, and attend group meetings (dates TBD). See [How to Join the Group →](/testify/#how-to-join-the-group)
+To get involved: share your contact info and how you'd like to help, receive updates on meeting dates and public comment strategy, and attend group meetings (dates TBD). See [How to Join the Group →](/testify/#how-to-join-the-group)
 
 ### Developer / Applicant
 
@@ -271,11 +271,10 @@ To get involved: share your contact info and how you'd like to help, receive upd
 | **Late May / June 2026** | City prepares responses to comments |
 | **September 8, 2026** | City Council meeting — public comment only; project not on agenda *(past)* |
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
-| **September 21, 2026** | **Planning Commission regular session**, 5:30 PM — expected hearing on the project (agenda not yet posted) |
-| **September 22, 2026** | City Council regular session, 6:00 PM — public comment open (agenda not yet posted) |
+| **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
 | **Post-PC decision** | 10–15 day appeal window to City Council (if applicable) |
 
-**Next milestone**: the September 21 Planning Commission meeting — the expected hearing on the project — then the September 22 City Council meeting. Watch for the posted agendas, and set calendar reminders for both.
+**Next milestone**: whichever Planning Commission or City Council meeting comes next — see [Upcoming City Meetings](/#upcoming-city-meetings) and the [City calendar](https://cityoforange.legistar.com/Calendar.aspx). Show up to each one.
 
 ## External Resources
 
@@ -329,7 +328,7 @@ Respectfully,
 
 {{< subscribe id="xzdnrjaz" >}}
 
-Set phone reminders for **Monday, September 21, 2026 at 5:30 PM** (Planning Commission — expected hearing on the project) and **Tuesday, September 22 at 6:00 PM** (City Council, public comment) — and check the posted agendas before you go.
+Check [Upcoming City Meetings](/#upcoming-city-meetings) and set a phone reminder for each Planning Commission and City Council meeting listed there — and check the [City calendar](https://cityoforange.legistar.com/Calendar.aspx) before you go, since agendas can change.
 
 ---
 

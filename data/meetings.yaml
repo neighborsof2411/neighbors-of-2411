@@ -1,0 +1,38 @@
+# Upcoming City meetings -- THE one place to update dates.
+#
+# Rendered on the homepage by the {{< meetings >}} shortcode, which also
+# fills the hero line and the "next meeting" box. Every other page links to
+# the homepage section instead of repeating dates, so nothing else needs
+# editing when a date moves.
+#
+# Add every Planning Commission and City Council meeting as the City posts
+# them (calendar_url below). Meetings whose date has passed are hidden
+# automatically in the browser, so old entries can be deleted whenever.
+#
+# Fields:
+#   body      Planning Commission | City Council
+#   date      "YYYY-MM-DD" (keep the quotes)
+#   time      shown as written, e.g. "5:30 PM"
+#   location  shown as written
+#   project   expected | confirmed | not on agenda   -- is 2411 Glassell on this agenda?
+#   agenda    "" until the City posts it, then the agenda URL
+#   note      optional one-liner shown under the meeting
+
+calendar_url: https://cityoforange.legistar.com/Calendar.aspx
+
+upcoming:
+  - body: Planning Commission
+    date: "2026-09-21"
+    time: "5:30 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: expected
+    agenda: ""
+    note: Expected to be the rescheduled hearing where the Commission actually considers the project. The agenda hasn't been posted, so its place on it isn't confirmed -- plan to attend regardless.
+
+  - body: City Council
+    date: "2026-09-22"
+    time: "6:00 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: not on agenda
+    agenda: ""
+    note: Regular session (a closed session precedes it at 5:00 PM). The project isn't on this agenda, but public comment is open -- Council is the appeal body, and it should hear from the neighborhood early.

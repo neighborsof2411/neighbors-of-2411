@@ -3,17 +3,17 @@ title: "2411 Glassell Warehouse Opposition | Orange, CA"
 description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 just 54 feet from homes and a quarter-mile from Fletcher Elementary School in Orange, CA. Learn the issues, review the evidence, and prepare your public comment for the Planning Commission hearing."
 ---
 
-{{< callout type="warning" title="Planning Commission Hearing Coming Soon" icon="⚠️" >}}
-**Monday, September 21, 2026 · 5:30 PM — now on the City's calendar.** The Planning Commission meets in regular session that evening, and it's expected to be the rescheduled hearing where the Commission actually considers the project. The agenda hasn't been posted yet, so the project's place on it isn't confirmed — but plan to attend.
+## Upcoming City Meetings
 
-**Where:** City Council Chamber, Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas and remote-participation details are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — worth checking before you go, since agendas can change.
+**The hearing on this project has not been officially noticed, and its date has already moved more than once.** Expect it to keep changing until the City sends notice. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
 
-**The next evening:** the City Council meets **Tuesday, September 22 at 6:00 PM** (regular session) in the same chamber, with public comment open.
+**What we're asking for:** that the Planning Commission **deny the project**. If it won't, it shouldn't approve it on this environmental review — a full Environmental Impact Report is the minimum.
 
-**This is your chance to be heard on a 24/7 industrial warehouse 54 feet from homes and a quarter-mile from Fletcher Elementary School.** [Prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
-{{< /callout >}}
+{{< meetings >}}
 
-{{< countdown >}}
+<div class="cta-primary-row">
+{{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
+</div>
 
 ## A 298,988-Square-Foot Warehouse Operating 24 Hours a Day, Every Day — Right Next Door to Your Child's School
 
@@ -41,7 +41,7 @@ Rexford Industrial is proposing to demolish the existing office campus at 2411 N
 {{< cta href="/testify/" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
-The Planning Commission hearing is your opportunity to be heard directly. Public comment from residents, parents, and health advocates makes a real difference in the record.
+Every Planning Commission and City Council meeting until the decision is an opportunity to be heard — and the hearing itself is where your comment enters the official record. Public comment from residents, parents, and health advocates makes a real difference.
 
 <div class="cta-secondary-row">
 {{< cta href="/issues/" variant="secondary" >}}Learn the Issues{{< /cta >}}
@@ -56,7 +56,7 @@ The Planning Commission hearing is your opportunity to be heard directly. Public
 - **Applicant**: Rexford Industrial Realty, Inc.
 - **Zoning**: M-2 (Industrial Manufacturing), Light Industrial General Plan
 - **Status**: Draft Environmental Report released April 16, 2026; while the initial public comment period closed on May 6, 2026, public comments may still be submitted to the official administrative record until the conclusion of the Planning Commission public hearing
-- **Next step**: Planning Commission meeting, Monday, September 21 at 5:30 PM — expected hearing on the project (agenda not yet posted)
+- **Next step**: keep showing up — every Planning Commission and City Council meeting until the decision; see [Upcoming City Meetings](#upcoming-city-meetings)
 - **Entitlements**: Conditional Use Permit (CUP 25-0013), Major Site Plan Review (SP-1180)
 
 ## Frequently Asked Questions About 2411 Glassell
@@ -108,6 +108,8 @@ The Planning Commission can:
 - **Impose strict conditions of approval** (hours restrictions, truck routing, emissions controls, buffer protections)
 - **Recommend that the City prepare an Environmental Impact Report** before approving the project
 
+We're asking for the first one — **denial**. The others are fallbacks, not the goal.
+
 ### If the Planning Commission Approves, There's Still an Appeal
 
 If the PC approves, there's typically a **10–15 day window** to appeal the decision to the City Council.
@@ -118,8 +120,7 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 - 📅 **May 6, 2026** → Comment period closes *(past)*
 - 📅 **Sept 8, 2026** → City Council meeting — public comment only, project not on agenda *(past)*
 - 📅 **Sept 10, 2026** → Planning Commission meeting — public comment only, project not on agenda *(past)*
-- 📅 **Sept 21, 2026** → Planning Commission regular session, 5:30 PM — expected hearing on the project *(agenda not yet posted)*
-- 📅 **Sept 22, 2026** → City Council regular session, 6:00 PM — public comment open *(agenda not yet posted)*
+- 📅 **Upcoming meetings** → see [Upcoming City Meetings](#upcoming-city-meetings), updated as the City posts dates
 - 📅 **10–15 days after PC** → Appeal window to City Council (if needed)
 
 ## What Happens at the Planning Commission Hearing?
@@ -138,8 +139,9 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 
 **Neighbors of 2411 (UNA)** is an organized group of residents, parents, and community members who have reviewed the technical documents and are committed to:
 
-- Ensuring this project undergoes proper environmental review (EIR)
-- Negotiating strict operational conditions if the project is approved
+- Getting this project denied
+- Failing that, making sure it isn't approved without a full Environmental Impact Report (EIR)
+- Negotiating strict operational conditions if it's approved anyway
 - Protecting children's health and neighborhood quality of life
 
 [Learn more & get involved →](/testify/)
@@ -156,7 +158,7 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 
 ---
 
-**This warehouse would fundamentally change the character of this neighborhood — 24 hours a day, every day, forever. The environmental review falls short. The Planning Commission needs to hear from you.**
+**This warehouse would fundamentally change the character of this neighborhood — 24 hours a day, every day, forever. The Planning Commission should deny it — and it needs to hear from you at every meeting until it does.**
 
 <div class="cta-primary-row">
 {{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}

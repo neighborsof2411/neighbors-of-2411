@@ -137,24 +137,6 @@
         "isCritical": false
       },
       {
-        "name": "Planning Commission Hearing (Tentative)",
-        "date": "2026-09-21",
-        "time": "17:30",
-        "status": "tentative",
-        "location": "City Council Chamber, 300 E. Chapman Avenue",
-        "details": "Regular session on the City calendar; expected hearing on the project, agenda not yet posted",
-        "isCritical": true
-      },
-      {
-        "name": "City Council Meeting (public comment)",
-        "date": "2026-09-22",
-        "time": "18:00",
-        "status": "scheduled",
-        "location": "City Council Chamber, 300 E. Chapman Avenue",
-        "details": "Regular session 6:00 PM (closed session 5:00 PM); public comment open; agenda not yet posted",
-        "isCritical": false
-      },
-      {
         "name": "PC Decision",
         "date": null,
         "status": "pending",
@@ -174,12 +156,7 @@
       "duration": 20,
       "status": "closed"
     },
-    "nextHearing": {
-      "type": "Planning Commission",
-      "tentativeDates": ["2026-09-21"],
-      "notificationDaysBeforeConfirmation": 10,
-      "status": "tentative"
-    }
+    "_upcomingMeetings": "Upcoming meetings live in data/meetings.yaml (rendered on the homepage) -- not here."
   },
   "contacts": {
     "cityStaff": [
@@ -298,7 +275,7 @@
       "City of Orange Planning Division website",
       "Neighbors of 2411 project records"
     ],
-    "nextUpdateNeeded": "Planning Commission hearing date confirmation (10 days before hearing)",
+    "nextUpdateNeeded": "Keep data/meetings.yaml current as the City posts Planning Commission and City Council dates",
     "claudeCodeUsage": "Pass this entire JSON to Claude Code artifact for website construction"
   }
 }

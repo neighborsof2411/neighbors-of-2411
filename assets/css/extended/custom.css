@@ -622,6 +622,16 @@ a.button, .button {
 }
 .post-content th { background: var(--tertiary); text-align: left; }
 
+/* ---------- Upcoming meetings (homepage; data/meetings.yaml) ---------- */
+
+.meeting-list { display: flex; flex-direction: column; gap: 0.85rem; margin: 1rem 0; }
+.meeting-list .callout { margin: 0; }
+.meeting-when { font-weight: 700; font-size: 1.05rem; margin: 0 0 0.35rem; }
+.meeting-meta { font-size: 0.9rem; margin: 0.35rem 0 0; }
+.meeting-meta .doc-badge { margin-bottom: 0; vertical-align: middle; }
+.meeting-days { font-weight: 700; }
+.meeting-past { display: none; }
+
 /* ---------- Print ---------- */
 
 @media print {

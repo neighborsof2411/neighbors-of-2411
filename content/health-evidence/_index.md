@@ -130,7 +130,7 @@ The District has a duty of care to protect students from known environmental hea
 - [ ] Demand an independent health impact analysis using USC CHS findings
 - [ ] Require baseline air quality and health monitoring before construction
 - [ ] Mandate ongoing, developer-funded health surveillance during operations
-- [ ] Support the community's EIR demand
+- [ ] Support the community's call to deny the project — and, failing that, to require a full EIR
 - [ ] Push for health-protective conditions if approved (no 24/7 ops near school, no cold storage, zero-emission equipment, independent monitoring)
 - [ ] Consider a board resolution creating a public record of District concern
 
@@ -138,10 +138,10 @@ The District has a duty of care to protect students from known environmental hea
 
 You have direct standing to submit public comment — health and safety of students is your core jurisdiction.
 
-> *"I am a [parent / teacher / school nurse] at Fletcher Elementary. The USC Children's Health Study shows that children living near diesel truck traffic have increased asthma risk and measurable lung damage. This warehouse generates approximately 163 daily diesel truck trips 0.25 miles from our school. I urge the Planning Commission to demand a full Environmental Impact Report examining health impacts on our students, and to impose strict conditions if the project is approved."*
+> *"I am a [parent / teacher / school nurse] at Fletcher Elementary. The USC Children's Health Study shows that children living near diesel truck traffic have increased asthma risk and measurable lung damage. This warehouse generates approximately 163 daily diesel truck trips 0.25 miles from our school. I urge the Planning Commission to deny this project. If it won't, it should at minimum require a full Environmental Impact Report examining health impacts on our students, and impose strict conditions."*
 
 - [ ] Share USC CHS findings with school administrators
-- [ ] Propose the District submit formal comments supporting the EIR demand
+- [ ] Propose the District submit formal comments supporting denial, with a full EIR as the minimum
 - [ ] Encourage other parents and educators to attend and speak up
 
 ### For Health Professionals
@@ -157,7 +157,7 @@ Your expertise and public comment carry particular weight with decision-makers.
 
 Health impacts on sensitive receptors (schools) are considered "significant" under CEQA.
 
-- [ ] Require a full Environmental Impact Report
+- [ ] Deny the project as proposed; failing that, require a full Environmental Impact Report
 - [ ] Impose health-protective conditions if approved (no 24/7 ops, independent monitoring, diesel-free equipment, truck routing away from school)
 - [ ] Establish a health monitoring baseline before operations begin
 - [ ] Apply an environmental justice lens given Orange's diverse, working-class community
@@ -166,8 +166,8 @@ Health impacts on sensitive receptors (schools) are considered "significant" und
 
 - [ ] Share this page on social media and neighborhood apps
 - [ ] Bring these findings to community meetings
-- [ ] Contact city council members requesting health-protective conditions or an EIR
-- [ ] Attend the Planning Commission hearing and speak up
+- [ ] Contact city council members asking them to deny the project — or at minimum require an EIR and health-protective conditions
+- [ ] Attend every Planning Commission and City Council meeting and speak up
 
 <div class="cta-primary-row">
 {{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Submit Public Comment About Health Impacts →{{< /cta >}}
@@ -188,6 +188,6 @@ Health impacts on sensitive receptors (schools) are considered "significant" und
 
 The debate over the 2411 N. Glassell warehouse should not be abstract. It is about the health of real children — students at Fletcher Elementary and families in the neighborhood, all of whom deserve clean air. The USC Children's Health Study gives us peer-reviewed, locally grounded evidence: asthma risk increases, lung development is impaired, respiratory infections become more common, and school absences rise near concentrated diesel sources.
 
-**The Planning Commission must**: demand a full Environmental Impact Report examining health impacts on Fletcher Elementary and nearby residents; impose strict conditions if approved (no 24/7 operations, diesel-free equipment, independent health monitoring); and prioritize child health in its decision.
+**The Planning Commission should deny this project.** If it won't, it should at minimum require a full Environmental Impact Report examining health impacts on Fletcher Elementary and nearby residents, impose strict conditions (no 24/7 operations, diesel-free equipment, independent health monitoring), and prioritize child health in its decision.
 
 {{< share text="The USC Children's Health Study documents how diesel pollution harms children's lungs. A 24/7 warehouse is proposed a quarter-mile from Fletcher Elementary in Orange, CA." >}}

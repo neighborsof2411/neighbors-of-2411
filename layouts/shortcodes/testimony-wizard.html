@@ -55,10 +55,10 @@
       <div class="form-row">
         <label for="wiz-recommendation">What do you want the Commission to do?</label>
         <select id="wiz-recommendation" name="recommendation">
-          <option value="eir">Demand a full Environmental Impact Report</option>
+          <option value="deny">Deny the project</option>
+          <option value="both">Deny the project — and if it moves forward, require an EIR and strict conditions</option>
+          <option value="eir">Require a full Environmental Impact Report (the fallback)</option>
           <option value="conditions">Impose strict conditions of approval (no 24/7 ops, truck caps, monitoring)</option>
-          <option value="both">Demand an EIR, and impose strict conditions if approved anyway</option>
-          <option value="deny">Deny the project outright</option>
         </select>
       </div>
       <button type="button" class="button wizard-back" data-back="2">← Back</button>
@@ -124,10 +124,10 @@
   };
 
   var RECOMMENDATION_TEXT = {
-    'eir': 'I urge the Planning Commission to demand a full Environmental Impact Report before this project can be approved.',
-    'conditions': 'I urge the Planning Commission to impose strict, enforceable conditions of approval: no 24/7 operations, a cap on daily truck trips, zero-emission equipment requirements, and independent monitoring.',
-    'both': 'I urge the Planning Commission to demand a full Environmental Impact Report — and if the project moves forward regardless, to impose strict, enforceable conditions: no 24/7 operations, capped truck trips, and independent monitoring.',
-    'deny': 'I urge the Planning Commission to deny this project as proposed.'
+    'deny': 'I urge the Planning Commission to deny this project as proposed.',
+    'both': 'I urge the Planning Commission to deny this project as proposed. If it moves forward regardless, it should not be approved on this Mitigated Negative Declaration — require a full Environmental Impact Report, and impose strict, enforceable conditions: no 24/7 operations, capped truck trips, and independent monitoring.',
+    'eir': 'I urge the Planning Commission not to approve this project on the current Mitigated Negative Declaration, and to require a full Environmental Impact Report first.',
+    'conditions': 'I urge the Planning Commission to impose strict, enforceable conditions of approval: no 24/7 operations, a cap on daily truck trips, zero-emission equipment requirements, and independent monitoring.'
   };
 
   function $(sel, ctx) { return (ctx || wizard).querySelector(sel); }
@@ -203,7 +203,7 @@
       checkedFacts.forEach(function (f) { lines.push('- ' + f); });
       lines.push('');
     }
-    lines.push(RECOMMENDATION_TEXT[recommendation] || RECOMMENDATION_TEXT['eir']);
+    lines.push(RECOMMENDATION_TEXT[recommendation] || RECOMMENDATION_TEXT['deny']);
     lines.push('');
     lines.push('Thank you for your time and for protecting our neighborhood.');
 

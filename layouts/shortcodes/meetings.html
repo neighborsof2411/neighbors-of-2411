@@ -1,0 +1,65 @@
+<!--
+  Upcoming City meetings. Reads data/meetings.yaml -- the single place dates
+  are maintained -- and renders a "next meeting" box plus one card per
+  meeting. Meetings whose date has passed are hidden in the browser, so the
+  page stays correct between deploys; the YAML can be pruned whenever.
+
+  Cards reuse the existing callout styles: red (warning) when 2411 Glassell
+  is expected or confirmed on the agenda, green (alert) when it isn't.
+-->
+{{ $d := hugo.Data.meetings }}
+{{ $today := now.Format "2006-01-02" }}
+{{ $sorted := sort $d.upcoming "date" }}
+{{ $next := dict }}
+{{ range $sorted }}{{ if and (not $next) (ge .date $today) }}{{ $next = . }}{{ end }}{{ end }}
+
+<div class="countdown-box" id="next-meeting">
+  <p class="countdown-label">⚠️ Next City Meeting</p>
+  <p class="countdown-dates" id="next-meeting-when">{{ with $next }}{{ dateFormat "Monday, January 2, 2006" .date }} · {{ .time }} — {{ .body }}{{ else }}No upcoming meetings posted yet{{ end }}</p>
+  <p class="countdown-timer" id="next-meeting-days" aria-live="polite">{{ with $next }}Calculating days remaining&hellip;{{ else }}Check the City calendar for the next date.{{ end }}</p>
+  <p class="countdown-note">Dates keep changing until the City sends official notice. The <a href="{{ $d.calendar_url }}">City&rsquo;s meeting calendar</a> is the authoritative schedule &mdash; check it before you go.</p>
+</div>
+
+<div class="meeting-list" id="meeting-list">
+{{ range $sorted }}
+  <div class="callout {{ if eq .project "not on agenda" }}callout--alert{{ else }}callout--warning{{ end }}" data-date="{{ .date }}">
+    <p class="meeting-when">{{ dateFormat "Monday, January 2, 2006" .date }} · {{ .time }} — {{ .body }}</p>
+    <p class="meeting-meta">
+      {{- if eq .project "confirmed" }}<span class="doc-badge">2411 Glassell is on this agenda</span>
+      {{- else if eq .project "expected" }}<span class="doc-badge">Expected: 2411 Glassell hearing</span>
+      {{- else }}<strong>Project not on this agenda</strong> &mdash; public comment is still open{{ end }}
+      <span class="meeting-days" data-days></span>
+    </p>
+    {{ with .note }}<p>{{ . }}</p>{{ end }}
+    <p class="meeting-meta">{{ .location }} &middot; {{ with .agenda }}<a href="{{ . }}">Agenda</a>{{ else }}Agenda not yet posted{{ end }}</p>
+  </div>
+{{ end }}
+</div>
+
+<p class="meeting-meta">Full schedule, agendas, and remote-participation details: <a href="{{ $d.calendar_url }}">City of Orange meeting calendar</a>.</p>
+
+<script>
+(function () {
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var next = null;
+  var cards = document.querySelectorAll('#meeting-list [data-date]');
+  Array.prototype.forEach.call(cards, function (el) {
+    var d = new Date(el.getAttribute('data-date') + 'T00:00:00');
+    var days = Math.round((d - today) / 864e5);
+    if (days < 0) { el.classList.add('meeting-past'); return; }
+    var span = el.querySelector('[data-days]');
+    if (span) span.textContent = '· ' + (days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : 'In ' + days + ' days');
+    if (!next) next = { el: el, days: days };
+  });
+  var when = document.getElementById('next-meeting-when');
+  var out = document.getElementById('next-meeting-days');
+  if (!when || !out) return;
+  if (!next) {
+    when.textContent = 'No upcoming meetings posted yet';
+    out.textContent = 'Check the City calendar for the next date.';
+    return;
+  }
+  when.textContent = next.el.querySelector('.meeting-when').textContent;
+  out.textContent = next.days === 0 ? 'Today' : next.days === 1 ? 'Tomorrow' : next.days + ' days away';
+})();
+</script>

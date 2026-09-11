@@ -13,15 +13,11 @@ You can still submit public comment — in writing or in person — **at the Pla
 
 ## Upcoming Meetings
 
-**Monday, September 21, 2026 · 5:30 PM — Planning Commission.** Now on the City's calendar as a regular session. This is expected to be the rescheduled hearing where the Commission actually considers the project; the agenda hasn't been posted yet, so the project's place on it isn't confirmed — but plan to attend.
-
-**Tuesday, September 22, 2026 · 6:00 PM — City Council.** Regular session, with public comment open (a closed session precedes it at 5:00 PM). The agenda hasn't been posted yet.
-
-Both meet in the City Council Chamber at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas, times, and remote-participation details for every City meeting are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — check it before you go, since agendas can change.
+Dates are changing until the City sends official notice, so we keep them in one place: **[Upcoming City Meetings on the homepage](/#upcoming-city-meetings)**, alongside the [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx). Come to every Planning Commission and City Council meeting until this project is decided — public comment is open at each one, and a room full of neighbors is what commissioners remember. Meetings are held in the City Council Chamber, Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866.
 
 ## Quick Start: Three Ways to Participate
 
-**1. Attend & speak at the Planning Commission hearing (most powerful).** When: Monday, September 21, 2026 at 5:30 PM (on the City's calendar; agenda not yet posted). Where: City Council Chamber, Orange City Hall, 300 East Chapman Avenue. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
+**1. Attend & speak at the Planning Commission hearing (most powerful).** When: see [Upcoming City Meetings](/#upcoming-city-meetings) — the date keeps moving until the City sends notice. Where: City Council Chamber, Orange City Hall, 300 East Chapman Avenue. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
 
 **2. Submit written comments at the hearing.** Even if you can't speak in person, you can submit a written comment letter (usually 1–2 pages) to be read into the record.
 
@@ -63,7 +59,7 @@ Pick one or two specific facts from the technical analysis. Keep it simple — s
 1. **Introduction** (15 sec): "My name is [Name]. I live at [Address/Location]. I'm speaking in opposition to this project because [core message]."
 2. **Impact** (30 sec): what this project would do to you/your family/your neighborhood — be specific.
 3. **Evidence** (45 sec): cite one or two specific pieces of evidence from the record.
-4. **Recommendation** (15 sec): "I urge the Planning Commission to [demand an EIR / deny this project / impose strict conditions]."
+4. **Recommendation** (15 sec): "I urge the Planning Commission to deny this project." Then the fallback, if you want one: "If you won't deny it, don't approve it on this review — require a full EIR [and strict conditions]."
 5. **Closing** (10 sec): "Thank you for your time and for protecting our neighborhood."
 
 ### Step 4: Practice
@@ -96,7 +92,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > The SCAQMD, the government agency responsible for air quality, identified seven serious deficiencies in this analysis. One key problem: the air quality analysis only modeled 5 loading dock doors, but the actual site plan has 36. If corrected, the cancer risk could be seven times higher.
 >
-> I don't accept a warehouse next to my children's school with an inadequate environmental analysis. I urge you to demand a full Environmental Impact Report before approving this project.
+> I don't accept a warehouse next to my children's school. I urge you to deny this project. And if you won't deny it, don't approve it on this analysis — require a full Environmental Impact Report first.
 >
 > Thank you."
 
@@ -112,7 +108,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > A warehouse operating 24 hours a day will disrupt sleep for me, my family, and my neighbors. Sleep disruption causes documented health effects. This impact is significant.
 >
-> I ask the Planning Commission to either demand an EIR or impose a strict condition: no 24/7 operations, and limit truck traffic to 7 AM–10 PM.
+> I ask the Planning Commission to deny this project. If it moves forward anyway, at minimum require an EIR and a strict condition: no 24/7 operations, and limit truck traffic to 7 AM–10 PM.
 >
 > Thank you."
 
@@ -132,7 +128,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > Fourth, the traffic analysis acknowledges the southern driveway will operate at Level of Service E/F, and the applicant calls this 'unavoidable.' An unavoidable significant impact cannot be waved through by an IS/MND.
 >
-> Any one of these is grounds for an EIR. Together, they demand one. I urge you to require a full Environmental Impact Report before this project can be approved.
+> Any one of these is grounds for an EIR. Together, they demand one. I urge you to deny this project as proposed — and if you don't, you cannot approve it on this Mitigated Negative Declaration. A full Environmental Impact Report is required first.
 >
 > Thank you."
 
@@ -148,7 +144,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > When a project operates this close to significance thresholds, with this many deficiencies identified by government agencies, a full Environmental Impact Report is warranted.
 >
-> I'm not asking the Commission to deny the project. I'm asking you to require proper environmental review and consider stricter operational conditions — limiting 24/7 operations, capping truck trips, or excluding uses like cold storage.
+> I'm asking the Commission to deny this project as proposed. If you aren't prepared to do that, then at minimum require proper environmental review — a full EIR — and stricter operational conditions: limiting 24/7 operations, capping truck trips, or excluding uses like cold storage.
 >
 > This is good governance: full review, enforceable conditions, and accountability.
 >
