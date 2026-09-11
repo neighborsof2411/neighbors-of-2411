@@ -87,24 +87,25 @@
 
   var FACTS = {
     'air-quality': [
-      { id: 'aq-cancer', label: 'Modeled cancer risk is 9.48 per million — only 0.52 below the 10 per million significance threshold.' },
-      { id: 'aq-docks', label: 'The health risk analysis modeled only 5 loading dock doors, but the site plan shows 36 — actual risk could be far higher.' },
-      { id: 'aq-scaqmd', label: 'The South Coast Air Quality Management District (SCAQMD) identified 7 technical deficiencies in the air quality analysis.' },
-      { id: 'aq-generator', label: 'The analysis assumes just 50 hours/year of backup generator use; SCAQMD says a realistic estimate is 200+ hours.' }
+      { id: 'aq-cancer', label: "The health risk assessment's own result is 10.07 per million at the closest home — over the 10 per million significance threshold. It reaches 9.48 only by requiring cleaner construction equipment (Mitigation Measure AQ-1)." },
+      { id: 'aq-docks', label: "The health risk assessment modeled only 5 loading dock doors, but the MND's own Option 2 site plan (page 24) shows 36 — and none of the technical studies analyzes that layout." },
+      { id: 'aq-scaqmd', label: 'The South Coast Air Quality Management District (SCAQMD) raised seven areas of concern with the air quality analysis and noted the unmitigated cancer risk exceeds the threshold.' },
+      { id: 'aq-generator', label: 'The analysis assumes the diesel fire water pump runs just 50 hours a year; SCAQMD says permits allow up to 200 hours and the analysis should evaluate that.' }
     ],
     'noise': [
       { id: 'n-margin', label: "Modeled nighttime dock noise is 53.6 dBA, above the City's baseline 45/50 dBA nighttime standards — the MND avoids a significant-impact finding only by applying an ambient-noise adjustment that raises the effective threshold to about 57-58 dBA." },
-      { id: 'n-alarms', label: 'The noise analysis does not model backup alarms, which run 75+ dBA on heavy vehicles.' },
+      { id: 'n-alarms', label: "The noise study assumes trucks unloading at only 3 docks at a time (the plan allows 36) and never applies the City's 5 dBA stricter standard for tonal, repetitive sounds like back-up alarms (Municipal Code § 8.24.040(D))." },
+      { id: 'n-nomit', label: 'The MND proposes no noise mitigation at all — it states that "no mitigation measures are required" (MND page 121).' },
       { id: 'n-247', label: 'With 24/7 operations, peak loading-dock activity can occur at night, during sleeping hours.' }
     ],
     'traffic': [
       { id: 't-trips', label: 'The project adds 810 net new daily passenger-car-equivalent (PCE) trips, a traffic engineering measure that weights trucks more heavily than cars.' },
-      { id: 't-los', label: 'The southern truck driveway is projected to operate at Level of Service E/F (severe congestion) — called "unavoidable" by the applicant.' },
-      { id: 't-school', label: 'Fletcher Elementary is a quarter-mile away; many children walk or bike on routes trucks will use.' }
+      { id: 't-los', label: 'The southern truck driveway is projected to operate at Level of Service E/F (severe congestion) — called "unavoidable" — and its delay gets worse in every future-year scenario the study ran.' },
+      { id: 't-school', label: 'The MND says trucks will use Glassell Street to SR-91 and stay off school streets — but no condition of approval requires that route (MND page 91).' }
     ],
     'land-use': [
       { id: 'lu-2417', label: 'A 24/7 industrial warehouse would operate just 54 feet from single-family homes.' },
-      { id: 'lu-carb', label: "CARB siting guidance recommends against sensitive uses like schools locating near high-traffic warehouse sites." },
+      { id: 'lu-carb', label: "CARB's siting handbook recommends keeping homes and schools 1,000 feet from a busy distribution center; the closest homes here are 54 and 150 feet away." },
       { id: 'lu-setback', label: 'The 20-foot residential setback required by the M-2 zone was not designed for 24/7, high-intensity warehouse operations.' }
     ],
     'health': [
@@ -125,9 +126,9 @@
 
   var RECOMMENDATION_TEXT = {
     'deny': 'I urge the Planning Commission to deny this project as proposed.',
-    'both': 'I urge the Planning Commission to deny this project as proposed. If it moves forward regardless, it should not be approved on this Mitigated Negative Declaration — require a full Environmental Impact Report, and impose strict, enforceable conditions: no 24/7 operations, capped truck trips, and independent monitoring.',
+    'both': 'I urge the Planning Commission to deny this project as proposed. If it moves forward regardless, it should not be approved on this Mitigated Negative Declaration — require a full Environmental Impact Report, and impose strict, enforceable conditions: no 24/7 operations, a cap on daily trucks at the level the MND analyzed (as SCAQMD recommended), a binding truck route away from homes and schools, and independent monitoring.',
     'eir': 'I urge the Planning Commission not to approve this project on the current Mitigated Negative Declaration, and to require a full Environmental Impact Report first.',
-    'conditions': 'I urge the Planning Commission to impose strict, enforceable conditions of approval: no 24/7 operations, a cap on daily truck trips, zero-emission equipment requirements, and independent monitoring.'
+    'conditions': 'I urge the Planning Commission to impose strict, enforceable conditions of approval: no 24/7 operations, a cap on daily trucks at the level the MND analyzed (as SCAQMD recommended), a binding truck route away from homes and schools, zero-emission equipment requirements, and independent monitoring.'
   };
 
   function $(sel, ctx) { return (ctx || wizard).querySelector(sel); }

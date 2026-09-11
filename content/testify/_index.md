@@ -45,21 +45,21 @@ Dates are changing until the City sends official notice, so we keep them in one 
 Don't try to cover every issue — focus on what directly affects you or what you feel most passionate about:
 
 - **Sleep & noise**: "This warehouse operates 24/7, and I will lose sleep from noise and truck traffic." *(Appendix K: 53.6 dBA modeled vs. City's 45/50 dBA baseline standards)*
-- **Children's health**: "My children attend Fletcher Elementary, a quarter-mile away. They breathe diesel exhaust from this 24/7 warehouse." *(Appendix B: cancer risk 9.48 vs. 10 per million; [Health Evidence →](/health-evidence/))*
-- **Air quality analysis**: "The air quality analysis is incomplete — SCAQMD identified 7 deficiencies, and the dock door count is wrong (36 vs. 5 modeled)." *(SCAQMD letter, Appendix L Footnote 1)*
-- **Traffic safety**: "Adding approximately 163 daily truck trips creates a safety hazard at the school crossing." *(Appendix L: southern driveway LOS E/F)*
+- **Children's health**: "My children attend Fletcher Elementary, a quarter-mile away. They breathe diesel exhaust from this 24/7 warehouse." *(Appendix B: cancer risk 10.07 per million before mitigation — over the 10 per million threshold — and 9.48 after; [Health Evidence →](/health-evidence/))*
+- **Air quality analysis**: "The air quality analysis is incomplete — SCAQMD raised seven areas of concern, and the health risk model used 5 dock doors when the plan the City can approve has 36." *(SCAQMD letter; MND at 24, Table 3; Appendix B at 7)*
+- **Traffic safety**: "The truck driveway already fails, it gets worse in every year the study looks at, and nothing requires those 163 daily truck trips to stay off school streets." *(Appendix L at 18–33: southern driveway LOS F; MND at 91: no binding truck route)*
 - **Procedural/legal**: "The law requires an EIR when there is substantial evidence of significant impacts — and this analysis shows exactly that." *(no personal impact required)*
 
 ### Step 2: Gather Supporting Facts
 
-Pick one or two specific facts from the technical analysis. Keep it simple — say *"The South Coast Air Quality Management District identified seven technical deficiencies in the air quality analysis"* rather than reciting jargon like dispersion-model names.
+Pick one or two specific facts from the technical analysis. Keep it simple — say *"The South Coast Air Quality Management District raised seven areas of concern with the air quality analysis, and the unmitigated cancer risk is over the threshold"* rather than reciting jargon like dispersion-model names.
 
 ### Step 3: Write Out Your Public Comment (2–3 minutes)
 
 1. **Introduction** (15 sec): "My name is [Name]. I live at [Address/Location]. I'm speaking in opposition to this project because [core message]."
 2. **Impact** (30 sec): what this project would do to you/your family/your neighborhood — be specific.
 3. **Evidence** (45 sec): cite one or two specific pieces of evidence from the record.
-4. **Recommendation** (15 sec): "I urge the Planning Commission to deny this project." Then the fallback, if you want one: "If you won't deny it, don't approve it on this review — require a full EIR [and strict conditions]."
+4. **Recommendation** (15 sec): "I urge the Planning Commission to deny this project." Then the fallback, if you want one: "If you won't deny it, don't approve it on this review — require a full EIR [and strict conditions]." For conditions, start with [what SCAQMD says the City should require](/issues/#what-scaqmd-says-the-city-should-require).
 5. **Closing** (10 sec): "Thank you for your time and for protecting our neighborhood."
 
 ### Step 4: Practice
@@ -86,11 +86,11 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 > "My name is Sarah Chen, and I live on Fletcher Avenue, two blocks from the proposed warehouse. I have a first-grader and a third-grader who attend Fletcher Elementary, a quarter-mile north of this site.
 >
-> Every day, my children walk to school on streets that will be congested with approximately 163 additional diesel truck trips. The warehouse operates 24/7, meaning trucks would be arriving and departing at all hours.
+> Every day, my children walk to school along Fletcher Avenue and Glassell Street. The traffic study projects approximately 163 additional diesel truck trips a day, and nothing in this approval requires those trucks to stay on any particular route. The warehouse operates 24/7, meaning trucks would be arriving and departing at all hours.
 >
-> I reviewed the health risk assessment in the environmental document. It shows the diesel particulate matter from this project would create a cancer risk of 9.48 per million — the significance threshold is 10 per million. That's a margin of 0.52 — essentially zero.
+> I reviewed the health risk assessment in the environmental document. Before mitigation, it shows a cancer risk of 10.07 per million at the closest home — over the 10 per million significance threshold. It gets down to 9.48 only by requiring cleaner construction equipment. That's a margin of 0.52 — essentially zero — for an operation that will run for decades.
 >
-> The SCAQMD, the government agency responsible for air quality, identified seven serious deficiencies in this analysis. One key problem: the air quality analysis only modeled 5 loading dock doors, but the actual site plan has 36. If corrected, the cancer risk could be seven times higher.
+> The SCAQMD, the government agency responsible for air quality, raised seven areas of concern with this analysis. And here is a problem its letter doesn't even reach: the health risk assessment modeled 5 loading dock doors, but the MND's own Option 2 site plan has 36. Nobody has analyzed the project that could actually be built.
 >
 > I don't accept a warehouse next to my children's school. I urge you to deny this project. And if you won't deny it, don't approve it on this analysis — require a full Environmental Impact Report first.
 >
@@ -100,11 +100,11 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 ### Example 2: Neighbor Concerned About Noise
 
-> "My name is Mike Rodriguez. I live on Fletcher Avenue, 54 feet from the proposed warehouse site.
+> "My name is Mike Rodriguez. I live east of the site — in the homes the noise study calls the east receptor, about 150 feet from the property line.
 >
 > The noise analysis in Appendix K shows nighttime dock operations would generate 53.6 decibels at my house. The City's own baseline nighttime noise standards are 45 decibels (General Plan) and 50 decibels (Municipal Code) — this project is modeled above both. The MND avoids calling this significant only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at my home to around 57–58 decibels because the existing background noise is already elevated.
 >
-> This analysis doesn't even model backup alarms, which are required on heavy vehicles and sound at 75 decibels or higher. It doesn't model refrigeration units, common in Rexford warehouses. And with 24/7 operations, peak dock activity happens at night, when I'm sleeping.
+> That analysis assumes trucks unloading at three docks at a time — half of the five docks in the version it studied. The plan you are being asked to approve allows 36. It never applies the City's own noise code, which sets a 5-decibel stricter limit for tonal, repetitive sounds like back-up alarms. And the MND proposes no noise mitigation at all — it says none is required. With 24/7 operations, peak dock activity happens at night, when I'm sleeping.
 >
 > A warehouse operating 24 hours a day will disrupt sleep for me, my family, and my neighbors. Sleep disruption causes documented health effects. This impact is significant.
 >
@@ -120,9 +120,9 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > Under CEQA, when there is substantial evidence that a project may have significant environmental impacts, a full Environmental Impact Report is required. We don't need to prove the impacts will occur — just show a fair argument that they might.
 >
-> First, the South Coast Air Quality Management District sent a formal letter identifying seven technical deficiencies in the air quality analysis.
+> First, the South Coast Air Quality Management District sent a formal comment letter raising seven areas of concern with the air quality analysis — and noting that the unmitigated cancer risk exceeds the significance threshold.
 >
-> Second, the air quality analysis modeled only 5 loading dock doors, but Footnote 1 of the traffic study confirms the site plan has 36 — a sevenfold underestimation of emissions.
+> Second, the health risk assessment modeled only 5 loading dock doors, but the MND's own project description, at page 24, shows an Option 2 layout with 36 — and none of the technical studies analyzes that layout.
 >
 > Third, the noise analysis shows nighttime dock operations at 53.6 decibels, above the City's baseline 45- and 50-decibel nighttime standards — the MND avoids a significant-impact finding only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at the nearest home to roughly 57–58 decibels.
 >
@@ -140,9 +140,9 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > I'm not opposed to development — I support industrial uses in the M-2 zone. But this project raises specific concerns that deserve proper environmental review.
 >
-> The warehouse is designed for 24/7 operations a quarter-mile from Fletcher Elementary and 54 feet from homes. The analysis shows the project pushing against the City's own significance thresholds: cancer risk 9.48 per million (threshold 10), nighttime noise 53.6 dBA (above the City's 45/50 dBA baseline standards, though under its ambient-adjusted threshold), and an acknowledged Level of Service E/F traffic impact.
+> The warehouse is designed for 24/7 operations a quarter-mile from Fletcher Elementary and 54 feet from homes. The analysis shows the project pushing against the City's own significance thresholds: cancer risk 10.07 per million before mitigation and 9.48 after (threshold 10), nighttime noise 53.6 dBA (above the City's 45/50 dBA baseline standards, though under its ambient-adjusted threshold), and an acknowledged Level of Service E/F traffic impact.
 >
-> When a project operates this close to significance thresholds, with this many deficiencies identified by government agencies, a full Environmental Impact Report is warranted.
+> When a project operates this close to significance thresholds, with the regional air agency raising this many concerns, a full Environmental Impact Report is warranted.
 >
 > I'm asking the Commission to deny this project as proposed. If you aren't prepared to do that, then at minimum require proper environmental review — a full EIR — and stricter operational conditions: limiting 24/7 operations, capping truck trips, or excluding uses like cold storage.
 >
@@ -189,9 +189,9 @@ Respectfully submitted,
 
 **Avoid personal attacks.** Not: *"The developers are greedy and don't care about our community."* Instead: *"The developer's business model prioritizes warehouse density and 24/7 operations, which are incompatible with this neighborhood."*
 
-**Avoid unsupported claims.** Not: *"This warehouse will give everyone cancer."* Instead: *"The Health Risk Assessment models a cancer risk of 9.48 per million, close to the 10 per million significance threshold, with identified deficiencies that could push the risk higher."*
+**Avoid unsupported claims.** Not: *"This warehouse will give everyone cancer."* Instead: *"The Health Risk Assessment's own result is 10.07 per million before mitigation — over the 10 per million significance threshold — and 9.48 after, with the operation modeled at 5 dock doors instead of 36."*
 
-**Avoid legal conclusions unless you're an attorney.** Not: *"This violates the Clean Air Act."* Instead: *"The SCAQMD, the government agency responsible for air quality, identified deficiencies in this analysis."*
+**Avoid legal conclusions unless you're an attorney.** Not: *"This violates the Clean Air Act."* Instead: *"The SCAQMD, the government agency responsible for air quality, raised seven areas of concern with this analysis."*
 
 **What IS appropriate**: your personal experience, facts from the record, agency letters, your recommendation, and health/safety concerns.
 
