@@ -78,7 +78,9 @@ export async function onRequestPost({ request, env }) {
   return redirect(request, "/thanks/?form=" + formType);
 }
 
-export function onRequest({ request }) {
-  // Any non-POST hit (someone opening /api/sign in a browser) just goes to the petition.
+// GET only -- someone opening /api/sign in a browser is sent to the petition.
+// (Using onRequestGet, not onRequest: a catch-all onRequest would also
+// swallow POSTs and the duplicate check would never run.)
+export function onRequestGet({ request }) {
   return redirect(request, "/petition/");
 }

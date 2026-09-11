@@ -1,11 +1,16 @@
 <!--
-  Shared petition/join sign-on form. Posts to /api/sign -- a Cloudflare
-  Pages Function (functions/api/sign.js) that checks for a repeat
-  submission from the same email before forwarding to the site's one real
-  Formspree endpoint. The hidden _subject field is what distinguishes
-  petition signatures from join requests in the group's inbox, since both
-  reach the same Formspree form; form_type is the same distinction for the
-  duplicate check, derived from the subject so call sites needn't change.
+  Shared petition/join sign-on form. Posts straight to the site's one real
+  Formspree endpoint (see $endpoint below). The hidden _subject field
+  distinguishes petition signatures from join requests in the group's inbox,
+  since both reach the same Formspree form; form_type carries the same
+  distinction for the (currently inactive) duplicate check, derived from the
+  subject so call sites needn't change.
+
+  Duplicate detection: this site deploys as a Cloudflare Worker with static
+  assets (see wrangler.jsonc), NOT classic Pages, so the Pages-style
+  functions/api/sign.js does NOT run. Reinstating server-side dedupe means
+  moving that logic into a Worker entry script -- see the notes handed to
+  the user. Until then forms post directly to Formspree, exactly as before.
 
   Params (via a dict): idPrefix (unique per instance on a page, used for
   input ids), buttonLabel, subject (hidden _subject value), showComment,
@@ -20,8 +25,15 @@
 {{ $showPhone := eq (.showPhone | default "false") "true" }}
 {{ $showWhy := eq (.showWhy | default "false") "true" }}
 {{ $formType := cond (in $subject "Join") "join" "petition" }}
-<form class="petition-form" action="/api/sign" method="POST">
+{{- /* Live forms post straight to Formspree so sign-ups always work with no
+       backend. The /api/sign duplicate-check Function is deployed but stays
+       OFF until Cloudflare Pages Functions are confirmed building and a
+       SIGNERS KV namespace is bound (see functions/api/sign.js). To turn on
+       duplicate detection, change $endpoint to "/api/sign" -- one line. */}}
+{{ $endpoint := "https://formspree.io/f/xzdnrjaz" }}
+<form class="petition-form" action="{{ $endpoint }}" method="POST">
   <input type="hidden" name="_subject" value="{{ $subject }}">
+  <input type="hidden" name="_next" value="{{ absURL "thanks/" }}">
   <input type="hidden" name="form_type" value="{{ $formType }}">
   <div class="form-row">
     <label for="{{ $idPrefix }}-name">Name</label>
