@@ -11,11 +11,11 @@ The answer is documented in one of the most respected longitudinal health studie
 
 {{< callout type="alert" title="Fletcher Elementary by the Numbers" icon="📍" >}}
 - **School**: Fletcher Elementary (TK–6)
-- **Students**: ~497
+- **Students**: ~493 (Ed-Data, 2024–25)
 - **Estimated students with asthma**: ~40 (1 in 12 California children, per CDC data)
 - **Distance to warehouse site**: 0.25 miles (quarter-mile)
 - **Distance from homes to site**: 54 feet
-- **Background diesel particulate matter (MATES-V)**: 300–400 per million (already above regional average)
+- **Existing cancer risk from air toxics (MATES-V, as reported in the HRA)**: 300–400 per million, about 68% of it from diesel particulate matter (Appendix B at 11)
 {{< /callout >}}
 
 ## What Is the USC Children's Health Study?
@@ -33,7 +33,7 @@ McConnell R, Berhane K, Yao T, et al. Traffic, Susceptibility, and Childhood Ast
 
 **What the research shows**: children living within 500 meters (~1,600 feet) of busy roads with heavy vehicle traffic have significantly higher rates of asthma diagnosis and asthma-like symptoms. Risk increases with proximity and with traffic volume/intensity.
 
-**Why this applies to Fletcher Elementary**: the warehouse will generate approximately 163 net new daily truck trips — the primary source of diesel particulate matter and functionally a "new busy road" that did not previously exist on this block. The nearest homes are 54 feet from the site; Fletcher Elementary is 0.25 miles (1,320 feet) north. While the school is technically beyond the 500-meter high-risk zone, the concentration of diesel truck traffic creates an emissions source comparable to busy roadside proximity.
+**Why this applies to Fletcher Elementary**: the warehouse will generate approximately 163 net new daily truck trips — the primary source of diesel particulate matter and functionally a "new busy road" that did not previously exist on this block. The nearest homes are 54 feet from the site; Fletcher Elementary is about 0.25 miles (1,320 feet) away on Fletcher Avenue. While the school is technically beyond the 500-meter high-risk zone, the concentration of diesel truck traffic creates an emissions source comparable to busy roadside proximity.
 
 **What this means**: the addition of approximately 163 daily truck trips near a school creates a documented health risk factor for asthma in enrolled students — not speculation, but peer-reviewed research on Southern California children.
 {{< /finding-card >}}
@@ -54,7 +54,7 @@ Gauderman WJ, McConnell R, Gilliland F, et al. The Effect of Air Pollution on Lu
 | Acid Vapor | Vehicle exhaust, secondary formation | Airway damage and reduced lung capacity |
 | Diesel Particulate Matter (DPM) | Diesel engines, trucks, generators | Deep-lung deposits; carcinogenic |
 
-**Why this applies**: the warehouse will operate 24/7, generating approximately 163 daily truck trips, loading dock operations, backup generators, possible refrigerated trailers, and idling engines — each emitting NO2, elemental carbon, and diesel particulates.
+**Why this applies**: the warehouse will operate 24/7, generating approximately 163 daily truck trips, loading dock operations, a diesel fire water pump, possible refrigerated trailers, and idling engines — each emitting NO2, elemental carbon, and diesel particulates.
 
 **What this means**: children at Fletcher Elementary would be exposed throughout their elementary and middle school years — exactly the 10–18 age window the CHS identified as most vulnerable to pollution-related lung damage. A typical warehouse operates for 50+ years.
 {{< /finding-card >}}
@@ -84,7 +84,7 @@ McConnell R, Berhane K, Gilliland F, et al. Air Pollution and Bronchitic Symptom
 
 **What the research shows**: children already diagnosed with asthma are especially vulnerable to air pollution. On higher-pollution days, asthmatic children experience more bronchitic symptoms, increased medication use, more activity limitations, and more school absences.
 
-**Why this applies to Fletcher Elementary**: at ~497 students, and using CDC data showing 1 in 12 California children have asthma, we estimate ~40 children with asthma-related conditions currently enrolled — the District's most respiratory-vulnerable students, facing cumulative risk from an already-burdened air basin (MATES-V background: 300–400 per million).
+**Why this applies to Fletcher Elementary**: at ~493 students, and using CDC data showing 1 in 12 California children have asthma, we estimate ~40 children with asthma-related conditions currently enrolled — the District's most respiratory-vulnerable students, facing cumulative risk from an already-burdened air basin (MATES-V existing air-toxics cancer risk: 300–400 per million).
 
 **What this means**: a significant number of Fletcher Elementary students already live with asthma. A 24/7 warehouse adding chronic pollution next door creates a predictable health risk for this subpopulation.
 {{< /finding-card >}}
@@ -117,7 +117,7 @@ The findings are consistent with the National Academy of Sciences, American Acad
 
 ## Why the Current Environmental Analysis Falls Short
 
-The City's Draft Mitigated Negative Declaration includes an air quality analysis (Appendix B: Health Risk Assessment). However, it models **cancer risk only** — not asthma, lung function, or respiratory infections — doesn't reference USC CHS findings, doesn't account for the vulnerable population at a school 0.25 miles away, and uses modeling flagged as deficient by SCAQMD.
+The City's Draft Mitigated Negative Declaration includes an air quality analysis (Appendix B: Health Risk Assessment). However, it models **cancer risk and a chronic hazard index only** — not asthma incidence, lung-function growth, or respiratory infections — doesn't reference USC CHS findings, doesn't account for the vulnerable population at a school 0.25 miles away, and uses model versions SCAQMD flagged as outdated (SCAQMD letter at 3). Even so, its own unmitigated result is 10.07 per million — over the significance threshold (MND at 55).
 
 A proper health analysis would reference USC CHS and similar peer-reviewed literature, model health outcomes beyond cancer risk (asthma, lung function, absences), establish baseline health metrics at Fletcher Elementary, project health impacts over the warehouse's lifetime, analyze operational alternatives, and recommend ongoing monitoring with adaptive management.
 
@@ -182,7 +182,7 @@ Health impacts on sensitive receptors (schools) are considered "significant" und
 5. Gilliland FD, Avol E, Kinney PL, et al. Air Pollution Exposure, Lung Function, and Bronchial Responsiveness in Southwestern U.S. Children. *Epidemiology*. 2001;12(6):613-623. [doi.org/10.1097/00001648-200111000-00006](https://doi.org/10.1097/00001648-200111000-00006)
 6. Gauderman WJ, Urman R, Avol E, et al. Association of Improved Air Quality with Lung Development in Children. *New England Journal of Medicine*. 2015;372(10):905-913. [doi.org/10.1056/NEJMoa1414123](https://doi.org/10.1056/NEJMoa1414123)
 
-**Authoritative resources**: [USC Children's Health Study](https://healthstudy.usc.edu/study-findings/) · [CARB Siting Guidance](https://ww2.arb.ca.gov/our-work/programs/california-state-strategy-deployment-zero-emission-vehicles) · [OEHHA Air Quality](https://oehha.ca.gov/air-quality) · [South Coast AQMD](https://www.aqmd.gov/) · [American Lung Association](https://www.lung.org/clean-air) · [WHO Air Quality Guidelines](https://www.who.int/publications/i/item/9789240034228) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/)
+**Authoritative resources**: [USC Children's Health Study](https://healthstudy.usc.edu/study-findings/) · [CARB Air Quality and Land Use Handbook](https://www.aqmd.gov/docs/default-source/ceqa/handbook/california-air-resources-board-air-quality-and-land-use-handbook-a-community-health-perspective.pdf) · [OEHHA Air Quality](https://oehha.ca.gov/air-quality) · [South Coast AQMD](https://www.aqmd.gov/) · [American Lung Association](https://www.lung.org/clean-air) · [WHO Air Quality Guidelines](https://www.who.int/publications/i/item/9789240034228) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/)
 
 ## Bottom Line
 

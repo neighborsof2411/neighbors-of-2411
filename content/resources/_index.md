@@ -26,7 +26,7 @@ The nearest residences are about 54 feet north of the site (along Fletcher Avenu
 {{< /faq >}}
 
 {{< faq q="What's the developer's background?" >}}
-Rexford Industrial Realty, Inc. is a publicly traded Real Estate Investment Trust (REIT) that develops and operates industrial warehouse properties, specializing in high-density warehouse development for logistics, fulfillment, and cold storage operations.
+Rexford Industrial Realty, Inc. is a publicly traded Real Estate Investment Trust (REIT) that develops and operates industrial warehouse properties, specializing in high-density warehouse development for logistics and fulfillment operations.
 {{< /faq >}}
 
 {{< faq q="Can the project be denied outright?" >}}
@@ -114,19 +114,19 @@ Tiny solid particles and liquid droplets emitted from diesel engines. DPM is a k
 {{< /faq >}}
 
 {{< faq q="What's the significance of '9.48 per million' cancer risk?" >}}
-Background cancer risk from all air pollution in this area is ~300–400 per million (MATES-V study); the project's added risk is modeled at 9.48 per million against a 10.0 per million significance threshold — barely below it. Any modeling error or real-world variability pushes it over.
+Existing cancer risk from all air toxics in this area is ~300–400 per million (MATES-V, as reported in the HRA). The project's added risk is modeled at 10.07 per million before mitigation — over the 10.0 per million significance threshold — and 9.48 per million after a construction-equipment measure (MM AQ-1). The operational part, modeled with 5 dock doors, is 0.56; the mitigated total leaves 0.52 of margin for a plan that allows 36.
 {{< /faq >}}
 
 {{< faq q="Is cancer risk 'de minimis' (too small to worry about)?" >}}
-No. A 9.48 per million added risk means approximately 10 additional cancer cases per million people exposed over a lifetime. For a sensitive population (children at Fletcher Elementary), this is significant.
+No. A 9.48 (or 10.07) per million added risk means roughly 10 additional cancer cases per million people exposed over a lifetime, on top of an existing 300–400 per million. For a sensitive population (children at Fletcher Elementary), this is significant.
 {{< /faq >}}
 
 {{< faq q="What's SCAQMD?" >}}
-South Coast Air Quality Management District — the government agency responsible for air quality regulation and permitting in Orange County, and the expert authority on air quality impacts. Their deficiency letter is strong evidence the analysis is inadequate.
+South Coast Air Quality Management District — the government agency responsible for air quality regulation and permitting in Orange County, and the expert authority on air quality impacts. Their comment letter — seven areas of concern plus a list of recommended conditions — is strong evidence the analysis is inadequate.
 {{< /faq >}}
 
 {{< faq q="What's CARB?" >}}
-California Air Resources Board — the state agency responsible for air quality statewide, which publishes siting guidance recommending sensitive land uses (schools, homes) be kept well away from high-traffic highways and warehouses.
+California Air Resources Board — the state agency responsible for air quality statewide, whose advisory *Air Quality and Land Use Handbook* recommends keeping new homes and schools 500 feet from freeways and 1,000 feet from busy distribution centers.
 {{< /faq >}}
 
 ### About Noise
@@ -140,7 +140,7 @@ Yes. Most jurisdictions have lower significance thresholds for nighttime noise (
 {{< /faq >}}
 
 {{< faq q="What's a 'backup alarm'?" >}}
-The loud beeping sound that plays when heavy equipment backs up. Federal regulations require backup alarms on vehicles over 10,000 lbs — typically 75–85 dBA, far louder than the modeled dock noise level of 53.6 dBA.
+The loud beeping sound that plays when a truck or piece of heavy equipment backs up. The noise study folds back-up alarms into a 75 dBA truck-arrival source level measured 20 feet from the truck (Appendix K at 26) — but it never applies the Municipal Code's 5 dBA stricter limit for "simple tone" and "recurring impulsive" sounds (§ 8.24.040(D)), which is exactly what a back-up alarm is.
 {{< /faq >}}
 
 ### About Traffic
@@ -253,7 +253,7 @@ To get involved: share your contact info and how you'd like to help, receive upd
 
 ### Government Agencies
 
-**South Coast Air Quality Management District (SCAQMD)** — [jafshar@aqmd.gov](mailto:jafshar@aqmd.gov) (Jivar Afshar, Air Quality Specialist) · [swang1@aqmd.gov](mailto:swang1@aqmd.gov) (Sam Wang, issued the formal deficiency letter) · [aqmd.gov](https://www.aqmd.gov/)
+**South Coast Air Quality Management District (SCAQMD)** — [jafshar@aqmd.gov](mailto:jafshar@aqmd.gov) (Jivar Afshar, Air Quality Specialist) · [swang1@aqmd.gov](mailto:swang1@aqmd.gov) (Sam Wang, signed the comment letter) · [aqmd.gov](https://www.aqmd.gov/)
 
 **California Air Resources Board (CARB)** — [ww2.arb.ca.gov](https://ww2.arb.ca.gov/) · [GeneralInquiries@arb.ca.gov](mailto:GeneralInquiries@arb.ca.gov)
 
@@ -280,7 +280,7 @@ To get involved: share your contact info and how you'd like to help, receive upd
 
 **CEQA & Environmental Law**: [California Resources Agency — CEQA](https://resources.ca.gov/ceqa) · [State Clearinghouse — CEQA Document Portal](https://opr.ca.gov/ceqa/ceqa-document-portal/)
 
-**Air Quality**: [South Coast Air Quality Management District](https://www.aqmd.gov/) · [CARB Siting Guidance](https://ww2.arb.ca.gov/our-work/programs/california-state-strategy-deployment-zero-emission-vehicles) · [OEHHA](https://oehha.ca.gov/)
+**Air Quality**: [South Coast Air Quality Management District](https://www.aqmd.gov/) · [CARB Air Quality and Land Use Handbook](https://www.aqmd.gov/docs/default-source/ceqa/handbook/california-air-resources-board-air-quality-and-land-use-handbook-a-community-health-perspective.pdf) · [OEHHA](https://oehha.ca.gov/)
 
 **Noise**: [EPA Noise Guidance](https://www.epa.gov/noise-pollution) · [Caltrans](https://dot.ca.gov/)
 

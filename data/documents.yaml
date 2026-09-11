@@ -6,7 +6,7 @@
   file: /documents/2411_N_Glassell_Street_MND.pdf
   url: ""
   summary: "The City of Orange's environmental analysis of the proposed warehouse project — the primary decision document. Includes project description, existing conditions, and impact analysis."
-  lookFor: "Page 24: Parking summary (380 stalls). Page 141: Building specs (298,988 SF). Page 188: General Plan designation."
+  lookFor: "Pages 23–24: the two configurations — Option 1 (5 docks, analyzed) and Option 2 (36 docks + 2 grade-level; Table 3, Figure 9). Page 50: the only place Option 2 is addressed in the impact analysis. Pages 55–56: cancer risk 10.07 unmitigated / 9.48 mitigated (Tables AQ-8, AQ-9). Page 121: 'No mitigation measures are required' for noise."
 
 - id: appendix-b
   title: "Appendix B: Health Risk Assessment (HRA)"
@@ -15,8 +15,8 @@
   critical: true
   file: /documents/Appendix_B_Health_Risk_Assessment.pdf
   url: ""
-  summary: "Models diesel particulate matter emissions and cancer risk. Modeled risk is 9.48 per million against a 10.0 per million significance threshold — a margin of just 0.52."
-  lookFor: "Assumes only 5 loading dock doors operating (site plan shows 36). Assumes 50 hrs/year generator use (SCAQMD says 200+ is realistic)."
+  summary: "Models diesel particulate matter emissions and cancer risk. Unmitigated combined risk at the closest home is 10.07 per million — over the 10.0 per million threshold (p. 30; Table 14, p. 32). It drops to 9.48 only with Tier 4 construction equipment (MM AQ-1; Table 15, p. 35). Operation was modeled with 5 dock doors."
+  lookFor: "Page 7: 5 dock doors and one diesel fire water pump at 50 hours/year (SCAQMD: permits allow up to 200). Page 30 and Table 14: unmitigated 10.07. Page 35: mitigated 9.48. Nowhere: Option 2."
 
 - id: appendix-k
   title: "Appendix K: Noise and Vibration Impact Analysis"
@@ -25,8 +25,8 @@
   critical: true
   file: /documents/Appendix_K_Noise_and_Vibration_Impact_Analysis.pdf
   url: ""
-  summary: "Models nighttime dock noise at 53.6 dBA — above the City's baseline nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code) — with the MND relying on the City's ambient-adjustment rules (raising the effective threshold to ~57–58 dBA) to avoid a significance finding, and no modeling of backup alarms or refrigeration noise."
-  lookFor: "Modeling assumptions on pages 1-5 matter more than the final numbers."
+  summary: "Models nighttime dock noise at 53.6 dBA at the east receptor — above the City's baseline nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code) — with the MND relying on the City's ambient-adjustment rules (raising the effective threshold to ~57–58 dBA) to avoid a significance finding. Assumes unloading at 3 docks and truck movements at 10 spaces (p. 26) — the 5-dock Option 1 layout, not the 36-dock Option 2 — and never applies the Municipal Code's 5 dBA stricter standard for tonal/impulsive sounds like back-up alarms. The MND proposes no noise mitigation."
+  lookFor: "Page 26: source levels, the 3-dock assumption, and 'shielding from the proposed building' as the only barrier modeled. Page 12, Table C: the ambient-adjustment rule. Nowhere: Option 2."
 
 - id: appendix-l
   title: "Appendix L: Traffic Impact Analysis (TIA)"
@@ -35,8 +35,8 @@
   critical: true
   file: /documents/Appendix_L_Traffic_Impact_Analysis.pdf
   url: ""
-  summary: "810 net new daily PCE trips. The southern truck driveway is projected to operate at Level of Service E/F — acknowledged as 'unavoidable.' Footnote 1 (page 166) reveals the dock-door discrepancy with Appendix B."
-  lookFor: "Page 140: specs. Page 166: Footnote 1 (dock door discrepancy). Page 170: trip generation. Page 178+: LOS analysis."
+  summary: "810 net new daily PCE trips. The southern truck driveway operates at Level of Service E/F in every scenario — acknowledged as 'unavoidable' — with PM delay rising from 63 seconds in the existing scenario to 114 under the General Plan Update. Analyzes Option 1 only: 'Option 2' appears nowhere in the study. (The 36-dock plan is in the MND at page 24, Table 3.)"
+  lookFor: "Page 5: trip totals and the driveway finding. Pages 18, 22, 28, 33: driveway LOS by scenario. Page 38, Table 4-1: trip generation ('Without Cold Storage'). Pages 62–65: queuing and gate analysis."
 
 - id: appendix-a
   title: "Appendix A: Air Quality, Energy, and Greenhouse Gas Impact Analysis"
@@ -59,14 +59,14 @@
   lookFor: ""
 
 - id: scaqmd-letter
-  title: "SCAQMD Formal Deficiency Letter (Control No. ORC260414-01)"
+  title: "SCAQMD Comment Letter (Control No. ORC260414-01)"
   category: agency-letters
   issues: [air-quality]
   critical: true
   file: /documents/SCAQMD_Formal_Deficiency_Letter.pdf
   url: ""
-  summary: "South Coast Air Quality Management District's formal response identifying 7 technical deficiencies in the air quality analysis, including outdated dispersion models and an unrealistic backup-generator scenario."
-  lookFor: "Signed by Sam Wang, Air Quality Specialist, May 6, 2026."
+  summary: "South Coast Air Quality Management District's formal comments raising seven areas of concern with the air quality analysis — air permits, outdated dispersion-model versions, a 50-hour fire-pump scenario when permits allow 200, the adjacent railroad, inapplicable screening tables, Rule 2305, and no cumulative air-toxics analysis — and noting 'unmitigated risk exceeding the threshold and mitigated risk only marginally below it' (p. 6). Pages 6–7 list recommended conditions the MND doesn't include."
+  lookFor: "Page 3: model versions and the 200-hour fire pump. Page 6: 'unmitigated risk exceeding the threshold.' Pages 6–7: recommended conditions, including a cap on daily trucks at analyzed levels. Signed by Sam Wang, May 6, 2026."
 
 - id: formal-objection
   title: "Formal Objection to IS/MND & Demand for Full EIR"

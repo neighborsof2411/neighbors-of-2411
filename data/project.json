@@ -60,7 +60,7 @@
         "groundFloor": "9,400 SF",
         "mezzanine": "9,400 SF"
       },
-      "note": "Analysis assumed maximum manufacturing scenario (189,988 warehouse + 109,000 manufacturing)"
+      "note": "Analysis assumed Option 1 (171,188 SF warehouse + 18,800 SF office = the TIA's 189,988 SF; 109,000 SF manufacturing; 298,988 SF total). Option 2 (36 docks + 2 grade-level) totals 298,918 SF with 247 stalls (MND pp. 23-24). No technical appendix analyzes Option 2."
     },
     "parking": {
       "analyzedProject": {
@@ -197,7 +197,7 @@
           "name": "Sam Wang",
           "title": "Air Quality Specialist (Control Letter Signer)",
           "email": "swang1@aqmd.gov",
-          "note": "Issued formal deficiency letter (Control No. ORC260414-01, May 6, 2026)"
+          "note": "Signed SCAQMD's comment letter (Control No. ORC260414-01, May 6, 2026)"
         }
       }
     ],
@@ -214,7 +214,7 @@
       "type": "Elementary School",
       "name": "Fletcher Elementary School",
       "grade": "TK-6",
-      "enrollment": "~497 students",
+      "enrollment": "~493 students (Ed-Data, 2024-25)",
       "programs": "Mandarin Language & GATE Academy",
       "address": "515 W. Fletcher Avenue, Orange, CA",
       "distanceToSite": "0.25 miles (quarter-mile)",
@@ -237,11 +237,11 @@
       "Greenhouse gas emissions"
     ],
     "technicalVulnerabilities": [
-      "Health risk assessment (9.48 per million cancer risk vs. 10 per million threshold)",
-      "Dock door count discrepancy (HRA modeled 5 doors; TIA Footnote 1 confirms 36-door Option 2 plan)",
-      "SCAQMD formal deficiency letter (7 technical issues identified)",
-      "Nighttime noise (53.6 dBA modeled vs. 55.0 dBA threshold)",
-      "Southern truck driveway LOS E/F deficiency (acknowledged as unavoidable)"
+      "Health risk assessment (10.07 per million unmitigated cancer risk - over the 10 per million threshold; 9.48 only with Tier 4 construction equipment, MM AQ-1)",
+      "Dock door count discrepancy (HRA modeled 5 doors; MND p. 24, Table 3 shows the 36-dock Option 2 plan; no appendix analyzes Option 2)",
+      "SCAQMD comment letter (seven areas of concern; notes unmitigated risk exceeds threshold; recommends a truck cap at analyzed levels)",
+      "Nighttime noise (53.6 dBA modeled vs. 55.0 dBA ambient at the east receptor; no noise mitigation proposed)",
+      "Southern truck driveway LOS E/F (acknowledged as unavoidable; delay worsens in every future-year scenario)"
     ],
     "mitigationStatus": "Initial Study/Mitigated Negative Declaration (IS/MND) — no full EIR",
     "appealPath": "Planning Commission → City Council (if applicant or public appeals PC decision)"

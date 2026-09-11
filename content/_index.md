@@ -51,7 +51,7 @@ Every Planning Commission and City Council meeting until the decision is an oppo
 
 ## Quick Facts
 
-- **What**: 298,988 SF industrial warehouse with 36 loading docks
+- **What**: 298,988 SF industrial warehouse (the analyzed layout); the alternate Option 2 layout the City can approve has 36 raised loading docks plus 2 grade-level doors (MND at 24)
 - **Where**: 2411 N. Glassell Street, Orange, CA (southeast corner of Glassell & Fletcher)
 - **Applicant**: Rexford Industrial Realty, Inc.
 - **Zoning**: M-2 (Industrial Manufacturing), Light Industrial General Plan
@@ -71,13 +71,13 @@ The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, 
 
 {{< accordion title="Air Quality: \"Less than significant.\"" >}}
 {{< fact-compare claim="The IS/MND concludes air quality impacts, including cancer risk from diesel particulate matter, are less than significant." >}}
-The health risk assessment models cancer risk at **9.48 per million** — only **0.52 below** the 10.0 per million significance threshold — while assuming just 5 loading dock doors (the site plan shows 36) and only 50 hours/year of backup generator use (SCAQMD says 200+ is realistic). {{< cite doc="appendix-b" label="Verify Fact" >}}
+The health risk assessment's own result is **10.07 per million** at the closest home — **over the 10.0 per million significance threshold**. It reaches **9.48** only by requiring Tier 4 construction equipment, and its operational modeling assumes just 5 loading dock doors (the Option 2 site plan shows 36) and only 50 hours/year for the diesel fire water pump (SCAQMD says permits allow up to 200). {{< cite doc="appendix-b" label="Verify Fact" >}}
 {{< /fact-compare >}}
 {{< /accordion >}}
 
 {{< accordion title="Noise: \"Less than significant.\"" >}}
 {{< fact-compare claim="The IS/MND concludes nighttime noise impacts are less than significant." >}}
-The project would generate **53.6 dBA** at the nearest home at night — above the City's baseline nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code). The MND avoids a significance finding by applying the City's ambient-adjustment rules, which raise the effective threshold at this receptor to about 57–58 dBA — and the analysis does not model backup alarms, which run 75+ dBA on heavy vehicles. {{< cite doc="appendix-k" label="Verify Fact" >}}
+The project would generate **53.6 dBA** at the nearest home at night — above the City's baseline nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code). The MND avoids a significance finding by applying the City's ambient-adjustment rules, which raise the effective threshold at this receptor to about 57–58 dBA. The model assumes trucks unloading at only 3 docks (the Option 2 plan allows 36), never applies the City's 5 dBA stricter standard for tonal, repetitive sounds like back-up alarms, and the MND proposes **no noise mitigation at all**. {{< cite doc="appendix-k" label="Verify Fact" >}}
 {{< /fact-compare >}}
 {{< /accordion >}}
 
@@ -89,7 +89,7 @@ The project's own traffic study projects the southern truck driveway will operat
 
 {{< accordion title="Land Use: \"Consistent with the zoning.\"" >}}
 {{< fact-compare claim="The project meets the M-2 zone's requirements as designed." >}}
-A 24/7 industrial warehouse would operate just **54 feet** from single-family homes. CARB siting guidance recommends against locating sensitive uses like schools near high-traffic warehouse sites — Fletcher Elementary is a quarter-mile away. {{< cite doc="opposition-site-plan" label="Verify Fact" >}}
+A 24/7 industrial warehouse would operate just **54 feet** from single-family homes. CARB's siting handbook recommends keeping homes and schools 1,000 feet from a busy distribution center — the closest homes here are 54 and 150 feet away, and Fletcher Elementary is a quarter-mile. {{< cite doc="opposition-site-plan" label="Verify Fact" >}}
 {{< /fact-compare >}}
 {{< /accordion >}}
 
