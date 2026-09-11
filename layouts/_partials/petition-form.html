@@ -1,8 +1,11 @@
 <!--
-  Shared petition/join sign-on form. Posts to the site's one real Formspree
-  endpoint; the hidden _subject field is what distinguishes petition
-  signatures from join requests in the group's inbox, since both post to
-  the same form.
+  Shared petition/join sign-on form. Posts to /api/sign -- a Cloudflare
+  Pages Function (functions/api/sign.js) that checks for a repeat
+  submission from the same email before forwarding to the site's one real
+  Formspree endpoint. The hidden _subject field is what distinguishes
+  petition signatures from join requests in the group's inbox, since both
+  reach the same Formspree form; form_type is the same distinction for the
+  duplicate check, derived from the subject so call sites needn't change.
 
   Params (via a dict): idPrefix (unique per instance on a page, used for
   input ids), buttonLabel, subject (hidden _subject value), showComment,
@@ -16,8 +19,10 @@
 {{ $showComment := eq (.showComment | default "false") "true" }}
 {{ $showPhone := eq (.showPhone | default "false") "true" }}
 {{ $showWhy := eq (.showWhy | default "false") "true" }}
-<form class="petition-form" action="https://formspree.io/f/xzdnrjaz" method="POST">
+{{ $formType := cond (in $subject "Join") "join" "petition" }}
+<form class="petition-form" action="/api/sign" method="POST">
   <input type="hidden" name="_subject" value="{{ $subject }}">
+  <input type="hidden" name="form_type" value="{{ $formType }}">
   <div class="form-row">
     <label for="{{ $idPrefix }}-name">Name</label>
     <input id="{{ $idPrefix }}-name" type="text" name="name" autocomplete="name" required>
