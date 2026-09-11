@@ -4,30 +4,14 @@ description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 jus
 ---
 
 {{< callout type="warning" title="Planning Commission Hearing Coming Soon" icon="⚠️" >}}
-**Tentative date: Monday, September 21, 2026 at 5:30 PM.** The City will notify the public 10 days before the date is confirmed.
+**Tentative date: Monday, September 21, 2026 at 5:30 PM.** This is expected to be the rescheduled hearing where the Commission actually considers the project. The City will notify the public 10 days before the date is confirmed — treat it as tentative until then, but plan to attend.
 
-**This is your chance to be heard on a 24/7 industrial warehouse 54 feet from homes and a quarter-mile from Fletcher Elementary School.**
+**Where:** Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas and remote-participation details are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — worth checking before you go, since agendas can change.
+
+**This is your chance to be heard on a 24/7 industrial warehouse 54 feet from homes and a quarter-mile from Fletcher Elementary School.** [Prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
 {{< /callout >}}
 
 {{< countdown >}}
-
-## Three Meetings Where You're Needed
-
-Three City meetings are coming up in September. Only the last one is the hearing on this project — but showing up at all three is what makes the neighborhood impossible to overlook.
-
-{{< callout type="alert" title="Tuesday, September 8 · 6:00 PM — City Council" icon="🗣️" >}}
-Not a formal hearing on this project, but an opportunity to speak during public comment and put Council members on notice that this neighborhood is watching and organized. This meeting can also be joined remotely by Zoom — the agenda and remote-participation details are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A).
-{{< /callout >}}
-
-{{< callout type="alert" title="Thursday, September 10 · 5:30 PM — Planning Commission" icon="👥" >}}
-The Rexford item is not on this agenda, but Commissioners will be present and public comment is open. Showing up in numbers here, even without a vote on the table, reinforces that our opposition isn't going anywhere.
-{{< /callout >}}
-
-{{< callout type="warning" title="Monday, September 21 · 5:30 PM — Planning Commission (tentative)" icon="⚠️" >}}
-This is expected to be the rescheduled hearing where the Commission actually considers the project. Treat this date as tentative until the City's official notice confirms it — but plan to attend.
-{{< /callout >}}
-
-All three meet at Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866. Agendas, times, and remote-participation details for every City meeting are posted on the [City's meeting calendar](https://cityoforange.legistar.com/Page.aspx?M=A) — worth checking before you go, since agendas can change. [Prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
 
 ## A 298,988-Square-Foot Warehouse Operating 24 Hours a Day, Every Day — Right Next Door to Your Child's School
 
@@ -130,8 +114,8 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 
 - 📅 **April 16, 2026** → MND released for public review
 - 📅 **May 6, 2026** → Comment period closes *(past)*
-- 📅 **Sept 8, 2026** → City Council meeting, 6:00 PM *(public comment open; project not on agenda)*
-- 📅 **Sept 10, 2026** → Planning Commission meeting, 5:30 PM *(public comment open; project not on agenda)*
+- 📅 **Sept 8, 2026** → City Council meeting — public comment only, project not on agenda *(past)*
+- 📅 **Sept 10, 2026** → Planning Commission meeting — public comment only, project not on agenda *(past)*
 - 📅 **Sept 21, 2026** → Planning Commission hearing on the project, 5:30 PM *(tentative — confirmed 10 days before)*
 - 📅 **10–15 days after PC** → Appeal window to City Council (if needed)
 

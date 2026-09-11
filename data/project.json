@@ -124,16 +124,16 @@
         "name": "City Council Meeting (public comment)",
         "date": "2026-09-08",
         "time": "18:00",
-        "status": "scheduled",
-        "details": "Not a hearing on this project; public comment is open. Zoom option available.",
+        "status": "completed",
+        "details": "Not a hearing on this project; public comment only.",
         "isCritical": false
       },
       {
         "name": "Planning Commission Meeting (public comment)",
         "date": "2026-09-10",
         "time": "17:30",
-        "status": "scheduled",
-        "details": "Rexford item not on this agenda; Commissioners present and public comment open",
+        "status": "completed",
+        "details": "Rexford item not on this agenda; public comment only",
         "isCritical": false
       },
       {
