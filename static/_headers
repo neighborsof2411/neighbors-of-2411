@@ -3,3 +3,8 @@
 
 /documents/*
   Cache-Control: public, max-age=86400
+
+# Contact card behind "Save us as a contact" (save-contact shortcode).
+# text/vcard makes phones open it straight into Contacts.
+/neighbors-of-2411.vcf
+  Content-Type: text/vcard; charset=utf-8

@@ -150,6 +150,8 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 
 There's one list. Everyone who [signs the petition](#petition) gets an email when meeting dates change and when it's time to show up — no separate sign-up. Already signed? You're on it.
 
+Updates come from **neighborsof2411@gmail.com**. Some inboxes file them as spam — [save us as a contact](/resources/#make-sure-our-emails-reach-you) so they don't.
+
 ## Need Help?
 
 **Contact the group** — [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com)

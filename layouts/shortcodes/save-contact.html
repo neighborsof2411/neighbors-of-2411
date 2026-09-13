@@ -1,0 +1,29 @@
+<!--
+  "Make sure our emails reach you" box, shown right after someone signs
+  (thanks, already-signed) and on the Resources page. Group updates go out
+  from a plain Gmail address, which some inboxes file as spam; saving the
+  address as a contact, or emailing it once, fixes that in every major mail
+  client. The contact card is static/neighbors-of-2411.vcf (served as
+  text/vcard via static/_headers, so phones open it straight into Contacts).
+  No JS. The wrapper carries a fixed id so /resources/#make-sure-our-emails-
+  reach-you is a stable link for emails and the footer.
+-->
+{{ $email := "neighborsof2411@gmail.com" }}
+<div class="save-contact" id="make-sure-our-emails-reach-you">
+  <p class="save-contact-title"><span aria-hidden="true">📬</span> Make sure our emails reach you</p>
+  <p>Updates come from <strong>{{ $email }}</strong>, and some inboxes file them under spam. Either of these fixes it:</p>
+  <div class="save-contact-actions">
+    <a class="button button--primary" href="/neighbors-of-2411.vcf">Save us as a contact</a>
+    <a class="button button--secondary" href="mailto:{{ $email }}?subject=Keep%20me%20posted%20on%202411%20Glassell&amp;body=Hi%20%E2%80%94%20please%20keep%20me%20on%20the%20update%20list.%20(Sending%20this%20so%20your%20emails%20don%27t%20land%20in%20my%20spam%20folder.)">Send us a one-line hello</a>
+  </div>
+  <p class="save-contact-hint">The first button opens our contact card &mdash; on a phone it goes straight into Contacts; on a computer, open the downloaded file or import it into Gmail, Outlook, or Apple Contacts. The second works because mail apps stop flagging addresses you've written to.</p>
+  <details class="save-contact-details">
+    <summary>Already found one of our emails in spam?</summary>
+    <ul>
+      <li><strong>Gmail:</strong> open the message and click <em>Not spam</em>, then click our name at the top and <em>Add to contacts</em>. To settle it for good: Settings &rarr; Filters and Blocked Addresses &rarr; Create a new filter &rarr; From: {{ $email }} &rarr; <em>Never send it to Spam</em>.</li>
+      <li><strong>iPhone / Apple Mail:</strong> in Junk, open it and choose <em>Move to Inbox</em>, then tap our name and <em>Create New Contact</em>.</li>
+      <li><strong>Outlook:</strong> open it and choose <em>Not junk</em>, then add {{ $email }} under Junk email settings &rarr; <em>Safe senders</em>.</li>
+      <li><strong>Yahoo:</strong> open it and click <em>Not spam</em>, then add {{ $email }} to your contacts.</li>
+    </ul>
+  </details>
+</div>
