@@ -46,7 +46,7 @@ Every Planning Commission and City Council meeting until the decision is an oppo
 <div class="cta-secondary-row">
 {{< cta href="/issues/" variant="secondary" >}}Learn the Issues{{< /cta >}}
 {{< cta href="/evidence/" variant="secondary" >}}Review the Evidence{{< /cta >}}
-{{< cta href="/testify/#how-to-join-the-group" variant="secondary" >}}Join the Group{{< /cta >}}
+{{< cta href="#petition" variant="secondary" >}}Sign the Petition{{< /cta >}}
 </div>
 
 ## Quick Facts
@@ -148,7 +148,7 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 
 ## Stay Informed
 
-{{< subscribe id="xzdnrjaz" >}}
+There's one list. Everyone who [signs the petition](#petition) gets an email when meeting dates change and when it's time to show up — no separate sign-up. Already signed? You're on it.
 
 ## Need Help?
 

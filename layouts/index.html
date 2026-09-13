@@ -3,8 +3,9 @@
   Project override of the homepage (PaperMod's list.html home path, which
   this site doesn't otherwise need -- there's no post-list/pagination here,
   just one static landing page). Renders a full-bleed dark hero with the
-  two petition/join CTAs, a real petition sign-on section, then the
-  existing homepage body from content/_index.md unchanged below it.
+  petition CTA, the site's one sign-up section (signing the petition is
+  also the email list), then the existing homepage body from
+  content/_index.md unchanged below it.
 
   Note: this file's own leading-comment placement matters -- a comment
   placed before the opening define tag on line 1 silently breaks Hugo's
@@ -18,8 +19,8 @@
     <h1 class="hero-mega-h1">Stop the 300,000 Sq. Ft. Mega-Warehouse in Our Neighborhood.</h1>
     <p class="hero-mega-sub">Rexford Industrial wants to run a 298,988 SF warehouse 24 hours a day, 7 days a week &mdash; 54 feet from homes and a quarter-mile from Fletcher Elementary School. Add your name and tell the Planning Commission you oppose it.</p>
     <div class="hero-cta-row">
-      <a href="/#petition" class="button button--hero-primary">Sign the Opposition Petition</a>
-      <a href="/join/" class="button button--hero-secondary">Join Neighbors of 2411</a>
+      <a href="/#petition" class="button button--hero-primary">Sign the Petition &amp; Get Updates</a>
+      <a href="/testify/#how-to-prepare-your-public-comment" class="button button--hero-secondary">Prepare Your Public Comment</a>
     </div>
     {{- /* Next meeting comes from data/meetings.yaml, the one place dates are kept. */}}
     {{- $today := now.Format "2006-01-02" }}
@@ -31,9 +32,9 @@
 
 <section id="petition" class="petition-section">
   <div class="petition-inner">
-    <h2 class="petition-title">Add Your Name in Opposition</h2>
-    <p class="petition-sub">This goes directly to Neighbors of 2411 (UNA). We'll use it to show the Planning Commission the scale of neighborhood opposition and ask it to deny the project, and to send you meeting-date updates and ways to help.</p>
-    {{ partial "petition-form.html" (dict "idPrefix" "petition" "buttonLabel" "Sign the Opposition Petition" "subject" "Petition Signature -- 2411 Glassell Opposition") }}
+    <h2 class="petition-title">Sign the Petition &amp; Get Updates</h2>
+    <p class="petition-sub">One form does both: your name goes on the petition asking the Planning Commission to deny the project, and you're added to the email list for meeting-date updates and ways to help. This goes directly to Neighbors of 2411 (UNA).</p>
+    {{ partial "petition-form.html" (dict "idPrefix" "petition" "buttonLabel" "Sign the Petition & Get Updates") }}
   </div>
 </section>
 

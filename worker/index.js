@@ -5,15 +5,15 @@
   the built static files in public/ FIRST, and only paths with no matching
   asset reach this Worker (run_worker_first is left at its default, false).
   So all normal pages are served straight from assets and never touch this
-  code -- the Worker exists only to handle POST /api/sign, the sign-up
-  endpoint the petition and join forms submit to.
+  code -- the Worker exists only to handle POST /api/sign, the endpoint the
+  site's one sign-up form (the petition, which is also the email list)
+  submits to.
 
   /api/sign: catch a repeat submission from the same email before it reaches
   the group's inbox and spreadsheet as a duplicate, then forward to Formspree
-  exactly as the browser used to. Only a SHA-256 hash of "<form>:<email>" is
-  stored (never the address), so the store can't be read back as a mailing
-  list. Petition and join are tracked separately, so signing one doesn't
-  block the other.
+  exactly as the browser used to. Only a SHA-256 hash of "petition:<email>"
+  is stored (never the address), so the store can't be read back as a
+  mailing list.
 
   Fails open: until a KV namespace is bound as SIGNERS (see wrangler.jsonc),
   env.SIGNERS is undefined and every submission is forwarded to Formspree
@@ -51,15 +51,16 @@ async function handleSign(request, env) {
     return seeOther(base, "/thanks/");
   }
 
-  const formType = form.get("form_type") === "join" ? "join" : "petition";
   const email = String(form.get("email") || "").trim().toLowerCase();
-  const kv = env.SIGNERS; // undefined until the KV namespace is bound -> fail open
-  const key = email ? formType + ":" + (await sha256Hex(email)) : null;
+  const kv = env.SIGNERS; // undefined if the KV namespace isn't bound -> fail open
+  // Key prefix stays "petition:" so signatures recorded before the separate
+  // join form was retired still count as already signed.
+  const key = email ? "petition:" + (await sha256Hex(email)) : null;
 
   if (kv && key) {
     let seen = null;
     try { seen = await kv.get(key); } catch (e) { seen = null; }
-    if (seen) return seeOther(base, "/already-signed/?form=" + formType);
+    if (seen) return seeOther(base, "/already-signed/");
   }
 
   const origin = new URL(base).origin;
@@ -81,7 +82,7 @@ async function handleSign(request, env) {
   if (kv && key) {
     try { await kv.put(key, new Date().toISOString()); } catch (e) {}
   }
-  return seeOther(base, "/thanks/?form=" + formType);
+  return seeOther(base, "/thanks/");
 }
 
 export default {

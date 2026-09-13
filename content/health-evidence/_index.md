@@ -150,7 +150,7 @@ Your expertise and public comment carry particular weight with decision-makers.
 
 - [ ] Draft a formal comment letter from your practice, clinic, or organization
 - [ ] Speak at the Planning Commission hearing, explaining the health mechanisms
-- [ ] Connect with [Neighbors of 2411](/testify/#how-to-join-the-group) to coordinate health professional public comment
+- [ ] Connect with [Neighbors of 2411](/testify/#how-to-help) to coordinate health professional public comment
 - [ ] Reach out to your professional organizations about engaging on this issue
 
 ### For City Council & Planning Decision-Makers

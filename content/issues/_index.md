@@ -217,7 +217,7 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 3. **Ask the Commission to deny the project** — that's the goal
 4. **Require an EIR as the fallback** — cite the fair argument standard by name: the project can't be approved on this MND
 5. **Request strict conditions of approval** as a last resort — start with [what SCAQMD says the City should require](#what-scaqmd-says-the-city-should-require)
-6. **Join Neighbors of 2411** and stay engaged
+6. **[Sign the petition](/#petition)** — one form adds your name and gets you meeting-date updates
 
 <div class="cta-primary-row">
 {{< cta href="/testify/" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
