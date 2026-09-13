@@ -11,6 +11,8 @@ build:
 
 **Good news — this email address has already signed.** We didn't record a second entry, so the petition tally stays accurate — and you're already on the email list for meeting-date updates. Nothing more to do.
 
+{{< save-contact >}}
+
 A few things that might be what you were after:
 
 - **Someone else in your household shares this email and wants to sign?** Email us at [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) with their name and we'll add them by hand.
