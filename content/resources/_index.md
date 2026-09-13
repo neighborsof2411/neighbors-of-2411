@@ -243,7 +243,7 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **Email**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com)
 
-To get involved: share your contact info and how you'd like to help, receive updates on meeting dates and public comment strategy, and attend group meetings (dates TBD). See [How to Join the Group →](/testify/#how-to-join-the-group)
+To get updates: [sign the petition](/#petition) — it's the one list, and every signer gets meeting-date emails. To volunteer: email us with how you'd like to help. See [How to Help →](/testify/#how-to-help)
 
 ### Developer / Applicant
 
@@ -326,7 +326,7 @@ Respectfully,
 
 ## Staying Informed
 
-{{< subscribe id="xzdnrjaz" >}}
+One list, one form: [sign the petition](/#petition) and you'll get an email when meeting dates change. Already signed? You're on it.
 
 Check [Upcoming City Meetings](/#upcoming-city-meetings) and set a phone reminder for each Planning Commission and City Council meeting listed there — and check the [City calendar](https://cityoforange.legistar.com/Calendar.aspx) before you go, since agendas can change.
 

@@ -203,7 +203,7 @@ If this project is approved without proper environmental review and strict condi
 
 - **Review the technical evidence**: [See Issues & Evidence](/issues/)
 - **Prepare your public comment**: [How to submit public comment at the Planning Commission](/testify/#how-to-prepare-your-public-comment)
-- **Join the group**: [Get Involved](/testify/#how-to-join-the-group)
-- **Stay informed**: [Subscribe to email updates](/#stay-informed)
+- **Sign the petition and get updates**: [Add your name](/#petition) — one form, one list
+- **Help out**: [How to help](/testify/#how-to-help)
 
 {{< share text="The Project: 298,988 SF warehouse proposed at 2411 N. Glassell St, Orange CA — 24/7 operations, 54 feet from homes, quarter-mile from Fletcher Elementary." >}}

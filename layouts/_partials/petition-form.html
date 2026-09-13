@@ -1,26 +1,23 @@
 <!--
-  Shared petition/join sign-on form. Posts to /api/sign, the Cloudflare
-  Worker route (worker/index.js) that checks for a repeat submission from the
-  same email -- once the SIGNERS KV namespace is bound -- and then forwards to
-  the group's one Formspree endpoint. The hidden _subject field distinguishes
-  petition signatures from join requests in the inbox; form_type carries the
-  same distinction for the duplicate check, derived from the subject so call
-  sites needn't change. If the Worker or KV isn't in place the check is
-  skipped and the submission still reaches Formspree (fail open).
+  The site's one sign-up form. Signing the petition is also how someone gets
+  on the email list -- there is a single list, so there is a single form.
+  Posts to /api/sign, the Cloudflare Worker route (worker/index.js) that
+  turns away a repeat submission from the same email (sending the person to
+  /already-signed/), then forwards to the group's Formspree endpoint. If the
+  Worker or its KV store isn't in place the check is skipped and the
+  submission still reaches Formspree (fail open).
+
+  The hidden _subject value is what inbox rules / the spreadsheet automation
+  key on -- keep it stable.
 
   Params (via a dict): idPrefix (unique per instance on a page, used for
-  input ids), buttonLabel, subject (hidden _subject value), showComment,
-  showPhone, showWhy (all "true"/"false" -- showComment is used by
-  petition instances, showPhone/showWhy by the join page, for the
-  Google Sheets columns the automation script expects).
+  input ids), buttonLabel, showComment ("true" adds the optional
+  "what concerns you most" field).
 -->
 {{ $idPrefix := .idPrefix | default "petition" }}
-{{ $buttonLabel := .buttonLabel | default "Sign the Opposition Petition" }}
+{{ $buttonLabel := .buttonLabel | default "Sign the Petition & Get Updates" }}
 {{ $subject := .subject | default "Petition Signature -- 2411 Glassell Opposition" }}
 {{ $showComment := eq (.showComment | default "false") "true" }}
-{{ $showPhone := eq (.showPhone | default "false") "true" }}
-{{ $showWhy := eq (.showWhy | default "false") "true" }}
-{{ $formType := cond (in $subject "Join") "join" "petition" }}
 {{- /* $endpoint is the Worker route (worker/index.js) that dedupes, then
        forwards to Formspree. To bypass the Worker and post straight to
        Formspree instead, set it to the full https://formspree.io/f/<id> URL. */}}
@@ -28,7 +25,6 @@
 <form class="petition-form" action="{{ $endpoint }}" method="POST">
   <input type="hidden" name="_subject" value="{{ $subject }}">
   <input type="hidden" name="_next" value="{{ absURL "thanks/" }}">
-  <input type="hidden" name="form_type" value="{{ $formType }}">
   <div class="form-row">
     <label for="{{ $idPrefix }}-name">Name</label>
     <input id="{{ $idPrefix }}-name" type="text" name="name" autocomplete="name" required>
@@ -47,18 +43,7 @@
     <textarea id="{{ $idPrefix }}-comment" name="comment" rows="3"></textarea>
   </div>
   {{ end }}
-  {{ if $showPhone }}
-  <div class="form-row">
-    <label for="{{ $idPrefix }}-phone">Phone (optional)</label>
-    <input id="{{ $idPrefix }}-phone" type="tel" name="phone" autocomplete="tel">
-  </div>
-  {{ end }}
-  {{ if $showWhy }}
-  <div class="form-row">
-    <label for="{{ $idPrefix }}-why">Why do you want to join? (optional)</label>
-    <textarea id="{{ $idPrefix }}-why" name="why" rows="3"></textarea>
-  </div>
-  {{ end }}
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
   <button type="submit" class="button button--primary petition-submit">{{ $buttonLabel }}</button>
+  <p class="petition-form-note">Signing adds your name to the petition and puts you on the email list for meeting-date updates. Already signed? You're on the list.</p>
 </form>

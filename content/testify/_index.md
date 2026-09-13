@@ -1,6 +1,6 @@
 ---
 title: "How to Submit Public Comment at the Planning Commission Hearing"
-description: "Step-by-step guidance for submitting public comment — written or oral — at the Planning Commission hearing on the 2411 N. Glassell warehouse project, plus example comment scripts and how to join Neighbors of 2411."
+description: "Step-by-step guidance for submitting public comment — written or oral — at the Planning Commission hearing on the 2411 N. Glassell warehouse project, plus example comment scripts and how to help Neighbors of 2411."
 ShowToc: true
 TocOpen: false
 ---
@@ -21,7 +21,7 @@ Dates are changing until the City sends official notice, so we keep them in one 
 
 **2. Submit written comments at the hearing.** Even if you can't speak in person, you can submit a written comment letter (usually 1–2 pages) to be read into the record.
 
-**3. Join Neighbors of 2411.** Support the organized opposition effort, stay informed, and coordinate with other residents. [Jump to how to join →](#how-to-join-the-group)
+**3. Sign the petition.** One form adds your name to the opposition petition and puts you on the email list for meeting-date updates. [Sign the petition →](/#petition) Want to do more? [See how to help →](#how-to-help)
 
 <div class="cta-primary-row">
 {{< cta href="#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
@@ -195,23 +195,24 @@ Respectfully submitted,
 
 **What IS appropriate**: your personal experience, facts from the record, agency letters, your recommendation, and health/safety concerns.
 
-## How to Join the Group
+## How to Help
 
 ### Neighbors of 2411 (UNA)
 
-We are an organized group of residents committed to ensuring proper environmental review and strict operational conditions for this project.
+We are an organized group of residents working to get this project denied — and, failing that, to make sure it isn't approved without a full Environmental Impact Report and strict, enforceable conditions.
 
 **How to get involved:**
 
-1. **Email the group**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) — subject "I want to participate in opposition to the 2411 N. Glassell warehouse," including your name, address, email, and how you'd like to help
-2. **Attend group meetings** (dates/times TBD) — discuss strategy, review documents together, coordinate hearing attendance
-3. **Share information** with neighbors — forward emails, encourage others to submit public comment, post on community social media
-4. **[Sign the petition](/#petition)** — shows unified neighborhood opposition
-5. **Donate or volunteer** — help with outreach, refreshments for volunteers, or legal/consultant fees if the group votes to retain counsel
+1. **[Sign the petition](/#petition)** — one form adds your name to the opposition petition and puts you on the email list for meeting-date updates. That's the only sign-up there is.
+2. **Show up** — every Planning Commission and City Council meeting until the decision; see [Upcoming City Meetings](/#upcoming-city-meetings)
+3. **Volunteer** — email [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) with how you'd like to help: outreach, document review, coordinating hearing attendance, or legal/consultant costs if the group votes to retain counsel
+4. **Share information** with neighbors — forward emails, encourage others to sign and to submit public comment, post on community social media
 
 **Group values**: factual accuracy, respectful and professional communication, no personal attacks, strategic focus, inclusive leadership.
 
-{{< subscribe id="xzdnrjaz" >}}
+<div class="cta-primary-row">
+{{< cta href="/#petition" variant="primary" >}}Sign the Petition & Get Updates →{{< /cta >}}
+</div>
 
 ## Planning Commission Hearing Checklist
 
