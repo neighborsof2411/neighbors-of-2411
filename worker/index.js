@@ -94,8 +94,10 @@ async function handleSign(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    // Forgiving match: a trailing slash or odd casing should still sign
-    // someone up rather than fall through to the asset server's 405.
+    // Forgiving match, so a trailing slash still signs someone up instead of
+    // falling through to the asset server's 405. (Case is normalized too, but
+    // only helps once a request is here: the run_worker_first glob itself is
+    // case-sensitive, and no browser posts /API/Sign anyway.)
     const path = url.pathname.replace(/\/+$/, "").toLowerCase() || "/";
 
     if (path === "/api/sign") {
