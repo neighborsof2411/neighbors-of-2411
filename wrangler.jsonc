@@ -5,7 +5,11 @@
   "assets": {
     "directory": "public",
     "binding": "ASSETS",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    // Send /api/* to the Worker BEFORE the asset server sees it. The asset
+    // server replies to any non-GET with a bare 405, which is how sign-up
+    // POSTs to a near-miss path (e.g. a trailing slash) failed in Sept 2026.
+    "run_worker_first": ["/api/*"]
   },
   // Duplicate-check storage for POST /api/sign: the "SIGNERS" KV namespace
   // (Cloudflare dashboard -> Storage & Databases -> KV). Only SHA-256 hashes

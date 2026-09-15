@@ -1,13 +1,19 @@
 /*
   Cloudflare Worker entry script (wrangler.jsonc -> "main").
 
-  This site is a Worker with static assets: every request is checked against
-  the built static files in public/ FIRST, and only paths with no matching
-  asset reach this Worker (run_worker_first is left at its default, false).
-  So all normal pages are served straight from assets and never touch this
-  code -- the Worker exists only to handle POST /api/sign, the endpoint the
-  site's one sign-up form (the petition, which is also the email list)
-  submits to.
+  This site is a Worker with static assets: an ordinary request is checked
+  against the built static files in public/ FIRST, and only paths with no
+  matching asset reach this Worker. So all normal pages are served straight
+  from assets and never touch this code -- except /api/*, which
+  assets.run_worker_first routes here before the asset server sees it.
+  That matters: the asset server answers ANY non-GET request with a bare 405
+  ("This page isn't working"), so a sign-up POST that missed this Worker by a
+  single character -- /api/sign/ with a trailing slash -- died at the edge.
+  Signers hit exactly that in September 2026. The route match below is now
+  forgiving, and /api/* never reaches the asset server ahead of this code.
+
+  The Worker exists to handle POST /api/sign, the endpoint the site's one
+  sign-up form (the petition, which is also the email list) submits to.
 
   /api/sign: catch a repeat submission from the same email before it reaches
   the group's inbox and spreadsheet as a duplicate, then forward to Formspree
@@ -88,14 +94,25 @@ async function handleSign(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (url.pathname === "/api/sign") {
+    // Forgiving match: a trailing slash or odd casing should still sign
+    // someone up rather than fall through to the asset server's 405.
+    const path = url.pathname.replace(/\/+$/, "").toLowerCase() || "/";
+
+    if (path === "/api/sign") {
       try {
         return await handleSign(request, env);
       } catch (e) {
         // Never strand a real signer -- send them somewhere they can retry.
-        return Response.redirect(new URL("/submission-error/", request.url).toString(), 303);
+        return seeOther(request.url, "/submission-error/");
       }
     }
+
+    // Any other POST that gets routed here (run_worker_first covers /api/*)
+    // gets a page that explains itself instead of a raw Cloudflare 405.
+    if (request.method === "POST") {
+      return seeOther(request.url, "/submission-error/");
+    }
+
     // Everything else is a static asset (or a genuine 404, handled per
     // assets.not_found_handling in wrangler.jsonc).
     return env.ASSETS.fetch(request);
