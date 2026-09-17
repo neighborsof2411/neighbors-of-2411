@@ -207,6 +207,7 @@ We are an organized group of residents working to get this project denied — an
 2. **Show up** — every Planning Commission and City Council meeting until the decision; see [Upcoming City Meetings](/#upcoming-city-meetings)
 3. **Volunteer** — email [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com) with how you'd like to help: outreach, document review, coordinating hearing attendance, or legal/consultant costs if the group votes to retain counsel
 4. **Share information** with neighbors — forward emails, encourage others to sign and to submit public comment, post on community social media
+5. **[Follow us on Facebook](https://www.facebook.com/profile.php?id=61592081517790)** — updates between emails, and posts you can share with neighbors who aren't on the list
 
 **Group values**: factual accuracy, respectful and professional communication, no personal attacks, strategic focus, inclusive leadership.
 

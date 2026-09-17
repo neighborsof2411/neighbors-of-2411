@@ -14,7 +14,7 @@ May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you
 {{< /faq >}}
 
 {{< faq q="When is the Planning Commission hearing?" >}}
-It hasn't been officially noticed, and the expected date has already moved more than once. We keep the current date — and every upcoming Planning Commission and City Council meeting — in one place: [Upcoming City Meetings on the homepage](/#upcoming-city-meetings). The [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx) is the authoritative schedule. [Sign up for email updates](/#stay-informed) to be notified when dates change.
+It hasn't been officially noticed. The September 21, 2026 meeting was cancelled, and the expected date had already moved more than once before that. The next Planning Commission meetings are **October 5 and October 19, 2026 at 5:30 PM** — until the City posts an agenda, either could be the hearing. We keep the current date — and every upcoming Planning Commission and City Council meeting — in one place: [Upcoming City Meetings on the homepage](/#upcoming-city-meetings). The [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx) is the authoritative schedule. [Sign up for email updates](/#stay-informed) to be notified when dates change.
 {{< /faq >}}
 
 {{< faq q="Can I still submit comments?" >}}
@@ -243,6 +243,8 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **Email**: [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com)
 
+**Facebook**: [facebook.com/Neighbors of 2411](https://www.facebook.com/profile.php?id=61592081517790)
+
 To get updates: [sign the petition](/#petition) — it's the one list, and every signer gets meeting-date emails. To volunteer: email us with how you'd like to help. See [How to Help →](/testify/#how-to-help)
 
 ### Developer / Applicant
@@ -271,6 +273,7 @@ To get updates: [sign the petition](/#petition) — it's the one list, and every
 | **Late May / June 2026** | City prepares responses to comments |
 | **September 8, 2026** | City Council meeting — public comment only; project not on agenda *(past)* |
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
+| **September 21, 2026** | Planning Commission hearing **cancelled by the City**; no new hearing date noticed |
 | **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
 | **Post-PC decision** | 10–15 day appeal window to City Council (if applicable) |
 

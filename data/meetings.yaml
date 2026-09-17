@@ -14,20 +14,15 @@
 #   date      "YYYY-MM-DD" (keep the quotes)
 #   time      shown as written, e.g. "5:30 PM"
 #   location  shown as written
-#   project   expected | confirmed | not on agenda   -- is 2411 Glassell on this agenda?
+#   project   confirmed | expected | tbd | not on agenda  -- is 2411 Glassell
+#             on this agenda?  Use "tbd" when the City hasn't posted the
+#             agenda yet and the hearing could land on this date; use
+#             "not on agenda" only once the posted agenda shows it isn't.
 #   agenda    "" until the City posts it, then the agenda URL
 #   note      optional one-liner shown under the meeting
 
 calendar_url: https://cityoforange.legistar.com/Calendar.aspx
-
 upcoming:
-  - body: Planning Commission
-    date: "2026-09-21"
-    time: "5:30 PM"
-    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
-    project: expected
-    agenda: ""
-    note: Expected to be the rescheduled hearing where the Commission actually considers the project. The agenda hasn't been posted, so its place on it isn't confirmed -- plan to attend regardless.
 
   - body: City Council
     date: "2026-09-22"
@@ -35,4 +30,36 @@ upcoming:
     location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
     project: not on agenda
     agenda: ""
-    note: Regular session (a closed session precedes it at 5:00 PM). The project isn't on this agenda, but public comment is open -- Council is the appeal body, and it should hear from the neighborhood early.
+    note: Regular session (a closed session precedes it at 5:00 PM). The project isn't on this agenda, but public comment is open — Council is the appeal body, and it should hear from the neighborhood early.
+
+  - body: Planning Commission
+    date: "2026-10-05"
+    time: "5:30 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: tbd
+    agenda: ""
+    note: The September 21 meeting was cancelled, and no new hearing date has been noticed. This is the next Planning Commission meeting, so the rescheduled hearing could land here — plan to attend.
+
+  - body: City Council
+    date: "2026-10-13"
+    time: "6:00 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: not on agenda
+    agenda: ""
+    note: Regular session. Council is the appeal body — the project can only reach it after the Planning Commission acts and its decision is appealed, so don't expect it on this agenda. Public comment is open at every meeting regardless, and it helps for Council to hear from the neighborhood before it ever lands in front of them.
+
+  - body: Planning Commission
+    date: "2026-10-19"
+    time: "5:30 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: tbd
+    agenda: ""
+    note: The following Planning Commission meeting. Until the City posts an agenda, either October date could be the hearing — come to both if you can.
+
+  - body: City Council
+    date: "2026-10-27"
+    time: "6:00 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: not on agenda
+    agenda: ""
+    note: Regular session. Council is the appeal body — the project can only reach it after the Planning Commission acts and its decision is appealed, so don't expect it on this agenda. Public comment is open at every meeting regardless, and it helps for Council to hear from the neighborhood before it ever lands in front of them.
