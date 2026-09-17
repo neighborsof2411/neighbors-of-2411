@@ -149,9 +149,9 @@ a.button, .button {
 .callout-body > *:last-child { margin-bottom: 0; }
 .callout-body > *:first-child { margin-top: 0; }
 
-/* ---------- "Make sure our emails reach you" box (save-contact shortcode) ---------- */
+/* ---------- Stay-in-touch boxes (save-contact + follow-facebook shortcodes) ---------- */
 
-.save-contact {
+.save-contact, .follow-fb {
     border-left: 4px solid var(--nb-alert-border);
     background: var(--nb-alert-bg);
     color: var(--nb-alert-text);
@@ -159,10 +159,10 @@ a.button, .button {
     padding: 1rem 1.25rem;
     margin: 1.5rem 0;
 }
-.save-contact > *:last-child { margin-bottom: 0; }
-.save-contact-title { font-weight: 700; margin: 0 0 0.5rem; font-size: 1.05rem; }
-.save-contact-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.75rem 0; }
-.save-contact-hint { font-size: 0.9rem; }
+.save-contact > *:last-child, .follow-fb > *:last-child { margin-bottom: 0; }
+.save-contact-title, .follow-fb-title { font-weight: 700; margin: 0 0 0.5rem; font-size: 1.05rem; }
+.save-contact-actions, .follow-fb-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.75rem 0; }
+.save-contact-hint, .follow-fb-hint { font-size: 0.9rem; }
 .save-contact-details summary { cursor: pointer; font-weight: 600; }
 .save-contact-details ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
 .save-contact-details li { margin: 0.35rem 0; }

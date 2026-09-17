@@ -1,0 +1,18 @@
+<!--
+  "Follow us on Facebook" box. Same visual treatment as the save-contact
+  box (see custom.css) so the two "ways to stay in touch" blocks read as a
+  pair. The page URL lives here only -- update it in one place.
+
+  Usage: a "follow-facebook" shortcode call, no params. (Written out in
+  prose rather than shown literally -- Hugo parses shortcode syntax even
+  inside an HTML comment.)
+-->
+{{ $url := "https://www.facebook.com/profile.php?id=61592081517790" }}
+<div class="follow-fb" id="follow-us-on-facebook">
+  <p class="follow-fb-title"><span aria-hidden="true">📣</span> Follow us on Facebook</p>
+  <p>Neighbors of 2411 has a Facebook page. Follow it for updates between emails, and share the posts to reach neighbors who aren&rsquo;t on our list yet.</p>
+  <p class="follow-fb-actions">
+    <a class="button button--primary" href="{{ $url }}" target="_blank" rel="noopener noreferrer">Open our Facebook page</a>
+  </p>
+  <p class="follow-fb-hint">Email is still how we send meeting-date changes &mdash; <a href="/#petition">sign the petition</a> to get those. Facebook is the backup if a message ever lands in your spam folder.</p>
+</div>

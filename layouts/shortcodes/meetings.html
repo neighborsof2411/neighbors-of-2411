@@ -27,6 +27,7 @@
     <p class="meeting-meta">
       {{- if eq .project "confirmed" }}<span class="doc-badge">2411 Glassell is on this agenda</span>
       {{- else if eq .project "expected" }}<span class="doc-badge">Expected: 2411 Glassell hearing</span>
+      {{- else if eq .project "tbd" }}<span class="doc-badge">Agenda not posted &mdash; the hearing could be here</span>
       {{- else }}<strong>Project not on this agenda</strong> &mdash; public comment is still open{{ end }}
       <span class="meeting-days" data-days></span>
     </p>

@@ -5,7 +5,7 @@ description: "2411 Glassell: a 298,988 SF warehouse proposed to operate 24/7 jus
 
 ## Upcoming City Meetings
 
-**The hearing on this project has not been officially noticed, and its date has already moved more than once.** Expect it to keep changing until the City sends notice. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
+**The September 21 Planning Commission meeting was cancelled, and no new hearing date has been noticed.** The date has already moved more than once, so expect it to keep changing until the City sends official notice. The next two Planning Commission meetings are listed below &mdash; until an agenda is posted, either one could be the hearing. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
 
 **What we're asking for:** that the Planning Commission **deny the project**. If it won't, it shouldn't approve it on this environmental review — a full Environmental Impact Report is the minimum.
 
@@ -120,6 +120,7 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 - 📅 **May 6, 2026** → Comment period closes *(past)*
 - 📅 **Sept 8, 2026** → City Council meeting — public comment only, project not on agenda *(past)*
 - 📅 **Sept 10, 2026** → Planning Commission meeting — public comment only, project not on agenda *(past)*
+- 📅 **Sept 21, 2026** → Planning Commission hearing **cancelled by the City** — no new hearing date noticed yet
 - 📅 **Upcoming meetings** → see [Upcoming City Meetings](#upcoming-city-meetings), updated as the City posts dates
 - 📅 **10–15 days after PC** → Appeal window to City Council (if needed)
 
@@ -151,6 +152,8 @@ If the PC approves, there's typically a **10–15 day window** to appeal the dec
 There's one list. Everyone who [signs the petition](#petition) gets an email when meeting dates change and when it's time to show up — no separate sign-up. Already signed? You're on it.
 
 Updates come from **neighborsof2411@gmail.com**. Some inboxes file them as spam — [save us as a contact](/resources/#make-sure-our-emails-reach-you) so they don't.
+
+{{< follow-facebook >}}
 
 ## Need Help?
 
