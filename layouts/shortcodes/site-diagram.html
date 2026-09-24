@@ -1,0 +1,47 @@
+{{- /* Schematic of the site and its neighbours -- NOT to scale. Uses only
+       distances stated elsewhere on the site (MND p. 116; project page):
+       homes 54 ft north across Fletcher Ave, homes about 150 ft east,
+       Fletcher Mandarin Language and GATE Academy about 1,200 ft east.
+       Inline SVG, no external requests. */ -}}
+<figure class="site-diagram">
+  <svg viewBox="0 0 360 290" role="img" aria-labelledby="sd-title sd-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="sd-title">Where 2411 N. Glassell sits (not to scale)</title>
+    <desc id="sd-desc">The project site is at the southeast corner of Glassell Street and Fletcher Avenue. Homes are 54 feet to the north, across Fletcher Avenue. Homes are about 150 feet to the east. Fletcher Mandarin Language and GATE Academy is about 1,200 feet east.</desc>
+    <!-- roads -->
+    <rect class="sd-road" x="18" y="0" width="30" height="290"/>
+    <rect class="sd-road" x="18" y="74" width="342" height="26"/>
+    <text class="sd-road-label" x="33" y="200" transform="rotate(-90 33 200)" text-anchor="middle">Glassell St</text>
+    <text class="sd-road-label" x="300" y="91" text-anchor="middle">Fletcher Ave</text>
+    <!-- homes north -->
+    <g class="sd-homes">
+      <rect x="70" y="30" width="28" height="26" rx="3"/><rect x="108" y="30" width="28" height="26" rx="3"/>
+      <rect x="146" y="30" width="28" height="26" rx="3"/><rect x="184" y="30" width="28" height="26" rx="3"/>
+    </g>
+    <text class="sd-label" x="141" y="20" text-anchor="middle">Homes</text>
+    <!-- site -->
+    <rect class="sd-site" x="64" y="116" width="170" height="150" rx="4"/>
+    <text class="sd-site-label" x="149" y="184" text-anchor="middle">Project site</text>
+    <text class="sd-site-sub" x="149" y="204" text-anchor="middle">2411 N. Glassell</text>
+    <!-- 54 ft north -->
+    <line class="sd-dim" x1="226" y1="58" x2="226" y2="114"/>
+    <polygon class="sd-arrow" points="221,64 231,64 226,56"/><polygon class="sd-arrow" points="221,108 231,108 226,116"/>
+    <text class="sd-dim-label" x="222" y="132" text-anchor="end">54 ft</text>
+    <!-- homes east -->
+    <g class="sd-homes">
+      <rect x="300" y="120" width="26" height="28" rx="3"/><rect x="300" y="160" width="26" height="28" rx="3"/>
+      <rect x="300" y="200" width="26" height="28" rx="3"/>
+    </g>
+    <text class="sd-label" x="313" y="246" text-anchor="middle">Homes</text>
+    <line class="sd-dim" x1="236" y1="174" x2="298" y2="174"/>
+    <polygon class="sd-arrow" points="242,169 242,179 234,174"/><polygon class="sd-arrow" points="292,169 292,179 300,174"/>
+    <text class="sd-dim-label" x="267" y="166" text-anchor="middle">~150 ft</text>
+    <!-- school, off to the east -->
+    <line class="sd-dim sd-dim--far" x1="250" y1="52" x2="344" y2="52"/>
+    <polygon class="sd-arrow" points="338,47 338,57 348,52"/>
+    <text class="sd-label" x="352" y="24" text-anchor="end">Fletcher Elementary</text>
+    <text class="sd-dim-label" x="352" y="42" text-anchor="end">~1,200 ft east</text>
+    <!-- compass -->
+    <text class="sd-compass" x="345" y="282" text-anchor="end">N ↑ · not to scale</text>
+  </svg>
+  <figcaption>Not to scale. Homes 54 ft north across Fletcher Avenue and about 150 ft east (MND p. 116); Fletcher Mandarin Language and GATE Academy about 1,200 ft east (<a href="/project/#sensitive-land-uses">project page</a>).</figcaption>
+</figure>

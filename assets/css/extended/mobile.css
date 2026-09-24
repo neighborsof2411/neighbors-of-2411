@@ -324,9 +324,9 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
     .post-content table.table--stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
     .post-content table.table--stack tr {
         border: 1px solid var(--border); border-radius: var(--radius); background: var(--entry);
-        padding: 0.6rem 0.85rem; margin: 0 0 0.6rem;
+        padding: 0.5rem 0.8rem; margin: 0 0 0.45rem;
     }
-    .post-content table.table--stack td { border: 0; padding: 0.15rem 0; }
+    .post-content table.table--stack td { border: 0; padding: 0.1rem 0; }
     .post-content table.table--stack td:first-child { font-weight: 700; }
     .post-content table.table--cols-3 td:not(:first-child)::before {
         content: attr(data-label); display: block; font-size: 0.75rem; font-weight: 700;
@@ -388,7 +388,7 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
 @media (max-width: 767px) {
     .footer-ctas { display: grid; grid-template-columns: 1fr 1fr; }
     .footer-ctas .button { padding: 0.5rem; font-size: 0.95rem; }
-    .hero-mega { padding-top: 2.25rem; padding-bottom: 2rem; }
+    .hero-mega { padding-top: 2.25rem; padding-bottom: 2rem; margin-bottom: 1.25rem; }
     .hero-mega-eyebrow { margin-bottom: 0.9rem; }
     .hero-mega-sub { margin-bottom: 1.4rem; }
 }
@@ -404,3 +404,25 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
 }
 @keyframes nb-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .petition-submit.is-busy::before { animation: none; } }
+
+/* ---------- Site diagram (site-diagram shortcode) ---------- */
+.site-diagram { margin: 1.5rem 0; }
+.site-diagram svg { width: 100%; max-width: 520px; height: auto; display: block; margin: 0 auto; background: var(--entry); border: 1px solid var(--border); border-radius: var(--radius); }
+.site-diagram figcaption { font-size: 0.85rem; color: var(--secondary); margin-top: 0.5rem; }
+.sd-road { fill: var(--tertiary); }
+.sd-road-label { fill: var(--secondary); font-size: 11px; font-weight: 600; }
+.sd-homes rect { fill: var(--nb-alert-bg); stroke: var(--nb-alert-border); stroke-width: 1.5; }
+.sd-site { fill: var(--nb-warning-bg); stroke: var(--nb-cta-primary); stroke-width: 3; }
+.sd-site-label { fill: var(--primary); font-size: 15px; font-weight: 800; }
+.sd-site-sub { fill: var(--secondary); font-size: 11px; }
+.sd-label { fill: var(--primary); font-size: 12px; font-weight: 700; }
+.sd-dim { stroke: var(--nb-cta-primary); stroke-width: 2; }
+.sd-dim--far { stroke-dasharray: 4 3; }
+.sd-arrow { fill: var(--nb-cta-primary); }
+.sd-dim-label { fill: var(--nb-cta-primary); font-size: 13px; font-weight: 800; }
+.sd-compass { fill: var(--secondary); font-size: 10px; }
+.site-diagram figcaption { font-weight: 400; }
+@media (max-width: 767px) {
+    .stat-strip a { min-height: 76px; padding: 0.6rem 0.8rem; }
+    .petition-section { padding: 1.5rem var(--gap); }
+}

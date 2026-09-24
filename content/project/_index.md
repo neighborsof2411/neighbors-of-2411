@@ -119,6 +119,8 @@ We have identified substantial evidence in the City's own documents that contrad
 | **East** | BNSF freight line, then Orange Olive Road and single-family homes | Homes about 150 feet |
 | **West** | Glassell Street, then commercial/industrial | 0 feet (frontage) |
 
+{{< site-diagram >}}
+
 ### Sensitive Land Uses
 
 {{< callout type="alert" title="Fletcher Mandarin Language and GATE Academy (Fletcher Elementary)" icon="📍" >}}

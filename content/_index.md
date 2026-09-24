@@ -25,6 +25,8 @@ Rexford Industrial is proposing to demolish the existing office campus at 2411 N
 - **Emit diesel exhaust** that pushes the project's own estimated cancer risk over the air district's threshold before mitigation (10.07 in a million, unmitigated)
 - **Create continuous noise** from loading docks, truck alarms, and 24-hour operations
 
+{{< site-diagram >}}
+
 **The City released a Draft Initial Study / Mitigated Negative Declaration (IS/MND) that concludes these impacts are less than significant. We believe the evidence shows otherwise.**
 
 ## Why This Matters
