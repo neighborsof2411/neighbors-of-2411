@@ -333,3 +333,48 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
         text-transform: uppercase; letter-spacing: 0.04em; color: var(--secondary); margin-top: 0.35rem;
     }
 }
+
+/* ---------- Section pages: summary box, jump menu, collapsing, next steps ---------- */
+
+.summary-box { border: 2px solid var(--nb-accent); border-radius: var(--radius); padding: 1rem 1.1rem; margin: 0 0 1.25rem; background: var(--entry); }
+.summary-box-title { margin: 0 0 0.4rem; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--nb-accent); }
+.summary-box ul { margin: 0 0 0.75rem; padding-left: 1.2rem; }
+
+.jump-menu { margin: 0 0 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--entry); }
+.jump-menu > summary {
+    cursor: pointer; list-style: none; min-height: 44px; display: flex; align-items: center; justify-content: space-between;
+    padding: 0 1rem; font-weight: 700; font-size: 0.95rem;
+}
+.jump-menu > summary::-webkit-details-marker { display: none; }
+.jump-menu > summary::after { content: "▾"; color: var(--nb-accent); }
+.jump-menu[open] > summary::after { content: "▴"; }
+.jump-menu ol { margin: 0; padding: 0 1rem 0.5rem 2.2rem; }
+.jump-menu li { margin: 0; }
+.jump-menu li a { display: flex; align-items: center; min-height: 44px; line-height: 1.3; }
+.jump-expand { margin: 0 1rem 0.5rem; }
+@media (max-width: 767px) {
+    .jump-menu { position: sticky; top: 56px; z-index: 15; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
+    .jump-menu[open] { max-height: calc(100dvh - 56px - 80px); overflow-y: auto; }
+}
+
+.post-content h2 > .section-toggle {
+    all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; gap: 0.6rem;
+    width: 100%; min-height: 48px; font: inherit; color: inherit;
+}
+.post-content h2 > .section-toggle::after { content: "+"; margin-left: auto; color: var(--nb-accent); font-size: 1.3em; line-height: 1; }
+.post-content h2 > .section-toggle[aria-expanded="true"]::after { content: "−"; }
+.post-content h2 > .section-toggle:focus-visible { outline: 3px solid var(--nb-accent); outline-offset: 2px; }
+.post-content[data-collapse] h2:has(> .section-toggle) { border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+
+.action-next { margin: 2rem 0 1rem; }
+.action-next-title { font-size: 1.25rem; margin: 0 0 0.5rem; }
+.action-next .meetings { margin-top: 0.5rem; }
+.action-next-buttons { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+@media (min-width: 640px) { .action-next-buttons { display: flex; flex-wrap: wrap; } }
+.faq-filter { display: flex; flex-direction: column; gap: 0.35rem; margin: 0.5rem 0 1rem; }
+.faq-filter label { font-weight: 600; font-size: 0.9rem; }
+.faq-filter input { font: inherit; font-size: 16px; min-height: 48px; padding: 0.6rem 0.7rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--theme); color: var(--primary); }
+.faq-filter-count { margin: 0; font-size: 0.9rem; color: var(--secondary); min-height: 1.2em; }
+/* Anchored headings land below the sticky header (and jump menu on phones). */
+.post-content [id], .main section[id], details[id] { scroll-margin-top: 80px; }
+@media (max-width: 767px) { .post-content [id], .main section[id], details[id] { scroll-margin-top: 116px; } }

@@ -33,6 +33,8 @@ A short, specific email from you, in your own words, is one of the most useful t
 
 ## Frequently Asked Questions
 
+{{< faq-filter >}}
+
 ### About the Project
 
 {{< faq q="When did the public comment period close?" >}}

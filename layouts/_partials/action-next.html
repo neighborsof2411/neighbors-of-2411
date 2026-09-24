@@ -1,0 +1,17 @@
+{{- /* End-of-page action block (section pages): the next rung up the ladder.
+       Next meeting card from data/meetings.yaml, then Sign / Write your
+       comment. Each page's own share block sits just above this. */ -}}
+{{- $today := now.Format "2006-01-02" }}
+{{- $up := where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today }}
+<section class="action-next" aria-labelledby="action-next-title">
+  <h2 id="action-next-title" class="action-next-title">What you can do next</h2>
+  {{- with $up }}
+  <div class="meetings">
+    {{ partial "meeting-card.html" (dict "m" (index . 0) "next" true) }}
+  </div>
+  {{- end }}
+  <div class="action-next-buttons">
+    <a class="button button--primary" href="/#petition">Sign the Petition</a>
+    <a class="button button--secondary" href="/testify/#comment-builder">Write your public comment</a>
+  </div>
+</section>

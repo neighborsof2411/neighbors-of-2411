@@ -68,6 +68,49 @@
     $all('details.collapse-mobile[open]').forEach(function (d) { d.open = false; });
   }
 
+  /* ---------- Section pages: collapse H2 sections after the first two on
+     phones (content stays open without JS) ---------- */
+  var phoneMQ = window.matchMedia && window.matchMedia('(max-width: 767px)');
+  var content = $('.post-content[data-collapse]');
+  var toggles = [];
+  function setSection(btn, open) {
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    doc.getElementById(btn.getAttribute('aria-controls')).hidden = !open;
+  }
+  if (content && phoneMQ && phoneMQ.matches) {
+    var h2s = $all(':scope > h2', content);
+    if (h2s.length >= 4) {
+      h2s.slice(2).forEach(function (h2, i) {
+        var body = doc.createElement('div');
+        body.className = 'section-body';
+        body.id = (h2.id || 'section-' + i) + '--body';
+        var n = h2.nextSibling;
+        while (n && !(n.nodeType === 1 && (n.tagName === 'H2' || n.classList.contains('share-block')))) {
+          var nx = n.nextSibling; body.appendChild(n); n = nx;
+        }
+        h2.parentNode.insertBefore(body, h2.nextSibling);
+        var btn = doc.createElement('button');
+        btn.type = 'button';
+        btn.className = 'section-toggle';
+        btn.setAttribute('aria-controls', body.id);
+        var anchor = $('a.anchor', h2);
+        Array.prototype.slice.call(h2.childNodes).forEach(function (c) { if (c !== anchor) btn.appendChild(c); });
+        h2.insertBefore(btn, anchor || null);
+        setSection(btn, false);
+        btn.addEventListener('click', function () { setSection(btn, btn.getAttribute('aria-expanded') !== 'true'); });
+        toggles.push(btn);
+      });
+      var expandAll = $('[data-expand-all]');
+      if (expandAll) {
+        expandAll.hidden = false;
+        expandAll.addEventListener('click', function () {
+          toggles.forEach(function (b) { setSection(b, true); });
+          var jm = $('#jump-menu'); if (jm) jm.open = false;
+        });
+      }
+    }
+  }
+
   /* ---------- Open a collapsed section when a link targets it ---------- */
   function openForHash() {
     var id = decodeURIComponent(location.hash.slice(1));
@@ -75,7 +118,12 @@
     var el = doc.getElementById(id);
     if (!el) return;
     var d = el.tagName === 'DETAILS' ? el : el.closest('details');
-    while (d) { d.open = true; d = d.parentElement && d.parentElement.closest('details'); }
+    while (d) { if (d.id !== 'jump-menu') d.open = true; d = d.parentElement && d.parentElement.closest('details'); }
+    var sec = el.closest('.section-body');
+    var own = el.querySelector && el.querySelector(':scope > .section-toggle');
+    if (own) setSection(own, true);
+    if (sec) { var t = $('[aria-controls="' + sec.id + '"]'); if (t) setSection(t, true); }
+    var jm = $('#jump-menu'); if (jm) jm.open = false;
     el.scrollIntoView();
   }
   window.addEventListener('hashchange', openForHash);
@@ -172,4 +220,31 @@
       });
     }
   });
+
+  /* ---------- FAQ filter (faq-filter shortcode) ---------- */
+  var ff = $('.faq-filter');
+  if (ff) {
+    ff.hidden = false;
+    var input = $('input', ff);
+    var countEl = $('.faq-filter-count', ff);
+    var items = $all('.faq-item');
+    var groups = $all('h3').filter(function (h) {
+      var n = h.nextElementSibling; return n && n.classList.contains('faq-item');
+    });
+    input.addEventListener('input', function () {
+      var q = input.value.trim().toLowerCase();
+      var shown = 0;
+      items.forEach(function (it) {
+        var hit = !q || it.textContent.toLowerCase().indexOf(q) !== -1;
+        it.hidden = !hit;
+        if (hit) shown++;
+      });
+      groups.forEach(function (h) {
+        var n = h.nextElementSibling, any = false;
+        while (n && n.classList.contains('faq-item')) { if (!n.hidden) any = true; n = n.nextElementSibling; }
+        h.hidden = !any;
+      });
+      countEl.textContent = q ? shown + ' of ' + items.length + ' questions match' : '';
+    });
+  }
 })();

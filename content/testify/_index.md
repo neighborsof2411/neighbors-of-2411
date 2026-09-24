@@ -3,6 +3,9 @@ title: "How to Submit Public Comment at the Planning Commission Hearing"
 description: "Step-by-step guidance for submitting public comment — written or oral — at the Planning Commission hearing on the 2411 N. Glassell warehouse project, plus example comment scripts and how to help Neighbors of 2411."
 ShowToc: true
 TocOpen: false
+# The comment builder must stay open; the long guides below it already
+# collapse on their own.
+collapseSections: false
 ---
 
 ## The Good News
