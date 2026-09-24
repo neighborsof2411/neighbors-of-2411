@@ -38,7 +38,7 @@ The HRA's own result exceeds the threshold — the MND says so: "the unmitigated
 
 **1. The measure that gets it under the line is construction-phase; the operation lasts decades.** MM AQ-1 requires Tier 4 Final engines on construction equipment over 400 horsepower (MND at 56). It does nothing to operational emissions, which were modeled at 0.56 per million with 5 dock doors (MND at 54, Table AQ-7). The mitigated total leaves 0.52 per million of margin — any operational increase larger than that puts the project back over the threshold. The HRA used older versions of the EPA dispersion models (AERMOD 23132 / AERMET 16216). The air district said this "may result in inaccurate or non-conservative health risk estimates" and asked for a re-run with the current versions (SCAQMD letter, p. 3). In SCAQMD's words: "Given the extremely narrow margin between the mitigated risk level and the significance threshold, the result appears highly sensitive to underlying assumptions" (SCAQMD letter at 3).
 
-**2. The dock-door gap.** The health study models **5 dock doors** (Appendix B, p. 7). The alternate layout in the City's own document has **36 raised dock doors plus 2 grade-level doors** (IS/MND Table 3, p. 24), and the applicant has confirmed in writing that it is building that layout. The traffic study's own footnote says the latest site plan is the warehouse-heavy version (Appendix L, fn. 1). **No study analyzes the 36-door building.** How much more diesel it would bring depends on the tenant, and nobody has run the numbers.
+**2. The dock-door gap.** The health study models **5 dock doors** (Appendix B, p. 7). The alternate layout in the City's own document has **36 raised dock doors plus 2 grade-level doors** (IS/MND Table 3, p. 24), and the applicant has said in writing that it intends to build that layout (outreach-team email, August 5, 2026). The traffic study's own footnote says the latest site plan is the warehouse-heavy version (Appendix L, fn. 1). **No study analyzes the 36-door building.** How much more diesel it would bring depends on the tenant, and nobody has run the numbers.
 
 **3. The diesel fire pump.** The study assumes the 238-horsepower diesel fire pump runs 50 hours a year. The air district says permits allow **up to 200 hours a year** including emergencies, and asked the City to re-run the analysis or cap the hours by permit (SCAQMD letter, pp. 3–4).
 
@@ -70,7 +70,7 @@ About 500 children attend Fletcher Mandarin Language and GATE Academy (Fletcher 
 
 ### What Should Happen
 
-A full Environmental Impact Report should include updated air dispersion modeling using current model versions, analysis of the 36-door layout the applicant has confirmed it is building, a fire pump scenario at up to 200 hours a year, the cumulative air toxics analysis SCAQMD asked for, a health impact assessment specific to the children at Fletcher, and an alternatives analysis with truck trip reduction strategies.
+A full Environmental Impact Report should include updated air dispersion modeling using current model versions, analysis of the 36-door layout the applicant says it intends to build, a fire pump scenario at up to 200 hours a year, the cumulative air toxics analysis SCAQMD asked for, a health impact assessment specific to the children at Fletcher, and an alternatives analysis with truck trip reduction strategies.
 
 ---
 
@@ -131,7 +131,7 @@ The applicant's studies estimate **about 160 truck trips a day**: roughly 80 tru
 The estimate rests on three assumptions:
 - **A "typical" warehouse-and-manufacturing mix.** The traffic study uses standard trip rates for ordinary warehousing plus 109,000 sq ft of manufacturing (Traffic Study, Appendix L, Table 4-1, p. 38).
 - **No cold storage.** Every trip table is labeled "Without Cold Storage" (Appendix L, Table 4-1, p. 38).
-- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). The applicant has confirmed in writing, by email to Neighbors of 2411, that it is building that 36-door layout.
+- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). In an August 5, 2026 email to a resident, the applicant's outreach team wrote that Rexford "intends to proceed with the project configuration shown in the entitlement plan set, which includes 36 dock doors and 2 grade-level doors."
 
 **The 36-dock layout was never run through the traffic study.** The study's own footnote says the latest site plan is the warehouse-heavy version (about 260,000 sq ft of warehouse). It then analyzes the manufacturing-heavy version anyway (Appendix L, footnote 1, p. 4).
 

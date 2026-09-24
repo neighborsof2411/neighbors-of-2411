@@ -44,7 +44,7 @@ The applicant's studies estimate **about 160 truck trips a day**: roughly 80 tru
 The estimate rests on three assumptions:
 - **A "typical" warehouse-and-manufacturing mix.** The traffic study uses standard trip rates for ordinary warehousing plus 109,000 sq ft of manufacturing (Traffic Study, Appendix L, Table 4-1, p. 38).
 - **No cold storage.** Every trip table is labeled "Without Cold Storage" (Appendix L, Table 4-1, p. 38).
-- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). The applicant has confirmed in writing, by email to Neighbors of 2411, that it is building that 36-door layout.
+- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). In an August 5, 2026 email to a resident, the applicant's outreach team wrote that Rexford "intends to proceed with the project configuration shown in the entitlement plan set, which includes 36 dock doors and 2 grade-level doors."
 
 **The 36-dock layout was never run through the traffic study.** The study's own footnote says the latest site plan is the warehouse-heavy version (about 260,000 sq ft of warehouse). It then analyzes the manufacturing-heavy version anyway (Appendix L, footnote 1, p. 4).
 
