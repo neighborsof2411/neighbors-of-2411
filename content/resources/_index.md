@@ -5,6 +5,32 @@ ShowToc: true
 TocOpen: false
 ---
 
+## How to Email a Public Comment {#email-a-comment}
+
+A short, specific email from you, in your own words, is one of the most useful things you can send. Here's how to make sure it counts.
+
+1. **Send it to both of these addresses, every time.**
+   - Arlen Beck, Senior Planner — [abeck@cityoforange.org](mailto:abeck@cityoforange.org)
+   - City Clerk — [clerkinfo@cityoforange.org](mailto:clerkinfo@cityoforange.org)
+
+   Put both addresses on the same email. If you email only one, your comment may never reach the official file.
+
+2. **Use this subject line:**
+
+   `Public Comment — CUP No. 25-0013 / IS-MND No. ENV25-0002 / 2411 N. Glassell St.`
+
+3. **Say who you are.** Write in the first person, as an individual: "I am a resident of [your street] in Orange," or "I am a parent of a student at Fletcher." You don't need to mention any group.
+
+4. **Say what you want.** Ask the City to prepare a full Environmental Impact Report instead of relying on the Mitigated Negative Declaration, ask for specific conditions of approval, or both.
+
+5. **Give your reasons in your own words.** Your own firsthand observations — what you have heard or seen, when, and where — count as evidence, and the City has to consider them. For example, "On [date], trucks idled on Glassell outside my house from [time] to [time]" is stronger than "there will be a lot of trucks."
+
+6. **Ask for your email to go in the record.** End with this sentence:
+
+   > Please place this email in the administrative record for CUP No. 25-0013 / IS-MND No. ENV25-0002 and include it in the Planning Commission packet and any later hearing packet for this project.
+
+7. **Keep a copy.** Save your sent email (or BCC yourself) so you can show what you sent and when.
+
 ## Frequently Asked Questions
 
 ### About the Project
