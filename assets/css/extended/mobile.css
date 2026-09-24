@@ -118,7 +118,7 @@
 .meeting-card-actions .button:nth-child(3) { grid-column: 1 / -1; }
 @media (min-width: 640px) { .meeting-card-actions { display: flex; flex-wrap: wrap; } }
 .meeting-card-alt { font-size: 0.85rem; color: var(--secondary); margin: 0.6rem 0 0; }
-.meeting-card-alt a { display: inline-block; padding: 0.35rem 0; }
+.meeting-card-alt a { display: inline-flex; align-items: center; min-height: 44px; }
 .meetings-more > summary {
     cursor: pointer; font-weight: 700; min-height: 48px; display: flex; align-items: center; gap: 0.5rem;
     padding: 0 1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--entry); list-style: none;
@@ -273,3 +273,34 @@ body.has-action-bar { padding-bottom: calc(64px + env(safe-area-inset-bottom)); 
 .share-more { margin-top: 0.5rem; }
 .share-more > summary { cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; color: var(--secondary); font-size: 0.9rem; }
 .share-status { margin: 0.5rem 0 0; font-weight: 700; color: var(--nb-alert-border); min-height: 1.2em; }
+
+/* ---------- Tap targets (44px minimum) ---------- */
+
+button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: manipulation; }
+
+/* "Verify Fact" badges: readable, with a 44px invisible hit area. */
+.cite-badge {
+    position: relative; font-size: 0.875rem; min-height: 32px; padding: 0.2rem 0.7rem;
+    letter-spacing: 0.02em;
+}
+.cite-badge::after { content: ""; position: absolute; left: -4px; right: -4px; top: 50%; height: 44px; transform: translateY(-50%); }
+
+.faq-item summary, .finding-card summary, .fact-accordion-summary, .save-contact-details summary { min-height: 48px; }
+.doc-filter { min-height: 44px; padding: 0.4rem 0.9rem; }
+.cite-modal-close, .button--tertiary, a.button.button--tertiary { min-height: 44px; }
+.theme-toggle { min-width: 44px; min-height: 44px; }
+
+/* Stand-alone links (breadcrumbs, TOC, footer, post nav) get a taller box;
+   links inside running text rely on the 1.7 line height instead. */
+.breadcrumbs a, .toc a, .footer a, .site-footer-extended a, .post-content > p > a:only-child {
+    display: inline-flex; align-items: center; min-height: 44px;
+}
+.toc li { margin: 0; }
+.site-footer-extended .footer-col p { margin: 0; }
+.petition-form input, .wizard select { min-height: 48px; }
+.logo > a { min-height: 44px; }
+/* Running-text links in tables, FAQ answers and callouts: same 1.7 line
+   height as body text so neighbouring links aren't cramped. */
+.post-content td, .post-content th, .faq-answer, .faq-answer p, .faq-answer li,
+.callout, .callout p, .callout li, .fact-compare-text, .fact-compare-text p { line-height: 1.7; }
+.post-content table th, .post-content table td { line-height: 1.7 !important; }

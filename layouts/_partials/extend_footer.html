@@ -40,7 +40,7 @@
       <h4>City of Orange Planning</h4>
       {{ range $p.contacts.cityStaff }}
       <p>{{ .name }}, {{ .title }}<br>
-        <a href="mailto:{{ .email }}">{{ .email }}</a>{{ with .phone }} · {{ . }}{{ end }}</p>
+        <a href="mailto:{{ .email }}">{{ .email }}</a>{{ with .phone }} · <a href="tel:+1{{ replaceRE `[^0-9]` "" . }}">{{ . }}</a>{{ end }}</p>
       {{ end }}
     </div>
 

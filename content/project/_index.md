@@ -74,7 +74,7 @@ A single-story industrial warehouse (plus mezzanine) designed for mixed warehous
 ### Lead Agency
 
 **City of Orange** — Community Development Department, Planning Division
-300 East Chapman Avenue, Orange, CA 92866 · (714) 744-7220
+300 East Chapman Avenue, Orange, CA 92866 · [(714) 744-7220](tel:+17147447220)
 
 ## Developer & Applicant
 
@@ -85,7 +85,7 @@ A single-story industrial warehouse (plus mezzanine) designed for mixed warehous
 | **Applicant** | Rexford Industrial Realty, Inc. |
 | **Address** | 555 Anton Blvd, Suite 910, Costa Mesa, CA 92626 |
 | **Contact Person** | Luis Gomez, Vice President, Development |
-| **Phone** | (424) 465-2061 |
+| **Phone** | [(424) 465-2061](tel:+14244652061) |
 | **Email** | LGomez@rexfordindustrial.com |
 | **Outreach Email** | 2411NGlassell@gmail.com *(Rexford's outreach email — not the neighborhood group's)* |
 
