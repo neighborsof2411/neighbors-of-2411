@@ -24,21 +24,13 @@
 calendar_url: https://cityoforange.legistar.com/Calendar.aspx
 upcoming:
 
-  - body: City Council
-    date: "2026-09-22"
-    time: "6:00 PM"
-    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
-    project: not on agenda
-    agenda: ""
-    note: Regular session (a closed session precedes it at 5:00 PM). The project isn't on this agenda, but public comment is open — Council is the appeal body, and it should hear from the neighborhood early.
-
   - body: Planning Commission
     date: "2026-10-05"
     time: "5:30 PM"
     location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
     project: tbd
     agenda: ""
-    note: The September 21 meeting was cancelled, and no new hearing date has been noticed. This is the next Planning Commission meeting, so the rescheduled hearing could land here — plan to attend.
+    note: The September 21 meeting was cancelled, and no new hearing date has been noticed. The City has committed in writing to mail notice to property owners within 300 feet and post the site at least 10 days before any hearing. If no notice has arrived by about September 25, this meeting is unlikely to be the hearing. Come anyway — public comment is open.
 
   - body: City Council
     date: "2026-10-13"

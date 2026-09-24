@@ -22,7 +22,7 @@ Yes. You can submit written or oral public comment **at the Planning Commission 
 {{< /faq >}}
 
 {{< faq q="How many people live nearby?" >}}
-The nearest residences are about 54 feet north of the site (along Fletcher Avenue). Fletcher Elementary School is 0.25 miles (a quarter-mile) north.
+The nearest residences are about 54 feet north of the site (along Fletcher Avenue). Fletcher Mandarin Language and GATE Academy (Fletcher Elementary) is about 1,200 feet away. Homes to the east are about 150 feet away.
 {{< /faq >}}
 
 {{< faq q="What's the developer's background?" >}}
@@ -34,7 +34,7 @@ Yes. The Planning Commission can vote to deny the project based on environmental
 {{< /faq >}}
 
 {{< faq q="What if the Planning Commission approves?" >}}
-You typically have **10–15 days** to appeal the decision to the City Council (a "Council appeal"). Council Members can overturn or modify the Commission's decision.
+**If the Planning Commission approves the project,** its decision can be appealed to the City Council, but **the deadline is short** and the appeal requires a filing fee. [Sign the petition](/#petition) so we can alert you the day the Commission acts. Council Members can overturn or modify the Commission's decision.
 {{< /faq >}}
 
 {{< faq q="What happens if an EIR is demanded?" >}}
@@ -56,19 +56,19 @@ A comprehensive environmental document (typically 50–200+ pages) analyzing all
 {{< /faq >}}
 
 {{< faq q="What's the 'fair argument' standard?" >}}
-Under CEQA, an EIR is required if there is **any reasonable argument** that a project may have significant environmental effects — a lower burden than "preponderance of evidence." Example: the City's baseline nighttime noise standards are 45 dBA (General Plan) and 50 dBA (Municipal Code), and the applicant's own noise model shows the project generating 53.6 dBA at the nearest home. The MND finds this "less than significant" only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at this receptor to roughly 57–58 dBA because ambient noise there is already elevated. There is a fair argument that this adjustment methodology doesn't adequately protect residents, even though the modeled level falls below the adjusted number.
+Under CEQA, an EIR is required if **substantial evidence** in the record supports a **fair argument** that the project may have a significant effect, even if other evidence points the other way. Substantial evidence means facts, reasonable assumptions based on facts, or expert opinion based on facts. Argument and speculation don't count, which is why we cite the applicant's own documents. Example: the City's nighttime noise standard is 45 dBA (General Plan), and the applicant's own noise model shows the project generating 53.6 dBA at the homes to the east of the site. The MND finds this "less than significant" only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at this receptor to roughly 57–58 dBA because ambient noise there is already elevated. There is a fair argument that this adjustment methodology doesn't adequately protect residents, even though the modeled level falls below the adjusted number.
 {{< /faq >}}
 
 {{< faq q="What's the difference between a 'less than significant' impact and a 'significant' impact?" >}}
-"Less than significant" means the impact occurs but won't substantially affect the environment (due to low intensity or effective mitigation). "Significant" means the impact will substantially affect the environment and requires an EIR and detailed mitigation.
+"Less than significant" means the impact occurs but won't substantially affect the environment (due to low intensity or effective mitigation). "Significant" means a substantial adverse change in the environment. When the evidence supports a fair argument that a project may cause one, an EIR is required.
 {{< /faq >}}
 
 {{< faq q="What's a 'mitigation measure'?" >}}
-A requirement imposed on a project to reduce impacts to less-than-significant levels (sound walls, truck route restrictions, hours-of-operation limits, air filtration, etc.). If mitigation measures are vague, unenforceable, or rely on future regulatory compliance rather than the applicant's binding commitment, they may not be adequate under CEQA.
+A requirement imposed on a project to reduce impacts to less-than-significant levels (for example noise barriers, truck route restrictions, hours-of-operation limits, air filtration, etc.). If mitigation measures are vague, unenforceable, or rely on future regulatory compliance rather than the applicant's binding commitment, they may not be adequate under CEQA.
 {{< /faq >}}
 
 {{< faq q="Can I demand an EIR at the hearing?" >}}
-Yes. You can submit public comment stating that substantial evidence supports a fair argument of significant impacts, and therefore an EIR is required. The Planning Commission cannot ignore a fair argument — they must either prepare an EIR or provide written findings explaining why impacts are not significant.
+Yes. You can submit public comment stating that substantial evidence supports a fair argument of significant impacts, and therefore an EIR is required. If there is substantial evidence supporting a fair argument of a significant impact, CEQA requires an EIR. Contrary findings don't make that evidence go away.
 {{< /faq >}}
 
 ### About Your Rights
@@ -78,7 +78,7 @@ No. Anyone with an interest in the project can comment — if you work in the ar
 {{< /faq >}}
 
 {{< faq q="Can I form a nonprofit to oppose the project?" >}}
-Yes. Neighbors of 2411 is a Nonprofit Unincorporated Association (UNA) organized under California law, requiring no formal registration — just a founding document and agreement among members. A UNA provides anti-SLAPP protection and litigation privilege.
+Yes. Neighbors of 2411 is a Nonprofit Unincorporated Association (UNA) organized under California law, requiring no formal registration — just a founding document and agreement among members. Separately, California's anti-SLAPP law and the litigation privilege protect speech to government bodies, whether or not you belong to any group.
 {{< /faq >}}
 
 {{< faq q="Can the developer sue me for opposing the project?" >}}
@@ -118,43 +118,39 @@ Existing cancer risk from all air toxics in this area is ~300–400 per million 
 {{< /faq >}}
 
 {{< faq q="Is cancer risk 'de minimis' (too small to worry about)?" >}}
-No. A 9.48 (or 10.07) per million added risk means roughly 10 additional cancer cases per million people exposed over a lifetime, on top of an existing 300–400 per million. For a sensitive population (children at Fletcher Elementary), this is significant.
+No. The modeled figure means that a person living at the most-exposed home for 30 years would face an estimated added cancer risk of about 10 in a million, on top of the existing 300–400 in a million from all air toxics in this area.
 {{< /faq >}}
 
 {{< faq q="What's SCAQMD?" >}}
-South Coast Air Quality Management District — the government agency responsible for air quality regulation and permitting in Orange County, and the expert authority on air quality impacts. Their comment letter — seven areas of concern plus a list of recommended conditions — is strong evidence the analysis is inadequate.
+South Coast Air Quality Management District — the government agency responsible for air quality regulation and permitting in Orange County, and the expert authority on air quality impacts. Their comment letter — seven areas of concern plus a list of recommended mitigation measures — is strong evidence the analysis is inadequate.
 {{< /faq >}}
 
 {{< faq q="What's CARB?" >}}
-California Air Resources Board — the state agency responsible for air quality statewide, whose advisory *Air Quality and Land Use Handbook* recommends keeping new homes and schools 500 feet from freeways and 1,000 feet from busy distribution centers.
+California Air Resources Board — the state air agency. Its advisory *Air Quality and Land Use Handbook* (2005) gives siting distances for new homes and schools near freeways and large distribution centers.
 {{< /faq >}}
 
 ### About Noise
 
 {{< faq q="What do the decibel (dB) numbers mean?" >}}
-Decibels measure sound intensity on a logarithmic scale — each 10 dB increase is roughly twice as loud to human ears. For reference: whisper ~30 dBA, conversation ~60 dBA, busy traffic ~70 dBA, lawn mower ~90 dBA, chainsaw ~110 dBA. Notably, the City's own Municipal Code defines 3 dBA as "the industry-accepted threshold of human perceptibility for a change in the noise environment" — and a 3 dBA increase is exactly the ambient-noise adjustment the MND relies on to avoid a significant-impact finding for this project's modeled 53.6 dBA nighttime noise.
+Decibels measure sound intensity on a logarithmic scale — each 10 dB increase is roughly twice as loud to human ears. For reference: whisper ~30 dBA, conversation ~60 dBA, busy traffic ~70 dBA, lawn mower ~90 dBA, chainsaw ~110 dBA. The MND's ambient adjustment raises the standard in 3-dB steps. At the east homes it moved the nighttime standard from 45 dBA to about 57–58 dBA.
 {{< /faq >}}
 
 {{< faq q="Is nighttime noise more regulated than daytime?" >}}
-Yes. Most jurisdictions have lower significance thresholds for nighttime noise (e.g., 55 dBA at night vs. 70 dBA during the day), reflecting that sleep disruption is more harmful than daytime activity.
+Yes. Orange's stationary-noise standards are 55 dBA by day and 45 dBA at night (hourly average), and 70/65 dBA for single loud events (Appendix K, Table C).
 {{< /faq >}}
 
 {{< faq q="What's a 'backup alarm'?" >}}
-The loud beeping sound that plays when a truck or piece of heavy equipment backs up. The noise study folds back-up alarms into a 75 dBA truck-arrival source level measured 20 feet from the truck (Appendix K at 26) — but it never applies the Municipal Code's 5 dBA stricter limit for "simple tone" and "recurring impulsive" sounds (§ 8.24.040(D)), which is exactly what a back-up alarm is.
+The loud beeping sound that plays when a truck or piece of heavy equipment backs up. The noise study folds back-up alarms into a 75 dBA truck-arrival source level measured 20 feet from the truck (Appendix K at 26) — but it never applies the City's 5 dBA stricter limit for "simple tone" and "recurring impulsive" sounds (Appendix K, Table C, note 2), which is exactly what a back-up alarm is.
 {{< /faq >}}
 
 ### About Traffic
 
 {{< faq q="What's 'Level of Service' (LOS)?" >}}
-A measure of traffic congestion at an intersection or roadway, from LOS A (free-flowing) to LOS F (gridlock). LOS E/F is generally considered unacceptable for residential or mixed-use areas.
+A measure of traffic congestion at an intersection or roadway, from LOS A (free-flowing) to LOS F (gridlock). LOS E/F is generally considered unacceptable for residential or mixed-use areas. Since 2020, CEQA measures traffic impacts by vehicle miles traveled rather than LOS. LOS still matters for safety and General Plan consistency.
 {{< /faq >}}
 
 {{< faq q="What's a 'PCE trip'?" >}}
-Passenger Car Equivalent. One truck counts as roughly 2 PCE trips because trucks take up more space and affect traffic flow more than cars — so 810 net new PCE trips represents fewer actual vehicles, but a traffic impact equivalent to 810 cars.
-{{< /faq >}}
-
-{{< faq q="If the applicant says the traffic impact is 'unavoidable,' does that mean it's not significant?" >}}
-No — an "unavoidable" impact is actually evidence that it's significant. Significant impacts require an EIR and analysis of alternatives; the fact that the applicant can't or won't mitigate it highlights the need for more thorough review, not less.
+Passenger Car Equivalent. Each truck trip counts as 1.5, 2 or 3 car trips depending on its size (Appendix L, Table 4-1). So 810 PCE trips means about 556 actual vehicles, including about 160 truck trips.
 {{< /faq >}}
 
 ## Glossary of Terms
@@ -173,7 +169,7 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **Entitlements** — approvals required from the government (permits, CUPs, variances, etc.).
 
-**Fair Argument Standard** — the CEQA legal standard requiring an EIR if there is any reasonable argument a project may have significant environmental effects.
+**Fair Argument Standard** — the CEQA legal standard requiring an EIR if substantial evidence in the record supports a fair argument that a project may have a significant environmental effect.
 
 **General Plan** — a city's long-term vision/policy document guiding future land use, transportation, housing, etc.
 
@@ -191,7 +187,7 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **Notice of Availability (NOA)** — public notice announcing release of an environmental document and comment period.
 
-**Public Records Act (PRA)** — California Government Code §6250 et seq., providing public access to government records.
+**Public Records Act (PRA)** — California Government Code § 7920.000 et seq. (renumbered effective January 1, 2023), providing public access to government records.
 
 **Recusal** — when an official removes themselves from a decision due to conflict of interest or appearance of bias.
 
@@ -235,7 +231,7 @@ No — an "unavoidable" impact is actually evidence that it's significant. Signi
 
 **Planning Division** — [abeck@cityoforange.org](mailto:abeck@cityoforange.org) (Arlen Beck, Senior Planner) · [hbeckman@cityoforange.org](mailto:hbeckman@cityoforange.org) (Hayden Beckman, Planning Manager) · (714) 744-7220 · 300 East Chapman Avenue, Orange, CA 92866
 
-**City Council** — Kathy Tavoularis (friendly contact), [ktavoularis@cityoforange.org](mailto:ktavoularis@cityoforange.org) *(may recuse if the project reaches a City Council appeal due to her quasi-adjudicative role)*
+**City Council** — contact information for all Council members is on the City's website.
 
 **Meeting agendas & remote participation** — [City of Orange meeting calendar](https://cityoforange.legistar.com/Calendar.aspx). Agendas, times, and Zoom details for City Council and Planning Commission meetings are posted here. Check it before any meeting you plan to attend, since agendas can change.
 
@@ -273,9 +269,9 @@ To get updates: [sign the petition](/#petition) — it's the one list, and every
 | **Late May / June 2026** | City prepares responses to comments |
 | **September 8, 2026** | City Council meeting — public comment only; project not on agenda *(past)* |
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
-| **September 21, 2026** | Planning Commission hearing **cancelled by the City**; no new hearing date noticed |
+| **September 21, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
 | **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
-| **Post-PC decision** | 10–15 day appeal window to City Council (if applicable) |
+| **Post-PC decision** | Short appeal window; see the homepage |
 
 **Next milestone**: whichever Planning Commission or City Council meeting comes next — see [Upcoming City Meetings](/#upcoming-city-meetings) and the [City calendar](https://cityoforange.legistar.com/Calendar.aspx). Show up to each one.
 
@@ -302,9 +298,9 @@ If you need documents from the City that aren't easily available:
 
 [Date]
 
-Community Development Department
+City Clerk
 City of Orange
-300 East Chapman Avenue
+300 E. Chapman Avenue
 Orange, CA 92866
 
 RE: Public Records Act Request
@@ -312,18 +308,20 @@ RE: Public Records Act Request
 
 Dear City Clerk:
 
-Pursuant to Government Code §6250 et seq. (California Public Records Act),
+Pursuant to Government Code § 7920.000 et seq. (California Public Records Act),
 I request copies of the following documents:
 
 1. [Specific document name and date, or description]
 2. [Another document]
 3. [Etc.]
 
-Please provide these records within 10 business days.
+Please let me know within 10 days whether you have responsive records, as the Public Records Act requires.
 
 Respectfully,
 [Your Signature]
 ```
+
+The City also accepts requests through its online public records portal.
 
 **Common requests**: staff reports prepared for the Planning Commission, minutes from pre-application meetings, correspondence between the City and applicant, traffic counts used in the traffic analysis, and conditions of approval for similar projects in the city.
 

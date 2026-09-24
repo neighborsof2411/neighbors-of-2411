@@ -19,7 +19,7 @@ Rexford Industrial Realty, Inc. is proposing to demolish three existing office b
 | **Assessor's Parcel Numbers** | 374-381-01 & 374-381-02 |
 | **Zoning** | M-2 (Industrial Manufacturing) |
 | **General Plan Designation** | Light Industrial (LI) |
-| **Max Height Allowed** | 45 feet |
+| **Building Height** | About 45 feet (the M-2 zone maximum) |
 
 ### Building & Operations
 
@@ -29,25 +29,27 @@ Rexford Industrial Realty, Inc. is proposing to demolish three existing office b
 | **Warehouse Space** | 171,188 SF (Option 1, analyzed — the traffic study's 189,988 SF folds in the 18,800 SF of office); 260,118 SF (Option 2) |
 | **Manufacturing Space** | 109,000 SF (Option 1, analyzed); 20,000 SF (Option 2) |
 | **Office Space** | 18,800 SF (9,400 SF ground floor + 9,400 SF mezzanine), both options |
-| **Building Height** | One story + mezzanine (within 45-foot limit) |
+| **Stories** | One story plus mezzanine |
 | **Loading Dock Doors** | 5 (Option 1, analyzed); **36 raised dock doors plus 2 grade-level doors (Option 2)** — MND at 24, Tables 2–3, Figure 9 |
 | **Parking Spaces** | 380 (Option 1, analyzed: 297 standard, 5 accessible, 2 van, 76 EV); 247 (Option 2: 190 standard, 5 accessible, 2 van, 50 EV) |
 | **Bicycle Parking** | 20 spaces (14 short-term, 6 long-term) |
 
-The MND analyzed Option 1 and says any differences between the two options "are identified throughout the analysis" (MND at 23). In practice, Option 2 is addressed in a single paragraph on criteria pollutants (MND at 50); the health risk, noise, and traffic studies never mention it. [Why that matters →](/issues/#issue-1-air-quality-and-health-risk-assessment)
+The MND analyzed Option 1 and says any differences between the two options "are identified throughout the analysis" (MND at 23). In practice, Option 2 is addressed in a single paragraph on criteria pollutants (MND at 50); the health risk, noise, and traffic studies never analyze it. [Why that matters →](/issues/#issue-1-air-quality-and-health-risk-assessment)
 
 ### Traffic & Operations
 
 | Specification | Detail |
 |---------------|--------|
 | **Operating Hours** | 24 hours per day, 7 days per week (24/7) |
-| **Daily Vehicle Trips** | 843 total; 556 net new (≈163 trucks, 810 PCE-weighted) |
+| **Daily Vehicle Trips** | Estimated 843 total daily vehicle trips (556 net new), including about 160 truck trips. The estimate assumes a typical tenant, 5 docks and no cold storage, and could be higher ([why](/issues/#truck-traffic)) |
 | **AM Peak Hour Trips** | 106 vehicle trips (139 PCE) |
 | **PM Peak Hour Trips** | 115 vehicle trips (147 PCE) |
 | **Truck Driveway Access** | Southern driveway on Glassell Street (49 ft wide, MND at 25; the HRA's project description says 40 ft, Appendix B at 7) |
 | **Passenger Vehicle Access** | Northern driveway on Glassell Street (30 ft, passenger vehicles only, right-in/right-out — MND at 25; Appendix L at 5) |
 | **Fire Access** | Separate 28-foot driveway via Fletcher Avenue (northeast) |
 | **Expected Opening Year** | 2027 |
+
+**How many trucks? Nobody knows yet.** The applicant's studies estimate about 160 truck trips a day (roughly 80 trucks, each counted coming and going) for a tenant that hasn't been named. That estimate assumes an ordinary warehouse-and-manufacturing mix, no cold storage, and 5 loading docks, while the alternate layout in the City's own document has 36 (IS/MND Table 3, p. 24). The environmental document proposes no limit on daily trucks, though the air district recommended one (SCAQMD comment letter, p. 6). [Read more →](/issues/#truck-traffic)
 
 ## Current Project Development
 
@@ -95,13 +97,13 @@ On **April 16, 2026**, the City of Orange released a **Draft Initial Study/Mitig
 
 The IS/MND is available on the [City of Orange Planning Division website](https://www.cityoforange.org/our-city/departments/community-development/planning-division/current-projects) and in our [Evidence & Documents library](/evidence/).
 
-An IS/MND is a streamlined environmental review (not a full Environmental Impact Report). The City's consultants concluded that the project would have **no significant environmental impacts** if certain mitigation measures are implemented.
+An IS/MND is a streamlined environmental review (not a full Environmental Impact Report). The document concludes all impacts are less than significant, some only after mitigation.
 
-**Contested impacts** (impacts the City claims can be "mitigated to less than significant"):
+**Contested impacts** (impacts the City concludes are less than significant):
 
-- Air quality and diesel particulate matter emissions
+- Air quality and diesel particulate matter emissions. The health, noise and traffic studies analyzed 5 loading docks; the alternate layout (Option 2) has 36 raised docks plus 2 grade-level doors (IS/MND Table 3, p. 24), and none of the technical studies analyze this configuration.
 - Noise from 24/7 operations and dock activities
-- Traffic and Level of Service impacts
+- A truck driveway the applicant's study rates as failing, and no cap on daily trucks.
 - Greenhouse gas emissions
 
 We have identified substantial evidence in the City's own documents that contradicts the "no significant impacts" conclusion. [See 2411 Glassell's key environmental issues →](/issues/)
@@ -114,17 +116,16 @@ We have identified substantial evidence in the City's own documents that contrad
 |-----------|--------------|----------|
 | **North** | Fletcher Avenue, then single-family residences | 54 feet |
 | **South** | Former railroad spur, then warehouses/industrial | Adjacent |
-| **East** | BNSF railroad (active freight line) | Adjacent |
+| **East** | BNSF freight line, then Orange Olive Road and single-family homes | Homes about 150 feet |
 | **West** | Glassell Street, then commercial/industrial | 0 feet (frontage) |
 
 ### Sensitive Land Uses
 
-{{< callout type="alert" title="Fletcher Elementary School" icon="📍" >}}
-- **Distance**: about 0.25 miles (a quarter-mile) from the site, on Fletcher Avenue (MND at 91)
-- **Students**: ~493 (TK–6; Ed-Data, 2024–25)
-- **Programs**: Mandarin Language Academy & GATE Academy
+{{< callout type="alert" title="Fletcher Mandarin Language and GATE Academy (Fletcher Elementary)" icon="📍" >}}
+- **Grades**: TK–6
+- **Distance**: about 1,200 feet from the site
+- **Students**: about 500
 - **Address**: 515 W. Fletcher Avenue
-- **Significance**: Closest sensitive receptor for air quality and noise impacts; most vulnerable population (children)
 {{< /callout >}}
 
 ### Residential Homes and Sensitive Receptors — 54 Feet (Immediate North Boundary)
@@ -147,9 +148,9 @@ Families in these homes are not transient tenants; they are choosing to raise ch
 | *Late May / early June 2026* | City prepares responses to comments |
 | **September 8, 2026** | City Council meeting — public comment only; project not on agenda *(past)* |
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
-| **September 21, 2026** | Planning Commission hearing **cancelled by the City**; no new hearing date noticed |
+| **September 21, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
 | **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
-| **10–15 days after PC approval** | Appeal window to City Council (if decision is appealed) |
+| **After the Planning Commission acts** | Short window to appeal to City Council (see below) |
 
 ### How the Process Works
 
@@ -157,7 +158,7 @@ Families in these homes are not transient tenants; they are choosing to raise ch
 
 **Step 2: Planning Commission hearing (next)** — Commission reviews staff report, IS/MND, and public comments. Public comment is taken. Commission votes to approve, deny, or continue the project.
 
-**Step 3: City Council appeal (if applicable)** — If denied by PC, applicant can appeal to Council. If approved by PC, community can appeal to Council. Council makes the final decision.
+**Step 3: City Council appeal (if applicable)** — If denied by PC, applicant can appeal to Council. If approved by PC, community can appeal to Council. Council makes the final decision. **If the Planning Commission approves the project,** its decision can be appealed to the City Council, but **the deadline is short** and the appeal requires a filing fee. [Sign the petition](/#petition) so we can alert you the day the Commission acts.
 
 **Step 4: Final environmental decision** — If PC approves under IS/MND, the project can move forward with streamlined review. If IS/MND is overturned or an EIR is demanded, a full Environmental Impact Report is required.
 
@@ -177,7 +178,7 @@ Yes. Even if the project is approved, the Planning Commission can impose **Condi
 
 ### What about the 36 loading docks?
 
-The health risk assessment (HRA) modeled only 5 loading dock doors (Appendix B at 7). But the MND's own project description includes **Option 2 — 36 raised dock doors plus two grade-level doors** — which can be built under the same approval (MND at 23–24, Table 3 and Figure 9). None of the technical studies analyzes it: the HRA, the noise study, and the traffic study never mention Option 2, and the MND addresses it only in one paragraph on criteria pollutants (MND at 50). [More on air quality →](/issues/#issue-1-air-quality-and-health-risk-assessment)
+The health risk assessment (HRA) modeled only 5 loading dock doors (Appendix B at 7). But the MND's own project description includes **Option 2 — 36 raised dock doors plus two grade-level doors** — which can be built under the same approval (MND at 23–24, Table 3 and Figure 9). None of the technical studies analyzes it. The noise study and the traffic study both describe the 36-dock layout, and the traffic study's footnote calls it the latest site plan (Appendix L, fn. 1, p. 4), but each runs its numbers on the 5-dock layout. The MND addresses it only in one qualitative paragraph on criteria pollutants (MND at 50). [More on air quality →](/issues/#issue-1-air-quality-and-health-risk-assessment)
 
 ### Is the project legal?
 
@@ -207,4 +208,4 @@ If this project is approved without proper environmental review and strict condi
 - **Sign the petition and get updates**: [Add your name](/#petition) — one form, one list
 - **Help out**: [How to help](/testify/#how-to-help)
 
-{{< share text="The Project: 298,988 SF warehouse proposed at 2411 N. Glassell St, Orange CA — 24/7 operations, 54 feet from homes, quarter-mile from Fletcher Elementary." >}}
+{{< share text="The Project: 298,988 SF warehouse proposed at 2411 N. Glassell St, Orange CA — 24/7 operations, 54 feet from homes, about 1,200 feet from Fletcher Mandarin Language and GATE Academy." >}}
