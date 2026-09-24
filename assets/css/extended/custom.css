@@ -39,9 +39,19 @@
     --nb-hero-bg-end: #16223d;
     --nb-hero-text: #f8fafc;
     --nb-hero-text-muted: #cbd5e1;
-    --nb-hero-cta-bg: #f59e0b;
+    --nb-hero-cta-bg: #f59e0b;      /* amber: hero eyebrow/labels only, not buttons */
     --nb-hero-cta-text: #0b1220;
     --nb-hero-cta-hover: #fbbf24;
+
+    /* One action color (P1-4): every primary button -- hero, header, form,
+       footer, action bar -- is the filled --action; secondary is outlined.
+       White on #c2410c is 5.2:1; in dark mode the lighter orange takes
+       dark ink (#0b1220 on #f0743a is 6.6:1); both pairs also clear 3:1
+       against the fixed navy hero. */
+    --action: var(--nb-cta-primary);
+    --action-ink: var(--nb-on-accent);
+    --action-hover: var(--nb-cta-primary-hover);
+    --tap: 44px;
     --nb-hero-cta-outline: #f8fafc;
 }
 
@@ -477,11 +487,11 @@ a.button, .button {
     .hero-cta-row .button { flex: 0 1 auto; }
 }
 .button--hero-primary, a.button.button--hero-primary {
-    background: var(--nb-hero-cta-bg);
-    color: var(--nb-hero-cta-text);
-    border-color: var(--nb-hero-cta-bg);
+    background: var(--action);
+    color: var(--action-ink);
+    border-color: var(--action);
 }
-.button--hero-primary:hover, a.button.button--hero-primary:hover { background: var(--nb-hero-cta-hover); border-color: var(--nb-hero-cta-hover); }
+.button--hero-primary:hover, a.button.button--hero-primary:hover { background: var(--action-hover); border-color: var(--action-hover); color: var(--action-ink); }
 .button--hero-secondary, a.button.button--hero-secondary {
     background: transparent;
     color: var(--nb-hero-cta-outline);
