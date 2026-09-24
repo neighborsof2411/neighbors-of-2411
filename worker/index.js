@@ -15,15 +15,29 @@
   The Worker exists to handle POST /api/sign, the endpoint the site's one
   sign-up form (the petition, which is also the email list) submits to.
 
-  /api/sign: catch a repeat submission from the same email before it reaches
-  the group's inbox and spreadsheet as a duplicate, then forward to Formspree
-  exactly as the browser used to. Only a SHA-256 hash of "petition:<email>"
-  is stored (never the address), so the store can't be read back as a
+  /api/sign: catch a repeat submission from the same email, then record the
+  signature in the group's Google Sheet ("Opposition Signups") via the
+  "Neighbors of 2411 - Automation" Apps Script web app (WebSignup.gs), which
+  also emails the group right away. Only a SHA-256 hash of "petition:<email>"
+  is kept here (never the address), so the store can't be read back as a
   mailing list.
 
-  Fails open: until a KV namespace is bound as SIGNERS (see wrangler.jsonc),
-  env.SIGNERS is undefined and every submission is forwarded to Formspree
-  without a duplicate check -- so this is safe to ship before KV exists.
+  Why not Formspree any more: from Sept 11-24, 2026 every sign-up this Worker
+  forwarded to Formspree was filed under Spam by its "Formshield" filter
+  (a server-to-server post looks like a bot), so no notification was sent;
+  the free plan also stops at 50 submissions a month. Formspree remains only
+  as a fallback if the Sheet can't be reached, so a signature is never lost
+  -- anything that lands there is in Formspree's Spam folder.
+
+  The web app only accepts requests carrying SIGNUP_SECRET, a Cloudflare
+  secret that must match the Script Property of the same name. Its URL is
+  the SIGNUP_WEBAPP_URL var in wrangler.jsonc (fine to be public: without the
+  secret it refuses everything).
+
+  Fails open throughout: without the SIGNERS KV binding there is simply no
+  duplicate check here, and without SIGNUP_WEBAPP_URL / SIGNUP_SECRET the
+  signature goes to the Formspree fallback. A signer only sees the error
+  page if every route failed.
 */
 
 const FORMSPREE = "https://formspree.io/f/xzdnrjaz";
@@ -31,6 +45,43 @@ const FORMSPREE = "https://formspree.io/f/xzdnrjaz";
 async function sha256Hex(text) {
   const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
   return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+// Record a signature in the Google Sheet. Returns the web app's JSON reply
+// ({ok, duplicate}) or null if it isn't configured or couldn't be reached.
+// Apps Script answers a POST with a 302 to its content host; following that
+// redirect (as a GET, per the fetch spec) is how its reply is retrieved.
+async function sendToSheet(env, form) {
+  if (!env.SIGNUP_WEBAPP_URL || !env.SIGNUP_SECRET) return null;
+  const body = new URLSearchParams();
+  body.set("secret", env.SIGNUP_SECRET);
+  for (const field of ["name", "email", "address", "comment"]) {
+    body.set(field, String(form.get(field) || "").trim());
+  }
+  try {
+    const res = await fetch(env.SIGNUP_WEBAPP_URL, { method: "POST", body, redirect: "follow" });
+    if (!res.ok) return null;
+    const reply = await res.json();
+    return reply && reply.ok ? reply : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+// Fallback only: the old route. Submissions arriving this way land in
+// Formspree's Spam folder (see the note at the top), but they are kept.
+async function sendToFormspree(base, form) {
+  const origin = new URL(base).origin;
+  try {
+    const res = await fetch(FORMSPREE, {
+      method: "POST",
+      headers: { Accept: "application/json", Origin: origin, Referer: origin + "/" },
+      body: form,
+    });
+    return res.ok;
+  } catch (e) {
+    return false;
+  }
 }
 
 function seeOther(base, path) {
@@ -69,26 +120,18 @@ async function handleSign(request, env) {
     if (seen) return seeOther(base, "/already-signed/");
   }
 
-  const origin = new URL(base).origin;
-  let upstream = null;
-  try {
-    upstream = await fetch(FORMSPREE, {
-      method: "POST",
-      headers: { Accept: "application/json", Origin: origin, Referer: origin + "/" },
-      body: form,
-    });
-  } catch (e) {
-    upstream = null;
-  }
-
-  if (!upstream || !upstream.ok) {
+  const sheet = await sendToSheet(env, form);
+  const recorded = sheet ? true : await sendToFormspree(base, form);
+  if (!recorded) {
     return seeOther(base, "/submission-error/");
   }
 
   if (kv && key) {
     try { await kv.put(key, new Date().toISOString()); } catch (e) {}
   }
-  return seeOther(base, "/thanks/");
+  // The Sheet knows about everyone who signed before this Worker's own
+  // duplicate store existed, so it can catch repeats the store can't.
+  return seeOther(base, sheet && sheet.duplicate ? "/already-signed/" : "/thanks/");
 }
 
 export default {
