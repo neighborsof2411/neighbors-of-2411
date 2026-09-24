@@ -90,11 +90,15 @@ pygmentsUseClasses = true
     name = 'Project'
     url = '/project/'
     weight = 20
+    [menu.main.params]
+      drawerName = 'The Project'
   [[menu.main]]
     identifier = 'issues'
     name = 'Issues'
     url = '/issues/'
     weight = 30
+    [menu.main.params]
+      drawerName = 'The Issues'
   [[menu.main]]
     identifier = 'health-evidence'
     name = 'Health Evidence'
@@ -105,6 +109,8 @@ pygmentsUseClasses = true
     name = 'Evidence'
     url = '/evidence/'
     weight = 50
+    [menu.main.params]
+      drawerName = 'Evidence & Documents'
   [[menu.main]]
     identifier = 'testify'
     name = 'Public Comment'

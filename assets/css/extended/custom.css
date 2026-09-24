@@ -551,28 +551,8 @@ a.button, .button {
 }
 .button--nav-cta:hover { background: var(--nb-cta-primary-hover); }
 
-/* The nav <ul> scrolls horizontally on narrow screens (theme behaviour), which
-   pushed "Sign the Petition" ~257px past the right edge of a 375px viewport --
-   the primary conversion CTA was only reachable by scrolling a strip most
-   people never realise scrolls. Pinning it to the scroll container's right
-   edge keeps it on screen at every scroll position. The fade masks menu items
-   passing underneath. */
-@media (max-width: 768px) {
-    .menu-cta-item {
-        position: sticky;
-        right: 0;
-        z-index: 1;
-        background: var(--theme);
-        padding-left: 0.75rem;
-        box-shadow: -10px 0 10px -6px var(--theme);
-    }
-    /* Tightened here so the pinned CTA claims less of the strip and more
-       menu items stay readable beside it. */
-    .menu-cta-item .button--nav-cta {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.7rem;
-    }
-}
+/* Phone/tablet header layout lives in mobile.css (the old sticky-CTA-in-a-
+   scroll-strip workaround was removed with the drawer). */
 
 /* ---------- Focus visibility ---------- */
 

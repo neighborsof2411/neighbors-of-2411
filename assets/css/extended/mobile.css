@@ -1,0 +1,83 @@
+/* Neighbors of 2411 -- phone-first layer (loads after custom.css).
+   Header + drawer, action bar, meeting cards, share grid, tap targets.
+   Breakpoints: < 768 phone, 768-1023 tablet, >= 1024 desktop. */
+
+[hidden] { display: none !important; }
+
+/* ---------- Header ---------- */
+
+.header-mobile-actions { display: none; align-items: center; gap: 0.5rem; margin-left: auto; }
+.menu-more { display: none; }
+.menu-button, .nav-drawer-close {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; padding: 0; border: 1px solid var(--border);
+    border-radius: var(--radius); background: transparent; color: var(--primary); cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .header-nav { flex-wrap: nowrap; align-items: center; line-height: 1.2; min-height: 55px; }
+    .logo { flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; }
+    .logo > a { font-size: 19px; white-space: nowrap; }
+    /* JS on: one row, full nav in the drawer. */
+    .js .header-nav #menu, .js .logo-switches { display: none; }
+    .js .header-mobile-actions { display: flex; }
+    .header-sign { min-height: 44px !important; padding: 0 1rem !important; font-size: 0.95rem !important; }
+    /* JS off: the plain menu wraps under the wordmark instead of scrolling sideways. */
+    html:not(.js) .header-nav { flex-wrap: wrap; }
+    html:not(.js) .menu { flex-wrap: wrap; white-space: normal; overflow: visible; row-gap: 0.25rem; padding-bottom: 0.5rem; }
+    html:not(.js) .menu a { min-height: 44px; display: inline-flex; align-items: center; }
+}
+
+@media (min-width: 768px) {
+    .menu-item--home { display: none; }
+    .header-nav { flex-wrap: nowrap; align-items: center; }
+    .logo { flex-wrap: nowrap; flex-shrink: 0; }
+    .logo > a { font-size: 22px; white-space: nowrap; }
+    .menu { overflow: visible; align-items: center; column-gap: 1.1rem; }
+    .menu a { font-size: 15px; }
+    .menu > li > a { min-height: 44px; display: inline-flex; align-items: center; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-item--more { display: none; }
+    .menu-more { display: flex; align-items: center; position: relative; }
+    .menu-more-details summary {
+        list-style: none; cursor: pointer; font-size: 15px; min-height: 44px;
+        display: inline-flex; align-items: center; gap: 0.3rem;
+    }
+    .menu-more-details summary::-webkit-details-marker { display: none; }
+    .menu-more-details summary::after { content: "▾"; font-size: 0.8em; }
+    .menu-more-details[open] ul {
+        position: absolute; right: 0; top: 100%; z-index: 30; list-style: none; margin: 0;
+        padding: 0.4rem 0; min-width: 12rem; line-height: 1.3;
+        background: var(--theme); border: 1px solid var(--border); border-radius: var(--radius);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    .menu-more-details a { display: flex; align-items: center; min-height: 44px; padding: 0 1rem; }
+}
+
+/* Phone drawer (<dialog>, see assets/js/site.js) */
+.nav-drawer {
+    margin: 0 0 0 auto; inset: 0 0 0 auto; height: 100dvh; max-height: 100dvh;
+    width: min(22rem, 88vw); max-width: none; padding: 0 1.25rem calc(1.5rem + env(safe-area-inset-bottom));
+    border: 0; background: var(--theme); color: var(--primary); overflow-y: auto;
+    box-shadow: -12px 0 32px rgba(0, 0, 0, 0.25);
+}
+.nav-drawer::backdrop { background: rgba(0, 0, 0, 0.5); }
+.nav-drawer-head { display: flex; align-items: center; justify-content: space-between; min-height: 56px; border-bottom: 1px solid var(--border); }
+.nav-drawer-title { font-weight: 700; font-size: 1.05rem; }
+.nav-drawer-group {
+    margin: 1.25rem 0 0.35rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--secondary);
+}
+.nav-drawer-list { list-style: none; margin: 0; padding: 0; }
+.nav-drawer-link {
+    display: flex; align-items: center; min-height: 48px; font-size: 1.1rem; font-weight: 600;
+    color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--border);
+}
+.nav-drawer-link--primary { color: var(--nb-cta-primary); }
+.nav-drawer-foot { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; }
+.nav-drawer-foot a { display: inline-flex; align-items: center; min-height: 44px; color: var(--secondary); }
+.nav-drawer-theme {
+    font: inherit; min-height: 44px; border: 1px solid var(--border); border-radius: var(--radius);
+    background: transparent; color: var(--primary); cursor: pointer; text-align: left; padding: 0 0.9rem;
+}
