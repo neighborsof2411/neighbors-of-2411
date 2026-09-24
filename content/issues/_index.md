@@ -157,7 +157,7 @@ The applicant's traffic consultant calls the driveway delay "unavoidable" (Appen
 
 ### Why This Is Inadequate
 
-**1. A failing driveway with every truck in it.** Since 2020, state law measures CEQA traffic impacts by vehicle miles traveled, not delay. The failing driveway is still a **safety and General Plan** issue: every truck must turn left in or out across Glassell at a driveway the applicant's own study rates as failing.
+**1. A failing left turn, right where trucks exit south.** Since 2020, state law measures CEQA transportation impacts by vehicle miles traveled, not intersection delay (CEQA Guidelines § 15064.3(a)). But the applicant's own traffic study finds the southern driveway's left-turn movement — used by trucks heading south on Glassell — already operating at LOS E/F today, worsening to a 293-second delay by 2050 with the project (Appendix L). We argue that's still a real safety issue for a driveway trucks use around the clock, whatever CEQA calls it.
 
 **2. No binding truck route.** The MND says neither nearby school is "located along the truck route that would be used," with trucks expected to travel north on Glassell Street to SR-91 (MND at 91). That route is an expectation, not a condition of approval. SCAQMD recommended marked truck routes that keep trucks away from homes and schools, truck entrances that don't face sensitive receptors, and an on-site check-in so no truck ever queues on Glassell Street (SCAQMD letter at 7) — none of which is in the MND. Families whose children walk or bike to Fletcher along Fletcher Avenue and Glassell Street have no enforceable protection if that route changes.
 
