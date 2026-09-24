@@ -392,3 +392,15 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
     .hero-mega-eyebrow { margin-bottom: 0.9rem; }
     .hero-mega-sub { margin-bottom: 1.4rem; }
 }
+
+/* ---------- Petition form ---------- */
+.form-error { margin: 0.1rem 0 0; font-size: 0.9rem; font-weight: 600; color: var(--nb-warning-border); }
+.petition-form input[aria-invalid="true"] { border-color: var(--nb-warning-border); border-width: 2px; }
+.petition-privacy { font-size: 0.85rem; margin: 0; color: var(--secondary); }
+.petition-submit.is-busy { opacity: 0.85; cursor: progress; }
+.petition-submit.is-busy::before {
+    content: ""; width: 1em; height: 1em; margin-right: 0.5rem; border-radius: 50%;
+    border: 2px solid currentColor; border-right-color: transparent; animation: nb-spin 0.8s linear infinite;
+}
+@keyframes nb-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .petition-submit.is-busy::before { animation: none; } }

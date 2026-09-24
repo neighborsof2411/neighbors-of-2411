@@ -253,4 +253,35 @@
       countEl.textContent = q ? shown + ' of ' + items.length + ' questions match' : '';
     });
   }
+
+  /* ---------- Petition form: inline errors, no double submit ---------- */
+  $all('form[data-petition]').forEach(function (form) {
+    form.setAttribute('novalidate', '');                    // we show our own messages
+    var fields = $all('input[required]', form);
+    function check(input) {
+      var err = doc.getElementById(input.getAttribute('aria-describedby'));
+      var ok = input.checkValidity();
+      input.setAttribute('aria-invalid', ok ? 'false' : 'true');
+      if (err) err.hidden = ok;
+      return ok;
+    }
+    fields.forEach(function (input) {
+      input.addEventListener('blur', function () { if (input.value) check(input); });
+      input.addEventListener('input', function () { if (input.getAttribute('aria-invalid') === 'true') check(input); });
+    });
+    form.addEventListener('submit', function (e) {
+      var bad = fields.filter(function (i) { return !check(i); });
+      if (bad.length) { e.preventDefault(); bad[0].focus(); return; }
+      var btn = $('button[type=submit]', form);
+      if (btn.disabled) { e.preventDefault(); return; }
+      btn.disabled = true;
+      btn.classList.add('is-busy');
+      btn.textContent = btn.getAttribute('data-busy-label') || 'Sending…';
+    });
+    // Back/forward cache: re-enable if the visitor comes back to the page.
+    window.addEventListener('pageshow', function () {
+      var btn = $('button[type=submit]', form);
+      if (btn && btn.disabled) { btn.disabled = false; btn.classList.remove('is-busy'); }
+    });
+  });
 })();
