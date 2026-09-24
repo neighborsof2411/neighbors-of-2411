@@ -79,13 +79,19 @@
   }
   if (content && phoneMQ && phoneMQ.matches) {
     var h2s = $all(':scope > h2', content);
+    var from = content.getAttribute('data-collapse-from');
+    var start = 2;
+    if (from) h2s.forEach(function (h, i) { if (h.id === from) start = i; });
     if (h2s.length >= 4) {
-      h2s.slice(2).forEach(function (h2, i) {
+      h2s.slice(start).forEach(function (h2, i) {
         var body = doc.createElement('div');
         body.className = 'section-body';
         body.id = (h2.id || 'section-' + i) + '--body';
         var n = h2.nextSibling;
-        while (n && !(n.nodeType === 1 && (n.tagName === 'H2' || n.classList.contains('share-block')))) {
+        // Stop at the next heading, the share block, or a closing rule that
+        // has no heading after it (the page's sign-off stays visible).
+        while (n && !(n.nodeType === 1 && (n.tagName === 'H2' || n.classList.contains('share-block') ||
+               (n.tagName === 'HR' && !$all(':scope > h2', content).some(function (h) { return n.compareDocumentPosition(h) & 4; }))))) {
           var nx = n.nextSibling; body.appendChild(n); n = nx;
         }
         h2.parentNode.insertBefore(body, h2.nextSibling);

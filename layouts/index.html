@@ -50,7 +50,9 @@
 </section>
 
 {{- if .Content }}
-<div class="post-content md-content">
+{{- /* On phones, sections from Quick Facts down collapse behind heading
+     toggles (assets/js/site.js); stakes and meetings stay open. */}}
+<div class="post-content md-content" data-collapse data-collapse-from="quick-facts">
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
   {{- else }}{{ .Content }}{{ end }}

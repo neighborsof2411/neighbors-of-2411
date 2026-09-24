@@ -378,3 +378,17 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
 /* Anchored headings land below the sticky header (and jump menu on phones). */
 .post-content [id], .main section[id], details[id] { scroll-margin-top: 80px; }
 @media (max-width: 767px) { .post-content [id], .main section[id], details[id] { scroll-margin-top: 116px; } }
+
+/* Footer contacts: open on larger screens, folded on phones (site.js). */
+.footer-contacts > summary { cursor: pointer; font-weight: 700; min-height: 44px; display: flex; align-items: center; list-style: none; }
+.footer-contacts > summary::-webkit-details-marker { display: none; }
+.footer-contacts > summary::after { content: "▾"; margin-left: 0.5rem; color: var(--nb-accent); }
+.footer-contacts[open] > summary::after { content: "▴"; }
+@media (min-width: 768px) { .footer-contacts > summary { display: none; } }
+@media (max-width: 767px) {
+    .footer-ctas { display: grid; grid-template-columns: 1fr 1fr; }
+    .footer-ctas .button { padding: 0.5rem; font-size: 0.95rem; }
+    .hero-mega { padding-top: 2.25rem; padding-bottom: 2rem; }
+    .hero-mega-eyebrow { margin-bottom: 0.9rem; }
+    .hero-mega-sub { margin-bottom: 1.4rem; }
+}
