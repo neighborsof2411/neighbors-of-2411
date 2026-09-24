@@ -28,12 +28,12 @@
   <div class="form-row">
     <label for="{{ $idPrefix }}-name">Name</label>
     <input id="{{ $idPrefix }}-name" type="text" name="name" autocomplete="name" autocapitalize="words" enterkeyhint="next" required aria-describedby="{{ $idPrefix }}-name-err">
-    <p class="form-error" id="{{ $idPrefix }}-name-err" hidden>Please enter your name.</p>
+    <p class="form-error" id="{{ $idPrefix }}-name-err" aria-live="polite" hidden>Please enter your name.</p>
   </div>
   <div class="form-row">
     <label for="{{ $idPrefix }}-email">Email</label>
     <input id="{{ $idPrefix }}-email" type="email" name="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" enterkeyhint="next" required aria-describedby="{{ $idPrefix }}-email-err">
-    <p class="form-error" id="{{ $idPrefix }}-email-err" hidden>Please enter an email address like name@example.com.</p>
+    <p class="form-error" id="{{ $idPrefix }}-email-err" aria-live="polite" hidden>Please enter an email address like name@example.com.</p>
   </div>
   <div class="form-row">
     <label for="{{ $idPrefix }}-address">Address / Neighborhood (optional)</label>

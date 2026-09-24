@@ -7,6 +7,7 @@
   768-1023px shows the first nav items inline and the rest under "More".
   Sticky positioning is handled in CSS (custom.css, .header).
 -->
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="header">
     <nav class="header-nav">
         <div class="logo">
@@ -168,3 +169,5 @@
         </div>
     </dialog>
 </header>
+{{- /* Skip-link target: sits just before <main>. */}}
+<span id="main-content" tabindex="-1"></span>
