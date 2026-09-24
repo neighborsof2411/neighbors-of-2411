@@ -304,3 +304,32 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
 .post-content td, .post-content th, .faq-answer, .faq-answer p, .faq-answer li,
 .callout, .callout p, .callout li, .fact-compare-text, .fact-compare-text p { line-height: 1.7; }
 .post-content table th, .post-content table td { line-height: 1.7 !important; }
+
+/* ---------- Tables (layouts/_markup/render-table.html) ---------- */
+
+.table-wrap {
+    max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1.25rem 0;
+    /* edge shadows hint that a wide table scrolls */
+    background:
+        linear-gradient(to right, var(--theme) 30%, transparent) left center / 24px 100% no-repeat local,
+        linear-gradient(to left, var(--theme) 30%, transparent) right center / 24px 100% no-repeat local,
+        radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.18), transparent) left center / 10px 100% no-repeat scroll,
+        radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.18), transparent) right center / 10px 100% no-repeat scroll;
+}
+.post-content .table-wrap table { display: table; margin: 0; width: 100%; overflow: visible; }
+@media (max-width: 479px) {
+    .table-wrap--stack { overflow: visible; background: none; }
+    .post-content table.table--stack, .post-content table.table--stack tbody,
+    .post-content table.table--stack tr, .post-content table.table--stack td { display: block; width: 100%; }
+    .post-content table.table--stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    .post-content table.table--stack tr {
+        border: 1px solid var(--border); border-radius: var(--radius); background: var(--entry);
+        padding: 0.6rem 0.85rem; margin: 0 0 0.6rem;
+    }
+    .post-content table.table--stack td { border: 0; padding: 0.15rem 0; }
+    .post-content table.table--stack td:first-child { font-weight: 700; }
+    .post-content table.table--cols-3 td:not(:first-child)::before {
+        content: attr(data-label); display: block; font-size: 0.75rem; font-weight: 700;
+        text-transform: uppercase; letter-spacing: 0.04em; color: var(--secondary); margin-top: 0.35rem;
+    }
+}
