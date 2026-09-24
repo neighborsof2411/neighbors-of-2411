@@ -13,22 +13,36 @@
   any file-level comment here, inside the block, not above it.
 -->
 
+{{- /* .home-top groups hero, stats, and petition so desktop (>= 1024px) can
+     put the form beside the headline; phones keep this order. */}}
+<div class="home-top">
 <section class="hero-mega">
   <div class="hero-mega-inner">
     <span class="hero-mega-eyebrow">Orange, CA &middot; Neighbors of 2411</span>
     <h1 class="hero-mega-h1">Stop the 300,000 Sq. Ft. Mega-Warehouse in Our Neighborhood.</h1>
     <p class="hero-mega-sub">Rexford Industrial wants to run a 298,988 SF warehouse 24 hours a day, 7 days a week &mdash; 54 feet from homes and about 1,200 feet from Fletcher Mandarin Language and GATE Academy. Add your name and tell the Planning Commission you oppose it.</p>
     <div class="hero-cta-row">
-      <a href="/#petition" class="button button--hero-primary">Sign the Petition &amp; Get Updates</a>
-      <a href="/testify/#how-to-prepare-your-public-comment" class="button button--hero-secondary">Prepare Your Public Comment</a>
+      <a href="/#petition" class="button button--hero-primary">Sign the Petition</a>
+      <a href="/testify/#comment-builder" class="button button--hero-secondary">Write Your Public Comment</a>
     </div>
     {{- /* Next meeting comes from data/meetings.yaml, the one place dates are kept. */}}
     {{- $today := now.Format "2006-01-02" }}
-    {{- $next := dict }}
-    {{- range sort hugo.Data.meetings.upcoming "date" }}{{ if and (not $next) (ge .date $today) }}{{ $next = . }}{{ end }}{{ end }}
-    <p class="hero-mega-meta">{{ with $next }}Next City meeting: {{ dateFormat "Monday, January 2" .date }} &middot; {{ .time }} &mdash; {{ .body }}. {{ end }}Come to every Planning Commission and City Council meeting until this project is decided. <a href="#upcoming-city-meetings">See all upcoming meetings</a></p>
+    {{- $next := index (where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today) 0 }}
+    {{- with $next }}
+    <a class="hero-next-chip" href="#upcoming-city-meetings"><span class="hero-next-label">Next City meeting</span> {{ dateFormat "Mon, Jan 2" .date }} &middot; {{ .time }} &middot; {{ .body }}</a>
+    {{- end }}
+    <p class="hero-mega-meta">Come to every Planning Commission and City Council meeting until this project is decided. <a href="#upcoming-city-meetings">See all upcoming meetings</a></p>
   </div>
 </section>
+
+{{- /* Stat strip: only figures already stated on the site, each linked to the
+     section that supports it. */}}
+<ul class="stat-strip" aria-label="Key facts">
+  <li><a href="/project/#residential-homes-and-sensitive-receptors--54-feet-immediate-north-boundary"><span class="stat-num">54 ft</span><span class="stat-label">from homes</span></a></li>
+  <li><a href="/project/#sensitive-land-uses"><span class="stat-num">~1,200 ft</span><span class="stat-label">from Fletcher Elementary</span></a></li>
+  <li><a href="/project/#traffic--operations"><span class="stat-num">24/7</span><span class="stat-label">operations</span></a></li>
+  <li><a href="/issues/#truck-traffic"><span class="stat-num">~160</span><span class="stat-label">truck trips a day (applicant estimate)</span></a></li>
+</ul>
 
 <section id="petition" class="petition-section">
   <div class="petition-inner">
@@ -37,9 +51,12 @@
     {{ partial "petition-form.html" (dict "idPrefix" "petition" "buttonLabel" "Sign the Petition & Get Updates") }}
   </div>
 </section>
+</div>
 
 {{- if .Content }}
-<div class="post-content md-content">
+{{- /* On phones, sections from Quick Facts down collapse behind heading
+     toggles (assets/js/site.js); stakes and meetings stay open. */}}
+<div class="post-content md-content" data-collapse data-collapse-from="quick-facts">
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
   {{- else }}{{ .Content }}{{ end }}

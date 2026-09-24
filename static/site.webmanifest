@@ -1,0 +1,14 @@
+{
+  "name": "Neighbors of 2411",
+  "short_name": "2411 Glassell",
+  "description": "Stop the 24/7 warehouse at 2411 N. Glassell St., Orange, CA: sign the petition, see the next City meeting, and write your public comment.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    { "src": "/favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

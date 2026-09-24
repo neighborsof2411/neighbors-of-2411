@@ -33,6 +33,8 @@ A short, specific email from you, in your own words, is one of the most useful t
 
 ## Frequently Asked Questions
 
+{{< faq-filter >}}
+
 ### About the Project
 
 {{< faq q="When did the public comment period close?" >}}
@@ -255,7 +257,7 @@ Passenger Car Equivalent. Each truck trip counts as 1.5, 2 or 3 car trips depend
 
 ### City of Orange
 
-**Planning Division** — [abeck@cityoforange.org](mailto:abeck@cityoforange.org) (Arlen Beck, Senior Planner) · [hbeckman@cityoforange.org](mailto:hbeckman@cityoforange.org) (Hayden Beckman, Planning Manager) · (714) 744-7220 · 300 East Chapman Avenue, Orange, CA 92866
+**Planning Division** — [abeck@cityoforange.org](mailto:abeck@cityoforange.org) (Arlen Beck, Senior Planner) · [hbeckman@cityoforange.org](mailto:hbeckman@cityoforange.org) (Hayden Beckman, Planning Manager) · [(714) 744-7220](tel:+17147447220) · 300 East Chapman Avenue, Orange, CA 92866
 
 **City Council** — contact information for all Council members is on the City's website.
 
@@ -271,7 +273,7 @@ To get updates: [sign the petition](/#petition) — it's the one list, and every
 
 ### Developer / Applicant
 
-**Rexford Industrial Realty, Inc.** — [LGomez@rexfordindustrial.com](mailto:LGomez@rexfordindustrial.com) (Luis Gomez, VP Development) · (424) 465-2061 · 555 Anton Blvd, Suite 910, Costa Mesa, CA 92626
+**Rexford Industrial Realty, Inc.** — [LGomez@rexfordindustrial.com](mailto:LGomez@rexfordindustrial.com) (Luis Gomez, VP Development) · [(424) 465-2061](tel:+14244652061) · 555 Anton Blvd, Suite 910, Costa Mesa, CA 92626
 
 **Developer outreach email**: [2411NGlassell@gmail.com](mailto:2411NGlassell@gmail.com) *(this is the developer's outreach email, NOT the neighborhood group's)*
 
@@ -283,7 +285,7 @@ To get updates: [sign the petition](/#petition) — it's the one list, and every
 
 ### Legal Resources
 
-[California Environmental Quality Act (CEQA)](https://resources.ca.gov/ceqa) · [California Code of Civil Procedure §425.16 (anti-SLAPP)](https://leginfo.legislature.ca.gov) · [Orange County Bar Association](https://www.ocbar.org/) — (714) 541-6100
+[California Environmental Quality Act (CEQA)](https://resources.ca.gov/ceqa) · [California Code of Civil Procedure §425.16 (anti-SLAPP)](https://leginfo.legislature.ca.gov) · [Orange County Bar Association](https://www.ocbar.org/) — [(714) 541-6100](tel:+17145416100)
 
 ## Timeline Reference
 

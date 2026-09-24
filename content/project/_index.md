@@ -74,7 +74,7 @@ A single-story industrial warehouse (plus mezzanine) designed for mixed warehous
 ### Lead Agency
 
 **City of Orange** — Community Development Department, Planning Division
-300 East Chapman Avenue, Orange, CA 92866 · (714) 744-7220
+300 East Chapman Avenue, Orange, CA 92866 · [(714) 744-7220](tel:+17147447220)
 
 ## Developer & Applicant
 
@@ -85,7 +85,7 @@ A single-story industrial warehouse (plus mezzanine) designed for mixed warehous
 | **Applicant** | Rexford Industrial Realty, Inc. |
 | **Address** | 555 Anton Blvd, Suite 910, Costa Mesa, CA 92626 |
 | **Contact Person** | Luis Gomez, Vice President, Development |
-| **Phone** | (424) 465-2061 |
+| **Phone** | [(424) 465-2061](tel:+14244652061) |
 | **Email** | LGomez@rexfordindustrial.com |
 | **Outreach Email** | 2411NGlassell@gmail.com *(Rexford's outreach email — not the neighborhood group's)* |
 
@@ -118,6 +118,8 @@ We have identified substantial evidence in the City's own documents that contrad
 | **South** | Former railroad spur, then warehouses/industrial | Adjacent |
 | **East** | BNSF freight line, then Orange Olive Road and single-family homes | Homes about 150 feet |
 | **West** | Glassell Street, then commercial/industrial | 0 feet (frontage) |
+
+{{< site-diagram >}}
 
 ### Sensitive Land Uses
 
@@ -204,7 +206,7 @@ If this project is approved without proper environmental review and strict condi
 ## Next Steps
 
 - **Review the technical evidence**: [See Issues & Evidence](/issues/)
-- **Prepare your public comment**: [How to submit public comment at the Planning Commission](/testify/#how-to-prepare-your-public-comment)
+- **Prepare your public comment**: [How to submit public comment at the Planning Commission](/testify/#comment-builder)
 - **Sign the petition and get updates**: [Add your name](/#petition) — one form, one list
 - **Help out**: [How to help](/testify/#how-to-help)
 

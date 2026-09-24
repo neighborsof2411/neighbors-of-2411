@@ -17,16 +17,14 @@ pygmentsUseClasses = true
   changefreq = 'weekly'
   priority = 0.5
 
-[services]
-  [services.googleAnalytics]
-    id = 'G-PWK8TB3BF8'
-
 [params]
   env = 'production'
   title = 'Neighbors of 2411'
   description = 'Community opposition to the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA — 24/7 operations 54 feet from homes and about 1,200 feet from Fletcher Mandarin Language and GATE Academy. Learn the issues, review the evidence, and prepare your public comment for the Planning Commission hearing.'
   keywords = ['2411 Glassell', '2411 North Glassell', 'Orange CA warehouse', 'Rexford Industrial', 'Fletcher Elementary', 'Planning Commission hearing', 'CEQA', 'environmental impact report', 'CUP 25-0013', 'ENV25-0002']
   author = 'Neighbors of 2411'
+  # Link-preview image (og:image, twitter summary_large_image) for every page.
+  images = ['og/2411-og.png']
 
   defaultTheme = 'auto'
   disableThemeToggle = false
@@ -46,6 +44,12 @@ pygmentsUseClasses = true
   hideSummary = false
   showtoc = false
   comments = false
+
+  # Public comment builder (/testify/#comment-builder): "Email it to the City"
+  # sends to both addresses, as the Resources page advises.
+  commentRecipients = ['abeck@cityoforange.org', 'clerkinfo@cityoforange.org']
+  commentSubject = 'Public Comment — CUP No. 25-0013 / IS-MND No. ENV25-0002 / 2411 N. Glassell St.'
+  commentRecordSentence = 'Please place this email in the administrative record for CUP No. 25-0013 / IS-MND No. ENV25-0002 and include it in the Planning Commission packet and any later hearing packet for this project.'
 
   [[params.socialIcons]]
     name = 'email'
@@ -90,11 +94,15 @@ pygmentsUseClasses = true
     name = 'Project'
     url = '/project/'
     weight = 20
+    [menu.main.params]
+      drawerName = 'The Project'
   [[menu.main]]
     identifier = 'issues'
     name = 'Issues'
     url = '/issues/'
     weight = 30
+    [menu.main.params]
+      drawerName = 'The Issues'
   [[menu.main]]
     identifier = 'health-evidence'
     name = 'Health Evidence'
@@ -102,9 +110,11 @@ pygmentsUseClasses = true
     weight = 40
   [[menu.main]]
     identifier = 'evidence'
-    name = 'Evidence'
+    name = 'Documents'
     url = '/evidence/'
     weight = 50
+    [menu.main.params]
+      drawerName = 'Documents'
   [[menu.main]]
     identifier = 'testify'
     name = 'Public Comment'

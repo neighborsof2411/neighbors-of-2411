@@ -1,4 +1,24 @@
 {{- $p := hugo.Data.project }}
+{{- $js := resources.Get "js/site.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+{{- /* Phone action bar (< 768px), driven by assets/js/site.js: next meeting on
+     the left, a context button on the right (Sign / Write My Comment / Add to
+     calendar once signed). Hidden until JS shows it. The meeting list comes
+     from data/meetings.yaml, the one place dates are kept. */}}
+{{- $today := now.Format "2006-01-02" }}
+{{- $up := where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today }}
+{{- $list := slice }}
+{{- range $up }}{{ $list = $list | append (dict "date" .date "time" .time "body" .body "id" (printf "%s-%s" (cond (eq .body "City Council") "cc" "pc") .date)) }}{{ end }}
+<script type="application/json" id="meetings-json">{{ $list | jsonify | safeJS }}</script>
+<div class="action-bar" id="action-bar" hidden>
+  <a class="action-bar-next" href="/#upcoming-city-meetings">
+    <span class="action-bar-label">Next meeting</span>
+    <span class="action-bar-when" data-ab-when></span>
+  </a>
+  <a class="button button--primary action-bar-cta" href="/#petition" data-ab-cta>Sign the Petition</a>
+</div>
+
 <div class="site-footer-extended">
 
   <div class="footer-ctas">
@@ -8,6 +28,8 @@
 
   <p class="footer-signup-note">Want an email when meeting dates change? <a href="/#petition">Sign the petition</a> &mdash; it's the one list. Not getting our emails? <a href="/resources/#make-sure-our-emails-reach-you">Save us as a contact</a>.</p>
 
+  <details class="footer-contacts collapse-mobile" open>
+    <summary>Contacts: Neighbors of 2411, City Planning, SCAQMD</summary>
   <div class="footer-columns">
     <div class="footer-col">
       <h4>Neighbors of 2411</h4>
@@ -20,7 +42,7 @@
       <h4>City of Orange Planning</h4>
       {{ range $p.contacts.cityStaff }}
       <p>{{ .name }}, {{ .title }}<br>
-        <a href="mailto:{{ .email }}">{{ .email }}</a>{{ with .phone }} · {{ . }}{{ end }}</p>
+        <a href="mailto:{{ .email }}">{{ .email }}</a>{{ with .phone }} · <a href="tel:+1{{ replaceRE `[^0-9]` "" . }}">{{ . }}</a>{{ end }}</p>
       {{ end }}
     </div>
 
@@ -32,8 +54,7 @@
       {{ end }}
     </div>
   </div>
-
-  {{ partial "share-inline.html" . }}
+  </details>
 
   <p class="footer-disclaimer">This site is maintained by Neighbors of 2411, an independent community group. It is not affiliated with the City of Orange or Rexford Industrial Realty, Inc. All claims are cited to the public record; see <a href="/evidence/">Evidence &amp; Documents</a>.</p>
 </div>

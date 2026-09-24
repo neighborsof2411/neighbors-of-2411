@@ -22,20 +22,22 @@
        forwards to Formspree. To bypass the Worker and post straight to
        Formspree instead, set it to the full https://formspree.io/f/<id> URL. */}}
 {{ $endpoint := "/api/sign" }}
-<form class="petition-form" action="{{ $endpoint }}" method="POST">
+<form class="petition-form" action="{{ $endpoint }}" method="POST" data-petition>
   <input type="hidden" name="_subject" value="{{ $subject }}">
   <input type="hidden" name="_next" value="{{ absURL "thanks/" }}">
   <div class="form-row">
     <label for="{{ $idPrefix }}-name">Name</label>
-    <input id="{{ $idPrefix }}-name" type="text" name="name" autocomplete="name" required>
+    <input id="{{ $idPrefix }}-name" type="text" name="name" autocomplete="name" autocapitalize="words" enterkeyhint="next" required aria-describedby="{{ $idPrefix }}-name-err">
+    <p class="form-error" id="{{ $idPrefix }}-name-err" aria-live="polite" hidden>Please enter your name.</p>
   </div>
   <div class="form-row">
     <label for="{{ $idPrefix }}-email">Email</label>
-    <input id="{{ $idPrefix }}-email" type="email" name="email" autocomplete="email" required>
+    <input id="{{ $idPrefix }}-email" type="email" name="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" enterkeyhint="next" required aria-describedby="{{ $idPrefix }}-email-err">
+    <p class="form-error" id="{{ $idPrefix }}-email-err" aria-live="polite" hidden>Please enter an email address like name@example.com.</p>
   </div>
   <div class="form-row">
     <label for="{{ $idPrefix }}-address">Address / Neighborhood (optional)</label>
-    <input id="{{ $idPrefix }}-address" type="text" name="address" autocomplete="address-line1">
+    <input id="{{ $idPrefix }}-address" type="text" name="address" autocomplete="address-line1" enterkeyhint="send">
   </div>
   {{ if $showComment }}
   <div class="form-row">
@@ -44,6 +46,11 @@
   </div>
   {{ end }}
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-  <button type="submit" class="button button--primary petition-submit">{{ $buttonLabel }}</button>
+  <button type="submit" class="button button--primary petition-submit" data-busy-label="Signing…">{{ $buttonLabel }}</button>
+  {{- /* Privacy line: hidden by decision (Sept 24, 2026). Setting
+         params.petitionPrivacyNote in hugo.toml would show it. */}}
+  {{- with site.Params.petitionPrivacyNote }}
+  <p class="petition-privacy">{{ . }}</p>
+  {{- end }}
   <p class="petition-form-note">Signing adds your name to the petition and puts you on the email list for meeting-date updates. Already signed? You're on the list.</p>
 </form>

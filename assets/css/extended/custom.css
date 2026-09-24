@@ -39,9 +39,19 @@
     --nb-hero-bg-end: #16223d;
     --nb-hero-text: #f8fafc;
     --nb-hero-text-muted: #cbd5e1;
-    --nb-hero-cta-bg: #f59e0b;
+    --nb-hero-cta-bg: #f59e0b;      /* amber: hero eyebrow/labels only, not buttons */
     --nb-hero-cta-text: #0b1220;
     --nb-hero-cta-hover: #fbbf24;
+
+    /* One action color (P1-4): every primary button -- hero, header, form,
+       footer, action bar -- is the filled --action; secondary is outlined.
+       White on #c2410c is 5.2:1; in dark mode the lighter orange takes
+       dark ink (#0b1220 on #f0743a is 6.6:1); both pairs also clear 3:1
+       against the fixed navy hero. */
+    --action: var(--nb-cta-primary);
+    --action-ink: var(--nb-on-accent);
+    --action-hover: var(--nb-cta-primary-hover);
+    --tap: 44px;
     --nb-hero-cta-outline: #f8fafc;
 }
 
@@ -166,22 +176,6 @@ a.button, .button {
 .save-contact-details summary { cursor: pointer; font-weight: 600; }
 .save-contact-details ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
 .save-contact-details li { margin: 0.35rem 0; }
-
-/* ---------- Countdown ---------- */
-
-.countdown-box {
-    background: var(--nb-warning-bg);
-    color: var(--nb-warning-text);
-    border: 2px solid var(--nb-warning-border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 1.5rem 0;
-}
-.countdown-label { font-weight: 700; font-size: 1.1rem; margin: 0 0 0.25rem; }
-.countdown-dates { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem; }
-.countdown-timer { font-size: 1rem; margin: 0 0 0.5rem; }
-.countdown-note { font-size: 0.85rem; opacity: 0.9; margin: 0; }
 
 /* ---------- Forms (petition sign-up, wizard) ---------- */
 
@@ -493,11 +487,11 @@ a.button, .button {
     .hero-cta-row .button { flex: 0 1 auto; }
 }
 .button--hero-primary, a.button.button--hero-primary {
-    background: var(--nb-hero-cta-bg);
-    color: var(--nb-hero-cta-text);
-    border-color: var(--nb-hero-cta-bg);
+    background: var(--action);
+    color: var(--action-ink);
+    border-color: var(--action);
 }
-.button--hero-primary:hover, a.button.button--hero-primary:hover { background: var(--nb-hero-cta-hover); border-color: var(--nb-hero-cta-hover); }
+.button--hero-primary:hover, a.button.button--hero-primary:hover { background: var(--action-hover); border-color: var(--action-hover); color: var(--action-ink); }
 .button--hero-secondary, a.button.button--hero-secondary {
     background: transparent;
     color: var(--nb-hero-cta-outline);
@@ -551,28 +545,8 @@ a.button, .button {
 }
 .button--nav-cta:hover { background: var(--nb-cta-primary-hover); }
 
-/* The nav <ul> scrolls horizontally on narrow screens (theme behaviour), which
-   pushed "Sign the Petition" ~257px past the right edge of a 375px viewport --
-   the primary conversion CTA was only reachable by scrolling a strip most
-   people never realise scrolls. Pinning it to the scroll container's right
-   edge keeps it on screen at every scroll position. The fade masks menu items
-   passing underneath. */
-@media (max-width: 768px) {
-    .menu-cta-item {
-        position: sticky;
-        right: 0;
-        z-index: 1;
-        background: var(--theme);
-        padding-left: 0.75rem;
-        box-shadow: -10px 0 10px -6px var(--theme);
-    }
-    /* Tightened here so the pinned CTA claims less of the strip and more
-       menu items stay readable beside it. */
-    .menu-cta-item .button--nav-cta {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.7rem;
-    }
-}
+/* Phone/tablet header layout lives in mobile.css (the old sticky-CTA-in-a-
+   scroll-strip workaround was removed with the drawer). */
 
 /* ---------- Focus visibility ---------- */
 
@@ -641,15 +615,7 @@ a.button, .button {
 }
 .post-content th { background: var(--tertiary); text-align: left; }
 
-/* ---------- Upcoming meetings (homepage; data/meetings.yaml) ---------- */
-
-.meeting-list { display: flex; flex-direction: column; gap: 0.85rem; margin: 1rem 0; }
-.meeting-list .callout { margin: 0; }
-.meeting-when { font-weight: 700; font-size: 1.05rem; margin: 0 0 0.35rem; }
-.meeting-meta { font-size: 0.9rem; margin: 0.35rem 0 0; }
-.meeting-meta .doc-badge { margin-bottom: 0; vertical-align: middle; }
-.meeting-days { font-weight: 700; }
-.meeting-past { display: none; }
+/* Upcoming meetings: see mobile.css (meeting cards). */
 
 /* ---------- Print ---------- */
 

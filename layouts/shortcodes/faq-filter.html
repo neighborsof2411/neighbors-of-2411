@@ -1,0 +1,8 @@
+{{- /* Filter box for a long FAQ page. Filters the .faq-item questions (and
+       answers) that follow it, hides empty group headings, and says how many
+       match. Hidden without JS (assets/js/site.js shows it). */ -}}
+<div class="faq-filter" hidden>
+  <label for="faq-filter-input">Search these questions</label>
+  <input id="faq-filter-input" type="search" autocomplete="off" enterkeyhint="search" placeholder="e.g. appeal, EIR, cancer risk">
+  <p class="faq-filter-count" role="status" aria-live="polite"></p>
+</div>

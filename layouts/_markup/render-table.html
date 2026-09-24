@@ -1,0 +1,35 @@
+{{- /*
+  Markdown table render hook. Every table gets a labelled, keyboard-
+  scrollable wrapper. Tables of 2-3 columns also get class "table--stack":
+  under 480px each row becomes a card -- the first cell as its title, later
+  cells labelled with their column header (data-label). 4+ columns scroll
+  sideways instead, with an edge shadow as the hint.
+*/ -}}
+{{- $cols := 0 }}{{ with .THead }}{{ with index . 0 }}{{ $cols = len . }}{{ end }}{{ end }}
+{{- $headers := slice }}
+{{- with .THead }}{{ range index . 0 }}{{ $headers = $headers | append (.Text | plainify | htmlUnescape) }}{{ end }}{{ end }}
+{{- $label := delimit $headers ", " }}
+{{- $stack := and (ge $cols 2) (le $cols 3) }}
+<div class="table-wrap{{ if $stack }} table-wrap--stack{{ end }}" role="region" tabindex="0" aria-label="Table: {{ $label }}">
+<table{{ with .Attributes.class }} class="{{ . }}{{ if $stack }} table--stack{{ end }}"{{ else }}{{ if $stack }} class="table--stack table--cols-{{ $cols }}"{{ end }}{{ end }}>
+  <thead>
+    {{- range .THead }}
+    <tr>
+      {{- range . }}
+      <th{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text }}</th>
+      {{- end }}
+    </tr>
+    {{- end }}
+  </thead>
+  <tbody>
+    {{- range .TBody }}
+    <tr>
+      {{- range $i, $c := . }}
+      <td{{ with $c.Alignment }} style="text-align: {{ . }}"{{ end }} data-label="{{ index $headers $i }}">{{ $c.Text }}</td>
+      {{- end }}
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+</div>
+{{- /**/ -}}

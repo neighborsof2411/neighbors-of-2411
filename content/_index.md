@@ -5,15 +5,16 @@ description: "2411 Glassell: a 298,988 SF industrial building proposed to operat
 
 ## Upcoming City Meetings
 
-**The September 21 Planning Commission meeting was cancelled, and no new hearing date has been noticed.** The date has already moved more than once, so expect it to keep changing until the City sends official notice. The next two Planning Commission meetings are listed below &mdash; until an agenda is posted, either one could be the hearing. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
-
 **What we're asking for:** that the Planning Commission **deny the project**. If it won't, it shouldn't approve it on this environmental review — a full Environmental Impact Report is the minimum.
 
 {{< meetings >}}
 
-<div class="cta-primary-row">
-{{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
-</div>
+<details class="more-details">
+<summary>Why the hearing date keeps changing</summary>
+
+**The September 21 Planning Commission meeting was cancelled, and no new hearing date has been noticed.** The date has already moved more than once, so expect it to keep changing until the City sends official notice. The next two Planning Commission meetings are listed below &mdash; until an agenda is posted, either one could be the hearing. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
+
+</details>
 
 ## A 298,988-Square-Foot Industrial Building Operating 24 Hours a Day, Every Day — 54 Feet From Homes
 
@@ -23,6 +24,8 @@ Rexford Industrial is proposing to demolish the existing office campus at 2411 N
 - **Generate an estimated 556 net new vehicle trips a day, including about 160 diesel truck trips** (810 passenger-car-equivalent trips). That is the applicant's estimate for an unnamed tenant, and it could be higher. [See why →](/issues/#truck-traffic)
 - **Emit diesel exhaust** that pushes the project's own estimated cancer risk over the air district's threshold before mitigation (10.07 in a million, unmitigated)
 - **Create continuous noise** from loading docks, truck alarms, and 24-hour operations
+
+{{< site-diagram >}}
 
 **The City released a Draft Initial Study / Mitigated Negative Declaration (IS/MND) that concludes these impacts are less than significant. We believe the evidence shows otherwise.**
 
@@ -37,7 +40,8 @@ Rexford Industrial is proposing to demolish the existing office campus at 2411 N
 | **Building Size** | 298,988 square feet |
 | **Duration** | Permanent; no end date on the permit |
 
-### How many trucks? Nobody knows yet.
+<details class="more-details" id="how-many-trucks-nobody-knows-yet">
+<summary>How many trucks? Nobody knows yet.</summary>
 
 The applicant's studies estimate **about 160 truck trips a day**: roughly 80 trucks, each counted coming and going. **That is an estimate, and it could be higher.** No tenant has been named. The building was designed "to accommodate two different use configurations depending on the needs of future tenants" (Noise Study, Appendix K, p. 1).
 
@@ -52,31 +56,19 @@ Actual truck traffic will depend on who moves in: a regional distributor, a parc
 
 **What we're asking:** if the Planning Commission won't deny the project, any approval must at least include an enforceable daily truck cap at the analyzed level, with public reporting. [More on truck traffic →](/issues/#truck-traffic)
 
+</details>
+
 <div class="cta-primary-row">
-{{< cta href="/testify/" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
+{{< cta href="/testify/#comment-builder" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
 Every Planning Commission and City Council meeting until the decision is an opportunity to be heard — and the hearing itself is where your comment enters the official record. Public comment from residents, parents, and health advocates makes a real difference.
 
 <div class="cta-secondary-row">
 {{< cta href="/issues/" variant="secondary" >}}Learn the Issues{{< /cta >}}
-{{< cta href="/evidence/" variant="secondary" >}}Review the Evidence{{< /cta >}}
+{{< cta href="/evidence/" variant="secondary" >}}Review the Documents{{< /cta >}}
 {{< cta href="#petition" variant="secondary" >}}Sign the Petition{{< /cta >}}
 </div>
-
-## Quick Facts
-
-- **What**: 298,988 SF industrial warehouse (the analyzed layout); the alternate Option 2 layout the City can approve has 36 raised loading docks plus 2 grade-level doors (MND at 24)
-- **Where**: 2411 N. Glassell Street, Orange, CA (southeast corner of Glassell & Fletcher)
-- **Applicant**: Rexford Industrial Realty, Inc.
-- **Zoning**: M-2 (Industrial Manufacturing), Light Industrial General Plan
-- **Status**: Draft IS/MND released April 16, 2026. The formal comment period closed May 6, 2026, but comments still enter the official record until the Planning Commission closes its public hearing.
-- **Next step**: keep showing up — every Planning Commission and City Council meeting until the decision; see [Upcoming City Meetings](#upcoming-city-meetings)
-- **Entitlements**: Conditional Use Permit (CUP 25-0013), Major Site Plan Review (SP-1180)
-
-## Frequently Asked Questions About 2411 Glassell
-
-{{< homepage-faq >}}
 
 ## The Core Problem: A Fact Hub
 
@@ -110,13 +102,75 @@ A 24/7 industrial building would sit **54 feet** from homes to the north and **1
 
 [Learn about 2411 Glassell's environmental issues →](/issues/)
 
-## What You Need to Know
+## Quick Facts
 
-### The Comment Period Is Closed — But the Record Is Still Open
+- **What**: 298,988 SF industrial warehouse (the analyzed layout); the alternate Option 2 layout the City can approve has 36 raised loading docks plus 2 grade-level doors (MND at 24)
+- **Where**: 2411 N. Glassell Street, Orange, CA (southeast corner of Glassell & Fletcher)
+- **Applicant**: Rexford Industrial Realty, Inc.
+- **Zoning**: M-2 (Industrial Manufacturing), Light Industrial General Plan
+- **Status**: Draft IS/MND released April 16, 2026. The formal comment period closed May 6, 2026, but comments still enter the official record until the Planning Commission closes its public hearing.
+- **Next step**: keep showing up — every Planning Commission and City Council meeting until the decision; see [Upcoming City Meetings](#upcoming-city-meetings)
+- **Entitlements**: Conditional Use Permit (CUP 25-0013), Major Site Plan Review (SP-1180)
+
+## Frequently Asked Questions About 2411 Glassell
+
+{{< homepage-faq >}}
+
+## What Happens Next {#timeline-from-here-to-the-decision}
+
+<ol class="timeline">
+<li class="timeline-past">
+
+**April 16, 2026** → MND released for public review
+
+</li>
+<li class="timeline-past">
+
+**May 6, 2026** → Comment period closes *(past)*
+
+</li>
+<li class="timeline-past">
+
+**Aug 31, 2026** → City removes the tentative Sept 10 hearing from the calendar; no new date given
+
+</li>
+<li class="timeline-past">
+
+**Sept 8, 2026** → City Council meeting — public comment only, project not on agenda *(past)*
+
+</li>
+<li class="timeline-past">
+
+**Sept 10, 2026** → Planning Commission meeting — public comment only, project not on agenda *(past)*
+
+</li>
+<li class="timeline-past">
+
+**Sept 21, 2026** → Planning Commission meeting cancelled — no hearing date noticed
+
+</li>
+<li class="timeline-here"><strong>You are here</strong></li>
+<li class="timeline-next">
+
+**Upcoming meetings** → see [Upcoming City Meetings](#upcoming-city-meetings), updated as the City posts dates
+
+</li>
+<li class="timeline-next">
+
+**After the Planning Commission acts** → short window to appeal to City Council (see [If the Planning Commission Approves](#if-the-planning-commission-approves-theres-still-an-appeal))
+
+</li>
+</ol>
+
+<details class="more-details" id="the-comment-period-is-closed--but-the-record-is-still-open">
+<summary>The Comment Period Is Closed — But the Record Is Still Open</summary>
 
 The public comment deadline (May 6, 2026) has passed — **but you can still submit public comment at the Planning Commission hearing itself**, and it counts toward the administrative record.
 
-### The Planning Commission Has Power
+</details>
+
+<details class="more-details" id="the-planning-commission-has-power">
+<summary>The Planning Commission Has Power</summary>
 
 The Planning Commission can:
 - **Deny the project** outright
@@ -125,22 +179,17 @@ The Planning Commission can:
 
 We're asking for the first one — **denial**. The others are fallbacks, not the goal.
 
-### If the Planning Commission Approves, There's Still an Appeal
+</details>
+
+<details class="more-details" id="if-the-planning-commission-approves-theres-still-an-appeal">
+<summary>If the Planning Commission Approves, There's Still an Appeal</summary>
 
 **If the Planning Commission approves the project,** its decision can be appealed to the City Council, but **the deadline is short** and the appeal requires a filing fee. [Sign the petition](#petition) so we can alert you the day the Commission acts.
 
-## Timeline: From Here to the Decision
+</details>
 
-- 📅 **April 16, 2026** → MND released for public review
-- 📅 **May 6, 2026** → Comment period closes *(past)*
-- 📅 **Aug 31, 2026** → City removes the tentative Sept 10 hearing from the calendar; no new date given
-- 📅 **Sept 8, 2026** → City Council meeting — public comment only, project not on agenda *(past)*
-- 📅 **Sept 10, 2026** → Planning Commission meeting — public comment only, project not on agenda *(past)*
-- 📅 **Sept 21, 2026** → Planning Commission meeting cancelled — no hearing date noticed
-- 📅 **Upcoming meetings** → see [Upcoming City Meetings](#upcoming-city-meetings), updated as the City posts dates
-- 📅 **After the Planning Commission acts** → short window to appeal to City Council (see [If the Planning Commission Approves](#if-the-planning-commission-approves-theres-still-an-appeal))
-
-## What Happens at the Planning Commission Hearing?
+<details class="more-details" id="what-happens-at-the-planning-commission-hearing">
+<summary>What Happens at the Planning Commission Hearing?</summary>
 
 1. **Staff presentation** — City planning staff and developer present the project
 2. **Applicant's case** — Rexford and their consultants respond to comments
@@ -150,7 +199,9 @@ We're asking for the first one — **denial**. The others are fallbacks, not the
 
 **Your public comment directly influences the record and the commissioners' thinking.**
 
-[How to prepare your public comment →](/testify/#how-to-prepare-your-public-comment)
+[How to prepare your public comment →](/testify/#comment-builder)
+
+</details>
 
 ## You're Not Alone
 
@@ -163,7 +214,10 @@ We're asking for the first one — **denial**. The others are fallbacks, not the
 
 [Learn more & get involved →](/testify/)
 
-## Stay Informed
+<div class="contact-grid">
+<div>
+
+### Stay Informed
 
 There's one list. Everyone who [signs the petition](#petition) gets an email when meeting dates change and when it's time to show up — no separate sign-up. Already signed? You're on it.
 
@@ -171,18 +225,24 @@ Updates come from **neighborsof2411@gmail.com**. Some inboxes file them as spam 
 
 {{< follow-facebook >}}
 
-## Need Help?
+</div>
+<div>
+
+### Need Help?
 
 **Contact the group** — [neighborsof2411@gmail.com](mailto:neighborsof2411@gmail.com)
 
-**Questions about the process?** Contact Senior Planner Arlen Beck — [abeck@cityoforange.org](mailto:abeck@cityoforange.org) · (714) 744-7272
+**Questions about the process?** Contact Senior Planner Arlen Beck — [abeck@cityoforange.org](mailto:abeck@cityoforange.org) · [(714) 744-7272](tel:+17147447272)
+
+</div>
+</div>
 
 ---
 
 **This warehouse would fundamentally change the character of this neighborhood — 24 hours a day, every day, forever. The Planning Commission should deny it — and it needs to hear from you at every meeting until it does.**
 
 <div class="cta-primary-row">
-{{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
+{{< cta href="/testify/#comment-builder" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
 {{< share >}}

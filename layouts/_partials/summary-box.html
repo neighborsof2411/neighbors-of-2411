@@ -1,0 +1,16 @@
+{{- /* "In 30 seconds" box. Filled from front matter:
+       summary_bullets: ["...", "...", "..."]
+       summary_cta: {label: "...", href: "..."}   (optional)
+     Hidden by decision (Sept 24, 2026): no page sets summary_bullets, so
+     nothing renders. Don't fill it with invented text. */ -}}
+{{- with .Params.summary_bullets }}
+<aside class="summary-box" aria-label="In 30 seconds">
+  <p class="summary-box-title">In 30 seconds</p>
+  <ul>
+    {{- range . }}<li>{{ . | markdownify }}</li>{{ end }}
+  </ul>
+  {{- with $.Params.summary_cta }}
+  <a class="button button--primary" href="{{ .href }}">{{ .label }}</a>
+  {{- end }}
+</aside>
+{{- end }}

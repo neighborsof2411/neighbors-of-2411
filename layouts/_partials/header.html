@@ -1,9 +1,13 @@
 <!--
   Project override of PaperMod's header.html (theme file left untouched).
-  Adds: a persistent "Sign the Petition" CTA injected into the nav menu.
-  Sticky positioning itself is handled in CSS (assets/css/extended/custom.css,
-  targeting .header) rather than here, since that's a pure style concern.
+  Adds: a persistent "Sign the Petition" CTA in the nav, and a phone layout:
+  one 56px row (wordmark, "Sign", menu button) with the full nav in a
+  <dialog> drawer. The drawer is wired up in assets/js/site.js; without JS
+  the plain #menu list below still renders (wrapped, not a scroll strip).
+  768-1023px shows the first nav items inline and the rest under "More".
+  Sticky positioning is handled in CSS (custom.css, .header).
 -->
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header class="header">
     <nav class="header-nav">
         <div class="logo">
@@ -89,6 +93,12 @@
                 {{- end }}
             </div>
             {{- end }}
+            <div class="header-mobile-actions">
+                <a href="/#petition" class="button button--nav-cta header-sign">Sign</a>
+                <button type="button" class="menu-button" aria-label="Menu" aria-expanded="false" aria-controls="nav-drawer" hidden>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+                </button>
+            </div>
         </div>
         {{- $currentPage := . }}
         <ul id="menu" class="menu">
@@ -96,7 +106,8 @@
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
-            <li>
+            {{- $inline := in (slice "project" "issues" "testify") .Identifier }}
+            <li class="{{ if eq .Identifier "home" }}menu-item--home{{ else if not $inline }}menu-item--more{{ end }}">
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
                     <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
@@ -115,9 +126,48 @@
                 </a>
             </li>
             {{- end }}
+            <li class="menu-more">
+                <details class="menu-more-details">
+                    <summary>More</summary>
+                    <ul>
+                        {{- range site.Menus.main }}{{ if not (in (slice "home" "project" "issues" "testify") .Identifier) }}
+                        <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+                        {{- end }}{{ end }}
+                    </ul>
+                </details>
+            </li>
             <li class="menu-cta-item">
                 <a href="/#petition" class="button button--nav-cta">Sign the Petition</a>
             </li>
         </ul>
     </nav>
+    {{- /* Phone drawer. Opened by .menu-button (assets/js/site.js). */}}
+    <dialog id="nav-drawer" class="nav-drawer" aria-label="Site menu">
+        <div class="nav-drawer-head">
+            <span class="nav-drawer-title">{{ site.Title }}</span>
+            <button type="button" class="nav-drawer-close" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+        </div>
+        <p class="nav-drawer-group">Take action</p>
+        <ul class="nav-drawer-list">
+            <li><a class="nav-drawer-link nav-drawer-link--primary" href="/#petition">Sign the Petition</a></li>
+            <li><a class="nav-drawer-link" href="/#upcoming-city-meetings">Upcoming Meetings</a></li>
+            <li><a class="nav-drawer-link" href="/testify/#comment-builder">Write Your Public Comment</a></li>
+        </ul>
+        <p class="nav-drawer-group">Learn</p>
+        <ul class="nav-drawer-list">
+            {{- range site.Menus.main }}{{ if not (in (slice "home" "testify") .Identifier) }}
+            <li><a class="nav-drawer-link" href="{{ .URL | absLangURL }}">{{ .Params.drawerName | default .Name }}</a></li>
+            {{- end }}{{ end }}
+        </ul>
+        <div class="nav-drawer-foot">
+            {{- if not site.Params.disableThemeToggle }}
+            <button type="button" class="nav-drawer-theme">Switch light / dark</button>
+            {{- end }}
+            <a href="mailto:neighborsof2411@gmail.com">neighborsof2411@gmail.com</a>
+        </div>
+    </dialog>
 </header>
+{{- /* Skip-link target: sits just before <main>. */}}
+<span id="main-content" tabindex="-1"></span>
