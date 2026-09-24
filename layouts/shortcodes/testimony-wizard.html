@@ -78,16 +78,13 @@
       <textarea id="wiz-output" rows="16" aria-label="Your public comment (you can edit it)"></textarea>
       <p class="wizard-readtime" id="wiz-readtime" aria-live="polite"></p>
       <div class="wizard-actions wizard-actions--output">
-        <a class="button button--primary" id="wiz-email" href="#" data-to="{{ delimit $p.commentRecipients "," }}" data-subject="{{ $p.commentSubject }}" data-record="{{ $p.commentRecordSentence }}" data-bcc="{{ $p.commentBcc }}">Email it to the City</a>
+        <a class="button button--primary" id="wiz-email" href="#" data-to="{{ delimit $p.commentRecipients "," }}" data-subject="{{ $p.commentSubject }}" data-record="{{ $p.commentRecordSentence }}">Email it to the City</a>
         <button type="button" class="button" id="wiz-copy">Copy to Clipboard</button>
         <button type="button" class="button" id="wiz-speaker">Speaker card</button>
         <button type="button" class="button" id="wiz-share" hidden>Share</button>
         <button type="button" class="button" id="wiz-print">Print</button>
         <button type="button" class="button wizard-back" data-back="3">← Edit Answers</button>
       </div>
-      {{- with $p.commentBcc }}
-      <label class="wizard-bcc"><input type="checkbox" id="wiz-bcc"> BCC Neighbors of 2411 ({{ . }}) so we can count comments</label>
-      {{- end }}
       <p class="wizard-hint">The email goes to {{ delimit $p.commentRecipients " and " }}, with the subject line and record request from our <a href="/resources/#email-a-comment">email guide</a>. Check it before you send.</p>
       <p class="wizard-toast" id="wiz-toast" role="status" aria-live="polite"></p>
       <div class="wizard-next-rung">
@@ -323,8 +320,6 @@
       (rt.secs > 180 ? '. That is over 3 minutes. Speakers usually get 3–5 minutes, so trim it if the Chair sets 3.' : '.');
     var to = emailBtn.getAttribute('data-to');
     var params = 'subject=' + encodeURIComponent(emailBtn.getAttribute('data-subject'));
-    var bcc = $('#wiz-bcc');
-    if (bcc && bcc.checked) params += '&bcc=' + encodeURIComponent(emailBtn.getAttribute('data-bcc'));
     var body = mailBody(out.value);
     emailBtn.dataset.long = body.length > MAILTO_MAX ? '1' : '';
     if (emailBtn.dataset.long) body = '[Paste your comment here]\n\n' + emailBtn.getAttribute('data-record');
@@ -333,7 +328,6 @@
     save('output', out.value);
   }
   out.addEventListener('input', updateOutputMeta);
-  if ($('#wiz-bcc')) $('#wiz-bcc').addEventListener('change', updateOutputMeta);
   emailBtn.addEventListener('click', function () {
     updateOutputMeta();
     if (emailBtn.dataset.long && navigator.clipboard) {

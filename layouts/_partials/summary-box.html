@@ -1,8 +1,8 @@
 {{- /* "In 30 seconds" box. Filled from front matter:
        summary_bullets: ["...", "...", "..."]
        summary_cta: {label: "...", href: "..."}   (optional)
-     TODO(Kevin): write the bullets for each page. Nothing renders until
-     summary_bullets is set -- don't fill it with invented text. */ -}}
+     Hidden by decision (Sept 24, 2026): no page sets summary_bullets, so
+     nothing renders. Don't fill it with invented text. */ -}}
 {{- with .Params.summary_bullets }}
 <aside class="summary-box" aria-label="In 30 seconds">
   <p class="summary-box-title">In 30 seconds</p>

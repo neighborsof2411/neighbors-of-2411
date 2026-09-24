@@ -227,8 +227,6 @@ body.has-action-bar { padding-bottom: calc(64px + env(safe-area-inset-bottom)); 
 #wiz-impact { resize: vertical; overflow: hidden; }
 .wizard-readtime { font-size: 0.9rem; font-weight: 600; margin: 0.5rem 0 0; }
 .wizard-toast { font-weight: 700; color: var(--nb-alert-border); min-height: 1.4em; margin: 0.5rem 0 0; }
-.wizard-bcc { display: flex; gap: 0.5rem; align-items: center; min-height: 44px; font-size: 0.95rem; font-weight: 400 !important; }
-.wizard-bcc input { width: 1.2rem; height: 1.2rem; min-height: 0 !important; }
 .wizard-next-rung { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
 .wizard-next-rung p { margin: 0 0 0.25rem; }
 .wizard-next-rung ul { margin: 0; padding-left: 1.2rem; }
@@ -270,8 +268,6 @@ body.has-action-bar { padding-bottom: calc(64px + env(safe-area-inset-bottom)); 
 .post-content a.share-btn { box-shadow: none; }
 .share-btn:hover { border-color: var(--nb-accent); }
 .share-btn--primary { grid-column: 1 / -1; background: var(--nb-cta-primary); border-color: var(--nb-cta-primary); color: var(--nb-on-accent); }
-.share-more { margin-top: 0.5rem; }
-.share-more > summary { cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; color: var(--secondary); font-size: 0.9rem; }
 .share-status { margin: 0.5rem 0 0; font-weight: 700; color: var(--nb-alert-border); min-height: 1.2em; }
 
 /* ---------- Tap targets (44px minimum) ---------- */

@@ -47,8 +47,8 @@
   {{ end }}
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
   <button type="submit" class="button button--primary petition-submit" data-busy-label="Signing…">{{ $buttonLabel }}</button>
-  {{- /* TODO(Kevin): confirm wording matches practice, then set
-         params.petitionPrivacyNote in hugo.toml. Empty = not shown. */}}
+  {{- /* Privacy line: hidden by decision (Sept 24, 2026). Setting
+         params.petitionPrivacyNote in hugo.toml would show it. */}}
   {{- with site.Params.petitionPrivacyNote }}
   <p class="petition-privacy">{{ . }}</p>
   {{- end }}

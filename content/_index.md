@@ -66,7 +66,7 @@ Every Planning Commission and City Council meeting until the decision is an oppo
 
 <div class="cta-secondary-row">
 {{< cta href="/issues/" variant="secondary" >}}Learn the Issues{{< /cta >}}
-{{< cta href="/evidence/" variant="secondary" >}}Review the Evidence{{< /cta >}}
+{{< cta href="/evidence/" variant="secondary" >}}Review the Documents{{< /cta >}}
 {{< cta href="#petition" variant="secondary" >}}Sign the Petition{{< /cta >}}
 </div>
 

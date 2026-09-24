@@ -6,7 +6,6 @@
     title heading ("" for none)
   Share... (native sheet) and the copy buttons need JS (assets/js/site.js);
   without it they stay hidden and the plain links still work.
-  TODO(Kevin): LinkedIn and X sit under "More" -- keep, or drop them?
 */ -}}
 {{- $url := .url }}
 {{- $text := .text }}
@@ -22,12 +21,5 @@
     <a class="share-btn" href="mailto:?subject={{ "Please review: 2411 N. Glassell Warehouse Opposition" | urlquery }}&body={{ printf "%s\n\n%s" $text $url | urlquery }}">Email</a>
     <button type="button" class="share-btn" data-share-copy="{{ $url }}" data-share-done="Link copied ✓" hidden>Copy link</button>
   </div>
-  <details class="share-more">
-    <summary>More</summary>
-    <div class="share-grid">
-      <a class="share-btn" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text={{ $text | urlquery }}&url={{ $url | urlquery }}">X / Twitter</a>
-      <a class="share-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url | urlquery }}">LinkedIn</a>
-    </div>
-  </details>
   <p class="share-status" role="status" aria-live="polite"></p>
 </section>
