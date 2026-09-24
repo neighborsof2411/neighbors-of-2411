@@ -1,0 +1,33 @@
+{{- /*
+  Share block for neighborhood channels. Context: dict with
+    url   page URL to share
+    text  longer share copy (email, WhatsApp, Nextdoor, X)
+    sms   short text-message copy (URL is appended)
+    title heading ("" for none)
+  Share... (native sheet) and the copy buttons need JS (assets/js/site.js);
+  without it they stay hidden and the plain links still work.
+  TODO(Kevin): LinkedIn and X sit under "More" -- keep, or drop them?
+*/ -}}
+{{- $url := .url }}
+{{- $text := .text }}
+{{- $sms := .sms | default "A 24/7 warehouse is proposed 54 ft from homes on Glassell in Orange. Sign the petition and see the next City meeting:" }}
+<section class="share-block" id="share-this-page" aria-labelledby="share-title-{{ .id | default "page" }}">
+  {{- with .title }}<h2 class="share-title" id="share-title-{{ $.id | default "page" }}">{{ . }}</h2>{{ end }}
+  <div class="share-grid">
+    <button type="button" class="share-btn share-btn--primary" data-share-native data-url="{{ $url }}" data-text="{{ $text }}" hidden>Share…</button>
+    <a class="share-btn" href="sms:?&body={{ printf "%s %s" $sms $url | urlquery }}">Text a neighbor</a>
+    <button type="button" class="share-btn" data-share-copy="{{ printf "%s\n\n%s" $text $url }}" data-share-done="Copied ✓ Paste it into a Nextdoor post." hidden>Copy text for Nextdoor</button>
+    <a class="share-btn" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u={{ $url | urlquery }}">Facebook</a>
+    <a class="share-btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/?text={{ printf "%s %s" $text $url | urlquery }}">WhatsApp</a>
+    <a class="share-btn" href="mailto:?subject={{ "Please review: 2411 N. Glassell Warehouse Opposition" | urlquery }}&body={{ printf "%s\n\n%s" $text $url | urlquery }}">Email</a>
+    <button type="button" class="share-btn" data-share-copy="{{ $url }}" data-share-done="Link copied ✓" hidden>Copy link</button>
+  </div>
+  <details class="share-more">
+    <summary>More</summary>
+    <div class="share-grid">
+      <a class="share-btn" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text={{ $text | urlquery }}&url={{ $url | urlquery }}">X / Twitter</a>
+      <a class="share-btn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url | urlquery }}">LinkedIn</a>
+    </div>
+  </details>
+  <p class="share-status" role="status" aria-live="polite"></p>
+</section>

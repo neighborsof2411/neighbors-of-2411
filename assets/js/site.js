@@ -145,4 +145,31 @@
     if (phone.addEventListener) phone.addEventListener('change', update);
     update();
   }
+
+  /* ---------- Share blocks ---------- */
+  $all('.share-block').forEach(function (block) {
+    var status = $('.share-status', block);
+    function say(msg) {
+      status.textContent = msg;
+      clearTimeout(say._t);
+      say._t = setTimeout(function () { status.textContent = ''; }, 4000);
+    }
+    var nativeBtn = $('[data-share-native]', block);
+    if (nativeBtn && navigator.share) {
+      nativeBtn.hidden = false;
+      nativeBtn.addEventListener('click', function () {
+        navigator.share({ title: doc.title, text: nativeBtn.getAttribute('data-text'), url: nativeBtn.getAttribute('data-url') }).catch(function () {});
+      });
+    }
+    if (navigator.clipboard) {
+      $all('[data-share-copy]', block).forEach(function (btn) {
+        btn.hidden = false;
+        btn.addEventListener('click', function () {
+          navigator.clipboard.writeText(btn.getAttribute('data-share-copy')).then(function () {
+            say(btn.getAttribute('data-share-done'));
+          });
+        });
+      });
+    }
+  });
 })();

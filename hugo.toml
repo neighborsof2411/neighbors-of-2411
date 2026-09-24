@@ -27,6 +27,8 @@ pygmentsUseClasses = true
   description = 'Community opposition to the proposed 298,988 SF warehouse at 2411 North Glassell Street, Orange, CA — 24/7 operations 54 feet from homes and about 1,200 feet from Fletcher Mandarin Language and GATE Academy. Learn the issues, review the evidence, and prepare your public comment for the Planning Commission hearing.'
   keywords = ['2411 Glassell', '2411 North Glassell', 'Orange CA warehouse', 'Rexford Industrial', 'Fletcher Elementary', 'Planning Commission hearing', 'CEQA', 'environmental impact report', 'CUP 25-0013', 'ENV25-0002']
   author = 'Neighbors of 2411'
+  # Link-preview image (og:image, twitter summary_large_image) for every page.
+  images = ['og/2411-og.png']
 
   defaultTheme = 'auto'
   disableThemeToggle = false

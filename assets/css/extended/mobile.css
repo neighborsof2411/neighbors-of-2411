@@ -255,3 +255,21 @@ body.has-action-bar { padding-bottom: calc(64px + env(safe-area-inset-bottom)); 
 .speaker-card-head .button { color: #f8fafc; border-color: #f8fafc; }
 .speaker-card-text { padding: 1rem 1.25rem 3rem; font-size: clamp(22px, 5.5vw, 30px); line-height: 1.5; max-width: 40rem; margin: 0 auto; }
 .speaker-card-text p { margin: 0 0 1em; white-space: pre-wrap; }
+
+/* ---------- Share block (layouts/_partials/share.html) ---------- */
+
+.share-block { margin: 2rem 0 1rem; padding: 1rem 1.1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--entry); }
+.post-content .share-title { font-size: 1.15rem; margin: 0 0 0.75rem; }
+.share-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+@media (min-width: 640px) { .share-grid { grid-template-columns: repeat(3, 1fr); } }
+.share-btn {
+    display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.4rem 0.75rem;
+    border: 1px solid var(--border); border-radius: var(--radius); background: var(--theme); color: var(--primary);
+    font: inherit; font-size: 0.95rem; font-weight: 600; text-decoration: none; cursor: pointer; text-align: center;
+}
+.post-content a.share-btn { box-shadow: none; }
+.share-btn:hover { border-color: var(--nb-accent); }
+.share-btn--primary { grid-column: 1 / -1; background: var(--nb-cta-primary); border-color: var(--nb-cta-primary); color: var(--nb-on-accent); }
+.share-more { margin-top: 0.5rem; }
+.share-more > summary { cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; color: var(--secondary); font-size: 0.9rem; }
+.share-status { margin: 0.5rem 0 0; font-weight: 700; color: var(--nb-alert-border); min-height: 1.2em; }

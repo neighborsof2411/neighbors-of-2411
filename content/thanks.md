@@ -21,4 +21,8 @@ Your name is on the petition, which shows the Planning Commission the scale of n
 {{< cta href="/#upcoming-city-meetings" variant="primary" >}}See Upcoming City Meetings →{{< /cta >}}
 </div>
 
+**Now tell three neighbors.** Send them the petition. It takes about a minute to sign.
+
+{{< share url="/" title="Tell 3 neighbors" sms="I just signed the petition against the 24/7 warehouse planned 54 ft from homes on Glassell. Add your name:" >}}
+
 [Prepare your public comment →](/testify/#comment-builder) · [Other ways to help →](/testify/#how-to-help)
