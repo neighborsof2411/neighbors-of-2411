@@ -1,24 +1,24 @@
 {{- /* Schematic of the site and its neighbours -- NOT to scale. Distances as
        stated elsewhere on the site (MND p. 116; project page): homes 54 ft
-       north across Fletcher Ave; to the east, the BNSF tracks, then Orange
+       north across Fletcher Ave (which ends before the tracks); to the east, the BNSF tracks, then Orange
        Olive Road, then homes about 150 ft away; Fletcher Mandarin Language
        and GATE Academy about 1,200 ft west, across Glassell St.
        Inline SVG, no external requests. */ -}}
 <figure class="site-diagram">
   <svg viewBox="0 0 400 300" role="img" aria-labelledby="sd-title sd-desc" xmlns="http://www.w3.org/2000/svg">
     <title id="sd-title">Where 2411 N. Glassell sits (not to scale)</title>
-    <desc id="sd-desc">The project site is at the southeast corner of Glassell Street and Fletcher Avenue. Homes are 54 feet to the north, across Fletcher Avenue. To the east, railroad tracks and then Orange Olive Road run parallel to Glassell Street, with homes beyond them about 150 feet from the site. Fletcher Mandarin Language and GATE Academy is about 1,200 feet to the west, across Glassell Street.</desc>
+    <desc id="sd-desc">The project site is at the southeast corner of Glassell Street and Fletcher Avenue. Homes are 54 feet to the north, across Fletcher Avenue, which ends before the railroad tracks. To the east, railroad tracks and then Orange Olive Road run parallel to Glassell Street, with homes beyond them about 150 feet from the site. Fletcher Mandarin Language and GATE Academy is about 1,200 feet to the west, across Glassell Street.</desc>
     <!-- roads -->
     <rect class="sd-road" x="96" y="0" width="26" height="300"/>
-    <rect class="sd-road" x="0" y="74" width="400" height="24"/>
-    <rect class="sd-road" x="296" y="98" width="22" height="202"/>
+    <rect class="sd-road" x="0" y="74" width="256" height="24" rx="0"/>
+    <rect class="sd-road" x="296" y="0" width="22" height="300"/>
     <text class="sd-road-label" x="109" y="210" transform="rotate(-90 109 210)" text-anchor="middle">Glassell St</text>
     <text class="sd-road-label" x="170" y="90" text-anchor="middle">Fletcher Ave</text>
     <text class="sd-road-label" x="307" y="236" transform="rotate(-90 307 236)" text-anchor="middle">Orange Olive Rd</text>
     <!-- railroad tracks, parallel to Glassell and Orange Olive -->
     <g class="sd-rail">
-      <line x1="270" y1="98" x2="270" y2="300"/><line x1="282" y1="98" x2="282" y2="300"/>
-      <path d="M266 108h20M266 120h20M266 132h20M266 144h20M266 156h20M266 168h20M266 180h20M266 192h20M266 204h20M266 216h20M266 228h20M266 240h20M266 252h20M266 264h20M266 276h20M266 288h20"/>
+      <line x1="270" y1="0" x2="270" y2="300"/><line x1="282" y1="0" x2="282" y2="300"/>
+      <path d="M266 12h20M266 24h20M266 36h20M266 48h20M266 60h20M266 72h20M266 84h20M266 96h20M266 108h20M266 120h20M266 132h20M266 144h20M266 156h20M266 168h20M266 180h20M266 192h20M266 204h20M266 216h20M266 228h20M266 240h20M266 252h20M266 264h20M266 276h20M266 288h20"/>
     </g>
     <rect class="sd-label-bg" x="269" y="226" width="14" height="52"/>
     <text class="sd-small" x="276" y="252" transform="rotate(-90 276 252)" text-anchor="middle" dy="3.5">Railroad</text>
