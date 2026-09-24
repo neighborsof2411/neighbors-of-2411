@@ -13,6 +13,9 @@
   any file-level comment here, inside the block, not above it.
 -->
 
+{{- /* .home-top groups hero, stats, and petition so desktop (>= 1024px) can
+     put the form beside the headline; phones keep this order. */}}
+<div class="home-top">
 <section class="hero-mega">
   <div class="hero-mega-inner">
     <span class="hero-mega-eyebrow">Orange, CA &middot; Neighbors of 2411</span>
@@ -48,6 +51,7 @@
     {{ partial "petition-form.html" (dict "idPrefix" "petition" "buttonLabel" "Sign the Petition & Get Updates") }}
   </div>
 </section>
+</div>
 
 {{- if .Content }}
 {{- /* On phones, sections from Quick Facts down collapse behind heading

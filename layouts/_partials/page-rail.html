@@ -1,0 +1,29 @@
+{{- /* Desktop sidebar (>= 1200px) for section pages: next meeting, the two
+       main actions, and the page's sections. Hidden on smaller screens,
+       where the action bar and jump menu do the same jobs. */ -}}
+{{- $p := .page }}
+{{- $today := now.Format "2006-01-02" }}
+{{- $up := where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today }}
+<aside class="page-rail" aria-label="Take action">
+  <div class="page-rail-inner">
+    {{- with $up }}{{ with index . 0 }}
+    {{- $id := printf "%s-%s" (cond (eq .body "City Council") "cc" "pc") .date }}
+    <div class="rail-meeting meetings" data-rail>
+      <p class="rail-label">Next meeting</p>
+      <p class="rail-when">{{ dateFormat "Mon, Jan 2" .date }} · {{ .time }}</p>
+      <p class="rail-body">{{ .body }}</p>
+      <p class="rail-links"><a href="/meetings/{{ $id }}.ics" download="{{ $id }}.ics">Add to calendar</a> · <a href="/#upcoming-city-meetings">All meetings</a></p>
+    </div>
+    {{- end }}{{ end }}
+    <a class="button button--primary rail-btn" href="/#petition">Sign the Petition</a>
+    <a class="button button--secondary rail-btn" href="/testify/#comment-builder">Write your public comment</a>
+    {{- if and ($p.Param "ShowToc") (ge (len .h2) 4) }}
+    <nav class="rail-toc" aria-label="On this page">
+      <p class="rail-label">On this page</p>
+      <ol>
+        {{- range .h2 }}<li><a href="#{{ .ID }}">{{ .Title | plainify | htmlUnescape }}</a></li>{{ end }}
+      </ol>
+    </nav>
+    {{- end }}
+  </div>
+</aside>
