@@ -63,6 +63,11 @@
   });
   if (isApple) $all('a.meeting-dir[data-apple]').forEach(function (a) { a.href = a.getAttribute('data-apple'); });
 
+  /* ---------- Long sections: open without JS, collapsed on phones ---------- */
+  if (window.matchMedia && window.matchMedia('(max-width: 767px)').matches) {
+    $all('details.collapse-mobile[open]').forEach(function (d) { d.open = false; });
+  }
+
   /* ---------- Open a collapsed section when a link targets it ---------- */
   function openForHash() {
     var id = decodeURIComponent(location.hash.slice(1));

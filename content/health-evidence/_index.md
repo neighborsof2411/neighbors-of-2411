@@ -167,7 +167,7 @@ Your expertise and public comment carry particular weight with decision-makers.
 - [ ] Attend every Planning Commission and City Council meeting and speak up
 
 <div class="cta-primary-row">
-{{< cta href="/testify/#how-to-prepare-your-public-comment" variant="primary" >}}Submit Public Comment About Health Impacts →{{< /cta >}}
+{{< cta href="/testify/#comment-builder" variant="primary" >}}Submit Public Comment About Health Impacts →{{< /cta >}}
 </div>
 
 ## References: Full Citations & Links

@@ -204,7 +204,7 @@ If this project is approved without proper environmental review and strict condi
 ## Next Steps
 
 - **Review the technical evidence**: [See Issues & Evidence](/issues/)
-- **Prepare your public comment**: [How to submit public comment at the Planning Commission](/testify/#how-to-prepare-your-public-comment)
+- **Prepare your public comment**: [How to submit public comment at the Planning Commission](/testify/#comment-builder)
 - **Sign the petition and get updates**: [Add your name](/#petition) — one form, one list
 - **Help out**: [How to help](/testify/#how-to-help)
 

@@ -21,4 +21,4 @@ Your name is on the petition, which shows the Planning Commission the scale of n
 {{< cta href="/#upcoming-city-meetings" variant="primary" >}}See Upcoming City Meetings →{{< /cta >}}
 </div>
 
-[Prepare your public comment →](/testify/#how-to-prepare-your-public-comment) · [Other ways to help →](/testify/#how-to-help)
+[Prepare your public comment →](/testify/#comment-builder) · [Other ways to help →](/testify/#how-to-help)

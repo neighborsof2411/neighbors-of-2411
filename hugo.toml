@@ -47,6 +47,15 @@ pygmentsUseClasses = true
   showtoc = false
   comments = false
 
+  # Public comment builder (/testify/#comment-builder): "Email it to the City"
+  # sends to both addresses, as the Resources page advises.
+  commentRecipients = ['abeck@cityoforange.org', 'clerkinfo@cityoforange.org']
+  commentSubject = 'Public Comment — CUP No. 25-0013 / IS-MND No. ENV25-0002 / 2411 N. Glassell St.'
+  commentRecordSentence = 'Please place this email in the administrative record for CUP No. 25-0013 / IS-MND No. ENV25-0002 and include it in the Planning Commission packet and any later hearing packet for this project.'
+  # TODO(Kevin): set to an address (e.g. neighborsof2411@gmail.com) to offer an
+  # opt-in "BCC us so we can count comments" checkbox. Empty = not shown.
+  commentBcc = ''
+
   [[params.socialIcons]]
     name = 'email'
     url = 'mailto:neighborsof2411@gmail.com'

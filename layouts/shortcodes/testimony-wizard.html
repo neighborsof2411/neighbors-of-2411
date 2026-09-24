@@ -1,10 +1,15 @@
 <!--
   Public Comment Preparation Wizard. Pure vanilla JS, no external dependencies.
   Walks the user through: issue -> personal impact -> supporting facts ->
-  generated public comment script (copy/print).
+  generated public comment, then: email it to the City (recipients, subject
+  and record-placement sentence from hugo.toml params.comment*), copy,
+  speaker card (large type + read time), share, print. Answers are saved
+  in localStorage as the user types; "Start over" clears them.
 -->
+{{- $p := site.Params }}
 <div class="wizard" id="testimony-wizard">
 
+  <p class="wizard-stepcount" aria-live="polite">Step <span data-stepnum>1</span> of 4</p>
   <div class="wizard-progress" aria-hidden="true">
     <span class="wizard-progress-step is-active" data-progress-step="1">1. Issue</span>
     <span class="wizard-progress-step" data-progress-step="2">2. Impact</span>
@@ -42,7 +47,9 @@
       <legend><strong>Step 2: How does it affect you?</strong></legend>
       <div class="form-row">
         <label for="wiz-impact">Describe the personal impact in your own words (a sentence or two is plenty)</label>
-        <textarea id="wiz-impact" name="impact" rows="4" placeholder="Example: My bedroom window faces the site, 54 feet away. / My children walk to Fletcher every day."></textarea>
+        <p class="wizard-hint" id="wiz-impact-help">Ideas: How far do you live from the site? Do your kids attend Fletcher? What do you hear or smell at night now?</p>
+        <textarea id="wiz-impact" name="impact" rows="5" aria-describedby="wiz-impact-help wiz-impact-count" placeholder="Example: My bedroom window faces the site, 54 feet away. / My children walk to Fletcher every day."></textarea>
+        <p class="wizard-count" id="wiz-impact-count" aria-live="polite"></p>
       </div>
       <button type="button" class="button wizard-back" data-back="1">← Back</button>
       <button type="button" class="button button--primary wizard-next" data-next="3">Next: Pick Supporting Facts →</button>
@@ -68,13 +75,30 @@
     <fieldset class="wizard-step" data-step="4" hidden>
       <legend><strong>Step 4: Your public comment</strong></legend>
       <p class="wizard-hint">Read it out loud and time yourself — aim for 2&ndash;3 minutes. Edit freely; this is a starting draft, not a script to memorize.</p>
-      <textarea id="wiz-output" rows="16" readonly></textarea>
-      <div class="wizard-actions">
-        <button type="button" class="button button--primary" id="wiz-copy">Copy to Clipboard</button>
+      <textarea id="wiz-output" rows="16" aria-label="Your public comment (you can edit it)"></textarea>
+      <p class="wizard-readtime" id="wiz-readtime" aria-live="polite"></p>
+      <div class="wizard-actions wizard-actions--output">
+        <a class="button button--primary" id="wiz-email" href="#" data-to="{{ delimit $p.commentRecipients "," }}" data-subject="{{ $p.commentSubject }}" data-record="{{ $p.commentRecordSentence }}" data-bcc="{{ $p.commentBcc }}">Email it to the City</a>
+        <button type="button" class="button" id="wiz-copy">Copy to Clipboard</button>
+        <button type="button" class="button" id="wiz-speaker">Speaker card</button>
+        <button type="button" class="button" id="wiz-share" hidden>Share</button>
         <button type="button" class="button" id="wiz-print">Print</button>
         <button type="button" class="button wizard-back" data-back="3">← Edit Answers</button>
       </div>
-      <p class="wizard-hint">Next: <a href="/testify/#how-to-prepare-your-public-comment">review the full public comment guide</a> for what to expect at the hearing.</p>
+      {{- with $p.commentBcc }}
+      <label class="wizard-bcc"><input type="checkbox" id="wiz-bcc"> BCC Neighbors of 2411 ({{ . }}) so we can count comments</label>
+      {{- end }}
+      <p class="wizard-hint">The email goes to {{ delimit $p.commentRecipients " and " }}, with the subject line and record request from our <a href="/resources/#email-a-comment">email guide</a>. Check it before you send.</p>
+      <p class="wizard-toast" id="wiz-toast" role="status" aria-live="polite"></p>
+      <div class="wizard-next-rung">
+        <p><strong>Next:</strong></p>
+        <ul>
+          <li><a href="/#upcoming-city-meetings" id="wiz-cal">Add the next meeting to your calendar</a></li>
+          <li><a href="#share-this-page" id="wiz-tell">Send this page to a neighbor</a></li>
+          <li><a href="/testify/#how-to-prepare-your-public-comment">Review the full public comment guide</a> for what to expect at the hearing.</li>
+        </ul>
+      </div>
+      <p class="wizard-restart"><button type="button" class="linklike" id="wiz-reset">Start over</button></p>
     </fieldset>
 
   </form>
@@ -133,13 +157,31 @@
   function $(sel, ctx) { return (ctx || wizard).querySelector(sel); }
   function $all(sel, ctx) { return Array.prototype.slice.call((ctx || wizard).querySelectorAll(sel)); }
 
-  function goToStep(n) {
+  function goToStep(n, noScroll) {
     $all('.wizard-step').forEach(function (s) {
       s.hidden = (s.getAttribute('data-step') !== String(n));
     });
     $all('.wizard-progress-step').forEach(function (s) {
       s.classList.toggle('is-active', s.getAttribute('data-progress-step') === String(n));
     });
+    $('[data-stepnum]').textContent = String(n);
+    save('step', String(n));
+    if (!noScroll) {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      wizard.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      var legend = $('.wizard-step[data-step="' + n + '"] legend');
+      if (legend) { legend.setAttribute('tabindex', '-1'); legend.focus({ preventScroll: true }); }
+    }
+    if (String(n) === '4') updateOutputMeta();
+  }
+
+  /* Saved answers (this browser only). */
+  var KEY = 'n2411-wizard';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { saved = {}; }
+  function save(k, v) {
+    saved[k] = v;
+    try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
   }
 
   $all('.wizard-next').forEach(function (btn) {
@@ -173,8 +215,9 @@
       var id = 'fact-' + fact.id;
       var wrap = document.createElement('div');
       wrap.className = 'wizard-fact';
+      var on = !saved.facts || saved.issueForFacts !== issue || saved.facts.indexOf(fact.id) !== -1;
       wrap.innerHTML =
-        '<label><input type="checkbox" id="' + id + '" value="' + fact.id + '" checked> ' + fact.label + '</label>';
+        '<label><input type="checkbox" id="' + id + '" value="' + fact.id + '"' + (on ? ' checked' : '') + '> ' + fact.label + '</label>';
       list.appendChild(wrap);
     });
   }
@@ -208,6 +251,9 @@
     lines.push('Thank you for your time and for protecting our neighborhood.');
 
     $('#wiz-output').value = lines.join('\n');
+    save('facts', $all('#wiz-facts-list input[type=checkbox]:checked').map(function (cb) { return cb.value; }));
+    save('issueForFacts', issue);
+    save('output', $('#wiz-output').value);
   }
 
   var copyBtn = $('#wiz-copy');
@@ -216,12 +262,10 @@
       var out = $('#wiz-output');
       out.select();
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(out.value).then(function () {
-          copyBtn.textContent = 'Copied!';
-          setTimeout(function () { copyBtn.textContent = 'Copy to Clipboard'; }, 2000);
-        });
+        navigator.clipboard.writeText(out.value).then(function () { toast('Copied ✓'); });
       } else {
         document.execCommand('copy');
+        toast('Copied ✓');
       }
     });
   }
@@ -229,6 +273,142 @@
   var printBtn = $('#wiz-print');
   if (printBtn) {
     printBtn.addEventListener('click', function () { window.print(); });
+  }
+  /* ---------- Saved answers: restore + keep in sync ---------- */
+  ['wiz-issue', 'wiz-name', 'wiz-address', 'wiz-impact', 'wiz-recommendation'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    if (saved[id] != null && saved[id] !== '') el.value = saved[id];
+    el.addEventListener('input', function () { save(id, el.value); });
+    el.addEventListener('change', function () { save(id, el.value); });
+  });
+  $('#wiz-facts-list').addEventListener('change', function () {
+    save('facts', $all('#wiz-facts-list input[type=checkbox]:checked').map(function (cb) { return cb.value; }));
+    save('issueForFacts', $('#wiz-issue').value);
+  });
+
+  /* Impact box: grows with the text, live count. */
+  var impact = $('#wiz-impact');
+  var count = $('#wiz-impact-count');
+  function grow() {
+    impact.style.height = 'auto';
+    impact.style.height = Math.max(impact.scrollHeight + 2, 120) + 'px';
+    var n = impact.value.length;
+    count.textContent = n ? n + ' characters' : '';
+  }
+  impact.addEventListener('input', grow);
+
+  /* ---------- Output: email, speaker card, share ---------- */
+  var out = $('#wiz-output');
+  var emailBtn = $('#wiz-email');
+  var MAILTO_MAX = 1800;
+  function words(t) { return (t.match(/\S+/g) || []).length; }
+  function readTime(t) {
+    var secs = Math.round(words(t) / 130 * 60);   // about 130 words a minute out loud
+    var m = Math.floor(secs / 60), s = secs % 60;
+    return { secs: secs, text: '≈ ' + (m ? m + ' min ' : '') + s + ' s at a speaking pace' };
+  }
+  function toast(msg) {
+    var t = $('#wiz-toast');
+    t.textContent = msg;
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function () { t.textContent = ''; }, 4000);
+  }
+  function mailBody(text) {
+    return text + '\n\n' + emailBtn.getAttribute('data-record');
+  }
+  function updateOutputMeta() {
+    var rt = readTime(out.value);
+    $('#wiz-readtime').textContent = 'Read-aloud time: ' + rt.text +
+      (rt.secs > 180 ? '. That is over 3 minutes. Speakers usually get 3–5 minutes, so trim it if the Chair sets 3.' : '.');
+    var to = emailBtn.getAttribute('data-to');
+    var params = 'subject=' + encodeURIComponent(emailBtn.getAttribute('data-subject'));
+    var bcc = $('#wiz-bcc');
+    if (bcc && bcc.checked) params += '&bcc=' + encodeURIComponent(emailBtn.getAttribute('data-bcc'));
+    var body = mailBody(out.value);
+    emailBtn.dataset.long = body.length > MAILTO_MAX ? '1' : '';
+    if (emailBtn.dataset.long) body = '[Paste your comment here]\n\n' + emailBtn.getAttribute('data-record');
+    emailBtn.href = 'mailto:' + to + '?' + params + '&body=' + encodeURIComponent(body);
+    emailBtn.textContent = emailBtn.dataset.long ? 'Copy, then email the City' : 'Email it to the City';
+    save('output', out.value);
+  }
+  out.addEventListener('input', updateOutputMeta);
+  if ($('#wiz-bcc')) $('#wiz-bcc').addEventListener('change', updateOutputMeta);
+  emailBtn.addEventListener('click', function () {
+    updateOutputMeta();
+    if (emailBtn.dataset.long && navigator.clipboard) {
+      navigator.clipboard.writeText(out.value).then(function () { toast('Copied ✓ Paste it into the email.'); });
+    }
+  });
+
+  // Speaker card: the same text, big and high-contrast, for reading at the podium.
+  $('#wiz-speaker').addEventListener('click', function () {
+    var dlg = document.createElement('dialog');
+    dlg.className = 'speaker-card';
+    dlg.setAttribute('aria-label', 'Speaker card');
+    var rt = readTime(out.value);
+    var head = document.createElement('div');
+    head.className = 'speaker-card-head';
+    var meta = document.createElement('p');
+    meta.textContent = rt.text + (rt.secs > 180 ? ' · over 3 minutes' : '');
+    var close = document.createElement('button');
+    close.type = 'button'; close.className = 'button'; close.textContent = 'Close';
+    close.addEventListener('click', function () { dlg.close(); });
+    head.appendChild(meta); head.appendChild(close);
+    var body = document.createElement('div');
+    body.className = 'speaker-card-text';
+    out.value.split(/\n{2,}/).forEach(function (para) {
+      var p = document.createElement('p');
+      p.textContent = para;
+      body.appendChild(p);
+    });
+    dlg.appendChild(head); dlg.appendChild(body);
+    dlg.addEventListener('close', function () { dlg.remove(); $('#wiz-speaker').focus(); });
+    document.body.appendChild(dlg);
+    dlg.showModal();
+  });
+
+  var shareBtn = $('#wiz-share');
+  if (navigator.share) {
+    shareBtn.hidden = false;
+    shareBtn.addEventListener('click', function () {
+      navigator.share({ title: 'My public comment on 2411 N. Glassell', text: out.value }).catch(function () {});
+    });
+  }
+
+  // Next rung: point "Add the next meeting" at its calendar file.
+  document.addEventListener('DOMContentLoaded', function () {
+  var mj = document.getElementById('meetings-json');
+  if (mj) {
+    try {
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      var nx = (JSON.parse(mj.textContent) || []).filter(function (m) { return new Date(m.date + 'T00:00:00') >= today; })[0];
+      if (nx) { var cal = $('#wiz-cal'); cal.href = '/meetings/' + nx.id + '.ics'; cal.setAttribute('download', nx.id + '.ics'); }
+    } catch (e) {}
+  }
+  });
+  $('#wiz-tell').addEventListener('click', function (e) {
+    if (navigator.share) {
+      e.preventDefault();
+      navigator.share({ title: document.title, url: location.origin + '/testify/#comment-builder' }).catch(function () {});
+    }
+  });
+
+  $('#wiz-reset').addEventListener('click', function () {
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    saved = {};
+    $('#wizard-form').reset();
+    out.value = '';
+    grow();
+    goToStep(1);
+  });
+
+  // Resume where the visitor left off.
+  grow();
+  if (saved.output) out.value = saved.output;
+  if (saved.step && saved.step !== '1' && $('#wiz-issue').value) {
+    if (Number(saved.step) >= 3) renderFacts($('#wiz-issue').value);
+    goToStep(saved.step, true);
   }
 })();
 </script>

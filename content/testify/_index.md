@@ -13,7 +13,15 @@ You can still submit public comment — in writing or in person — **at the Pla
 
 ## Upcoming Meetings
 
+{{< meetings only="next" >}}
+
 Dates are changing until the City sends official notice, so we keep them in one place: **[Upcoming City Meetings on the homepage](/#upcoming-city-meetings)**, alongside the [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx). Come to every Planning Commission and City Council meeting until this project is decided — public comment is open at each one, and a room full of neighbors is what commissioners remember. Meetings are held in the City Council Chamber, Orange City Hall, 300 East Chapman Avenue, Orange, CA 92866.
+
+## Public Comment Preparation Wizard {#comment-builder}
+
+Use this tool to draft a starting-point public comment script based on your answers. Edit it freely afterward — it's a draft, not a script to memorize.
+
+{{< testimony-wizard >}}
 
 ## Quick Start: Three Ways to Participate
 
@@ -24,10 +32,13 @@ Dates are changing until the City sends official notice, so we keep them in one 
 **3. Sign the petition.** One form adds your name to the opposition petition and puts you on the email list for meeting-date updates. [Sign the petition →](/#petition) Want to do more? [See how to help →](#how-to-help)
 
 <div class="cta-primary-row">
-{{< cta href="#how-to-prepare-your-public-comment" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
+{{< cta href="#comment-builder" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
 ## How the Planning Commission Hearing Works
+
+<details class="more-details collapse-mobile" open>
+<summary>Show the six steps of a hearing</summary>
 
 1. **Call to order** (5 min) — the Chair calls the meeting to order; staff presents procedural information
 2. **Staff presentation** (15–20 min) — City staff (likely Senior Planner Arlen Beck) presents the project, impacts identified, and mitigation proposed
@@ -38,7 +49,12 @@ Dates are changing until the City sends official notice, so we keep them in one 
 
 **Total time**: usually 60–120 minutes if you speak; you may leave after your portion if you just attend.
 
+</details>
+
 ## How to Prepare Your Public Comment
+
+<details class="more-details collapse-mobile" open>
+<summary>Show the five steps</summary>
 
 ### Step 1: Identify Your Core Message
 
@@ -73,17 +89,12 @@ Read it out loud and time yourself. Don't memorize — speak naturally. If you g
 
 Bring your written public comment (1 copy per commissioner, plus 1 for staff), a notecard with key points, and copies of any technical documents you're referencing.
 
----
-
-## Public Comment Preparation Wizard
-
-Use this tool to draft a starting-point public comment script based on your answers. Edit it freely afterward — it's a draft, not a script to memorize.
-
-{{< testimony-wizard >}}
-
----
+</details>
 
 ## Example Public Comment Scripts
+
+<details class="more-details collapse-mobile" open>
+<summary>Show the four example scripts</summary>
 
 ### Example 1: Parent Concerned About Children's Health
 
@@ -155,7 +166,12 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 *Time: 2 minutes — reasoned, pro-development-but-cautious tone*
 
+</details>
+
 ## How to Write Effective Comments
+
+<details class="more-details collapse-mobile" open>
+<summary>Show the letter format</summary>
 
 **Format:**
 
@@ -188,7 +204,12 @@ Respectfully submitted,
 
 **Length**: 1–2 pages. **Tone**: professional, factual, respectful. **Impact**: goes into the official record and is reviewed by commissioners before or during the hearing.
 
+</details>
+
 ## What NOT to Say in Your Public Comment
+
+<details class="more-details collapse-mobile" open>
+<summary>Show what to avoid</summary>
 
 **Avoid personal attacks.** Not: *"The developers are greedy and don't care about our community."* Instead: *"The developer's business model prioritizes warehouse density and 24/7 operations, which are incompatible with this neighborhood."*
 
@@ -197,6 +218,8 @@ Respectfully submitted,
 **Avoid legal conclusions unless you're an attorney.** Not: *"This violates the Clean Air Act."* Instead: *"The SCAQMD, the government agency responsible for air quality, raised seven areas of concern with this analysis."*
 
 **What IS appropriate**: your personal experience, facts from the record, agency letters, your recommendation, and health/safety concerns.
+
+</details>
 
 ## How to Help
 

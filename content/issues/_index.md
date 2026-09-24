@@ -238,7 +238,7 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 6. **[Sign the petition](/#petition)** — one form adds your name and gets you meeting-date updates
 
 <div class="cta-primary-row">
-{{< cta href="/testify/" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
+{{< cta href="/testify/#comment-builder" variant="primary" >}}Prepare Your Public Comment →{{< /cta >}}
 </div>
 
 ## References & Documents

@@ -217,3 +217,41 @@ body.has-action-bar { padding-bottom: calc(64px + env(safe-area-inset-bottom)); 
     .top-link { display: none !important; }
 }
 @media print { .action-bar { display: none !important; } }
+
+/* ---------- Comment builder (testimony-wizard shortcode) ---------- */
+
+.wizard-stepcount { font-size: 0.85rem; font-weight: 700; color: var(--nb-accent); margin: 0 0 0.35rem; }
+.wizard legend:focus { outline: none; }
+.wizard-count { font-size: 0.8rem; color: var(--secondary); margin: 0.25rem 0 0; min-height: 1.2em; }
+.wizard .form-row .wizard-hint { margin: 0; }
+#wiz-impact { resize: vertical; overflow: hidden; }
+.wizard-readtime { font-size: 0.9rem; font-weight: 600; margin: 0.5rem 0 0; }
+.wizard-toast { font-weight: 700; color: var(--nb-alert-border); min-height: 1.4em; margin: 0.5rem 0 0; }
+.wizard-bcc { display: flex; gap: 0.5rem; align-items: center; min-height: 44px; font-size: 0.95rem; font-weight: 400 !important; }
+.wizard-bcc input { width: 1.2rem; height: 1.2rem; min-height: 0 !important; }
+.wizard-next-rung { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
+.wizard-next-rung p { margin: 0 0 0.25rem; }
+.wizard-next-rung ul { margin: 0; padding-left: 1.2rem; }
+.wizard-next-rung li { margin: 0.35rem 0; }
+.wizard-restart { margin: 0.75rem 0 0; }
+.linklike { background: none; border: 0; padding: 0.5rem 0; min-height: 44px; font: inherit; color: var(--secondary); text-decoration: underline; cursor: pointer; }
+@media (max-width: 767px) {
+    .wizard { padding: 1rem; }
+    .wizard-step > .button, .wizard-actions .button { width: 100%; min-height: 48px; }
+    .wizard-step > .button + .button { margin-top: 0.6rem; }
+    .wizard-actions { flex-direction: column; }
+}
+
+.speaker-card {
+    width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; padding: 0;
+    border: 0; background: #0b1220; color: #f8fafc; overflow-y: auto;
+}
+.speaker-card::backdrop { background: #0b1220; }
+.speaker-card-head {
+    position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: 0.75rem 1rem; background: #0b1220; border-bottom: 1px solid #334155; font-size: 0.95rem; color: #cbd5e1;
+}
+.speaker-card-head p { margin: 0; }
+.speaker-card-head .button { color: #f8fafc; border-color: #f8fafc; }
+.speaker-card-text { padding: 1rem 1.25rem 3rem; font-size: clamp(22px, 5.5vw, 30px); line-height: 1.5; max-width: 40rem; margin: 0 auto; }
+.speaker-card-text p { margin: 0 0 1em; white-space: pre-wrap; }
