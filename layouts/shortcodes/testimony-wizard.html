@@ -42,7 +42,7 @@
       <legend><strong>Step 2: How does it affect you?</strong></legend>
       <div class="form-row">
         <label for="wiz-impact">Describe the personal impact in your own words (a sentence or two is plenty)</label>
-        <textarea id="wiz-impact" name="impact" rows="4" placeholder="Example: My bedroom window faces the site, 54 feet away. / My children walk to Fletcher Elementary every day."></textarea>
+        <textarea id="wiz-impact" name="impact" rows="4" placeholder="Example: My bedroom window faces the site, 54 feet away. / My children walk to Fletcher every day."></textarea>
       </div>
       <button type="button" class="button wizard-back" data-back="1">← Back</button>
       <button type="button" class="button button--primary wizard-next" data-next="3">Next: Pick Supporting Facts →</button>
@@ -87,31 +87,30 @@
 
   var FACTS = {
     'air-quality': [
-      { id: 'aq-cancer', label: "The health risk assessment's own result is 10.07 per million at the closest home — over the 10 per million significance threshold. It reaches 9.48 only by requiring cleaner construction equipment (Mitigation Measure AQ-1)." },
-      { id: 'aq-docks', label: "The health risk assessment modeled only 5 loading dock doors, but the MND's own Option 2 site plan (page 24) shows 36 — and none of the technical studies analyzes that layout." },
+      { id: 'aq-cancer', label: "The health risk assessment's own result is 10.07 in a million unmitigated at the most-exposed home — over the 10-in-a-million threshold. It reaches 9.48 mitigated only by requiring cleaner construction equipment (Mitigation Measure AQ-1); nothing reduces the diesel from operations." },
+      { id: 'aq-docks', label: "The health risk assessment modeled only 5 loading dock doors; the alternate layout in the City's document (IS/MND Table 3, p. 24) has 36, and none of the technical studies analyzes it." },
       { id: 'aq-scaqmd', label: 'The South Coast Air Quality Management District (SCAQMD) raised seven areas of concern with the air quality analysis and noted the unmitigated cancer risk exceeds the threshold.' },
-      { id: 'aq-generator', label: 'The analysis assumes the diesel fire water pump runs just 50 hours a year; SCAQMD says permits allow up to 200 hours and the analysis should evaluate that.' }
+      { id: 'aq-generator', label: 'The analysis assumes the diesel fire water pump runs just 50 hours a year; SCAQMD says permits allow up to 200 hours a year and the analysis should evaluate that.' }
     ],
     'noise': [
-      { id: 'n-margin', label: "Modeled nighttime dock noise is 53.6 dBA, above the City's baseline 45/50 dBA nighttime standards — the MND avoids a significant-impact finding only by applying an ambient-noise adjustment that raises the effective threshold to about 57-58 dBA." },
-      { id: 'n-alarms', label: "The noise study assumes trucks unloading at only 3 docks at a time (the plan allows 36) and never applies the City's 5 dBA stricter standard for tonal, repetitive sounds like back-up alarms (Municipal Code § 8.24.040(D))." },
+      { id: 'n-margin', label: "Modeled nighttime noise is 53.6 dBA at the homes east of the site, above the City's 45/50 dBA nighttime standards (General Plan / Municipal Code) — the MND avoids a significant-impact finding only by applying an ambient-noise adjustment that raises the effective threshold to about 57-58 dBA." },
+      { id: 'n-alarms', label: "The noise study assumes trucks unloading at only 3 docks at a time (the alternate layout has 36) and never applies the City's 5 dBA stricter standard for tonal, repetitive sounds like back-up alarms (Appendix K, Table C, note 2; Municipal Code § 8.24.040(D))." },
       { id: 'n-nomit', label: 'The MND proposes no noise mitigation at all — it states that "no mitigation measures are required" (MND page 121).' },
       { id: 'n-247', label: 'With 24/7 operations, peak loading-dock activity can occur at night, during sleeping hours.' }
     ],
     'traffic': [
-      { id: 't-trips', label: 'The project adds 810 net new daily passenger-car-equivalent (PCE) trips, a traffic engineering measure that weights trucks more heavily than cars.' },
-      { id: 't-los', label: 'The southern truck driveway is projected to operate at Level of Service E/F (severe congestion) — called "unavoidable" — and its delay gets worse in every future-year scenario the study ran.' },
+      { id: 't-trips', label: "The applicant estimates about 160 truck trips a day (810 passenger-car-equivalent trips in all) for a tenant that hasn't been named, and the MND proposes no cap on daily trucks." },
+      { id: 't-los', label: 'The southern truck driveway is already rated LOS E/F; with the project, evening delay reaches 293 seconds by 2050. The consultant calls it "unavoidable" and proposes no fix, and every truck uses that driveway.' },
       { id: 't-school', label: 'The MND says trucks will use Glassell Street to SR-91 and stay off school streets — but no condition of approval requires that route (MND page 91).' }
     ],
     'land-use': [
-      { id: 'lu-2417', label: 'A 24/7 industrial warehouse would operate just 54 feet from single-family homes.' },
-      { id: 'lu-carb', label: "CARB's siting handbook recommends keeping homes and schools 1,000 feet from a busy distribution center; the closest homes here are 54 and 150 feet away." },
+      { id: 'lu-2417', label: 'A 24/7 industrial building would operate 54 feet from homes to the north and 150 feet from homes to the east.' },
       { id: 'lu-setback', label: 'The 20-foot residential setback required by the M-2 zone was not designed for 24/7, high-intensity warehouse operations.' }
     ],
     'health': [
       { id: 'h-chs', label: "The USC Children's Health Study links proximity to heavy truck traffic with increased childhood asthma risk." },
       { id: 'h-lung', label: 'USC CHS research shows diesel-related pollutants (NO2, elemental carbon) measurably reduce lung-function growth in children ages 10-18.' },
-      { id: 'h-asthma', label: 'An estimated 40+ children at Fletcher Elementary already live with asthma and are especially vulnerable to added pollution.' },
+      { id: 'h-asthma', label: 'Dozens of children at Fletcher Mandarin Language and GATE Academy likely already live with asthma and are especially vulnerable to added pollution.' },
       { id: 'h-absence', label: 'Peer-reviewed research links higher pollution days to more respiratory infections and school absences.' }
     ]
   };
@@ -121,7 +120,7 @@
     'noise': 'the noise impacts of 24/7 operations',
     'traffic': 'the traffic and school-safety impacts of this project',
     'land-use': "this project's incompatibility with our neighborhood",
-    'health': "this warehouse's health impact on children at Fletcher Elementary"
+    'health': "this warehouse's health impact on children at Fletcher Mandarin Language and GATE Academy"
   };
 
   var RECOMMENDATION_TEXT = {

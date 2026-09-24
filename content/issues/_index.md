@@ -7,11 +7,11 @@ TocOpen: false
 
 ## The Central Problem
 
-The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, which assumes the project will have **no significant environmental impacts** if mitigation measures are implemented.
+The City prepared an **Initial Study/Mitigated Negative Declaration (IS/MND)**, which concludes all impacts are less than significant, some only after mitigation.
 
 **We believe the City's own technical studies contain substantial evidence of significant impacts that require a full Environmental Impact Report (EIR).**
 
-Under California law (CEQA), if there is **any reasonable argument** that a project may have a significant environmental effect, an EIR must be prepared — the **"fair argument" standard**.
+Under California law (CEQA), if **substantial evidence** in the record supports a **fair argument** that a project may have a significant environmental effect, an EIR must be prepared — the **"fair argument" standard**.
 
 ---
 
@@ -19,57 +19,58 @@ Under California law (CEQA), if there is **any reasonable argument** that a proj
 
 <span aria-hidden="true">🫁</span> **The Problem**
 
-Diesel trucks emit particulate matter (PM) that causes respiratory disease and cancer. A warehouse generating approximately 163 daily truck trips (mostly diesel) a quarter-mile from an elementary school raises serious health questions.
+Diesel trucks emit particulate matter (PM) that causes respiratory disease and cancer. A building estimated to generate about 160 diesel truck trips a day, and possibly more depending on the tenant, 54 feet from homes and about 1,200 feet from an elementary school raises serious health questions.
 
 ### What the City's Analysis Says
 
 The Health Risk Assessment (HRA) in Appendix B models diesel particulate matter (DPM) emissions and calculates cancer risk.
 
 {{< callout type="citation" title="Modeled Cancer Risk at the Closest Home" >}}
-- **Significance threshold**: 10.0 per million
-- **Unmitigated risk (construction plus operation)**: **10.07 per million — over the threshold** (Appendix B at 30 and Table 14 at 32; MND at 55, Table AQ-8)
-- **Mitigated risk**: 9.48 per million, after requiring Tier 4 Final construction equipment under Mitigation Measure AQ-1 (Appendix B at 35, Table 15; MND at 56, Table AQ-9)
-- **Margin after mitigation**: 0.52 per million
-- **Operational share**: 0.56 per million, modeled with 5 loading dock doors (MND at 54, Table AQ-7; Appendix B at 7)
+- **Significance threshold**: 10 in a million
+- **Modeled cancer risk**: **10.07 in a million unmitigated** (over the threshold) — construction plus operation (Appendix B at 30 and Table 14 at 32; MND at 55, Table AQ-8); **9.48 mitigated**, with cleaner construction equipment only (Mitigation Measure AQ-1; Appendix B at 35, Table 15; MND at 56, Table AQ-9)
+- **Margin after mitigation**: only 0.52 in a million. The air district called it "extremely narrow" and "highly sensitive to underlying assumptions" (SCAQMD letter, p. 3).
+- **Operational share**: 0.56 in a million, modeled with 5 loading dock doors (MND at 54, Table AQ-7; Appendix B at 7)
 {{< /callout >}}
 
 The HRA's own result exceeds the threshold — the MND says so: "the unmitigated combined construction and operational cancer risk for the maximally impacted sensitive receptor is 10.07 in one million, which exceeds SCAQMD's 10 in one million cancer risk threshold" (MND at 55). The City concludes the impact is "less than significant with mitigation" because one construction-phase measure — cleaner construction equipment — brings the combined number down to 9.48. SCAQMD's letter describes the result as "unmitigated risk exceeding the threshold and mitigated risk only marginally below it" (SCAQMD letter at 6).
 
 ### Why This Is Inadequate
 
-**1. The measure that gets it under the line is construction-phase; the operation lasts decades.** MM AQ-1 requires Tier 4 Final engines on construction equipment over 400 horsepower (MND at 56). It does nothing to operational emissions, which were modeled at 0.56 per million with 5 dock doors (MND at 54, Table AQ-7). The mitigated total leaves 0.52 per million of margin — any operational increase larger than that puts the project back over the threshold. The HRA also ran AERMOD version 23132 and AERMET version 16216 rather than the current EPA-recommended versions (SCAQMD letter at 3). In SCAQMD's words: "Given the extremely narrow margin between the mitigated risk level and the significance threshold, the result appears highly sensitive to underlying assumptions" (SCAQMD letter at 3).
+**1. The measure that gets it under the line is construction-phase; the operation lasts decades.** MM AQ-1 requires Tier 4 Final engines on construction equipment over 400 horsepower (MND at 56). It does nothing to operational emissions, which were modeled at 0.56 per million with 5 dock doors (MND at 54, Table AQ-7). The mitigated total leaves 0.52 per million of margin — any operational increase larger than that puts the project back over the threshold. The HRA used older versions of the EPA dispersion models (AERMOD 23132 / AERMET 16216). The air district said this "may result in inaccurate or non-conservative health risk estimates" and asked for a re-run with the current versions (SCAQMD letter, p. 3). In SCAQMD's words: "Given the extremely narrow margin between the mitigated risk level and the significance threshold, the result appears highly sensitive to underlying assumptions" (SCAQMD letter at 3).
 
-**2. The dock door discrepancy — the most serious issue.** The HRA in Appendix B modeled **5 loading dock doors** (Appendix B at 7). But the MND's own project description includes a second configuration — **Option 2, with 36 raised dock doors plus two grade-level doors** — that can be built under the same approval (MND at 23–24, Table 3 and Figure 9). The MND promises that "any differences in potential environmental impacts between the Option 1 and Option 2 are identified throughout the analysis" (MND at 23). They aren't: the only place Option 2 appears in the impact analysis is one paragraph on criteria pollutants (MND at 50). The Health Risk Assessment, the noise study, and the traffic study never mention it. With the mitigated result at 9.48 per million and the operational share at 0.56, the analysis has 0.52 per million of headroom for an operation with seven times as many dock doors as it modeled.
+**2. The dock-door gap.** The health study models **5 dock doors** (Appendix B, p. 7). The alternate layout in the City's own document has **36 raised dock doors plus 2 grade-level doors** (IS/MND Table 3, p. 24), and the applicant has said in writing that it intends to build that layout (outreach-team email, August 5, 2026). The traffic study's own footnote says the latest site plan is the warehouse-heavy version (Appendix L, fn. 1). **No study analyzes the 36-door building.** How much more diesel it would bring depends on the tenant, and nobody has run the numbers.
 
-**3. Understated operating assumptions.** The only stationary diesel source the HRA models is the project's diesel fire water pump, assumed to run 50 hours per year (Appendix B at 7). SCAQMD pointed out that permits for such engines allow "no more than 200 hours per year of total operation" and that "the CEQA document should evaluate emissions associated with **up to 200 hours per year**" (SCAQMD letter at 3) — four times the analyzed scenario. SCAQMD also asked the City to locate the pump away from homes and schools (SCAQMD letter at 7).
+**3. The diesel fire pump.** The study assumes the 238-horsepower diesel fire pump runs 50 hours a year. The air district says permits allow **up to 200 hours a year** including emergencies, and asked the City to re-run the analysis or cap the hours by permit (SCAQMD letter, pp. 3–4).
 
-**4. Cumulative air quality already burdened — and never analyzed.** The HRA itself reports that SCAQMD's MATES-V study puts the existing cancer risk from air toxics in this area at **300–400 per million**, with diesel particulate matter accounting for "the predominance (68%)" of it (Appendix B at 11). SCAQMD's letter adds that the MND never evaluated the project's contribution to those cumulative air toxics at all, and asked the City to do so (SCAQMD letter at 5–6). Adding a 298,988 SF warehouse generating approximately 163 daily truck trips to an already-burdened air basin deserves that analysis.
+**4. An area already carrying risk.** The applicant's own study reports that existing cancer risk here from all air toxics is **300–400 in a million**, with diesel responsible for about two-thirds (Appendix B, cumulative section). SCAQMD also said the MND never evaluated cumulative air-toxics impacts (SCAQMD letter, pp. 5–6).
+
+**5. Where the diesel lands.** The applicant's dispersion model places the **most-exposed homes on the north side**, along Fletcher Avenue: a home about 54 feet north during construction, and one about 72 feet north during operations (Appendix B, p. 27). The model uses weather data from Fullerton Municipal Airport, 2012–2016 (Appendix B, Table 10, p. 25).
 
 ### What Government Agencies Say
 
 {{< callout type="alert" title="SCAQMD Comment Letter" icon="📋" >}}
-The **South Coast Air Quality Management District (SCAQMD)** — the regional air agency — submitted a formal comment letter (Control No. ORC260414-01, signed by Sam Wang, May 6, 2026) raising **seven areas of concern** with the air quality analysis:
+The **South Coast Air Quality Management District (SCAQMD)** — the regional air agency — submitted a comment letter (Control No. ORC260414-01, signed by Sam Wang, May 6, 2026) raising **seven areas of concern** with the air quality analysis:
 
 - The project will need SCAQMD air permits, which makes SCAQMD a Responsible Agency under CEQA (letter at 2)
-- Outdated AERMOD and AERMET model versions (letter at 3)
-- A fire water pump scenario of 50 hours per year when permits allow up to 200 — with the pump near homes (letter at 3–4)
-- No analysis of the active BNSF railroad bordering the site (letter at 4)
+- Outdated dispersion-model versions, inconsistent with EPA's modeling guideline (letter at 3)
+- Diesel fire pump modeled at 50 hours a year; permits allow up to 200 (letter at 3–4)
+- No statement on whether the adjacent BNSF rail line will be used; if it will be, locomotive emissions must be analyzed (letter at 4)
 - Screening tables that do not apply to a 12.1-acre site (letter at 4)
 - SCAQMD's warehouse rule, Rule 2305 (WAIRE), which applies to warehouses of 100,000 SF or more (letter at 4–5)
-- No evaluation of the project's contribution to cumulative air toxics (letter at 5–6)
+- No cumulative air-toxics analysis (letter at 5–6)
 
 The letter also states that the HRA shows "unmitigated risk exceeding the threshold and mitigated risk only marginally below it," and recommends conditions the MND does not include — among them a cap on daily trucks at the level analyzed (letter at 6–7). [See what SCAQMD says the City should require ↓](#what-scaqmd-says-the-city-should-require)
 
 [Read the full letter →](/evidence/#scaqmd-letter)
 {{< /callout >}}
 
-### Why This Matters for Fletcher Elementary
+### Why This Matters for Children Nearby
 
-About 493 children attend Fletcher Elementary (Ed-Data, 2024–25), on Fletcher Avenue roughly a quarter-mile from the site (MND at 91). Children breathe more air per unit body weight than adults. Diesel PM is a known carcinogen (CARB, OEHHA, WHO classification). Chronic exposure increases asthma, respiratory disease, and cancer risk in children. **The California Air Resources Board's siting handbook recommends against locating homes or schools within 1,000 feet of a distribution center handling more than 100 trucks a day** (CARB, *Air Quality and Land Use Handbook*, Table 1-1) — guidance that is advisory, but grounded in an estimated 80 percent drop-off in pollutant concentrations at about 1,000 feet (Table 1-2). The closest homes here are 54 and 150 feet from the site (MND at 116). See the full research on our [Health Evidence page →](/health-evidence/)
+About 500 children attend Fletcher Mandarin Language and GATE Academy (Fletcher Elementary), about 1,200 feet away. Children breathe more air per unit body weight than adults. Diesel PM is a known carcinogen (CARB, OEHHA, WHO classification). Chronic exposure increases asthma, respiratory disease, and cancer risk in children. The closest homes are 54 and 150 feet from the site (MND at 116). See the full research on our [Health Evidence page →](/health-evidence/)
 
 ### What Should Happen
 
-A full Environmental Impact Report should include updated air dispersion modeling using current model versions, analysis of the 36-dock Option 2 configuration that can actually be built, a fire water pump scenario at the permitted 200 hours, the cumulative air toxics analysis SCAQMD asked for, a health impact assessment specific to Fletcher Elementary's vulnerable population, and an alternatives analysis with truck trip reduction strategies.
+A full Environmental Impact Report should include updated air dispersion modeling using current model versions, analysis of the 36-door layout the applicant says it intends to build, a fire pump scenario at up to 200 hours a year, the cumulative air toxics analysis SCAQMD asked for, a health impact assessment specific to the children at Fletcher, and an alternatives analysis with truck trip reduction strategies.
 
 ---
 
@@ -77,33 +78,39 @@ A full Environmental Impact Report should include updated air dispersion modelin
 
 <span aria-hidden="true">🔊</span> **The Problem**
 
-A 24/7 warehouse a quarter-mile from homes and a school means continuous noise from truck traffic, loading dock operations, backup alarms, possible refrigeration units, and outdoor lighting systems.
+A 24/7 industrial building 54 feet from homes to the north and 150 feet from homes to the east means continuous noise from truck traffic, loading dock operations, backup alarms, possible refrigeration units, and outdoor lighting systems.
 
 ### What the City's Analysis Says
 
 {{< callout type="citation" title="Modeled Nighttime Dock Noise" >}}
-- **City of Orange nighttime noise standards**: 45 dBA Leq (General Plan Noise Element, MND at 119–120, Table NOI-4) and 50 dBA Leq (Municipal Code [§ 8.24.040](https://ecode360.com/43562273), Table 8.24.040)
-- **Modeled noise level**: 53.6 dBA at the nearest residential receptor to the east (MND at 121, Table NOI-6)
-- **Measured ambient noise at that receptor**: 55.0 dBA — already above both baseline standards
+- **Modeled night-time noise: 53.6 dBA at the homes to the east** (about 150 ft away) (MND at 121, Table NOI-6)
+- **City nighttime standards: 45 dBA** (General Plan Noise Element; Appendix K, Table C, p. 12) **and 50 dBA** (Municipal Code [§ 8.24.040](https://ecode360.com/43562273))
+- **What the MND did:** raised the standard to about 57–58 dBA because existing background noise at those homes is already high (55.0 dBA measured) (Appendix K, Table C p. 12, Table O p. 27)
 {{< /callout >}}
 
-The MND does not find this significant because both the General Plan (Appendix K at 12, Table C, Note 4) and the Municipal Code ([§ 8.24.040(C)](https://ecode360.com/43562273)) allow the standard to be adjusted upward when existing ambient noise already exceeds the base standard. The Municipal Code defines this "adjusted ambient noise level" as measured ambient plus 3 dB(A) ([§ 8.24.020](https://ecode360.com/43562255)), which raises the effective nighttime threshold at this receptor to roughly 57–58 dBA — and the project's 53.6 dBA falls below that adjusted number.
+The City concludes this is "less than significant" only after that adjustment. The City's standards table lets the standard be raised in 3-dB steps whenever existing background noise already exceeds it (Appendix K, Table C, note 4, p. 12). The Municipal Code does the same: its "adjusted ambient noise level" is measured ambient plus 3 dB(A) ([§ 8.24.020](https://ecode360.com/43562255), [§ 8.24.040(C)](https://ecode360.com/43562273)) — which is where the roughly 57–58 dBA figure comes from.
 
-Whether that adjustment methodology adequately protects residents 54 feet from the property line — where the ambient itself is a mix of traffic, rail, and existing industrial noise — is a real question. The base standards exist to protect sleep and health at sensitive receptors; using an already-elevated ambient as the effective floor lets a new industrial noise source add to nighttime noise at nearby homes without ever triggering a significance finding.
+Whether that adjustment methodology adequately protects the residents around this site — where the ambient itself is a mix of traffic, rail, and existing industrial noise — is a real question. The base standards exist to protect sleep and health at sensitive receptors; using an already-elevated ambient as the effective floor lets a new industrial noise source add to nighttime noise at nearby homes without ever triggering a significance finding.
 
 ### Why This Is Inadequate
 
-**1. A thin margin even under the adjusted standard.** Even measured against the City's ambient-adjusted threshold (~57–58 dBA) rather than its base 45/50 dBA standards, the 53.6 dBA modeled noise level leaves only a few dBA of headroom — before accounting for real-world variability: loading operations are louder during peak activity; back-up alarms are tonal and repetitive, the kind of sound the Municipal Code holds to a 5 dBA stricter standard ([§ 8.24.040(D)](https://ecode360.com/43562273)); a future tenant could add refrigeration equipment the study didn't model; and weather and atmospheric conditions affect noise transmission.
+**1. The standard was moved to fit the project.** The modeled 53.6 dBA is 8.6 dB over the City's 45 dBA nighttime standard (General Plan) and 3.6 dB over the Municipal Code's 50 dBA. It passes only because the standard was raised in 3-dB steps to match existing background noise (Appendix K, Table C, note 4, p. 12). The City's own table also says standards "should be lowered by five dB" for simple-tone and repeating impulsive sounds (note 2), and back-up alarms are exactly that. The Municipal Code sets the same 5 dB stricter limit ([§ 8.24.040(D)](https://ecode360.com/43562273)). The penalty was never applied.
 
-**2. The model is built on the wrong project and skips a Code requirement.** Appendix K assumes unloading at "half of the total docks (3 docks)" at a time and truck arrivals and departures at 10 spaces (Appendix K at 26; MND at 120) — the 5-dock Option 1 layout. Under Option 2 the building has 36 raised docks plus two grade-level doors (MND at 24), so "half of the total docks" is 18, not 3. The study never mentions Option 2. It folds back-up alarms into a 75 dBA Leq truck-arrival source level borrowed from a 2016 study of a meat-distribution center (Appendix K at 26), but never applies Municipal Code [§ 8.24.040(D)](https://ecode360.com/43562273), which sets a **5 dBA stricter limit for "simple tone" and "recurring impulsive" noise** — what a back-up alarm is ([§ 8.24.020](https://ecode360.com/43562255)). And it assumes no refrigeration equipment: the MND states the project "does not propose cold storage or the use of refrigerants" (MND at 86), but nothing in the approval binds a future tenant to that.
+**2. Small assumptions, big building.** The model assumes trucks unload at only **3 docks at a time**, 30 minutes per hour, and trucks maneuver at 10 spaces (Appendix K, p. 26). That is half of a 5-dock building. The alternate layout has 36 docks. Truck engine, air-brake and back-up-alarm noise during docking was measured at **76.3 dBA at 20 feet** (Appendix K, p. 26).
 
 **3. Who bears the burden?** Residents and children are exposed to nighttime noise every night, year-round. Sleep disruption affects cognitive development in children and is linked to cardiovascular disease in adults — the significance threshold exists precisely because noise above this level causes documented health effects.
 
-**4. There is no noise mitigation at all.** The MND's noise section concludes: "Mitigation Measures: No mitigation measures are required" (MND at 121). The only wall in the project is an 8-foot screen wall around the truck court, described as screening with sliding security gates (MND at 25). Appendix K's model credits only "the shielding from the proposed building" (Appendix K at 26) and never mentions the wall — so the 53.6 dBA figure already assumes no barrier, and none is promised.
+**4. No mitigation at all.** The MND states "No mitigation measures are required" for noise (IS/MND, noise section, printed p. 121). There is no sound wall, no nighttime dock limit, and no truck-hour limit.
+
+**5. The trucks on Glassell were modeled as if they were cars.** About 60% of project trips head north on Glassell toward Lincoln, through the signal at Fletcher Avenue (Traffic Study, Appendix L, § 4.2, p. 41). Along that stretch, homes back directly onto Glassell, and their backyards (where families sleep with windows open and kids play) sit a short distance from the truck lanes. The traffic study says about 16% of project trips are heavy trucks with 3 or more axles (Appendix L, Table 4-1, p. 38). The noise study's Glassell calculation gives the added project traffic the **same truck mix as today's traffic, less than 1% heavy trucks** (Appendix K, Appendix C). That turns roughly 80–120 added heavy-truck trips a day into about 5. The model also assumes steady 45-mph traffic, so it leaves out trucks braking, idling and accelerating at the Fletcher light. And it averages noise over 24 hours, so a single truck at 2 a.m. disappears into the average. The same study says one passing heavy truck produces **up to 84 dBA at 50 feet** (Appendix K, p. 19).
+
+**6. Nights.** The health study assumes trucks operate 24 hours a day (Appendix B). The noise model assumes only about 14 heavy trucks pass on this stretch of Glassell during the whole night, from all traffic combined. If the project's trucks arrive around the clock, the project alone could add several dozen heavy-truck trips between 10 p.m. and 7 a.m. None of that is analyzed.
+
+**7. Idling.** State law limits heavy trucks to 5 minutes of idling. The health study assumed each truck idles for 15 minutes at the docks (Appendix B, p. 22). Enforcement depends on complaints, which is why we're asking for an enforceable no-idling condition with posted signs and on-site monitoring.
 
 ### What Should Happen
 
-A full EIR should include noise modeling of the 36-dock Option 2 layout; application of the Municipal Code's tonal and impulsive-noise standard to back-up alarms; 24-hour noise monitoring to establish a baseline; analysis of sleep disruption and health impacts; specific, enforceable mitigation measures — there are currently none; and a commitment to restrict nighttime dock operations.
+A full EIR should include noise modeling of the 36-dock Option 2 layout; application of the City's 5 dB tonal/impulsive penalty to back-up alarms; 24-hour noise monitoring to establish a baseline; analysis of sleep disruption and health impacts; specific, enforceable mitigation measures — there are currently none; and a commitment to restrict nighttime dock operations. At a minimum: apply the City's 5 dB tonal/impulsive penalty; model the 36-dock layout; prohibit nighttime truck docking and maneuvering unless a new analysis shows compliance.
 
 ### A Separate Problem: An Undisclosed Delivery-Hours Restriction
 
@@ -117,29 +124,44 @@ That leaves a real question the MND doesn't answer: does the City intend the Con
 
 ## Issue 3: Traffic and Transportation
 
+### How many trucks? Nobody knows yet. {#truck-traffic}
+
+The applicant's studies estimate **about 160 truck trips a day**: roughly 80 trucks, each counted coming and going. **That is an estimate, and it could be higher.** No tenant has been named. The building was designed "to accommodate two different use configurations depending on the needs of future tenants" (Noise Study, Appendix K, p. 1).
+
+The estimate rests on three assumptions:
+- **A "typical" warehouse-and-manufacturing mix.** The traffic study uses standard trip rates for ordinary warehousing plus 109,000 sq ft of manufacturing (Traffic Study, Appendix L, Table 4-1, p. 38).
+- **No cold storage.** Every trip table is labeled "Without Cold Storage" (Appendix L, Table 4-1, p. 38).
+- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). In an August 5, 2026 email to a resident, the applicant's outreach team wrote that Rexford "intends to proceed with the project configuration shown in the entitlement plan set, which includes 36 dock doors and 2 grade-level doors."
+
+**The 36-dock layout was never run through the traffic study.** The study's own footnote says the latest site plan is the warehouse-heavy version (about 260,000 sq ft of warehouse). It then analyzes the manufacturing-heavy version anyway (Appendix L, footnote 1, p. 4).
+
+Actual truck traffic will depend on who moves in: a regional distributor, a parcel or e-commerce operator, or a manufacturer. The environmental document proposes **no limit on daily trucks**. The South Coast Air Quality Management District recommended one: *"Limit the daily number of trucks allowed at the Proposed Project to levels analyzed"* (SCAQMD comment letter, May 6, 2026, p. 6).
+
+**What we're asking:** if the Planning Commission won't deny the project, any approval must at least include an enforceable daily truck cap at the analyzed level, with public reporting.
+
 <span aria-hidden="true">🚗</span> **The Problem**
 
-An additional 556 net new daily vehicle trips — including approximately 163 truck trips, weighted at 810 passenger-car-equivalent (PCE) trips due to the heavy truck mix — is a massive increase in heavy vehicle traffic on residential streets, impacting school safety, street congestion, accident risk, and air quality.
+The applicant estimates about 160 truck trips a day (810 passenger-car-equivalent trips in all), and that estimate assumes a typical tenant ([see why it could be more](#truck-traffic)).
 
 ### What the City's Analysis Says
 
 {{< callout type="citation" title="Traffic Impact Analysis Findings" >}}
-- **Net new daily PCE trips**: 810 (passenger car equivalent, accounting for truck weight)
+- **Net new daily PCE trips**: 810 (all vehicles, with each truck counted as 1.5 to 3 cars depending on size)
 - **AM peak hour (total project)**: 106 vehicle trips / 139 PCE (109 net new PCE)
 - **PM peak hour (total project)**: 115 vehicle trips / 147 PCE (119 net new PCE)
 - **Truck access**: Southern driveway on Glassell Street
-- **Critical finding**: The southern truck driveway operates at **Level of Service E/F** during peak hours in every scenario studied — and PM peak-hour delay grows from 63 seconds in the existing scenario to 78, 91, and 114 seconds in the TIA's 2027, 2030 General Plan, and General Plan Update scenarios (Appendix L at 5, 18, 22, 28, 33)
+- **Critical finding**: The southern truck driveway is already at **Level of Service E/F** today (63 seconds of evening delay). With the project, evening delay reaches 165.8 seconds in 2027 and 293 seconds by 2050 (Appendix L at 18, 45, 53, 66)
 {{< /callout >}}
 
-The applicant and City acknowledge this LOS E/F impact as **"unavoidable."** They are essentially saying: *"We know the traffic will be bad, but we're not going to fix it."*
+The applicant's traffic consultant calls the driveway delay "unavoidable" (Appendix L). The driveway is already LOS E/F today. With the project, evening delay reaches 165.8 seconds in 2027 and 293 seconds by 2050 (Appendix L, § 8 summary, p. 66). A traffic signal was found "not a feasible improvement" (Appendix L, p. 57).
 
 ### Why This Is Inadequate
 
-**1. Acknowledged Level of Service deficiency.** An "unavoidable" LOS E/F impact is a significant environmental impact by definition. The fact that the applicant can't or won't mitigate it doesn't make it insignificant — it makes the mitigation inadequate.
+**1. A failing driveway with every truck in it.** Since 2020, state law measures CEQA traffic impacts by vehicle miles traveled, not delay. The failing driveway is still a **safety and General Plan** issue: every truck must turn left in or out across Glassell at a driveway the applicant's own study rates as failing.
 
-**2. No binding truck route.** The MND says neither nearby school is "located along the truck route that would be used," with trucks expected to travel north on Glassell Street to SR-91 (MND at 91). That route is an expectation, not a condition of approval. SCAQMD recommended marked truck routes that keep trucks away from homes and schools, truck entrances that don't face sensitive receptors, and an on-site check-in so no truck ever queues on Glassell Street (SCAQMD letter at 7) — none of which is in the MND. Families whose children walk or bike to Fletcher Elementary along Fletcher Avenue and Glassell Street have no enforceable protection if that route changes.
+**2. No binding truck route.** The MND says neither nearby school is "located along the truck route that would be used," with trucks expected to travel north on Glassell Street to SR-91 (MND at 91). That route is an expectation, not a condition of approval. SCAQMD recommended marked truck routes that keep trucks away from homes and schools, truck entrances that don't face sensitive receptors, and an on-site check-in so no truck ever queues on Glassell Street (SCAQMD letter at 7) — none of which is in the MND. Families whose children walk or bike to Fletcher along Fletcher Avenue and Glassell Street have no enforceable protection if that route changes.
 
-**3. It gets worse in every year the TIA looks at.** The TIA does model future conditions — and the truck driveway fails in all of them. PM peak-hour delay at the southern driveway is 63 seconds in the existing scenario, 78 seconds in 2027, 91 seconds under the 2030 General Plan scenario, and 114 seconds under the General Plan Update — LOS F throughout (Appendix L at 18, 22, 28, 33).
+**3. It gets worse with the project, every year the TIA looks at.** The TIA models future years, and the driveway fails in all of them. It is already LOS F today (63 seconds of evening delay). With the project, evening delay reaches 165.8 seconds in 2027 and 293 seconds by 2050 (Appendix L at 45, 53, 66).
 
 **4. Truck routing and operating constraints.** The TIA does not include specific truck routing requirements, hours-of-operation restrictions, idling prohibitions, or a cap on truck trip generation.
 
@@ -155,18 +177,14 @@ A full EIR should include an alternatives analysis with trip reduction strategie
 
 <span aria-hidden="true">🏢</span> **The Problem**
 
-This project is a fundamentally incompatible use next to sensitive land uses — a school and homes.
+This project puts a 24/7 industrial use 54 feet from homes.
 
 ### Current Zoning & General Plan
 
 - **Site zoning**: M-2 (Industrial Manufacturing); **Site General Plan**: Light Industrial (LI)
 - **Surrounding zoning**: R-1-7 and R-1-8 (Low Density Residential); **Surrounding General Plan**: Low Density Residential (LDR)
 
-While the M-2 zone technically permits manufacturing, it is supposed to be used where it will not adversely impact adjacent residential land uses. **A 24/7 warehouse next to an elementary school and 54 feet from homes clearly adversely impacts adjacent land uses.**
-
-### What the State Says
-
-**CARB (California Air Resources Board) siting guidance.** CARB's *Air Quality and Land Use Handbook* recommends against siting homes, schools, and daycare centers within **500 feet** of a freeway or a road carrying 100,000 vehicles a day — and within **1,000 feet** of a distribution center that handles more than 100 trucks a day or more than 40 refrigerated trucks a day (Table 1-1). CARB estimates an 80 percent drop-off in pollutant concentrations at roughly 1,000 feet from a distribution center (Table 1-2). The handbook is advisory, and it was written for siting new sensitive uses near existing sources — but the health reasoning runs both ways. The closest homes are 54 feet and 150 feet from this site (MND at 116); Fletcher Elementary is about 1,320 feet away. At roughly 163 daily truck trips — about 80 trucks in and out — the analyzed project sits near CARB's volume trigger; no study says what the 36-dock layout would generate.
+The City's own zoning description says M-2 is for locations where industry is "compatible with and will not adversely impact adjacent land uses" (IS/MND, Land Use, p. 3). **A 24/7 industrial building 54 feet from homes, with no noise mitigation and no truck cap, doesn't meet that description.**
 
 ### Nighttime Operations & Residential Compatibility
 
@@ -174,7 +192,7 @@ The Zoning Ordinance requires a 20-foot setback when adjacent to a residential z
 
 ### Precedent Concerns
 
-If approved as-is, this project sets a precedent that intensive 24/7 warehouses can locate next to schools and homes, and that razor-thin environmental margins are acceptable — encouraging future warehouse development in incompatible locations throughout Orange County.
+If approved as-is, this project sets a precedent that intensive 24/7 warehouses can locate 54 feet from homes, and that razor-thin environmental margins are acceptable — encouraging future warehouse development in incompatible locations throughout Orange County.
 
 ### What the City Should Do
 
@@ -203,9 +221,9 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 
 | Issue | City Claims | The Record Says |
 |-------|-------------|------------------|
-| **Air Quality** | "Less than significant with mitigation" | Unmitigated cancer risk 10.07 per million — over the threshold; 9.48 only with Tier 4 construction equipment; operation modeled at 5 dock doors, not 36; SCAQMD raised seven areas of concern |
-| **Noise** | "Less than significant — no mitigation required" | No noise mitigation proposed; "less than significant" only by using an ambient-adjusted threshold (~57–58 dBA) instead of the City's base 45/50 dBA standards; model assumes 3 docks in use, not 18; Code's tonal/impulsive standard never applied to back-up alarms |
-| **Traffic** | "Unavoidable" | Southern driveway LOS E/F in every scenario, delay worsening every year; no binding truck route or truck cap |
+| **Air Quality** | "Less than significant with mitigation" | Unmitigated risk 10.07 in a million (over threshold); mitigated 9.48 via construction equipment only; SCAQMD raised seven concerns; 5 docks analyzed vs. 36 in the alternate layout |
+| **Noise** | "Less than significant" — no mitigation | 53.6 dBA at night at the east homes vs. 45/50 dBA standards (General Plan / Municipal Code); standard raised to about 57–58; 5 dB alarm penalty never applied; 3-dock assumption |
+| **Traffic** | "Less than significant" (vehicle miles traveled) | Truck driveway already LOS E/F; 293-second delay by 2050 with the project; no truck cap |
 | **Land Use** | "Consistent with zoning" | Legal consistency ≠ compatibility; 24/7 use incompatible with adjacent homes and school |
 
 **Each of these issues, alone, could trigger an EIR requirement. Together, they demand a full environmental analysis.**
@@ -230,7 +248,6 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 - [Appendix K: Noise and Vibration Analysis](/evidence/#appendix-k)
 - [Appendix L: Traffic Impact Analysis](/evidence/#appendix-l)
 - [SCAQMD Comment Letter](/evidence/#scaqmd-letter)
-- [CARB Air Quality and Land Use Handbook (2005)](https://www.aqmd.gov/docs/default-source/ceqa/handbook/california-air-resources-board-air-quality-and-land-use-handbook-a-community-health-perspective.pdf)
 - [Orange Municipal Code Chapter 8.24, Noise Control](https://ecode360.com/43562273)
 
-{{< share text="4 environmental issues with the 2411 N. Glassell warehouse: razor-thin margins on cancer risk and noise, an acknowledged traffic failure, and a land-use mismatch next to a school." >}}
+{{< share text="4 environmental issues with the 2411 N. Glassell warehouse: cancer risk over the threshold before mitigation, no noise mitigation, a failing truck driveway, and a 24/7 industrial use 54 feet from homes." >}}

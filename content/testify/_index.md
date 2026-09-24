@@ -30,7 +30,7 @@ Dates are changing until the City sends official notice, so we keep them in one 
 ## How the Planning Commission Hearing Works
 
 1. **Call to order** (5 min) — the Chair calls the meeting to order; staff presents procedural information
-2. **Staff presentation** (15–20 min) — City planner (likely Arlen Beck) presents the project, impacts identified, and mitigation proposed
+2. **Staff presentation** (15–20 min) — City staff (likely Senior Planner Arlen Beck) presents the project, impacts identified, and mitigation proposed
 3. **Applicant presentation** (10–20 min) — Rexford Industrial and their consultants present their position and respond to comments
 4. **Public comment** (30–60 min) — members of the public speak, usually 3–5 minutes each, in support or opposition. **You do NOT need a prepared speech** — commissioners want to hear your concerns
 5. **Commissioner questions & discussion** (10–20 min) — this is where your public comment can influence the conversation
@@ -44,15 +44,18 @@ Dates are changing until the City sends official notice, so we keep them in one 
 
 Don't try to cover every issue — focus on what directly affects you or what you feel most passionate about:
 
-- **Sleep & noise**: "This warehouse operates 24/7, and I will lose sleep from noise and truck traffic." *(Appendix K: 53.6 dBA modeled vs. City's 45/50 dBA baseline standards)*
-- **Children's health**: "My children attend Fletcher Elementary, a quarter-mile away. They breathe diesel exhaust from this 24/7 warehouse." *(Appendix B: cancer risk 10.07 per million before mitigation — over the 10 per million threshold — and 9.48 after; [Health Evidence →](/health-evidence/))*
-- **Air quality analysis**: "The air quality analysis is incomplete — SCAQMD raised seven areas of concern, and the health risk model used 5 dock doors when the plan the City can approve has 36." *(SCAQMD letter; MND at 24, Table 3; Appendix B at 7)*
-- **Traffic safety**: "The truck driveway already fails, it gets worse in every year the study looks at, and nothing requires those 163 daily truck trips to stay off school streets." *(Appendix L at 18–33: southern driveway LOS F; MND at 91: no binding truck route)*
+- **Sleep & noise**: "This warehouse operates 24/7, and I will lose sleep from noise and truck traffic." *(Nighttime noise modeled at 53.6 dBA at homes east of the site, versus the City's 45 dBA (General Plan) and 50 dBA (Municipal Code) nighttime standards — Appendix K)*
+- **Children's health**: "My children attend Fletcher Mandarin Language and GATE Academy (Fletcher Elementary), about 1,200 feet away. They breathe diesel exhaust from this 24/7 warehouse." *(Appendix B: cancer risk 10.07 per million before mitigation — over the 10 per million threshold — and 9.48 after mitigation that covers construction equipment only; [Health Evidence →](/health-evidence/))*
+- **Air quality analysis**: "The air quality analysis is incomplete — SCAQMD raised seven areas of concern, and the health risk assessment modeled 5 loading dock doors; the alternate layout in the City's document has 36." *(SCAQMD letter; MND at 24, Table 3; Appendix B at 7)*
+- **Traffic safety**: "The truck driveway already fails, it gets worse in every year the study looks at, and nothing requires those estimated 160 daily truck trips to stay off school streets." *(Appendix L at 45 and 53: southern driveway LOS F with the project; MND at 91: no binding truck route)*
+- **Truck traffic**: "Truck traffic is an estimate for an unnamed tenant, and the air district recommended capping daily trucks at the analyzed level." *([How many trucks?](/issues/#truck-traffic); SCAQMD letter at 6)*
 - **Procedural/legal**: "The law requires an EIR when there is substantial evidence of significant impacts — and this analysis shows exactly that." *(no personal impact required)*
 
 ### Step 2: Gather Supporting Facts
 
 Pick one or two specific facts from the technical analysis. Keep it simple — say *"The South Coast Air Quality Management District raised seven areas of concern with the air quality analysis, and the unmitigated cancer risk is over the threshold"* rather than reciting jargon like dispersion-model names.
+
+**What you personally observe counts.** Truck noise at night, trucks idling, trucks on your street: first-hand observations of things anyone can see or hear are evidence the Commission must consider. Be specific: date, time, place, what you saw or heard.
 
 ### Step 3: Write Out Your Public Comment (2–3 minutes)
 
@@ -84,9 +87,9 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 ### Example 1: Parent Concerned About Children's Health
 
-> "My name is Sarah Chen, and I live on Fletcher Avenue, two blocks from the proposed warehouse. I have a first-grader and a third-grader who attend Fletcher Elementary, a quarter-mile north of this site.
+> "My name is Sarah Chen, and I live on Fletcher Avenue, two blocks from the proposed warehouse. I have a first-grader and a third-grader who attend Fletcher, about 1,200 feet from this site.
 >
-> Every day, my children walk to school along Fletcher Avenue and Glassell Street. The traffic study projects approximately 163 additional diesel truck trips a day, and nothing in this approval requires those trucks to stay on any particular route. The warehouse operates 24/7, meaning trucks would be arriving and departing at all hours.
+> Every day, my children walk to school along Fletcher Avenue and Glassell Street. The traffic study estimates about 160 additional diesel truck trips a day — for a tenant that hasn't been named, so it could be more — and nothing in this approval requires those trucks to stay on any particular route. The warehouse operates 24/7, meaning trucks would be arriving and departing at all hours.
 >
 > I reviewed the health risk assessment in the environmental document. Before mitigation, it shows a cancer risk of 10.07 per million at the closest home — over the 10 per million significance threshold. It gets down to 9.48 only by requiring cleaner construction equipment. That's a margin of 0.52 — essentially zero — for an operation that will run for decades.
 >
@@ -102,9 +105,9 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 > "My name is Mike Rodriguez. I live east of the site — in the homes the noise study calls the east receptor, about 150 feet from the property line.
 >
-> The noise analysis in Appendix K shows nighttime dock operations would generate 53.6 decibels at my house. The City's own baseline nighttime noise standards are 45 decibels (General Plan) and 50 decibels (Municipal Code) — this project is modeled above both. The MND avoids calling this significant only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at my home to around 57–58 decibels because the existing background noise is already elevated.
+> The noise analysis in Appendix K shows nighttime noise of 53.6 decibels at my house. The City's nighttime standard is 45 decibels — this project is modeled above it. The MND avoids calling this significant only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at my home to around 57–58 decibels because the existing background noise is already elevated.
 >
-> That analysis assumes trucks unloading at three docks at a time — half of the five docks in the version it studied. The plan you are being asked to approve allows 36. It never applies the City's own noise code, which sets a 5-decibel stricter limit for tonal, repetitive sounds like back-up alarms. And the MND proposes no noise mitigation at all — it says none is required. With 24/7 operations, peak dock activity happens at night, when I'm sleeping.
+> That analysis assumes trucks unloading at three docks at a time — half of the five docks in the version it studied. The plan you are being asked to approve allows 36. It never applies the City's own 5-decibel stricter limit for tonal, repetitive sounds like back-up alarms. And the MND proposes no noise mitigation at all — it says none is required. With 24/7 operations, peak dock activity happens at night, when I'm sleeping.
 >
 > A warehouse operating 24 hours a day will disrupt sleep for me, my family, and my neighbors. Sleep disruption causes documented health effects. This impact is significant.
 >
@@ -116,7 +119,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 ### Example 3: Concerned About Procedural Inadequacy
 
-> "My name is Jennifer Okamoto. I'm a resident of Orange and a parent at Fletcher Elementary.
+> "My name is Jennifer Okamoto. I'm a resident of Orange and a parent at Fletcher.
 >
 > Under CEQA, when there is substantial evidence that a project may have significant environmental impacts, a full Environmental Impact Report is required. We don't need to prove the impacts will occur — just show a fair argument that they might.
 >
@@ -124,9 +127,9 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > Second, the health risk assessment modeled only 5 loading dock doors, but the MND's own project description, at page 24, shows an Option 2 layout with 36 — and none of the technical studies analyzes that layout.
 >
-> Third, the noise analysis shows nighttime dock operations at 53.6 decibels, above the City's baseline 45- and 50-decibel nighttime standards — the MND avoids a significant-impact finding only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at the nearest home to roughly 57–58 decibels.
+> Third, the noise analysis shows nighttime noise at 53.6 decibels at the homes east of the site, above the City's 45-decibel nighttime standard — the MND avoids a significant-impact finding only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at those homes to roughly 57–58 decibels.
 >
-> Fourth, the traffic analysis acknowledges the southern driveway will operate at Level of Service E/F, and the applicant calls this 'unavoidable.' An unavoidable significant impact cannot be waved through by an IS/MND.
+> Fourth, the applicant's own traffic study rates the southern truck driveway as failing, and with the project the evening delay reaches 293 seconds by 2050. Its consultant calls that 'unavoidable,' and no fix is proposed. Every truck uses that one driveway.
 >
 > Any one of these is grounds for an EIR. Together, they demand one. I urge you to deny this project as proposed — and if you don't, you cannot approve it on this Mitigated Negative Declaration. A full Environmental Impact Report is required first.
 >
@@ -140,7 +143,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 >
 > I'm not opposed to development — I support industrial uses in the M-2 zone. But this project raises specific concerns that deserve proper environmental review.
 >
-> The warehouse is designed for 24/7 operations a quarter-mile from Fletcher Elementary and 54 feet from homes. The analysis shows the project pushing against the City's own significance thresholds: cancer risk 10.07 per million before mitigation and 9.48 after (threshold 10), nighttime noise 53.6 dBA (above the City's 45/50 dBA baseline standards, though under its ambient-adjusted threshold), and an acknowledged Level of Service E/F traffic impact.
+> The warehouse is designed for 24/7 operations about 1,200 feet from Fletcher and 54 feet from homes. The analysis shows the project pushing against the City's own significance thresholds: cancer risk 10.07 per million before mitigation and 9.48 after (threshold 10), nighttime noise 53.6 dBA at the east homes (above the City's 45 dBA nighttime standard, though under its ambient-adjusted threshold), and a truck driveway the applicant's own study rates as failing.
 >
 > When a project operates this close to significance thresholds, with the regional air agency raising this many concerns, a full Environmental Impact Report is warranted.
 >

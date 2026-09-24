@@ -146,8 +146,7 @@
         "name": "Appeal Window Opens (if applicable)",
         "date": null,
         "status": "pending",
-        "details": "10-15 day window to appeal PC decision to City Council",
-        "durationDays": 15
+        "details": "Short window to appeal a PC decision to City Council (deadline and fee: see City rules; no number published)"
       }
     ],
     "commentPeriod": {
@@ -174,14 +173,7 @@
         "email": "hbeckman@cityoforange.org"
       }
     ],
-    "cityCouncil": [
-      {
-        "name": "Kathy Tavoularis",
-        "title": "City Council Member (Friendly Contact)",
-        "email": "ktavoularis@cityoforange.org",
-        "note": "Neighbor and ally; recusal risk if project reaches Council appeal due to quasi-adjudicative role"
-      }
-    ],
+    "cityCouncil": [],
     "airQuality": [
       {
         "agency": "South Coast Air Quality Management District (SCAQMD)",
@@ -212,14 +204,13 @@
   "sensitiveReceptors": [
     {
       "type": "Elementary School",
-      "name": "Fletcher Elementary School",
+      "name": "Fletcher Mandarin Language and GATE Academy (Fletcher Elementary)",
       "grade": "TK-6",
-      "enrollment": "~493 students (Ed-Data, 2024-25)",
+      "enrollment": "about 500 students",
       "programs": "Mandarin Language & GATE Academy",
       "address": "515 W. Fletcher Avenue, Orange, CA",
-      "distanceToSite": "0.25 miles (quarter-mile)",
-      "isClosestSensitiveReceptor": true,
-      "note": "Valid receptor for diesel particulate matter (DPM) and proximity arguments"
+      "distanceToSite": "about 1,200 feet",
+            "note": "Valid receptor for diesel particulate matter (DPM) and proximity arguments"
     },
     {
       "type": "Residential",

@@ -16,7 +16,7 @@
   file: /documents/Appendix_B_Health_Risk_Assessment.pdf
   url: ""
   summary: "Models diesel particulate matter emissions and cancer risk. Unmitigated combined risk at the closest home is 10.07 per million — over the 10.0 per million threshold (p. 30; Table 14, p. 32). It drops to 9.48 only with Tier 4 construction equipment (MM AQ-1; Table 15, p. 35). Operation was modeled with 5 dock doors."
-  lookFor: "Page 7: 5 dock doors and one diesel fire water pump at 50 hours/year (SCAQMD: permits allow up to 200). Page 30 and Table 14: unmitigated 10.07. Page 35: mitigated 9.48. Nowhere: Option 2."
+  lookFor: "Page 7: 5 dock doors and one diesel fire water pump at 50 hours/year (SCAQMD: permits allow up to 200 hours a year). Page 30 and Table 14: unmitigated 10.07. Page 35: mitigated 9.48. Nowhere: Option 2."
 
 - id: appendix-k
   title: "Appendix K: Noise and Vibration Impact Analysis"
@@ -25,8 +25,8 @@
   critical: true
   file: /documents/Appendix_K_Noise_and_Vibration_Impact_Analysis.pdf
   url: ""
-  summary: "Models nighttime dock noise at 53.6 dBA at the east receptor — above the City's baseline nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code) — with the MND relying on the City's ambient-adjustment rules (raising the effective threshold to ~57–58 dBA) to avoid a significance finding. Assumes unloading at 3 docks and truck movements at 10 spaces (p. 26) — the 5-dock Option 1 layout, not the 36-dock Option 2 — and never applies the Municipal Code's 5 dBA stricter standard for tonal/impulsive sounds like back-up alarms. The MND proposes no noise mitigation."
-  lookFor: "Page 26: source levels, the 3-dock assumption, and 'shielding from the proposed building' as the only barrier modeled. Page 12, Table C: the ambient-adjustment rule. Nowhere: Option 2."
+  summary: "Models nighttime dock noise at 53.6 dBA at the east receptor — above the City's nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code) — with the MND relying on the City's ambient-adjustment rules (raising the effective threshold to ~57–58 dBA) to avoid a significance finding. Assumes unloading at 3 docks and truck movements at 10 spaces (p. 26) — the 5-dock Option 1 layout, not the 36-dock Option 2 — and never applies the City's 5 dBA stricter standard for tonal/impulsive sounds like back-up alarms (Table C, note 2; Municipal Code § 8.24.040(D)). The MND proposes no noise mitigation."
+  lookFor: "Page 26: source levels, the 3-dock assumption, and 'shielding from the proposed building' as the only barrier modeled. Page 12, Table C: the ambient-adjustment rule (note 4) and the 5 dB tonal penalty (note 2). Page 1 describes both layouts; the analysis uses the 5-dock one. Appendix C: traffic-noise printouts (same truck mix with and without the project)."
 
 - id: appendix-l
   title: "Appendix L: Traffic Impact Analysis (TIA)"
@@ -35,8 +35,8 @@
   critical: true
   file: /documents/Appendix_L_Traffic_Impact_Analysis.pdf
   url: ""
-  summary: "810 net new daily PCE trips. The southern truck driveway operates at Level of Service E/F in every scenario — acknowledged as 'unavoidable' — with PM delay rising from 63 seconds in the existing scenario to 114 under the General Plan Update. Analyzes Option 1 only: 'Option 2' appears nowhere in the study. (The 36-dock plan is in the MND at page 24, Table 3.)"
-  lookFor: "Page 5: trip totals and the driveway finding. Pages 18, 22, 28, 33: driveway LOS by scenario. Page 38, Table 4-1: trip generation ('Without Cold Storage'). Pages 62–65: queuing and gate analysis."
+  summary: "810 net new daily PCE trips. The southern truck driveway is already LOS E/F today (63 seconds of evening delay). With the project, evening delay reaches 165.8 seconds in 2027 and 293 seconds by 2050. The study analyzes the 5-dock, manufacturing-heavy layout even though its own footnote 1 says the latest site plan is the warehouse-heavy version. The 36-dock plan is in the MND at p. 24, Table 3."
+  lookFor: "Page 4, footnote 1: the latest site plan vs. the layout analyzed. Page 5: trip totals and the driveway finding. Pages 18, 22, 28, 33: driveway LOS without the project; pages 45 and 53: with the project; page 57: signal found not feasible; page 66: summary. Page 41: 60% of trips head north toward Lincoln. Page 38, Table 4-1: trip generation ('Without Cold Storage'). Pages 62–65: queuing and gate analysis."
 
 - id: appendix-a
   title: "Appendix A: Air Quality, Energy, and Greenhouse Gas Impact Analysis"
@@ -65,8 +65,8 @@
   critical: true
   file: /documents/SCAQMD_Formal_Deficiency_Letter.pdf
   url: ""
-  summary: "South Coast Air Quality Management District's formal comments raising seven areas of concern with the air quality analysis — air permits, outdated dispersion-model versions, a 50-hour fire-pump scenario when permits allow 200, the adjacent railroad, inapplicable screening tables, Rule 2305, and no cumulative air-toxics analysis — and noting 'unmitigated risk exceeding the threshold and mitigated risk only marginally below it' (p. 6). Pages 6–7 list recommended conditions the MND doesn't include."
-  lookFor: "Page 3: model versions and the 200-hour fire pump. Page 6: 'unmitigated risk exceeding the threshold.' Pages 6–7: recommended conditions, including a cap on daily trucks at analyzed levels. Signed by Sam Wang, May 6, 2026."
+  summary: "South Coast Air Quality Management District's formal comments raising seven areas of concern with the air quality analysis — air permits, outdated dispersion-model versions, a 50-hour fire-pump scenario when permits allow up to 200, the adjacent railroad, inapplicable screening tables, Rule 2305, and no cumulative air-toxics analysis — and noting 'unmitigated risk exceeding the threshold and mitigated risk only marginally below it' (p. 6). Pages 6–7 list recommended mitigation measures the MND doesn't include."
+  lookFor: "Page 3: model versions and the 200-hour fire pump. Page 6: 'unmitigated risk exceeding the threshold.' Pages 6–7: recommended mitigation measures, including a cap on daily trucks at analyzed levels. Signed by Sam Wang, May 6, 2026."
 
 - id: formal-objection
   title: "Formal Objection to IS/MND & Demand for Full EIR"
@@ -85,7 +85,7 @@
   critical: false
   file: /documents/Supplemental_Evidence_Health_Impacts.pdf
   url: ""
-  summary: "Additional comment letter presenting supplemental evidence of health impacts on nearby residents and Fletcher Elementary students."
+  summary: "Additional comment letter presenting supplemental evidence of health impacts on nearby residents and Fletcher Mandarin Language and GATE Academy students."
   lookFor: ""
 
 - id: opposition-site-plan

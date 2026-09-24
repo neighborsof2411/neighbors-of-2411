@@ -19,9 +19,9 @@ This page provides access to the key technical studies, government agency letter
 
 **For written comments at the hearing**, cite specific page numbers in the technical appendices, the SCAQMD comment letter (agency evidence), and your personal impacts tied to the technical evidence. Example:
 
-> *"As stated in Appendix K, nighttime dock noise is modeled at 53.6 dBA — above the City's baseline nighttime standards of 45 dBA and 50 dBA. The MND avoids a significant-impact finding only by applying the City's ambient-noise adjustment, which raises the effective threshold at my home to around 57–58 dBA. Combined with a model that assumes only 3 docks in use at a time — when the plan allows 36 — and never applies the Code's stricter standard for back-up alarms, I don't think that adjustment adequately accounts for what we'll actually hear at night. My family is 54 feet from this site, and we will experience sleep disruption from 24/7 operations. An EIR is required."*
+> *"Appendix K models nighttime noise at 53.6 dBA at the homes east of this site, well above the City's 45 dBA nighttime standard. The MND finds no impact only by raising that standard to about 57 to 58 dBA, and it never applies the City's stricter limit for back-up alarms. It also assumes only 3 docks in use when the alternate plan has 36. [Describe what you hear at night now, and where you live.] I'm asking the Commission to require a full Environmental Impact Report."*
 
-**For public advocacy:** share the SCAQMD letter with friends, neighbors, and media; highlight the dock door discrepancy (5 vs. 36) — the most concrete evidence of analysis inadequacy; reference the cancer risk (10.07 per million before mitigation — over the threshold — and 9.48 after) to show that the project clears the significance threshold only on paper.
+**For public advocacy:** share the SCAQMD letter with friends, neighbors, and media; highlight the dock door discrepancy (5 vs. 36) — the most concrete evidence of analysis inadequacy; reference the cancer risk (10.07 per million before mitigation — over the threshold — and 9.48 after; mitigation applies to construction equipment only) to show that the project clears the significance threshold only on paper.
 
 ## Where to Find More Information
 
