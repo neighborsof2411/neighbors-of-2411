@@ -32,7 +32,9 @@
   <p class="meeting-card-when"><time datetime="{{ $start.Format "2006-01-02T15:04:05-07:00" }}">{{ $start.Format "Mon, Jan 2" }} · {{ $m.time }}</time> <span class="meeting-card-countdown" data-days></span></p>
   <p class="meeting-card-body">{{ $m.body }}</p>
   <p class="meeting-card-status"><span class="status-chip status-chip--{{ $status }}">{{ $label }}</span></p>
-  {{- with $m.note }}<p class="meeting-card-note">{{ . }}</p>{{ end }}
+  {{- with $m.note }}
+  <details class="meeting-card-note"><summary>About this meeting</summary><p>{{ . }}</p></details>
+  {{- end }}
   <p class="meeting-card-where">{{ $loc }}</p>
   <div class="meeting-card-actions">
     <a class="button button--secondary meeting-ics" href="{{ $icsRes.RelPermalink }}" download="{{ $id }}.ics">Add to calendar</a>

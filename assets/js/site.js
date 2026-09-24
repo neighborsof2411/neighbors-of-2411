@@ -62,4 +62,22 @@
     if (more && live.length < 2) more.hidden = true;
   });
   if (isApple) $all('a.meeting-dir[data-apple]').forEach(function (a) { a.href = a.getAttribute('data-apple'); });
+
+  /* ---------- Open a collapsed section when a link targets it ---------- */
+  function openForHash() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    var el = doc.getElementById(id);
+    if (!el) return;
+    var d = el.tagName === 'DETAILS' ? el : el.closest('details');
+    while (d) { d.open = true; d = d.parentElement && d.parentElement.closest('details'); }
+    el.scrollIntoView();
+  }
+  window.addEventListener('hashchange', openForHash);
+  doc.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="#"]');
+    if (!a || a.pathname !== location.pathname) return;
+    setTimeout(openForHash, 0);
+  });
+  openForHash();
 })();
