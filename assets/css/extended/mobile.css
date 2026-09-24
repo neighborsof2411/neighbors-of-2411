@@ -193,3 +193,27 @@
 .contact-grid { display: grid; grid-template-columns: 1fr; gap: 0 1.5rem; }
 @media (min-width: 768px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
 .contact-grid h3 { margin-top: 1rem; }
+
+/* ---------- Phone action bar (extend_footer.html) ---------- */
+
+.action-bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    display: flex; align-items: center; gap: 0.6rem;
+    min-height: 64px; padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom));
+    background: var(--theme); border-top: 1px solid var(--border);
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.12);
+}
+.action-bar-next {
+    flex: 1 1 auto; min-width: 0; min-height: 44px; display: flex; flex-direction: column; justify-content: center;
+    color: var(--primary); text-decoration: none; line-height: 1.25;
+}
+.action-bar-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--nb-accent); }
+.action-bar-when { font-size: 0.85rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.action-bar-cta { flex: 0 0 auto; min-height: 44px !important; padding: 0.5rem 0.9rem !important; font-size: 0.95rem !important; white-space: nowrap; }
+body.has-action-bar { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+@media (max-width: 767px) {
+    /* The floating back-to-top button covered text and share buttons; the
+       header is always one tap away on a phone. */
+    .top-link { display: none !important; }
+}
+@media print { .action-bar { display: none !important; } }

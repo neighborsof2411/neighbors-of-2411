@@ -80,4 +80,64 @@
     setTimeout(openForHash, 0);
   });
   openForHash();
+
+  /* ---------- Phone action bar ---------- */
+  var bar = $('#action-bar');
+  var meetingsEl = $('#meetings-json');
+  var store = { get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+                set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+  var path = location.pathname.replace(/\/+$/, '/') || '/';
+  if (path === '/thanks/' || path === '/already-signed/') store.set('signed', '1');
+
+  if (bar && meetingsEl && window.matchMedia) {
+    var list = [];
+    try { list = JSON.parse(meetingsEl.textContent) || []; } catch (e) {}
+    var next = list.filter(function (m) { return daysUntil(m.date) >= 0; })[0];
+    var when = $('[data-ab-when]', bar);
+    var cta = $('[data-ab-cta]', bar);
+    var DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    if (next) {
+      var d = new Date(next.date + 'T00:00:00');
+      when.textContent = DAYS[d.getDay()] + ' ' + MONTHS[d.getMonth()] + ' ' + d.getDate() + ' · ' + next.time + ' · ' + next.body;
+    } else {
+      when.textContent = 'See the City calendar';
+    }
+    // Context button, and the part of the page that makes it redundant.
+    var watch = $('#petition');
+    if (path === '/testify/') {
+      cta.textContent = 'Write My Comment';
+      cta.href = '#comment-builder';
+      watch = $('#comment-builder');
+    } else if (store.get('signed') === '1' && next) {
+      var dd = new Date(next.date + 'T00:00:00');
+      cta.textContent = 'Add ' + MONTHS[dd.getMonth()] + ' ' + dd.getDate() + ' to calendar';
+      cta.href = '/meetings/' + next.id + '.ics';
+      cta.setAttribute('download', next.id + '.ics');
+      watch = null;
+    }
+    var phone = window.matchMedia('(max-width: 767px)');
+    var inView = false, typing = false;
+    function update() {
+      var show = phone.matches && !inView && !typing;
+      bar.hidden = !show;
+      doc.body.classList.toggle('has-action-bar', phone.matches);
+    }
+    if (watch && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        inView = entries[0].isIntersecting; update();
+      }, { rootMargin: '0px 0px -64px 0px' }).observe(watch);
+    }
+    // Hide while the on-screen keyboard is up.
+    doc.addEventListener('focusin', function (e) { if (e.target.matches('input, textarea, select')) { typing = true; update(); } });
+    doc.addEventListener('focusout', function () { typing = false; setTimeout(update, 50); });
+    if (window.visualViewport) {
+      visualViewport.addEventListener('resize', function () {
+        typing = visualViewport.height < window.innerHeight * 0.75 || (doc.activeElement && doc.activeElement.matches('input, textarea, select'));
+        update();
+      });
+    }
+    if (phone.addEventListener) phone.addEventListener('change', update);
+    update();
+  }
 })();

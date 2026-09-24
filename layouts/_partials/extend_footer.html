@@ -1,6 +1,24 @@
 {{- $p := hugo.Data.project }}
 {{- $js := resources.Get "js/site.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+{{- /* Phone action bar (< 768px), driven by assets/js/site.js: next meeting on
+     the left, a context button on the right (Sign / Write My Comment / Add to
+     calendar once signed). Hidden until JS shows it. The meeting list comes
+     from data/meetings.yaml, the one place dates are kept. */}}
+{{- $today := now.Format "2006-01-02" }}
+{{- $up := where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today }}
+{{- $list := slice }}
+{{- range $up }}{{ $list = $list | append (dict "date" .date "time" .time "body" .body "id" (printf "%s-%s" (cond (eq .body "City Council") "cc" "pc") .date)) }}{{ end }}
+<script type="application/json" id="meetings-json">{{ $list | jsonify | safeJS }}</script>
+<div class="action-bar" id="action-bar" hidden>
+  <a class="action-bar-next" href="/#upcoming-city-meetings">
+    <span class="action-bar-label">Next meeting</span>
+    <span class="action-bar-when" data-ab-when></span>
+  </a>
+  <a class="button button--primary action-bar-cta" href="/#petition" data-ab-cta>Sign the Petition</a>
+</div>
+
 <div class="site-footer-extended">
 
   <div class="footer-ctas">
