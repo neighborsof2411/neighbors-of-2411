@@ -82,7 +82,7 @@ Gauderman WJ, Urman R, Avol E, et al. Association of Improved Air Quality with L
 McConnell R, Berhane K, Gilliland F, et al. Prospective study of air pollution and bronchitic symptoms in children with asthma. *American Journal of Respiratory and Critical Care Medicine*. 2003;168(7):790-797. [doi.org/10.1164/rccm.200304-466OC](https://doi.org/10.1164/rccm.200304-466OC)
 {{< /callout >}}
 
-**What the research shows**: children already diagnosed with asthma are especially vulnerable to air pollution. On higher-pollution days, asthmatic children experience more bronchitic symptoms, increased medication use, more activity limitations, and more school absences.
+**What the research shows**: children already diagnosed with asthma are especially vulnerable to air pollution, with more bronchitic symptoms where and when air pollution is higher.
 
 **Why this applies to Fletcher**: with about 500 students, and CDC data showing roughly 1 in 12 California children have asthma, dozens of enrolled students likely have asthma — the District's most respiratory-vulnerable students, facing cumulative risk from an already-burdened air basin (MATES-V existing air-toxics cancer risk: 300–400 per million).
 

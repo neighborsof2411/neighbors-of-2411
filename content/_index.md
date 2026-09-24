@@ -44,7 +44,7 @@ The applicant's studies estimate **about 160 truck trips a day**: roughly 80 tru
 The estimate rests on three assumptions:
 - **A "typical" warehouse-and-manufacturing mix.** The traffic study uses standard trip rates for ordinary warehousing plus 109,000 sq ft of manufacturing (Traffic Study, Appendix L, Table 4-1, p. 38).
 - **No cold storage.** Every trip table is labeled "Without Cold Storage" (Appendix L, Table 4-1, p. 38).
-- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). The applicant has said it intends to build that layout.
+- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). The applicant has confirmed in writing, by email to Neighbors of 2411, that it is building that 36-door layout.
 
 **The 36-dock layout was never run through the traffic study.** The study's own footnote says the latest site plan is the warehouse-heavy version (about 260,000 sq ft of warehouse). It then analyzes the manufacturing-heavy version anyway (Appendix L, footnote 1, p. 4).
 
@@ -92,7 +92,7 @@ The health risk assessment's own combined construction-and-operation result is *
 
 {{< accordion title="Noise: \"Less than significant.\"" >}}
 {{< fact-compare claim="The IS/MND concludes nighttime noise impacts are less than significant." >}}
-The noise study predicts **53.6 dBA at night at the homes east of the site**, above the City's 45 dBA nighttime standard. The MND avoids a significance finding by raising that standard to account for existing background noise, to about 57–58 dBA at those homes. The model assumes trucks unload at only 3 docks at a time (the alternate layout has 36). It never applies the City's 5 dBA stricter standard for tonal and repeating sounds like back-up alarms. The MND proposes **no noise mitigation at all**. {{< cite doc="appendix-k" label="Verify Fact" >}}
+The noise study predicts **53.6 dBA at night at the homes east of the site**, above the City's nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code). The MND avoids a significance finding by raising that standard to account for existing background noise, to about 57–58 dBA at those homes. The model assumes trucks unload at only 3 docks at a time (the alternate layout has 36). It never applies the City's 5 dBA stricter standard for tonal and repeating sounds like back-up alarms (Municipal Code § 8.24.040(D)). The MND proposes **no noise mitigation at all**. {{< cite doc="appendix-k" label="Verify Fact" >}}
 {{< /fact-compare >}}
 {{< /accordion >}}
 

@@ -38,7 +38,7 @@ The HRA's own result exceeds the threshold — the MND says so: "the unmitigated
 
 **1. The measure that gets it under the line is construction-phase; the operation lasts decades.** MM AQ-1 requires Tier 4 Final engines on construction equipment over 400 horsepower (MND at 56). It does nothing to operational emissions, which were modeled at 0.56 per million with 5 dock doors (MND at 54, Table AQ-7). The mitigated total leaves 0.52 per million of margin — any operational increase larger than that puts the project back over the threshold. The HRA used older versions of the EPA dispersion models (AERMOD 23132 / AERMET 16216). The air district said this "may result in inaccurate or non-conservative health risk estimates" and asked for a re-run with the current versions (SCAQMD letter, p. 3). In SCAQMD's words: "Given the extremely narrow margin between the mitigated risk level and the significance threshold, the result appears highly sensitive to underlying assumptions" (SCAQMD letter at 3).
 
-**2. The dock-door gap.** The health study models **5 dock doors** (Appendix B, p. 7). The alternate layout in the City's own document has **36 raised dock doors plus 2 grade-level doors** (IS/MND Table 3, p. 24), and the applicant has said it intends to build that layout. The traffic study's own footnote says the latest site plan is the warehouse-heavy version (Appendix L, fn. 1). **No study analyzes the 36-door building.** How much more diesel it would bring depends on the tenant, and nobody has run the numbers.
+**2. The dock-door gap.** The health study models **5 dock doors** (Appendix B, p. 7). The alternate layout in the City's own document has **36 raised dock doors plus 2 grade-level doors** (IS/MND Table 3, p. 24), and the applicant has confirmed in writing that it is building that layout. The traffic study's own footnote says the latest site plan is the warehouse-heavy version (Appendix L, fn. 1). **No study analyzes the 36-door building.** How much more diesel it would bring depends on the tenant, and nobody has run the numbers.
 
 **3. The diesel fire pump.** The study assumes the 238-horsepower diesel fire pump runs 50 hours a year. The air district says permits allow **up to 200 hours a year** including emergencies, and asked the City to re-run the analysis or cap the hours by permit (SCAQMD letter, pp. 3–4).
 
@@ -70,7 +70,7 @@ About 500 children attend Fletcher Mandarin Language and GATE Academy (Fletcher 
 
 ### What Should Happen
 
-A full Environmental Impact Report should include updated air dispersion modeling using current model versions, analysis of the 36-door layout the applicant says it will build, a fire pump scenario at up to 200 hours a year, the cumulative air toxics analysis SCAQMD asked for, a health impact assessment specific to the children at Fletcher, and an alternatives analysis with truck trip reduction strategies.
+A full Environmental Impact Report should include updated air dispersion modeling using current model versions, analysis of the 36-door layout the applicant has confirmed it is building, a fire pump scenario at up to 200 hours a year, the cumulative air toxics analysis SCAQMD asked for, a health impact assessment specific to the children at Fletcher, and an alternatives analysis with truck trip reduction strategies.
 
 ---
 
@@ -84,17 +84,17 @@ A 24/7 industrial building 54 feet from homes to the north and 150 feet from hom
 
 {{< callout type="citation" title="Modeled Nighttime Dock Noise" >}}
 - **Modeled night-time noise: 53.6 dBA at the homes to the east** (about 150 ft away) (MND at 121, Table NOI-6)
-- **City nighttime standard: 45 dBA** (General Plan Noise Element; Appendix K, Table C, p. 12)
+- **City nighttime standards: 45 dBA** (General Plan Noise Element; Appendix K, Table C, p. 12) **and 50 dBA** (Municipal Code [§ 8.24.040](https://ecode360.com/43562273))
 - **What the MND did:** raised the standard to about 57–58 dBA because existing background noise at those homes is already high (55.0 dBA measured) (Appendix K, Table C p. 12, Table O p. 27)
 {{< /callout >}}
 
-The City concludes this is "less than significant" only after that adjustment. The City's standards table lets the standard be raised in 3-dB steps whenever existing background noise already exceeds it (Appendix K, Table C, note 4, p. 12).
+The City concludes this is "less than significant" only after that adjustment. The City's standards table lets the standard be raised in 3-dB steps whenever existing background noise already exceeds it (Appendix K, Table C, note 4, p. 12). The Municipal Code does the same: its "adjusted ambient noise level" is measured ambient plus 3 dB(A) ([§ 8.24.020](https://ecode360.com/43562255), [§ 8.24.040(C)](https://ecode360.com/43562273)) — which is where the roughly 57–58 dBA figure comes from.
 
 Whether that adjustment methodology adequately protects the residents around this site — where the ambient itself is a mix of traffic, rail, and existing industrial noise — is a real question. The base standards exist to protect sleep and health at sensitive receptors; using an already-elevated ambient as the effective floor lets a new industrial noise source add to nighttime noise at nearby homes without ever triggering a significance finding.
 
 ### Why This Is Inadequate
 
-**1. The standard was moved to fit the project.** The modeled 53.6 dBA is 8.6 dB over the City's 45 dBA nighttime standard. It passes only because the standard was raised in 3-dB steps to match existing background noise (Appendix K, Table C, note 4, p. 12). The City's own table also says standards "should be lowered by five dB" for simple-tone and repeating impulsive sounds (note 2), and back-up alarms are exactly that. The penalty was never applied.
+**1. The standard was moved to fit the project.** The modeled 53.6 dBA is 8.6 dB over the City's 45 dBA nighttime standard (General Plan) and 3.6 dB over the Municipal Code's 50 dBA. It passes only because the standard was raised in 3-dB steps to match existing background noise (Appendix K, Table C, note 4, p. 12). The City's own table also says standards "should be lowered by five dB" for simple-tone and repeating impulsive sounds (note 2), and back-up alarms are exactly that. The Municipal Code sets the same 5 dB stricter limit ([§ 8.24.040(D)](https://ecode360.com/43562273)). The penalty was never applied.
 
 **2. Small assumptions, big building.** The model assumes trucks unload at only **3 docks at a time**, 30 minutes per hour, and trucks maneuver at 10 spaces (Appendix K, p. 26). That is half of a 5-dock building. The alternate layout has 36 docks. Truck engine, air-brake and back-up-alarm noise during docking was measured at **76.3 dBA at 20 feet** (Appendix K, p. 26).
 
@@ -131,7 +131,7 @@ The applicant's studies estimate **about 160 truck trips a day**: roughly 80 tru
 The estimate rests on three assumptions:
 - **A "typical" warehouse-and-manufacturing mix.** The traffic study uses standard trip rates for ordinary warehousing plus 109,000 sq ft of manufacturing (Traffic Study, Appendix L, Table 4-1, p. 38).
 - **No cold storage.** Every trip table is labeled "Without Cold Storage" (Appendix L, Table 4-1, p. 38).
-- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). The applicant has said it intends to build that layout.
+- **Five loading docks.** The health and noise studies model 5 dock doors (Health Risk Assessment, Appendix B, p. 7). The alternate layout in the City's own document has **36 raised loading docks plus 2 grade-level doors**, more than seven times as many (IS/MND, Table 3, p. 24). The applicant has confirmed in writing, by email to Neighbors of 2411, that it is building that 36-door layout.
 
 **The 36-dock layout was never run through the traffic study.** The study's own footnote says the latest site plan is the warehouse-heavy version (about 260,000 sq ft of warehouse). It then analyzes the manufacturing-heavy version anyway (Appendix L, footnote 1, p. 4).
 
@@ -222,7 +222,7 @@ Under CEQA's "fair argument" standard, substantial evidence supporting a fair ar
 | Issue | City Claims | The Record Says |
 |-------|-------------|------------------|
 | **Air Quality** | "Less than significant with mitigation" | Unmitigated risk 10.07 in a million (over threshold); mitigated 9.48 via construction equipment only; SCAQMD raised seven concerns; 5 docks analyzed vs. 36 in the alternate layout |
-| **Noise** | "Less than significant" — no mitigation | 53.6 dBA at night at the east homes vs. a 45 dBA standard; standard raised to about 57–58; 5 dB alarm penalty never applied; 3-dock assumption |
+| **Noise** | "Less than significant" — no mitigation | 53.6 dBA at night at the east homes vs. 45/50 dBA standards (General Plan / Municipal Code); standard raised to about 57–58; 5 dB alarm penalty never applied; 3-dock assumption |
 | **Traffic** | "Less than significant" (vehicle miles traveled) | Truck driveway already LOS E/F; 293-second delay by 2050 with the project; no truck cap |
 | **Land Use** | "Consistent with zoning" | Legal consistency ≠ compatibility; 24/7 use incompatible with adjacent homes and school |
 

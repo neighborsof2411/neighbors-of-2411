@@ -25,7 +25,7 @@
   critical: true
   file: /documents/Appendix_K_Noise_and_Vibration_Impact_Analysis.pdf
   url: ""
-  summary: "Models nighttime dock noise at 53.6 dBA at the east receptor — above the City's 45 dBA nighttime standard (General Plan) — with the MND relying on the City's ambient-adjustment rules (raising the effective threshold to ~57–58 dBA) to avoid a significance finding. Assumes unloading at 3 docks and truck movements at 10 spaces (p. 26) — the 5-dock Option 1 layout, not the 36-dock Option 2 — and never applies the City's 5 dBA stricter standard for tonal/impulsive sounds like back-up alarms (Table C, note 2). The MND proposes no noise mitigation."
+  summary: "Models nighttime dock noise at 53.6 dBA at the east receptor — above the City's nighttime standards of 45 dBA (General Plan) and 50 dBA (Municipal Code) — with the MND relying on the City's ambient-adjustment rules (raising the effective threshold to ~57–58 dBA) to avoid a significance finding. Assumes unloading at 3 docks and truck movements at 10 spaces (p. 26) — the 5-dock Option 1 layout, not the 36-dock Option 2 — and never applies the City's 5 dBA stricter standard for tonal/impulsive sounds like back-up alarms (Table C, note 2; Municipal Code § 8.24.040(D)). The MND proposes no noise mitigation."
   lookFor: "Page 26: source levels, the 3-dock assumption, and 'shielding from the proposed building' as the only barrier modeled. Page 12, Table C: the ambient-adjustment rule (note 4) and the 5 dB tonal penalty (note 2). Page 1 describes both layouts; the analysis uses the 5-dock one. Appendix C: traffic-noise printouts (same truck mix with and without the project)."
 
 - id: appendix-l

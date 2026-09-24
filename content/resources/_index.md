@@ -56,7 +56,7 @@ A comprehensive environmental document (typically 50–200+ pages) analyzing all
 {{< /faq >}}
 
 {{< faq q="What's the 'fair argument' standard?" >}}
-Under CEQA, an EIR is required if **substantial evidence** in the record supports a **fair argument** that the project may have a significant effect, even if other evidence points the other way. Substantial evidence means facts, reasonable assumptions based on facts, or expert opinion based on facts. Argument and speculation don't count, which is why we cite the applicant's own documents. Example: the City's nighttime noise standard is 45 dBA (General Plan), and the applicant's own noise model shows the project generating 53.6 dBA at the homes to the east of the site. The MND finds this "less than significant" only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at this receptor to roughly 57–58 dBA because ambient noise there is already elevated. There is a fair argument that this adjustment methodology doesn't adequately protect residents, even though the modeled level falls below the adjusted number.
+Under CEQA, an EIR is required if **substantial evidence** in the record supports a **fair argument** that the project may have a significant effect, even if other evidence points the other way. Substantial evidence means facts, reasonable assumptions based on facts, or expert opinion based on facts. Argument and speculation don't count, which is why we cite the applicant's own documents. Example: the City's nighttime noise standards are 45 dBA (General Plan) and 50 dBA (Municipal Code), and the applicant's own noise model shows the project generating 53.6 dBA at the homes to the east of the site. The MND finds this "less than significant" only by applying the City's ambient-noise adjustment rules, which raise the effective threshold at this receptor to roughly 57–58 dBA because ambient noise there is already elevated. There is a fair argument that this adjustment methodology doesn't adequately protect residents, even though the modeled level falls below the adjusted number.
 {{< /faq >}}
 
 {{< faq q="What's the difference between a 'less than significant' impact and a 'significant' impact?" >}}
@@ -140,7 +140,7 @@ Yes. Orange's stationary-noise standards are 55 dBA by day and 45 dBA at night (
 {{< /faq >}}
 
 {{< faq q="What's a 'backup alarm'?" >}}
-The loud beeping sound that plays when a truck or piece of heavy equipment backs up. The noise study folds back-up alarms into a 75 dBA truck-arrival source level measured 20 feet from the truck (Appendix K at 26) — but it never applies the City's 5 dBA stricter limit for "simple tone" and "recurring impulsive" sounds (Appendix K, Table C, note 2), which is exactly what a back-up alarm is.
+The loud beeping sound that plays when a truck or piece of heavy equipment backs up. The noise study folds back-up alarms into a 75 dBA truck-arrival source level measured 20 feet from the truck (Appendix K at 26) — but it never applies the City's 5 dBA stricter limit for "simple tone" and "recurring impulsive" sounds (Appendix K, Table C, note 2; Municipal Code § 8.24.040(D)), which is exactly what a back-up alarm is.
 {{< /faq >}}
 
 ### About Traffic

@@ -44,7 +44,7 @@ Dates are changing until the City sends official notice, so we keep them in one 
 
 Don't try to cover every issue — focus on what directly affects you or what you feel most passionate about:
 
-- **Sleep & noise**: "This warehouse operates 24/7, and I will lose sleep from noise and truck traffic." *(Nighttime noise modeled at 53.6 dBA at homes east of the site, versus the City's 45 dBA standard — Appendix K)*
+- **Sleep & noise**: "This warehouse operates 24/7, and I will lose sleep from noise and truck traffic." *(Nighttime noise modeled at 53.6 dBA at homes east of the site, versus the City's 45 dBA (General Plan) and 50 dBA (Municipal Code) nighttime standards — Appendix K)*
 - **Children's health**: "My children attend Fletcher Mandarin Language and GATE Academy (Fletcher Elementary), about 1,200 feet away. They breathe diesel exhaust from this 24/7 warehouse." *(Appendix B: cancer risk 10.07 per million before mitigation — over the 10 per million threshold — and 9.48 after mitigation that covers construction equipment only; [Health Evidence →](/health-evidence/))*
 - **Air quality analysis**: "The air quality analysis is incomplete — SCAQMD raised seven areas of concern, and the health risk assessment modeled 5 loading dock doors; the alternate layout in the City's document has 36." *(SCAQMD letter; MND at 24, Table 3; Appendix B at 7)*
 - **Traffic safety**: "The truck driveway already fails, it gets worse in every year the study looks at, and nothing requires those estimated 160 daily truck trips to stay off school streets." *(Appendix L at 45 and 53: southern driveway LOS F with the project; MND at 91: no binding truck route)*
