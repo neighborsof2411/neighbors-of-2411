@@ -167,22 +167,6 @@ a.button, .button {
 .save-contact-details ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
 .save-contact-details li { margin: 0.35rem 0; }
 
-/* ---------- Countdown ---------- */
-
-.countdown-box {
-    background: var(--nb-warning-bg);
-    color: var(--nb-warning-text);
-    border: 2px solid var(--nb-warning-border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 1.5rem 0;
-}
-.countdown-label { font-weight: 700; font-size: 1.1rem; margin: 0 0 0.25rem; }
-.countdown-dates { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem; }
-.countdown-timer { font-size: 1rem; margin: 0 0 0.5rem; }
-.countdown-note { font-size: 0.85rem; opacity: 0.9; margin: 0; }
-
 /* ---------- Forms (petition sign-up, wizard) ---------- */
 
 .petition-form {
@@ -621,15 +605,7 @@ a.button, .button {
 }
 .post-content th { background: var(--tertiary); text-align: left; }
 
-/* ---------- Upcoming meetings (homepage; data/meetings.yaml) ---------- */
-
-.meeting-list { display: flex; flex-direction: column; gap: 0.85rem; margin: 1rem 0; }
-.meeting-list .callout { margin: 0; }
-.meeting-when { font-weight: 700; font-size: 1.05rem; margin: 0 0 0.35rem; }
-.meeting-meta { font-size: 0.9rem; margin: 0.35rem 0 0; }
-.meeting-meta .doc-badge { margin-bottom: 0; vertical-align: middle; }
-.meeting-days { font-weight: 700; }
-.meeting-past { display: none; }
+/* Upcoming meetings: see mobile.css (meeting cards). */
 
 /* ---------- Print ---------- */
 

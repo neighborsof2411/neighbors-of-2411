@@ -33,4 +33,33 @@
     menuBtn.hidden = true;
     doc.documentElement.classList.remove('js');                     // fall back to the plain menu
   }
+
+  /* ---------- Meeting cards (data/meetings.yaml) ---------- */
+  var DAY = 864e5;
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  function daysUntil(ymd) { return Math.round((new Date(ymd + 'T00:00:00') - today) / DAY); }
+  function whenWord(days) { return days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : 'In ' + days + ' days'; }
+  var isApple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+
+  $all('.meetings').forEach(function (box) {
+    var cards = $all('.meeting-card', box);
+    var live = cards.filter(function (c) {
+      var d = daysUntil(c.getAttribute('data-date'));
+      if (d < 0) { c.hidden = true; return false; }
+      var chip = $('[data-days]', c);
+      if (chip) chip.textContent = whenWord(d);
+      return true;
+    });
+    // If the build's "next" card has passed, promote the first live one.
+    var first = live[0];
+    var more = $('.meetings-more', box);
+    if (first && !first.classList.contains('meeting-card--next')) {
+      first.classList.add('meeting-card--next');
+      box.insertBefore(first, more || box.firstChild);
+    }
+    var count = $('[data-meeting-count]', box);
+    if (count) count.textContent = String(live.length);
+    if (more && live.length < 2) more.hidden = true;
+  });
+  if (isApple) $all('a.meeting-dir[data-apple]').forEach(function (a) { a.href = a.getAttribute('data-apple'); });
 })();

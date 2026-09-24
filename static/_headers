@@ -8,3 +8,9 @@
 # text/vcard makes phones open it straight into Contacts.
 /neighbors-of-2411.vcf
   Content-Type: text/vcard; charset=utf-8
+
+# Meeting calendar files (meeting-card partial). text/calendar opens them
+# straight into the phone calendar.
+/meetings/*
+  Content-Type: text/calendar; charset=utf-8
+  Cache-Control: public, max-age=3600

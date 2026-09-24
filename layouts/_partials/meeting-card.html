@@ -1,0 +1,43 @@
+{{- /*
+  One meeting card. Context: dict "m" (an entry from data/meetings.yaml
+  upcoming) and "next" (bool, the soonest upcoming meeting).
+  Also publishes /meetings/<id>.ics for "Add to calendar" (3-hour alarm).
+  The countdown chip and hiding past meetings happen in assets/js/site.js,
+  so cards stay right between deploys.
+*/ -}}
+{{- $m := .m }}
+{{- $id := printf "%s-%s" (cond (eq $m.body "City Council") "cc" "pc") $m.date }}
+{{- /* "5:30 PM" -> 17:30, local to Orange, CA */}}
+{{- $tp := split $m.time " " }}
+{{- $hm := split (index $tp 0) ":" }}
+{{- $h := int (index $hm 0) }}
+{{- if and (eq (upper (index $tp 1)) "PM") (lt $h 12) }}{{ $h = add $h 12 }}{{ end }}
+{{- if and (eq (upper (index $tp 1)) "AM") (eq $h 12) }}{{ $h = 0 }}{{ end }}
+{{- $start := time.AsTime (printf "%sT%02d:%s:00" $m.date $h (index $hm 1)) "America/Los_Angeles" }}
+{{- $end := $start.Add (time.ParseDuration "2h") }}
+{{- $utc := "20060102T150405Z" }}
+{{- $title := printf "%s meeting (2411 Glassell)" $m.body }}
+{{- $desc := printf "City of Orange %s, %s. Public comment is open. Check the agenda: %s  Updates: https://2411glassell.com/#upcoming-city-meetings" $m.body $m.time hugo.Data.meetings.calendar_url }}
+{{- $loc := $m.location }}
+{{- $ics := printf "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Neighbors of 2411//Meetings//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\nBEGIN:VEVENT\r\nUID:%s@2411glassell.com\r\nDTSTAMP:%s\r\nDTSTART:%s\r\nDTEND:%s\r\nSUMMARY:%s\r\nLOCATION:%s\r\nDESCRIPTION:%s\r\nURL:https://2411glassell.com/#upcoming-city-meetings\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:%s\r\nTRIGGER:-PT3H\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n" $id (now.UTC.Format $utc) ($start.UTC.Format $utc) ($end.UTC.Format $utc) $title (replace $loc "," "\\,") (replace $desc "," "\\,") $title }}
+{{- $ics = replaceRE "(.{73})" "$1\r\n " $ics }}{{/* RFC 5545 line folding */}}
+{{- $icsRes := resources.FromString (printf "meetings/%s.ics" $id) $ics }}
+{{- $gcal := printf "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%s&dates=%s/%s&location=%s&details=%s" ($title | urlquery) ($start.UTC.Format $utc) ($end.UTC.Format $utc) ($loc | urlquery) ($desc | urlquery) }}
+{{- $maps := printf "https://www.google.com/maps/search/?api=1&query=%s" ($loc | urlquery) }}
+{{- $status := "neutral" }}{{ $label := "Project not on this agenda — public comment is still open" }}
+{{- if eq $m.project "confirmed" }}{{ $status = "urgent" }}{{ $label = "2411 Glassell is on this agenda" }}
+{{- else if eq $m.project "expected" }}{{ $status = "maybe" }}{{ $label = "Expected: 2411 Glassell hearing" }}
+{{- else if eq $m.project "tbd" }}{{ $status = "maybe" }}{{ $label = "Agenda not posted — the hearing could be here" }}{{ end }}
+<article class="meeting-card meeting-card--{{ $status }}{{ if .next }} meeting-card--next{{ end }}" data-date="{{ $m.date }}" data-start="{{ $start.Format "2006-01-02T15:04:05-07:00" }}" data-id="{{ $id }}" data-body="{{ $m.body }}" data-time="{{ $m.time }}">
+  <p class="meeting-card-when"><time datetime="{{ $start.Format "2006-01-02T15:04:05-07:00" }}">{{ $start.Format "Mon, Jan 2" }} · {{ $m.time }}</time> <span class="meeting-card-countdown" data-days></span></p>
+  <p class="meeting-card-body">{{ $m.body }}</p>
+  <p class="meeting-card-status"><span class="status-chip status-chip--{{ $status }}">{{ $label }}</span></p>
+  {{- with $m.note }}<p class="meeting-card-note">{{ . }}</p>{{ end }}
+  <p class="meeting-card-where">{{ $loc }}</p>
+  <div class="meeting-card-actions">
+    <a class="button button--secondary meeting-ics" href="{{ $icsRes.RelPermalink }}" download="{{ $id }}.ics">Add to calendar</a>
+    <a class="button button--secondary meeting-dir" href="{{ $maps }}" target="_blank" rel="noopener noreferrer" data-apple="https://maps.apple.com/?q={{ $loc | urlquery }}">Directions</a>
+    {{- with $m.agenda }}<a class="button button--secondary" href="{{ . }}" target="_blank" rel="noopener noreferrer">Agenda</a>{{ end }}
+  </div>
+  <p class="meeting-card-alt"><a href="{{ $gcal }}" target="_blank" rel="noopener noreferrer">Add to Google Calendar instead</a>{{ if not $m.agenda }} · Agenda not yet posted{{ end }}</p>
+</article>
