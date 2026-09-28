@@ -494,3 +494,15 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
     .logo > a { font-size: 20px; }
     .button--nav-cta { padding: 0.4rem 0.7rem; }
 }
+
+/* ---------- Homepage donation callout ---------- */
+.donate-callout {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem;
+    margin: 0 0 2rem; padding: 1rem 1.1rem; border-radius: var(--radius);
+    border: 2px solid var(--nb-accent); background: var(--entry);
+}
+.donate-callout-text { flex: 1 1 16rem; }
+.donate-callout-title { font-size: 1.15rem; margin: 0 0 0.25rem; }
+.donate-callout p { margin: 0; font-size: 0.95rem; color: var(--secondary); }
+.donate-callout-btn { flex: 1 1 auto; min-width: 9rem; }
+@media (min-width: 640px) { .donate-callout-btn { flex: 0 0 auto; } }
