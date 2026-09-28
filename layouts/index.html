@@ -53,6 +53,16 @@
 </section>
 </div>
 
+{{- /* Donation callout: sits right after the petition (and after the whole
+     hero band on desktop). Copy is from the Donate page. */}}
+<aside class="donate-callout" aria-labelledby="donate-callout-title">
+  <div class="donate-callout-text">
+    <h2 id="donate-callout-title" class="donate-callout-title">This fight is won with facts</h2>
+    <p>Your support helps us retain independent technical experts to review the City's environmental analysis and cover filing costs.</p>
+  </div>
+  <a class="button button--primary donate-callout-btn" href="/donate/">Donate</a>
+</aside>
+
 {{- if .Content }}
 {{- /* On phones, sections from Quick Facts down collapse behind heading
      toggles (assets/js/site.js); stakes and meetings stay open. */}}
