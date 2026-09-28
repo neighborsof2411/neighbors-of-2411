@@ -506,3 +506,5 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
 .donate-callout p { margin: 0; font-size: 0.95rem; color: var(--secondary); }
 .donate-callout-btn { flex: 1 1 auto; min-width: 9rem; }
 @media (min-width: 640px) { .donate-callout-btn { flex: 0 0 auto; } }
+.donate-note { font-size: 0.9rem; font-weight: 600; color: var(--secondary); margin: 0 0 0.75rem; }
+.donate-callout .donate-note { margin: 0.35rem 0 0; font-size: 0.85rem; }
