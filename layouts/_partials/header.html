@@ -154,10 +154,11 @@
             <li><a class="nav-drawer-link nav-drawer-link--primary" href="/#petition">Sign the Petition</a></li>
             <li><a class="nav-drawer-link" href="/#upcoming-city-meetings">Upcoming Meetings</a></li>
             <li><a class="nav-drawer-link" href="/testify/#comment-builder">Write Your Public Comment</a></li>
+            <li><a class="nav-drawer-link" href="/donate/">Donate</a></li>
         </ul>
         <p class="nav-drawer-group">Learn</p>
         <ul class="nav-drawer-list">
-            {{- range site.Menus.main }}{{ if not (in (slice "home" "testify") .Identifier) }}
+            {{- range site.Menus.main }}{{ if not (in (slice "home" "testify" "donate") .Identifier) }}
             <li><a class="nav-drawer-link" href="{{ .URL | absLangURL }}">{{ .Params.drawerName | default .Name }}</a></li>
             {{- end }}{{ end }}
         </ul>
