@@ -121,6 +121,11 @@ pygmentsUseClasses = true
     url = '/testify/'
     weight = 60
   [[menu.main]]
+    identifier = 'donate'
+    name = 'Donate'
+    url = '/donate/'
+    weight = 65
+  [[menu.main]]
     identifier = 'resources'
     name = 'Resources'
     url = '/resources/'

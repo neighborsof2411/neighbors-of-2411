@@ -1,0 +1,14 @@
+{{- /* Zeffy donation form (embed code from Zeffy, unchanged). Zeffy's script
+       loads only on pages that use this shortcode; if it fails to load, the
+       onerror fallback shows the form in a plain iframe instead. */ -}}
+<div class="donate-embed">
+  <div data-zeffy-embed data-form-url="/embed/donation-form/neighbors-of--2411"></div>
+  <div data-zeffy-embed-fallback style="display:none;">
+    <div style="position:relative;overflow:hidden;height:450px;width:100%;"><iframe title='Donation form powered by Zeffy' style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%' data-zeffy-embed-src='https://www.zeffy.com/embed/donation-form/neighbors-of--2411' allowpaymentrequest allowTransparency="true"></iframe></div>
+  </div>
+  <script
+    src="https://www.zeffy.com/embed/v2/zeffy-embed.js"
+    onerror="document.querySelectorAll('[data-zeffy-embed-fallback]').forEach(function(el){el.style.display='block';el.querySelectorAll('iframe[data-zeffy-embed-src]').forEach(function(f){f.src=f.getAttribute('data-zeffy-embed-src');});});">
+  </script>
+  <noscript><p><a href="https://www.zeffy.com/embed/donation-form/neighbors-of--2411">Open the donation form on Zeffy</a></p></noscript>
+</div>

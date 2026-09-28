@@ -487,3 +487,10 @@ button, .button, summary, .share-btn, .cite-badge, .doc-filter { touch-action: m
 .sd-rail line, .sd-rail path { stroke: var(--secondary); stroke-width: 2; fill: none; }
 .sd-small { fill: var(--secondary); font-size: 10px; font-weight: 600; }
 .sd-label-bg { fill: var(--entry); }
+/* 1024-1199px: seven nav items + CTA only fit with tighter spacing. */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .menu { column-gap: 0.75rem; }
+    .menu a { font-size: 14px; }
+    .logo > a { font-size: 20px; }
+    .button--nav-cta { padding: 0.4rem 0.7rem; }
+}
