@@ -51,6 +51,12 @@ pygmentsUseClasses = true
   commentSubject = 'Public Comment — CUP No. 25-0013 / IS-MND No. ENV25-0002 / 2411 N. Glassell St.'
   commentRecordSentence = 'Please place this email in the administrative record for CUP No. 25-0013 / IS-MND No. ENV25-0002 and include it in the Planning Commission packet and any later hearing packet for this project.'
 
+  # Cloudflare Turnstile bot check on the petition form (widget
+  # "2411glassell.com petition", hostname 2411glassell.com). The site key is
+  # public; the matching secret is the Worker secret TURNSTILE_SECRET,
+  # set for Production only (preview hostnames aren't on the widget).
+  turnstileSiteKey = '0x4AAAAAAFJvwpujggn6Idc-'
+
   [[params.socialIcons]]
     name = 'email'
     url = 'mailto:neighborsof2411@gmail.com'

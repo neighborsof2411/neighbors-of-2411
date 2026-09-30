@@ -274,6 +274,24 @@
       if (bad.length) { e.preventDefault(); bad[0].focus(); return; }
       var btn = $('button[type=submit]', form);
       if (btn.disabled) { e.preventDefault(); return; }
+      // Turnstile bot check still running: wait for its token, then submit.
+      var ts = $('input[name="cf-turnstile-response"]', form);
+      if ($('.cf-turnstile', form) && (!ts || !ts.value)) {
+        e.preventDefault();
+        btn.disabled = true;
+        btn.classList.add('is-busy');
+        btn.textContent = 'Checking…';
+        var tries = 0;
+        (function wait() {
+          var t = $('input[name="cf-turnstile-response"]', form);
+          if (t && t.value) { form.submit(); return; }
+          if (++tries > 40) {                                  // ~10s: let the server decide
+            form.submit(); return;
+          }
+          setTimeout(wait, 250);
+        })();
+        return;
+      }
       btn.disabled = true;
       btn.classList.add('is-busy');
       btn.textContent = btn.getAttribute('data-busy-label') || 'Sending…';

@@ -46,6 +46,17 @@
   </div>
   {{ end }}
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  {{- /* Cloudflare Turnstile bot check (params.turnstileSiteKey). Mostly
+         invisible: real visitors rarely see a challenge. The Worker verifies
+         the token (TURNSTILE_SECRET) before recording anything. With no site
+         key set, the widget is left out and the Worker skips the check.
+         Local dev uses Cloudflare's always-pass test key. */}}
+  {{- $tsKey := site.Params.turnstileSiteKey }}
+  {{- if hugo.IsServer }}{{ $tsKey = "1x00000000000000000000AA" }}{{ end }}
+  {{- with $tsKey }}
+  <div class="cf-turnstile" data-sitekey="{{ . }}" data-action="petition" data-appearance="interaction-only" data-size="flexible"></div>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  {{- end }}
   <button type="submit" class="button button--primary petition-submit" data-busy-label="Signing…">{{ $buttonLabel }}</button>
   {{- /* Privacy line: hidden by decision (Sept 24, 2026). Setting
          params.petitionPrivacyNote in hugo.toml would show it. */}}
