@@ -34,6 +34,12 @@
   the SIGNUP_WEBAPP_URL var in wrangler.jsonc (fine to be public: without the
   secret it refuses everything).
 
+  Bot check: the form carries a Cloudflare Turnstile token
+  (cf-turnstile-response), verified here with TURNSTILE_SECRET (a Cloudflare
+  secret) before anything is stored or sent. A missing or rejected token goes
+  to /not-verified/. If the secret isn't set, or Cloudflare's verify endpoint
+  can't be reached, the check is skipped rather than turning signers away.
+
   Fails open throughout: without the SIGNERS KV binding there is simply no
   duplicate check here, and without SIGNUP_WEBAPP_URL / SIGNUP_SECRET the
   signature goes to the Formspree fallback. A signer only sees the error
@@ -84,6 +90,28 @@ async function sendToFormspree(base, form) {
   }
 }
 
+// Cloudflare Turnstile. Returns true (human), false (missing/rejected
+// token), or null (not configured, or the verify call itself failed --
+// treated as a pass so an outage never blocks real signers).
+async function verifyTurnstile(env, form, request) {
+  if (!env.TURNSTILE_SECRET) return null;
+  const token = String(form.get("cf-turnstile-response") || "");
+  if (!token) return false;
+  const body = new URLSearchParams();
+  body.set("secret", env.TURNSTILE_SECRET);
+  body.set("response", token);
+  const ip = request.headers.get("CF-Connecting-IP");
+  if (ip) body.set("remoteip", ip);
+  try {
+    const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", { method: "POST", body });
+    if (!res.ok) return null;
+    const out = await res.json();
+    return out.success === true;
+  } catch (e) {
+    return null;
+  }
+}
+
 function seeOther(base, path) {
   return Response.redirect(new URL(path, base).toString(), 303);
 }
@@ -106,6 +134,11 @@ async function handleSign(request, env) {
   // Honeypot: a filled _gotcha is a bot -- accept quietly, store/send nothing.
   if (String(form.get("_gotcha") || "").trim()) {
     return seeOther(base, "/thanks/");
+  }
+
+  // Turnstile: no valid token, no signature.
+  if ((await verifyTurnstile(env, form, request)) === false) {
+    return seeOther(base, "/not-verified/");
   }
 
   const email = String(form.get("email") || "").trim().toLowerCase();
