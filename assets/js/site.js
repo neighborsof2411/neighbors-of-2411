@@ -52,6 +52,12 @@
     });
     // If the build's "next" card has passed, promote the first live one.
     var first = live[0];
+    if (box.classList.contains('meetings--single')) {
+      cards.forEach(function (c) { c.classList.remove('meeting-card--next'); });
+      live.forEach(function (c, i) { c.hidden = i > 0; });
+      if (first) first.classList.add('meeting-card--next');
+      return;
+    }
     var more = $('.meetings-more', box);
     if (first && !first.classList.contains('meeting-card--next')) {
       first.classList.add('meeting-card--next');
@@ -61,6 +67,26 @@
     if (count) count.textContent = String(live.length);
     if (more && live.length < 2) more.hidden = true;
   });
+  // Every other "next meeting" mention (hero chip, sidebar) is baked in at
+  // build time; correct it from the meeting list once a date has passed.
+  var mjEl = $('#meetings-json');
+  if (mjEl) {
+    var mlist = [];
+    try { mlist = JSON.parse(mjEl.textContent) || []; } catch (e) {}
+    var nxt = mlist.filter(function (m) { return daysUntil(m.date) >= 0; })[0];
+    var DN = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var MN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    if (nxt) {
+      var nd = new Date(nxt.date + 'T00:00:00');
+      var short = DN[nd.getDay()] + ', ' + MN[nd.getMonth()] + ' ' + nd.getDate() + ' · ' + nxt.time;
+      $all('[data-next-when]').forEach(function (el) { el.textContent = short + ' · ' + nxt.body; });
+      $all('[data-next-short]').forEach(function (el) { el.textContent = short; });
+      $all('[data-next-body]').forEach(function (el) { el.textContent = nxt.body; });
+      $all('a[data-next-ics]').forEach(function (a) { a.href = '/meetings/' + nxt.id + '.ics'; a.setAttribute('download', nxt.id + '.ics'); });
+    } else {
+      $all('.hero-next-chip, .rail-meeting').forEach(function (el) { el.hidden = true; });
+    }
+  }
   if (isApple) $all('a.meeting-dir[data-apple]').forEach(function (a) { a.href = a.getAttribute('data-apple'); });
 
   /* ---------- Long sections: open without JS, collapsed on phones ---------- */

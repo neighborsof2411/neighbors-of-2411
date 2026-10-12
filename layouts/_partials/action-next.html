@@ -6,8 +6,11 @@
 <section class="action-next" aria-labelledby="action-next-title">
   <h2 id="action-next-title" class="action-next-title">What you can do next</h2>
   {{- with $up }}
-  <div class="meetings">
+  {{- /* All upcoming cards rendered, one shown: site.js promotes the next
+         one when a date passes between deploys. */}}
+  <div class="meetings meetings--single">
     {{ partial "meeting-card.html" (dict "m" (index . 0) "next" true) }}
+    {{- range after 1 . }}{{ partial "meeting-card.html" (dict "m" . "next" false) }}{{ end }}
   </div>
   {{- end }}
   <div class="action-next-buttons">
