@@ -151,8 +151,9 @@ Families in these homes are not transient tenants; they are choosing to raise ch
 | **September 8, 2026** | City Council meeting — public comment only; project not on agenda *(past)* |
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
 | **September 21, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
+| **October 5, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
 | **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
-| **After the Planning Commission acts** | Short window to appeal to City Council (see below) |
+| **After the Planning Commission acts** | 7 business days to appeal to City Council (see below) |
 
 ### How the Process Works
 
@@ -160,7 +161,7 @@ Families in these homes are not transient tenants; they are choosing to raise ch
 
 **Step 2: Planning Commission hearing (next)** — Commission reviews staff report, IS/MND, and public comments. Public comment is taken. Commission votes to approve, deny, or continue the project.
 
-**Step 3: City Council appeal (if applicable)** — If denied by PC, applicant can appeal to Council. If approved by PC, community can appeal to Council. Council makes the final decision. **If the Planning Commission approves the project,** its decision can be appealed to the City Council, but **the deadline is short** and the appeal requires a filing fee. [Sign the petition](/#petition) so we can alert you the day the Commission acts.
+**Step 3: City Council appeal (if applicable)** — If denied by PC, applicant can appeal to Council. If approved by PC, community can appeal to Council. Council makes the final decision. **If the Planning Commission approves the project,** its decision can be appealed to the City Council within **7 business days** after the Commission acts. The appeal is filed in writing with the Community Development Department, with an initial deposit of **$1,000** (Planning Commission agenda, Sept. 10, 2026). [Sign the petition](/#petition) so we can alert you the day the Commission acts.
 
 **Step 4: Final environmental decision** — If PC approves under IS/MND, the project can move forward with streamlined review. If IS/MND is overturned or an EIR is demanded, a full Environmental Impact Report is required.
 

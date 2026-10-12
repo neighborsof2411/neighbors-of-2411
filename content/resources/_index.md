@@ -42,7 +42,7 @@ May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you
 {{< /faq >}}
 
 {{< faq q="When is the Planning Commission hearing?" >}}
-It hasn't been officially noticed. The September 21, 2026 meeting was cancelled, and the expected date had already moved more than once before that. The next Planning Commission meetings are **October 5 and October 19, 2026 at 5:30 PM** — until the City posts an agenda, either could be the hearing. We keep the current date — and every upcoming Planning Commission and City Council meeting — in one place: [Upcoming City Meetings on the homepage](/#upcoming-city-meetings). The [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx) is the authoritative schedule. [Sign up for email updates](/#stay-informed) to be notified when dates change.
+It hasn't been officially noticed. The September 21 and October 5, 2026 meetings were both cancelled, and the expected date had already moved more than once before that. The next Planning Commission meeting is **October 19, 2026 at 5:30 PM** — until the City posts an agenda, it could be the hearing. We keep the current date — and every upcoming Planning Commission and City Council meeting — in one place: [Upcoming City Meetings on the homepage](/#upcoming-city-meetings). The [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx) is the authoritative schedule. [Sign up for email updates](/#stay-informed) to be notified when dates change.
 {{< /faq >}}
 
 {{< faq q="Can I still submit comments?" >}}
@@ -62,7 +62,7 @@ Yes. The Planning Commission can vote to deny the project based on environmental
 {{< /faq >}}
 
 {{< faq q="What if the Planning Commission approves?" >}}
-**If the Planning Commission approves the project,** its decision can be appealed to the City Council, but **the deadline is short** and the appeal requires a filing fee. [Sign the petition](/#petition) so we can alert you the day the Commission acts. Council Members can overturn or modify the Commission's decision.
+**If the Planning Commission approves the project,** its decision can be appealed to the City Council within **7 business days** after the Commission acts. The appeal is filed in writing with the Community Development Department, with an initial deposit of **$1,000** (Planning Commission agenda, Sept. 10, 2026). [Sign the petition](/#petition) so we can alert you the day the Commission acts. Council Members can overturn or modify the Commission's decision.
 {{< /faq >}}
 
 {{< faq q="What happens if an EIR is demanded?" >}}
@@ -261,7 +261,7 @@ Passenger Car Equivalent. Each truck trip counts as 1.5, 2 or 3 car trips depend
 
 **City Council** — contact information for all Council members is on the City's website.
 
-**Meeting agendas & remote participation** — [City of Orange meeting calendar](https://cityoforange.legistar.com/Calendar.aspx). Agendas, times, and Zoom details for City Council and Planning Commission meetings are posted here. Check it before any meeting you plan to attend, since agendas can change.
+**Meeting agendas & remote participation** — [City of Orange meeting calendar](https://cityoforange.legistar.com/Calendar.aspx). Agendas, times, eComment, and video for City Council and Planning Commission meetings are posted here. To speak at City Council (in person or by phone), register at [publiccomment.cityoforange.org](https://publiccomment.cityoforange.org/); the Planning Commission uses speaker cards at the meeting. See [How to Speak or Comment](/testify/#how-to-speak). Check it before any meeting you plan to attend, since agendas can change.
 
 ### Neighbors of 2411
 
@@ -298,8 +298,9 @@ To get updates: [sign the petition](/#petition) — it's the one list, and every
 | **September 8, 2026** | City Council meeting — public comment only; project not on agenda *(past)* |
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
 | **September 21, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
+| **October 5, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
 | **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
-| **Post-PC decision** | Short appeal window; see the homepage |
+| **Post-PC decision** | 7 business days to appeal to City Council ($1,000 initial deposit) |
 
 **Next milestone**: whichever Planning Commission or City Council meeting comes next — see [Upcoming City Meetings](/#upcoming-city-meetings) and the [City calendar](https://cityoforange.legistar.com/Calendar.aspx). Show up to each one.
 

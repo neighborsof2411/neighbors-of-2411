@@ -317,7 +317,7 @@
   function updateOutputMeta() {
     var rt = readTime(out.value);
     $('#wiz-readtime').textContent = 'Read-aloud time: ' + rt.text +
-      (rt.secs > 180 ? '. That is over 3 minutes. Speakers usually get 3–5 minutes, so trim it if the Chair sets 3.' : '.');
+      (rt.secs > 180 ? '. That is over the usual 3-minute limit, so trim it unless the Chair announces more time.' : '.');
     var to = emailBtn.getAttribute('data-to');
     var params = 'subject=' + encodeURIComponent(emailBtn.getAttribute('data-subject'));
     var body = mailBody(out.value);

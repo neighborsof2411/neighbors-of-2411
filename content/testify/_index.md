@@ -26,11 +26,39 @@ Use this tool to draft a starting-point public comment script based on your answ
 
 {{< testimony-wizard >}}
 
+## How to Speak or Comment {#how-to-speak}
+
+The rules are different for the Planning Commission and the City Council. These come from the City's own agendas; check the agenda for the meeting you're going to, since the Chair can change details on the night.
+
+### At the Planning Commission (where the hearing will be)
+
+- **Speak in person.** Fill out a speaker card with your name, address, and the agenda item number (or subject) you want to speak on, and **give it to City staff before the meeting starts**. Arrive early. There is no online sign-up and no call-in speaking at Planning Commission meetings.
+- **Time limit:** 3 minutes per speaker, unless the Chair announces a different limit. State your name for the record, then speak.
+- **In writing:** use **eComment** on the meeting's agenda page in the [City's meeting calendar](https://cityoforange.legistar.com/Calendar.aspx), **by 3:00 p.m. the day of the meeting**. Comments go to the Commissioners and are posted on the City's website after the meeting. You can also [email staff and the City Clerk](/resources/#email-a-comment).
+- **By voicemail:** call [(714) 744-7271](tel:+17147447271) **by 4:00 p.m. the day of the meeting**. Messages aren't played at the meeting; they go to the Commission, and your position is summarized in the minutes.
+- **Watch:** Spectrum Channel 3, AT&T U-verse Channel 99, or streamed live at [cityoforange.org](https://www.cityoforange.org).
+
+*Source: Planning Commission agenda, September 10, 2026.*
+
+### At the City Council
+
+- **Register to speak** at [publiccomment.cityoforange.org](https://publiccomment.cityoforange.org/), in person or by phone. Pick the meeting, click **Register**, choose **In Person** or **Virtually**, select the agenda item (or **Non-Agenda Public Comment**), and submit. You'll get a confirmation email with instructions. In-person speakers can also register at the meeting.
+- **On the day, in person:** check in with the City Clerk when you arrive, and go to the podium when your name is called.
+- **By phone:** register first, using the same phone number you'll call from. Then call [(714) 912-1780](tel:+17149121780) and enter meeting code **10872#**. The line opens 30 minutes before the meeting. **If you don't register before public comment closes, you can't speak by phone.**
+- **Time limit:** 3 minutes per speaker, unless a different limit is announced.
+- **In writing:** eComment on the meeting calendar, by 3:00 p.m. the day of the meeting.
+
+*Sources: City Council agenda, October 13, 2026; publiccomment.cityoforange.org.*
+
+**Questions?** Call the City Clerk's Office at [(714) 744-5500](tel:+17147445500) during business hours before the meeting.
+
+**Put your points in writing, too.** The Planning Commission agenda warns that anyone who later challenges the decision in court "may be limited to raising only those issues you or someone else raised at the public hearing," or in written correspondence delivered to the Commission at or before the hearing.
+
 ## Quick Start: Three Ways to Participate
 
-**1. Attend & speak at the Planning Commission hearing (most powerful).** When: see [Upcoming City Meetings](/#upcoming-city-meetings) — the date keeps moving until the City sends notice. Where: City Council Chamber, Orange City Hall, 300 East Chapman Avenue. What: speak for 3–5 minutes about your concerns. Impact: your words go directly into the record.
+**1. Attend & speak at the Planning Commission hearing (most powerful).** When: see [Upcoming City Meetings](/#upcoming-city-meetings) — the date keeps moving until the City sends notice. Where: City Council Chamber, Orange City Hall, 300 East Chapman Avenue. What: fill out a speaker card before the meeting starts, then speak for up to 3 minutes. Impact: your words go directly into the record. [How to speak →](#how-to-speak)
 
-**2. Submit written comments at the hearing.** Even if you can't speak in person, you can submit a written comment letter (usually 1–2 pages) to be read into the record.
+**2. Comment in writing or by voicemail.** Can't be there? Use the City's eComment by 3:00 p.m. on the day of the meeting, [email staff and the City Clerk](/resources/#email-a-comment), or leave a voicemail at (714) 744-7271 by 4:00 p.m. [Details →](#how-to-speak)
 
 **3. Sign the petition.** One form adds your name to the opposition petition and puts you on the email list for meeting-date updates. [Sign the petition →](/#petition) Want to do more? [See how to help →](#how-to-help)
 
@@ -46,7 +74,7 @@ Use this tool to draft a starting-point public comment script based on your answ
 1. **Call to order** (5 min) — the Chair calls the meeting to order; staff presents procedural information
 2. **Staff presentation** (15–20 min) — City staff (likely Senior Planner Arlen Beck) presents the project, impacts identified, and mitigation proposed
 3. **Applicant presentation** (10–20 min) — Rexford Industrial and their consultants present their position and respond to comments
-4. **Public comment** (30–60 min) — members of the public speak, usually 3–5 minutes each, in support or opposition. **You do NOT need a prepared speech** — commissioners want to hear your concerns
+4. **Public comment** (30–60 min) — members of the public speak, 3 minutes each unless the Chair announces a different limit, in support or opposition. **You do NOT need a prepared speech** — commissioners want to hear your concerns
 5. **Commissioner questions & discussion** (10–20 min) — this is where your public comment can influence the conversation
 6. **Deliberation & vote** (5–20 min) — commissioners debate and vote to approve, deny, or continue
 
@@ -248,7 +276,7 @@ We are an organized group of residents working to get this project denied — an
 
 **Before the hearing**: review the [Issues page](/issues/); pick your core message; read the relevant technical appendix; write out your public comment; practice saying it out loud; bring 6–7 copies for commissioners; note the hearing date on your calendar; arrange childcare/time off work if needed.
 
-**At the hearing**: arrive 15–20 minutes early; sign up to speak; sit in the public comment section; listen to staff and applicant presentations; when called, state your name and address, speak clearly, refer to documents if you have them, stay within your time limit, and thank the commissioners when finished.
+**At the hearing**: arrive 15–20 minutes early; fill out a speaker card and give it to City staff before the meeting starts; sit in the public comment section; listen to staff and applicant presentations; when called, state your name and address, speak clearly, refer to documents if you have them, stay within your time limit, and thank the commissioners when finished.
 
 **After the hearing**: stay for the vote; take notes on what commissioners said; share your experience with neighbors; let the group know how it went.
 
