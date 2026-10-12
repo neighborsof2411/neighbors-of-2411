@@ -46,10 +46,42 @@ upcoming:
     location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
     project: tbd
     agenda: ""
-    note: The following Planning Commission meeting. Until the City posts an agenda, either October date could be the hearing — come to both if you can.
+    note: The October 5 meeting was cancelled. Until the City posts an agenda, this one could be the hearing. Come either way — public comment is open.
 
   - body: City Council
     date: "2026-10-27"
+    time: "6:00 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: not on agenda
+    agenda: ""
+    note: Regular session. Council is the appeal body — the project can only reach it after the Planning Commission acts and its decision is appealed, so don't expect it on this agenda. Public comment is open at every meeting regardless, and it helps for Council to hear from the neighborhood before it ever lands in front of them.
+
+  - body: Planning Commission
+    date: "2026-11-02"
+    time: "5:30 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: tbd
+    agenda: ""
+    note: Until the City posts an agenda, this meeting could be the hearing. Come either way — public comment is open.
+
+  - body: City Council
+    date: "2026-11-10"
+    time: "6:00 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: not on agenda
+    agenda: ""
+    note: Regular session. Council is the appeal body — the project can only reach it after the Planning Commission acts and its decision is appealed, so don't expect it on this agenda. Public comment is open at every meeting regardless, and it helps for Council to hear from the neighborhood before it ever lands in front of them.
+
+  - body: Planning Commission
+    date: "2026-11-16"
+    time: "5:30 PM"
+    location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
+    project: tbd
+    agenda: ""
+    note: Until the City posts an agenda, this meeting could be the hearing. Come either way — public comment is open.
+
+  - body: City Council
+    date: "2026-11-24"
     time: "6:00 PM"
     location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
     project: not on agenda

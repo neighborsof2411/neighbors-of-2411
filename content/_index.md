@@ -12,7 +12,7 @@ description: "2411 Glassell: a 298,988 SF industrial building proposed to operat
 <details class="more-details">
 <summary>Why the hearing date keeps changing</summary>
 
-**The September 21 Planning Commission meeting was cancelled, and no new hearing date has been noticed.** The date has already moved more than once, so expect it to keep changing until the City sends official notice. The next two Planning Commission meetings are listed below &mdash; until an agenda is posted, either one could be the hearing. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
+**The September 21 and October 5 Planning Commission meetings were both cancelled, and no hearing date has been noticed.** The date has already moved more than once, so expect it to keep changing until the City sends official notice. The upcoming meetings are listed below &mdash; until the City posts an agenda, the next Planning Commission meeting could be the hearing. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
 
 </details>
 
@@ -149,6 +149,11 @@ A 24/7 industrial building would sit **54 feet** from homes to the north and **1
 **Sept 21, 2026** → Planning Commission meeting cancelled — no hearing date noticed
 
 </li>
+<li class="timeline-past">
+
+**Oct 5, 2026** → Planning Commission meeting cancelled — no hearing date noticed
+
+</li>
 <li class="timeline-here"><strong>You are here</strong></li>
 <li class="timeline-next">
 
@@ -157,7 +162,7 @@ A 24/7 industrial building would sit **54 feet** from homes to the north and **1
 </li>
 <li class="timeline-next">
 
-**After the Planning Commission acts** → short window to appeal to City Council (see [If the Planning Commission Approves](#if-the-planning-commission-approves-theres-still-an-appeal))
+**After the Planning Commission acts** → 7 business days to appeal to City Council (see [If the Planning Commission Approves](#if-the-planning-commission-approves-theres-still-an-appeal))
 
 </li>
 </ol>
@@ -184,7 +189,7 @@ We're asking for the first one — **denial**. The others are fallbacks, not the
 <details class="more-details" id="if-the-planning-commission-approves-theres-still-an-appeal">
 <summary>If the Planning Commission Approves, There's Still an Appeal</summary>
 
-**If the Planning Commission approves the project,** its decision can be appealed to the City Council, but **the deadline is short** and the appeal requires a filing fee. [Sign the petition](#petition) so we can alert you the day the Commission acts.
+**If the Planning Commission approves the project,** its decision can be appealed to the City Council within **7 business days** after the Commission acts. The appeal is filed in writing with the Community Development Department, with an initial deposit of **$1,000** (Planning Commission agenda, Sept. 10, 2026). [Sign the petition](#petition) so we can alert you the day the Commission acts.
 
 </details>
 
@@ -193,7 +198,7 @@ We're asking for the first one — **denial**. The others are fallbacks, not the
 
 1. **Staff presentation** — City planning staff and developer present the project
 2. **Applicant's case** — Rexford and their consultants respond to comments
-3. **Public comment** — **you speak** (usually 3–5 minutes per person)
+3. **Public comment** — **you speak** (3 minutes per person unless the Chair announces a different limit; [how to sign up](/testify/#how-to-speak))
 4. **Commissioner questions** — they probe weak points in the analysis
 5. **Deliberation & vote** — the Commission votes to approve, deny, or continue
 

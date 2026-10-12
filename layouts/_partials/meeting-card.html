@@ -41,5 +41,12 @@
     <a class="button button--secondary meeting-dir" href="{{ $maps }}" target="_blank" rel="noopener noreferrer" data-apple="https://maps.apple.com/?q={{ $loc | urlquery }}">Directions</a>
     {{- with $m.agenda }}<a class="button button--secondary" href="{{ . }}" target="_blank" rel="noopener noreferrer">Agenda</a>{{ end }}
   </div>
+  <p class="meeting-card-speak">
+    {{- if eq $m.body "City Council" -}}
+    To speak: <a href="https://publiccomment.cityoforange.org/" target="_blank" rel="noopener noreferrer">register online</a> (in person or by phone) · <a href="/testify/#how-to-speak">How it works</a>
+    {{- else -}}
+    To speak: fill out a speaker card before the meeting starts · <a href="/testify/#how-to-speak">How it works</a>
+    {{- end -}}
+  </p>
   <p class="meeting-card-alt"><a href="{{ $gcal }}" target="_blank" rel="noopener noreferrer">Add to Google Calendar instead</a>{{ if not $m.agenda }} · Agenda not yet posted{{ end }}</p>
 </article>
