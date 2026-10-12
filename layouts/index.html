@@ -29,7 +29,7 @@
     {{- $today := now.Format "2006-01-02" }}
     {{- $next := index (where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today) 0 }}
     {{- with $next }}
-    <a class="hero-next-chip" href="#upcoming-city-meetings"><span class="hero-next-label">Next City meeting</span> {{ dateFormat "Mon, Jan 2" .date }} &middot; {{ .time }} &middot; {{ .body }}</a>
+    <a class="hero-next-chip" href="#upcoming-city-meetings"><span class="hero-next-label">Next City meeting</span> <span data-next-when>{{ dateFormat "Mon, Jan 2" .date }} &middot; {{ .time }} &middot; {{ .body }}</span></a>
     {{- end }}
     <p class="hero-mega-meta">Come to every Planning Commission and City Council meeting until this project is decided. <a href="#upcoming-city-meetings">See all upcoming meetings</a></p>
   </div>

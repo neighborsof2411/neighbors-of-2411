@@ -6,19 +6,22 @@
   the page stays correct between deploys; the YAML can be pruned whenever.
   Card markup: layouts/_partials/meeting-card.html.
 
-  Optional param "only" = "next" renders just the next card (used on
-  /testify/).
+  Optional param "only" = "next" shows just the next card (used on
+  /testify/). All upcoming cards are still rendered (hidden), so the browser
+  can promote the next one once a date passes between deploys.
 -->
 {{- $d := hugo.Data.meetings }}
 {{- $today := now.Format "2006-01-02" }}
 {{- $upcoming := where (sort $d.upcoming "date") "date" "ge" $today }}
 {{- $only := .Get "only" }}
-<div class="meetings" id="meeting-list">
+<div class="meetings{{ if eq $only "next" }} meetings--single{{ end }}" id="meeting-list">
 {{- if not $upcoming }}
   <p class="meeting-none">No upcoming meetings are posted yet. Check the <a href="{{ $d.calendar_url }}">City&rsquo;s meeting calendar</a>.</p>
 {{- else }}
   {{ partial "meeting-card.html" (dict "m" (index $upcoming 0) "next" true) }}
-  {{- if and (ne $only "next") (gt (len $upcoming) 1) }}
+  {{- if eq $only "next" }}
+  {{- range after 1 $upcoming }}{{ partial "meeting-card.html" (dict "m" . "next" false) }}{{ end }}
+  {{- else if gt (len $upcoming) 1 }}
   <details class="meetings-more">
     <summary><span>All upcoming meetings (<span data-meeting-count>{{ len $upcoming }}</span>)</span></summary>
     <div class="meetings-more-list">
