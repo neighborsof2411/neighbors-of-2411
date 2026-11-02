@@ -1,0 +1,42 @@
+# Checks the City's agenda system and updates data/meetings.yaml.
+# See scripts/meeting_watch.py. Pushing to main triggers the Cloudflare deploy.
+name: Meeting watch
+on:
+  schedule:
+    - cron: "0 15 * * *"   # about 7-8 a.m. Pacific
+    - cron: "0 21 * * *"   # about 1-2 p.m.
+    - cron: "0 2 * * *"    # about 6-7 p.m.
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency: meeting-watch
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pypdf==6.14.2
+      - name: Check the City's agendas
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/meeting_watch.py
+      - name: Publish any changes
+        run: |
+          git add data/meetings.yaml .github/meeting-watch-state.json
+          git diff --cached --quiet && exit 0
+          git config user.name "meeting-watch"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Meetings: update from the City's agenda system"
+          git pull --rebase origin main
+          git push
+      - name: Alert if the watcher itself failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "Meeting watch failed" \
+            --body "The scheduled check failed, so cancellations and agendas may not be updating. [Run log]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
