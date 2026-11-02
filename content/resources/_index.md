@@ -42,7 +42,7 @@ May 6, 2026 (20 days after the MND was released on April 16, 2026). However, you
 {{< /faq >}}
 
 {{< faq q="When is the Planning Commission hearing?" >}}
-It hasn't been officially noticed. The September 21 and October 5, 2026 meetings were both cancelled, and the expected date had already moved more than once before that. The next Planning Commission meeting is **October 19, 2026 at 5:30 PM** — until the City posts an agenda, it could be the hearing. We keep the current date — and every upcoming Planning Commission and City Council meeting — in one place: [Upcoming City Meetings on the homepage](/#upcoming-city-meetings). The [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx) is the authoritative schedule. [Sign up for email updates](/#stay-informed) to be notified when dates change.
+It hasn't been officially noticed. The September 21, October 5, and November 2, 2026 meetings were all cancelled, and the expected date had already moved more than once before that. The next Planning Commission meeting is **November 16, 2026 at 5:30 PM** — until the City posts an agenda, it could be the hearing. We keep the current date — and every upcoming Planning Commission and City Council meeting — in one place: [Upcoming City Meetings on the homepage](/#upcoming-city-meetings). The [City's own calendar](https://cityoforange.legistar.com/Calendar.aspx) is the authoritative schedule. [Sign up for email updates](/#stay-informed) to be notified when dates change.
 {{< /faq >}}
 
 {{< faq q="Can I still submit comments?" >}}
@@ -299,6 +299,8 @@ To get updates: [sign the petition](/#petition) — it's the one list, and every
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
 | **September 21, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
 | **October 5, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
+| **October 19, 2026** | Planning Commission meeting — project not on agenda *(past)* |
+| **November 2, 2026** | Planning Commission meeting cancelled |
 | **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
 | **Post-PC decision** | 7 business days to appeal to City Council ($1,000 initial deposit) |
 

@@ -1,8 +1,7 @@
 {{- /* End-of-page action block (section pages): the next rung up the ladder.
        Next meeting card from data/meetings.yaml, then Sign / Write your
        comment. Each page's own share block sits just above this. */ -}}
-{{- $today := now.Format "2006-01-02" }}
-{{- $up := where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today }}
+{{- $up := partial "upcoming-meetings.html" . }}
 <section class="action-next" aria-labelledby="action-next-title">
   <h2 id="action-next-title" class="action-next-title">What you can do next</h2>
   {{- with $up }}

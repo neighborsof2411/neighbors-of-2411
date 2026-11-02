@@ -152,6 +152,8 @@ Families in these homes are not transient tenants; they are choosing to raise ch
 | **September 10, 2026** | Planning Commission meeting — public comment only; project not on agenda *(past)* |
 | **September 21, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
 | **October 5, 2026** | Planning Commission meeting cancelled; no hearing date noticed |
+| **October 19, 2026** | Planning Commission meeting — project not on agenda *(past)* |
+| **November 2, 2026** | Planning Commission meeting cancelled |
 | **Upcoming meetings** | See [Upcoming City Meetings](/#upcoming-city-meetings) — updated as the City posts dates |
 | **After the Planning Commission acts** | 7 business days to appeal to City Council (see below) |
 

@@ -20,6 +20,8 @@
 #             "not on agenda" only once the posted agenda shows it isn't.
 #   agenda    "" until the City posts it, then the agenda URL
 #   note      optional one-liner shown under the meeting
+#   cancelled true once the City cancels it: shown as "Cancelled" and skipped
+#             by every next-meeting display
 
 calendar_url: https://cityoforange.legistar.com/Calendar.aspx
 upcoming:
@@ -58,6 +60,7 @@ upcoming:
 
   - body: Planning Commission
     date: "2026-11-02"
+    cancelled: true
     time: "5:30 PM"
     location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
     project: tbd
@@ -78,7 +81,7 @@ upcoming:
     location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
     project: tbd
     agenda: ""
-    note: Until the City posts an agenda, this meeting could be the hearing. Come either way — public comment is open.
+    note: The November 2 meeting was cancelled. Until the City posts an agenda, this meeting could be the hearing. Come either way — public comment is open.
 
   - body: City Council
     date: "2026-11-24"
