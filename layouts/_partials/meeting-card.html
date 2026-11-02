@@ -24,7 +24,7 @@
 {{- $icsRes := resources.FromString (printf "meetings/%s.ics" $id) $ics }}
 {{- $gcal := printf "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%s&dates=%s/%s&location=%s&details=%s" ($title | urlquery) ($start.UTC.Format $utc) ($end.UTC.Format $utc) ($loc | urlquery) ($desc | urlquery) }}
 {{- $maps := printf "https://www.google.com/maps/search/?api=1&query=%s" ($loc | urlquery) }}
-{{- $status := "neutral" }}{{ $label := "Project not on this agenda — public comment is still open" }}
+{{- $status := "neutral" }}{{ $label := "Please speak during public comment period to oppose the project." }}
 {{- if eq $m.project "confirmed" }}{{ $status = "urgent" }}{{ $label = "2411 Glassell is on this agenda" }}
 {{- else if eq $m.project "expected" }}{{ $status = "maybe" }}{{ $label = "Expected: 2411 Glassell hearing" }}
 {{- else if eq $m.project "tbd" }}{{ $status = "maybe" }}{{ $label = "Agenda not posted — the hearing could be here" }}{{ end }}
