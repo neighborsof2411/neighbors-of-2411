@@ -2,8 +2,7 @@
        main actions, and the page's sections. Hidden on smaller screens,
        where the action bar and jump menu do the same jobs. */ -}}
 {{- $p := .page }}
-{{- $today := now.Format "2006-01-02" }}
-{{- $up := where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today }}
+{{- $up := partial "upcoming-meetings.html" . }}
 <aside class="page-rail" aria-label="Take action">
   <div class="page-rail-inner">
     {{- with $up }}{{ with index . 0 }}

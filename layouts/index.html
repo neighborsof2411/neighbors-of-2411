@@ -26,8 +26,8 @@
       <a href="/testify/#comment-builder" class="button button--hero-secondary">Write Your Public Comment</a>
     </div>
     {{- /* Next meeting comes from data/meetings.yaml, the one place dates are kept. */}}
-    {{- $today := now.Format "2006-01-02" }}
-    {{- $next := index (where (sort hugo.Data.meetings.upcoming "date") "date" "ge" $today) 0 }}
+    {{- $next := dict }}
+    {{- with partial "upcoming-meetings.html" . }}{{ $next = index . 0 }}{{ end }}
     {{- with $next }}
     <a class="hero-next-chip" href="#upcoming-city-meetings"><span class="hero-next-label">Next City meeting</span> <span data-next-when>{{ dateFormat "Mon, Jan 2" .date }} &middot; {{ .time }} &middot; {{ .body }}</span></a>
     {{- end }}

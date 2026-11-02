@@ -12,9 +12,12 @@
 -->
 {{- $d := hugo.Data.meetings }}
 {{- $today := now.Format "2006-01-02" }}
-{{- $upcoming := where (sort $d.upcoming "date") "date" "ge" $today }}
+{{- $upcoming := partial "upcoming-meetings.html" . }}
 {{- $only := .Get "only" }}
 <div class="meetings{{ if eq $only "next" }} meetings--single{{ end }}" id="meeting-list">
+{{- range sort $d.upcoming "date" }}{{ if and .cancelled (ge .date $today) }}
+  <p class="meeting-cancelled" data-date="{{ .date }}"><strong>Cancelled:</strong> {{ dateFormat "Mon, Jan 2" .date }} · {{ .body }}</p>
+{{- end }}{{ end }}
 {{- if not $upcoming }}
   <p class="meeting-none">No upcoming meetings are posted yet. Check the <a href="{{ $d.calendar_url }}">City&rsquo;s meeting calendar</a>.</p>
 {{- else }}

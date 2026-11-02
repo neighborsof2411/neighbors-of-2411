@@ -12,7 +12,7 @@ description: "2411 Glassell: a 298,988 SF industrial building proposed to operat
 <details class="more-details">
 <summary>Why the hearing date keeps changing</summary>
 
-**The September 21 and October 5 Planning Commission meetings were both cancelled, and no hearing date has been noticed.** The date has already moved more than once, so expect it to keep changing until the City sends official notice. The upcoming meetings are listed below &mdash; until the City posts an agenda, the next Planning Commission meeting could be the hearing. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
+**The September 21, October 5, and November 2 Planning Commission meetings were all cancelled, and no hearing date has been noticed.** The date has already moved more than once, so expect it to keep changing until the City sends official notice. The upcoming meetings are listed below &mdash; until the City posts an agenda, the next Planning Commission meeting could be the hearing. What doesn't change: **every Planning Commission and City Council meeting between now and the decision is a chance to voice opposition** — and a room full of neighbors at each one is what commissioners and council members remember. Come to every one you can.
 
 </details>
 
@@ -152,6 +152,16 @@ A 24/7 industrial building would sit **54 feet** from homes to the north and **1
 <li class="timeline-past">
 
 **Oct 5, 2026** → Planning Commission meeting cancelled — no hearing date noticed
+
+</li>
+<li class="timeline-past">
+
+**Oct 19, 2026** → Planning Commission meeting — project not on agenda *(past)*
+
+</li>
+<li class="timeline-past">
+
+**Nov 2, 2026** → Planning Commission meeting cancelled
 
 </li>
 <li class="timeline-here"><strong>You are here</strong></li>

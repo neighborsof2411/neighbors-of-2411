@@ -67,6 +67,9 @@
     if (count) count.textContent = String(live.length);
     if (more && live.length < 2) more.hidden = true;
   });
+  $all('.meeting-cancelled').forEach(function (p) {
+    if (daysUntil(p.getAttribute('data-date')) < 0) p.hidden = true;
+  });
   // Every other "next meeting" mention (hero chip, sidebar) is baked in at
   // build time; correct it from the meeting list once a date has passed.
   var mjEl = $('#meetings-json');

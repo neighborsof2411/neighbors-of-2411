@@ -1,0 +1,8 @@
+{{- /* Upcoming meetings, soonest first, leaving out past and cancelled ones.
+       Every "next meeting" display uses this list (data/meetings.yaml). */ -}}
+{{- $today := now.Format "2006-01-02" }}
+{{- $out := slice }}
+{{- range sort hugo.Data.meetings.upcoming "date" }}
+  {{- if and (ge .date $today) (not .cancelled) }}{{ $out = $out | append . }}{{ end }}
+{{- end }}
+{{- return $out }}
