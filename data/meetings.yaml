@@ -72,8 +72,8 @@ upcoming:
     time: "6:00 PM"
     location: City Council Chamber, Orange City Hall, 300 E. Chapman Avenue, Orange, CA 92866
     project: not on agenda
-    agenda: ""
-    note: Regular session. Council is the appeal body — the project can only reach it after the Planning Commission acts and its decision is appealed, so don't expect it on this agenda. Public comment is open at every meeting regardless, and it helps for Council to hear from the neighborhood before it ever lands in front of them.
+    agenda: "https://cityoforange.legistar1.com/cityoforange/meetings/2026/11/1734_A_Orange_City_Council_26-11-10_Meeting_Agenda.pdf"
+    note: The City's posted agenda doesn't list 2411 Glassell. Public comment is still open on other matters.
 
   - body: Planning Commission
     date: "2026-11-16"
